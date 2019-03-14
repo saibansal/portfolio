@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border:0 none; font-family:inherit; font-size:100%; font-style:inherit; font-weight:inherit; margin:0; outline:0 none; padding:0; vertical-align: baseline; list-style:none; text-decoration:none;}
+a{text-decoration:none; outline:none;}
+a img{border:0;}
+input[type=submit], input[type=button], input[type=Reset], button{cursor:pointer; border:0; text-align:center; color:#fff; outline:none;}
+ul{margin:0; padding:0}
+p{line-height:22px; padding-top:0px; text-align:justify; margin:0px;}
+h1, h2, h3{font-family: 'Lato', sans-serif; width:100%;}
+h1{font-size:26px;} h2{font-size:24px;} h3{font-size:22px;}
+body{font-family:Tahoma, Geneva, sans-serif; font-size:13px; background:#fff url(images/body_bg.jpg) repeat-x left top; margin:0; padding:0}
+.wrapper{margin:auto; width:960px; margin-top:7px;}
+.header{float:left; width:100%;}
+.logo{float:left; width:190px; height:92px; margin-top:23px;}
+.rightsection{float:right; width:755px;}
+.rightsection .click{float:right; width:190px; height:39px; border-bottom:solid 1px #587816; background:#333; margin-top:-1px}
+.rightsection .click a{background:#00a88f; color:#fff; background:#00a88f; font-family: 'Open Sans', sans-serif; font-style:italic; margin:3px 0 0 11px; height:29px; line-height:29px; text-align:center; width:169px; float:left; }
+.social{float:right; margin-top:40px; clear:both;}
+.social span{font-size:18px; font-weight:bold; color:#303030; font-family:Arial, Helvetica, sans-serif; float:left; border-right:solid 1px #e0e0e0; padding:13px 27px; margin-right:10px;}
+.social em{float:left; font-family:Tahoma, Geneva, sans-serif; font-size:18px; color:#484848;}
+.social a{float:left; background:url(images/social.png) left top no-repeat; width:38px; height:37px; margin-right:10px; margin-top:5px;}
+.social a#fb{background-position:0 -1px;}
+.social a#fb:hover{background-position:0 -38px;}
+.social a#twitter{background-position:-38px 0;}
+.social a#twitter:hover{background-position:-38px -37px;}
+.social a#youtube{background-position:-76px 0;}
+.social a#youtube:hover{background-position:-76px -37px;}
+.navigation{float:left; width:100%; height:42px; background:#00a88f; margin-top:20px}
+#ddmenu{ display:block; font-family:Arial; text-align:center; letter-spacing:normal;}
+#ddmenu ul{width:77%; float:left; margin:0; padding:0; display:inline-block; list-style:none; position:relative; font-size:0;     z-index:999999990; }
+#ddmenu li{ margin:0; padding:0; display:inline-block; position:relative; color:#EEF4FB; float:left}
+#ddmenu a{color:#EEF4FB; padding:0 22px; line-height:42px; font-size:13px; font-weight:bold; text-decoration:none; display:inline-block; outline:0; position:relative; white-space:nowrap;}
+#ddmenu li.over{z-index:9999999998}
+#ddmenu li.over a{background-color:#333; color:#FFFFFF;}
+#ddmenu a.arrow{ background-image:url(arrow2.gif); background-repeat:no-repeat; background-position:right center; border-left:1px solid transparent; border-right:1px solid transparent;}
+#ddmenu li.over a.arrow{ background-color:#FFFFFF; color:#003366; border-left:1px solid #BBBBBB; border-right:1px solid #BBBBBB; z-index:9999999999;}
+#ddmenu div{padding:0; margin:0;}              
+#ddmenu div.drop{position:absolute; text-align:left; border:1px solid #BBBBBB; background:#FFFFFF; padding:20px; color:#000000; line-height:30px; font-size:13px; font-family:Arial; font-weight:bold; border-radius:0 0 6px 6px}
+#ddmenu div{display:none;}
+#ddmenu div.drop{left:0px;}
+#ddmenu div.dropToLef{left:auto; right:0px;}
+#ddmenu div.dropToLeft2{left:auto; right:-120px}
+#ddmenu div.drop a{line-height:20px; font-size:12px; font-family:Arial; font-weight:normal; color:#003399; text-decoration:none; display:block; text-align:left; position:static; background:none; background-image:none; padding:0 0;}
+#ddmenu div.drop a:hover{text-decoration:underline; color:#0099FF;}
+#ddmenu div.drop div{background:none;}  
+#ddmenu div.column{width:auto; float:left; /*align each column in one row*/ padding:0 10px; /*padding of each column*/}
+#ddmenu div.column div{padding:0px 10px; /*sub-div within div.column. 10px for indent.*/}
+#ddmenuLink {display:none;}
+.search{float:right; width:185px; height:29px; background:#fff; border:solid 1px #e2e2e2; margin:6px 10px 0 0; text-align:left;}
+.search input[type=text]{float:left; width:149px; height:27px; line-height:27px; border:0px; padding:0 5px;}
+.search input[type=submit]{float:left; background:url(images/submit.jpg) center center no-repeat; width:26px; height:27px; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#484848;}
+.slider{float:left; width:100%;}
+.product_container{float:left; width:100%;}
+.product_container .product{float:left; width:252px; padding:20px; background:#fbfbfb url(images/proct_shadow.jpg) no-repeat left 341px; border:solid 1px #e5e5e5;}
+.product_container .product img{float:left; border:solid 5px #e9e9e9;}
+.product_container .product h1{float:left; width:100%; text-align:center; font-family:'Open Sans', sans-serif; font-weight:600; font-size:18px; color:#00a88f; margin-top:11px;}
+.product_container .product p{float:left; width:100%; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:20px;}
+.product_container .product p .readmore{display:inline-block; height:34px; line-height:34px; padding:0 30px; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#fff; background:url(images/readmore_bg.jpg) left top repeat-x; margin-top:15px; border-radius:20px; border:solid 1px #000;}
+.product_container .product p .readmore:hover{background:url(images/readmore_hoverbg.jpg) left top repeat-x; border:solid 1px #00a88f;}
+.product_container .product.mrl_29{margin:0 29px;}
+.enquiry{float:left; width:100%; height:141px; background:url(images/bg_pattern.jpg) repeat left top; margin:35px 0 20px 0;}
+.enquiry .container{margin:auto; width:960px; height:140px;}
+.enquiry .container h1{float:left; width:100%; text-align:center; font-style:italic; margin-top:22px; font-weight:400}
+.enquiry .container .enq{float:left; width:238px; height:43px; background:url(images/make_enwuiry.jpg) left top no-repeat; margin-top:30px; margin-left:156px;}
+.enquiry .container .cont{float:left; width:283px; height:43px; background:url(images/contact_us.jpg) left top no-repeat; margin-top:30px;}
+.enquiry .container .and{float:left; width:150px; line-height:43px; font-family:Georgia, "Times New Roman", Times, serif; text-align:center; color:#979797; margin-top:30px; font-size:28px;}
+.text_container{margin:auto; width:960px; clear:both; margin-top:20px;}
+.text_container .about{width:533px; float:left; border:solid 1px #e5e5e5; background:#fbfbf; padding:20px; height:215px;}
+.text_container .blog h1, .text_container .about h1{float:left; width:100%; display:block; font-size:18px; font-family:Arial, Helvetica, sans-serif; margin-bottom:10px;}
+.text_container .blog h1 span, .text_container .about h1 span{color:#00a88f;}
+.text_container .about p, .text_container .blog p{float:left; line-height:20px; font-family:Arial, Helvetica, sans-serif; font-size:12px; margin-top:0;}
+.text_container .about a{float:right; color:#00a88f; line-height:20px; font-weight:bold;}
+.text_container .blog{width:295px; float:right; border:solid 1px #cbedff; background:#e7fffb; padding:21px 10px 10px 21px; height:230px;}
+.text_container .blog a{float:right; color:#00a88f; line-height:20px; font-weight:bold; background:url(images/readmore_hoverbg.jpg) left top no-repeat; border-radius:20px;}
+.text_container .blog p{margin-bottom:20px; line-height:23px;}
+.footer{float:left; width:100%; margin-top:20px; background:#3b3b3b; border-top:solid 5px #8dcf3f; height:30px; padding-top:40px;}

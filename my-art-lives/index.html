@@ -1,0 +1,178 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>jQuery Wookmark Plug-in Example</title>
+<meta name="description" content="An very basic example of how to use the Wookmark jQuery plug-in.">
+<meta name="author" content="Christoph Ono, Sebastian Helzle">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+<!-- Global CSS for the page and tiles -->
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!-- wrapper starts -->
+<div class="wrapper"> 
+  <!-- header starts -->
+  <div class="header"> <a href="javascript:;" class="logo">My art lives</a> 
+    <!-- navigation starts -->
+    <div class="navigation" id="main-nav">
+      <ul class="menu" id="menu-main-navigation">
+        <li class="menu-item current_page_item"><a data-description="All starts here" href="#">Home</a></li>
+        <li class="menu-item"><a data-description="Who we are" href="#">About Us</a></li>
+        <li class="menu-item"><a data-description="What we do" href="#">Services</a></li>
+        <li class="menu-item"><a data-description="Our work" href="#">Portfolio</a></li>
+        <li class="menu-item"><a data-description="Enquire here" href="#">Contact</a>
+          <ul class="sub-menu">
+            <li class="menu-item"><a href="#">Dummy Lorem text</a></li>
+            <li class="menu-item"><a href="#">Dummy Lorem text</a></li>
+            <li class="menu-item"><a href="#">Dummy Lorem text</a></li>
+          </ul>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-593" id="menu-item-593"><a data-description="Client area" href="https://webartdesign.com.au/myaccount">Clients</a></li>
+      </ul>
+    </div>
+    <!-- navigation finish --> 
+  </div>
+  <!-- header finih --> 
+  <!-- slider here -->
+   <div class="slider" id="carousel">
+    <ul>
+		<li><img alt="" src="images/slider1.jpg" />
+         <p>canvas painting</p>
+		</li>
+	</ul>   
+   </div>
+   
+  <!-- slider finish -->
+  <!-- gallery starts -->
+  <div id="main" role="main" class="gallery_container">
+    <ul id="tiles">
+      <!-- These are our grid blocks -->
+      <li><img src="images/design_25.jpg">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book. </p>
+        <a href="javascript:;" class="readmore">Read more...</a> </li>
+      <li><img src="images/design_03.jpg"></li>
+      <li><img src="images/design_05.jpg">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book. </p>
+        <a href="javascript:;" class="readmore">Read more...</a> </li>
+      <li><img src="images/design_07.jpg"></li>
+      <li><img src="images/design_09.jpg"></li>
+      <li><img src="images/design_16.jpg">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+          specimen book. </p>
+        <a href="javascript:;" class="readmore">Read more...</a> </li>
+      <li><img src="images/design_18.jpg"></li>
+      <li><img src="images/design_20.jpg"></li>
+      <li><img src="images/design_27.jpg"></li>
+      
+      <!-- End of grid blocks -->
+    </ul>
+  </div>
+  <!-- gallery finsih --> 
+  <!-- comment box -->
+   <div class="comment_box">
+    <h1 class="heading">Testimonials</h1>
+     <ul>
+      <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+      <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+      <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+      <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+      <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+      <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+      <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+      <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+     </ul>
+   </div>
+  <!-- comment box finish -->
+</div>
+<!-- footer starts -->
+<footer class="clearfix" id="footer">
+  <div class="container">
+    <div class="three-fourth">
+      <div class="widget ss-contact-info" id="ss-contact-info-2">
+        <ul class="contact-info">
+          <li class="email"><a href="mailto:dummy@dummy.com">info@webartdesign.com.au</a></li>
+        </ul>
+        <!-- end .contact-info --></div>
+    </div>
+    <!-- end .three-fourth -->
+    
+    <div class="one-fourth last">
+      <div class="widget ss-social-links" id="ss-social-links-2"><span class="widget-title">Stay Connected</span>
+        <ul class="social-links">
+          <li class="facebook"><a target="_blank" href="#">Facebook</a></li>
+          <li class="google"><a target="_blank" href="#">Google</a></li>
+          <li class="skype"><a target="_blank" href="#">Skype</a></li>
+          <li class="twitter"><a target="_blank" href="#">Twitter</a></li>
+        </ul>
+        <!-- end .social-links --></div>
+    </div>
+    <!-- end .one-fourth.last --> 
+    
+  </div>
+  <!-- end .container --> 
+  
+</footer>
+<footer class="clearfix" id="footer-bottom">
+  <div class="container">
+    <ul>
+      <li>&copy; My Art Lives 2013. All rights reserved</li>
+      <li><a href="#">Legal Notice</a></li>
+      <li><a href="#">Terms</a></li>
+    </ul>
+  </div>
+  <!-- end .container --> 
+  
+</footer>
+<!-- footer finish --> 
+<!-- include jQuery --> 
+<script src="libs/jquery.min.js"></script> 
+
+<!-- Include the plug-in --> 
+<script src="jquery.wookmark.js"></script> 
+
+<!-- Once the page is loaded, initalize the plug-in. --> 
+<script type="text/javascript">
+    (function ($){
+      var handler = $('#tiles li');
+      
+      handler.wookmark({
+          // Prepare layout options.
+          autoResize: true, // This will auto-update the layout when the browser window is resized.
+          container: $('#main'), // Optional, used for some extra CSS styling
+          offset:20, // Optional, the distance between grid items
+          outerOffset:0, // Optional, the distance to the containers border
+          itemWidth: 215 // Optional, the width of a grid item
+      });
+      
+      // Capture clicks on grid items.
+      handler.click(function(){
+        // Randomize the height of the clicked item.
+        var newHeight = $('img', this).height() + Math.round(Math.random() * 300 + 30);
+        $(this).css('height', newHeight+'px');
+
+        // Update the layout.
+        handler.wookmark();
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>

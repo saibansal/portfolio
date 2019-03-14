@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+/*font-family: 'Signika', sans-serif;     font-family: 'Open Sans', sans-serif;       font-family: 'Oswald', sans-serif;*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{border: 0 none; font-family: inherit; font-size: 100%; font-family: 'Open Sans', sans-serif; font-weight: inherit; margin: 0; outline: 0 none; padding: 0; vertical-align: baseline; list-style: none; text-decoration: none;  outline:none}
+input[type=submit], input[type=value], input[type=button], button{cursor:pointer; border: 0; outline: none;}
+body {background:#F3F3F3; color:#646464; margin:0px; padding:0px; font-family:'Open Sans', sans-serif; font-size:14px; line-height:20px; width:100%;}
+header{background:#181818; color:#96969B; height:64px; position:relative; width:100%; z-index:3; float:left;}
+.container{padding:0 10px; width:940px; margin:auto;}
+.logo{background:url(images/logo.png) no-repeat center center; display:block; height:64px; overflow:hidden; text-indent:-9999em; width:80px; float:left;}
+.search{float:left; margin-left:20px; width:215px; margin-top:16px; background:#434343}
+.search .btn{float:left; background:url(images/search.jpg) left top no-repeat; height:32px; width:32px;}
+.search .search-box{float:left; width:173px; padding:0 10px 0 0; background:#434343; line-height:32px; height:32px; border:0; color:#fff; font-weight:400; border-radius:0 3px 3px 0}
+/* ------------------- navigation -----------------*/
+.toggleMenu{display:none; background:#666; padding:10px 15px; color:#fff;}
+.nav{list-style:none; *zoom:1; float:right; max-width:615px; margin-top:16px;}
+.nav:before, .nav:after{content: ""; display:table;}
+.nav:after{clear:both;}
+.nav ul{list-style:none; width:9em; float:right;}
+.nav a{padding:0 10px; color:#8A8989; height:32px; line-height:32px; font-size:13px; font-weight:400;}
+.nav li.active a{background:#2D2D2D; color: #E5E5E5;}
+.nav li:hover a{color: #E5E5E5; transition:color 0.3s ease 0s;}
+.nav li{position:relative; margin-left:1px;}
+.nav > li{float: left;}
+/*.nav > li > .parent {background-image:url("images/downArrow.png"); background-repeat:no-repeat; background-position:right;}*/
+.nav > li > a{display: block;}
+.nav li ul{position:absolute; left:-9999px;}
+.nav > li.hover > ul{left:0;}
+.nav li li.hover ul{left:100%; top:0;}
+.nav li li a {display:block; background:#1d7a62; position:relative; z-index:100; border-top:1px solid #175e4c;}
+.nav li li li a {background:#249578; z-index:200; border-top:1px solid #1d7a62;}
+/*@media screen and (max-width: 768px) {
+    .active{display:block;}
+    .nav > li{float:none;}
+    .nav > li > .parent{background-position:95% 50%;}
+    .nav li li .parent{background-image:url("images/downArrow.png"); background-repeat:no-repeat; background-position:95% 50%;}
+    .nav ul{display:block; width:100%;}
+   .nav > li.hover > ul , .nav li li.hover ul{position: static;}
+}*/
+.content-container{margin:auto; width:940px; clear:both;}
+.content-container .container{margin:auto; padding:60px 0; width:700px;}
+.content-container h1{font-family: 'Signika', . sans-serif; font-size:2.77em; font-weight:400; width:100%; text-align:center;}
+.content-container h1 em{display:inline-block; font-weight:600}
+.content-container .container p{color:#757575; font-size:16px; line-height:1.5em; margin:30px auto 0; width:700px; text-align:center}
+.login-container{margin:0 auto; width:340px;}
+.login-container .hr{height:20px; margin:5px 0; position:relative; text-align:center; background:url(images/border-h1.jpg) repeat-x left center;}
+.login-container .hr span{background:#F3F3F3; display:inline-block; font-weight:bold; height:20px; line-height:20px; padding:0 10px; position: relative; z-index:2;}
+.login-container form label{float:left; width:100%; font-size:13px; margin-bottom:10px; font-weight:bold;}
+.login-container form input[type=text],
+.login-containerform input[type="email"],
+.login-container form input[type="password"],
+.login-container form input[type="search"],
+.login-container form input[type="number"],
+.login-container form input[type="tel"],
+.login-container form input[type="url"],
+textarea{-moz-box-sizing: border-box; background:#FFF; border:1px solid #CBC9CD; border-radius:2px; box-shadow:0 1px 1px rgba(0, 0, 0, 0.03) inset; color: #6D6D71; float:left; font-family:Arial,Helvetica,Geneva,sans-serif; font-size:13px; height:32px; margin:0; padding:0 9px; width:100%; margin-bottom:10px;}
+.login-container form a{color:#545390; font-weight:bold; transition:color 0.3s ease 0s; font-size:12px;}
+.login-container form a:hover{color:#000;}
+.login-container form p{float:left; width:100%;}
+.login-container form p .check{float:left;}
+.login-container form p .check {float:left; font-size:13px; margin-top:8px; line-height:20px;}
+.login-container form .check input[type=checkbox]{float:left; margin-top:4px; display:inline-block; border:red;}
+.login-container form .check:hover input[type=checkbox]{border:solid 1px #3399ff;}
+.login-container form p input[type=button]{padding:5px 14px; background:#0BB475; border: 1px solid #0AA56B; float:right; margin-top:5px; color:#fff;}
+.login-container form p input[type=button]:hover{background:#0AA56B;}
+.login-container authentication-options{padding:30px 0 0; text-align:center; float:left}
+.login-container .authentication-options em{line-height:1.5em; margin:0; font-style:normal; width:100%; float:left; text-align:center; margin-top:35px;}
+.login-container .authentication-options a{font-weight:bold; width:100%; float:left; text-align:center;}
+footer {background:#FFF; border-top:1px solid #E4E4E4; font-size: 11px; height:46px; float:left; position:relative;width: 100%; z-index:1;}
+.footerlogo{float:left; background:url(images/footerlogo.png) left center no-repeat; width:40px; height:46px}
+footer ul{float:left; width:100%;}
+footer nav{padding: 12px 0 0 15px; float:left; display:inline; width:94%}
+footer nav ul{float:left;}
+footer nav ul li{float:left;}
+footer nav a{color:#8A8989; float:left; font-family:'Open Sans' , sans-serif; font-weight:normal; height:22px; line-height:22px; margin:0 15px 0 0; transition:color 0.2s linear 0s;}
+footer nav li:hover a{color:#000;}
+footer nav ul li.social{float:right}
+footer nav ul li.social a{background:url(images/flaticons_social_lightgrey.png) left top no-repeat; float:right; width:16px; height:16px;}
+footer nav ul li.social a:hover{background:url(images/flaticons_social_grey.png) left top no-repeat;} 
+footer nav ul li.social a.fb{background-position:0 0;}
+footer nav ul li.social a.fb:hover{background-position:0 0;}
+footer nav ul li.social a.twitter{background-position:-30px 0;}
+footer nav ul li.social a.twitter:hover{background-position:-30px 0;}
+
+/*---------- for google chrome -----------------*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ .login-container form input[type=text],
+.login-containerform input[type="email"],
+.login-container form input[type="password"],
+.login-container form input[type="search"],
+.login-container form input[type="number"],
+.login-container form input[type="tel"],
+.login-container form input[type="url"], textarea{width:94%;}
+}
+/*---------- for ie10 -----------------*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+.login-container form input[type=text],
+.login-containerform input[type="email"],
+.login-container form input[type="password"],
+.login-container form input[type="search"],
+.login-container form input[type="number"],
+.login-container form input[type="tel"],
+.login-container form input[type="url"], textarea{width:94%;}
+.login-container form .check:hover input[type=checkbox]{border:solid 0px #3399ff;}
+.login-container form .check{line-height:25px !important;}
+} 
+
+/*------------------- for personal page css here -----------------*/

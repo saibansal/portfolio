@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head>
+ <meta charset="UTF-8" />
+ <title>A date range picker for Bootstrap</title>
+ <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+ <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" media="all" href="file:///C|/Users/Vishal/Desktop/bootstrap-daterangepicker-master/daterangepicker-bs3.css" />
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="file:///C|/Users/Vishal/Desktop/bootstrap-daterangepicker-master/moment.js"></script>
+ <script type="text/javascript" src="file:///C|/Users/Vishal/Desktop/bootstrap-daterangepicker-master/daterangepicker.js"></script>
+   </head>
+   <body>
+ <link href="file:///C|/Users/Vishal/Desktop/bootstrap-daterangepicker-master/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Custom styles for this template -->
+   <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+   <script src="file:///C|/Users/Vishal/Desktop/bootstrap-daterangepicker-master/js/ie-emulation-modes-warning.js"></script>
+   <script src="file:///C|/Users/Vishal/Desktop/bootstrap-daterangepicker-master/js/npm.js"></script>
+   <link href="file:///C|/Users/Vishal/Desktop/bootstrap-daterangepicker-master/fonts/fonts.css" rel="stylesheet">
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+   <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> -->
+   <link rel="stylesheet" type="text/css" href="file:///C|/Users/Vishal/Desktop/bootstrap-daterangepicker-master/custom.css">
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext,latin-ext,greek-ext,greek,vietnamese' rel='stylesheet' type='text/css'>
+   <!-- for select box -->
+    <script type="text/javascript" src="file:///C|/Users/Vishal/Desktop/bootstrap-daterangepicker-master/js/jquery.selectBox.js"></script>
+	
+	<!--<script>
+
+	$(document).ready(function () {
+     $('select')
+	  .selectBox({
+		  mobile: true
+		 })
+                    .focus(function () {
+                        $('#console').append('Focus on ' + $(this).attr('name') + '<br />');
+                        $('#console')[0].scrollTop = $('#console')[0].scrollHeight;
+                    })
+                    .blur(function () {
+                        $('#console').append('Blur on ' + $(this).attr('name') + '<br />');
+                        $('#console')[0].scrollTop = $('#console')[0].scrollHeight;
+                    })
+                    .change(function () {
+                        $('#console').append('Change on ' + $(this).attr('name') + ': ' + $(this).val() + '<br />');
+                        $('#console')[0].scrollTop = $('#console')[0].scrollHeight;
+                    });
+        });
+		
+		
+		 $(document).ready(function() {
+    $('#checkbox_n01').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.sme').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.sme').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+		</script> -->
+ </head>
+<input type="text" style="width: 200px" name="birthday" id="birthday" class="form-control" value="03/18/2013" /> 
+               <script type="text/javascript">
+               $(document).ready(function() {
+                  $('#birthday').daterangepicker({ singleDatePicker: true }, function(start, end, label) {
+                    console.log(start.toISOString(), end.toISOString(), label);
+                  });
+               });
+               </script>
+         </div>
+      </div>
+
+   </body>
+</html>

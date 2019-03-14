@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery selectBox (select replacement plugin)</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.selectBox.js"></script>
+    <link type="text/css" rel="stylesheet" href="jquery.selectBox.css"/>
+    <script type="text/javascript">
+    $(document).ready(function () {
+     $('select')
+	  .selectBox({
+		  mobile: true
+		 })
+                    .focus(function () {
+                        $('#console').append('Focus on ' + $(this).attr('name') + '<br />');
+                        $('#console')[0].scrollTop = $('#console')[0].scrollHeight;
+                    })
+                    .blur(function () {
+                        $('#console').append('Blur on ' + $(this).attr('name') + '<br />');
+                        $('#console')[0].scrollTop = $('#console')[0].scrollHeight;
+                    })
+                    .change(function () {
+                        $('#console').append('Change on ' + $(this).attr('name') + ': ' + $(this).val() + '<br />');
+                        $('#console')[0].scrollTop = $('#console')[0].scrollHeight;
+                    });
+
+        });
+
+    </script>
+</head>
+<body>
+    <p>
+        <select id="standard-dropdown" name="standard-dropdown" class="custom-class1 custom-class2" style="width: 200px;">
+            <option value="1" class="test-class-1">Item 1</option>
+            <option value="17">Item 17</option>
+            <option value="18">Item 18</option>
+            <option value="19">Item 19</option>
+            <option value="20">Item 20</option>
+        </select>
+    </p>
+</body>
+</html>

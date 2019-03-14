@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border:0; font-family:inherit; font-size:100%; font-style:inherit; font-weight:inherit; margin:0; outline:0; padding:0; vertical-align: baseline; list-style:none; text-decoration:none;}
+p, h1, h2, h3, h4, h5, h6{text-align:left;}
+a{text-decoration:none;}
+a img{border:none;}
+body{font-family:Verdana, Geneva, sans-serif; font-size:13px; color:#555555; background:#fff url(images/body_bg.jpg) repeat-x left top;}
+.wrapper{margin:auto; width:960px; min-height:200px; }
+.header{float:left; width:100%; height:159px; margin-top:30px;}
+.header a.logo{float:left; max-width:320px; height:65px;}
+.header .top_right{float:right; max-width:480px; height:20px}
+.header .top_right .row{float:right; max-width:480px; text-align:right; margin-bottom:18px;}
+.header .top_right .row .first{float:left; width:200px; border-right:solid 6px #e1d8bd; padding-right:21px;}
+.header .top_right .row .first span{font-size:14.3px; display:block; font-weight:bold; color:#593e1a;}
+.header .top_right .row .second{float:right; font-size:30px; font-weight:bold; margin-left:7px; width:243px; color:#95866a; line-height:31px;}
+.header .top_right .row span{float:right; color:#593e1a;}
+.header .top_right .row span img{float:right; margin-left:30px;}
+.header .top_right .row span.lh25{line-height:25px;}
+.nav {float:left; max-width:960px; margin-top:43px; height:50px; *width:960px;}
+.nav ul{float:left;}
+.nav ul li{list-style:none; float:left;}
+.nav ul li a{float:left; padding:0px 15px; color:#fff; font-size:16px; font-weight:bold; height:50px; line-height:50px;}
+.nav ul li:first-child a{padding-left:0}
+.nav ul li:last-child a{padding-right:0}
+.nav span.social{float:left; margin:10px 0 0 15px;}
+.nav span.social a{float:left; margin-right:15px;}
+.slider{float:left; width:100%; height:383px;}
+.content_section{float:left; width:100%; height:197px;}
+.content_section h1{background:url(images/bg_head.png) left top no-repeat; font-size:16px; margin:20px auto; width:440px; height:41px; text-align:center; line-height:40px; font-weight:bold; text-shadow:1px 3px 2px #FFFFFF;}
+.content_section .section{float:left; margin-top:4px; width:298px;}
+.content_section .section h2{float:left; font-size:16px; font-family:Arial, Helvetica, sans-serif; color:#555555; width:100%; font-weight:bold}
+.content_section .section p{float:left; padding:6px 0; width:100%; text-align:justify; line-height:21px; color:#555555; font-size:13px;}
+.fright{float:right !important;}
+.content_section .section.ml30{margin-left:35px;}
+.content_container{float:left; width:100%; min-height:100px; margin-top:22px;}
+.content_container .left_section{float:left; width:630px;}
+.content_container .left_section h1{float:left; width:100%; margin-bottom:25px; color:#241e14; font-weight:bold; font-size:20px;}
+.content_container .left_section p{float:left; width:100%; line-height:21px; font-size:14px; padding-top:10px;}
+.pb_10{padding-bottom:10px;}
+.footer_nav{background:url(images/footer_bg.jpg) repeat left top; height:165px; float:left; width:100%; margin-top:37px;}
+.footernav_outer{float:left; width:100%; background:#000;}
+.footer_nav .nav{margin:0 auto; float:none;}
+.content_container .right_section{float:right; width:300px;}
+.content_container .right_section .about{float:left; width:100%;}
+.content_container .right_section .about .image{float:left; width:140px; height:140px;}
+.content_container .right_section .about h3{float:right; width:125px; color:#555; font-size:23px; font-weight:bold; margin-top:25px;}
+.content_container .right_section .forum{float:left; width:100%; margin-top:32px;}
+.content_container .right_section .forum p.heading{font-size:15px; float:left; font-weight:bold; width:100%;}
+.content_container .right_section .forum p{float:left; width:100%; font-size:13px; line-height:21px;}
+.content_container .right_section .form_box{float:left; width:83%; background:#241e14; min-height:100px; padding:20px 30px 20px 20px; margin-top:30px;}
+.right_section .form_box h1{float:left; width:100%; font-size:17px; color:#fff; font-weight:bold;}
+.right_section .form_box p{float:left; width:100%; font-size:13px; color:#ccc;}
+.right_section .form_box input[type=text], .right_section .form_box input[type=email], .right_section .form_box input[type=tel]{
+	float:left; width:224px; height:30px; background:url(images/input_bg.jpg) repeat-x left top; border:none; border-radius:5px; margin-top:10px; line-height:30px; padding:0 13px; text-transform:capitalize}
+.right_section .form_box textarea{float:left; width:224px; height:63px; background:url(images/textarea_bg.jpg) repeat-x left top; border:none; border-radius:5px; margin-top:10px; padding:8px 13px; text-transform:capitalize; resize:none}
+.right_section .form_box input[type=submit]{float:left; background:url(images/button.jpg) left top no-repeat; width:251px; height:42px; border:0; cursor:pointer; margin-top:10px;}
+.right_section .sitemap{float:left; width:100%; margin-top:40px;}
+.right_section .sitemap h1{float:left; width:100%; font-size:19px; font-weight:bold; padding-bottom:15px; border-bottom:solid 1px #aaaaaa;}
+.right_section .sitemap ul{float:left; margin:10px 0 0 16px; width:95%;}
+.right_section .sitemap ul li{float:left; display:block; width:100%; margin:5px 0}
+.right_section .sitemap ul li a{float:left; font-size:15px; font-weight:bold; color:#241e14;}
+.right_section .details{float:left; width:100%; margin-top:40px;}
+.right_section .details h1{float:left; width:100%; font-size:19px; font-weight:bold; padding-bottom:15px; border-bottom:solid 1px #aaaaaa; margin-bottom:14px;}
+.footer_nav .container p{float:left; font-size:15px; margin-top:20px;}
+
+.footer_nav .container{margin:auto; width:960px; margin-top:65px; float:none}
+.footer_nav .container.header{height:100px;}

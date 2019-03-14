@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0 none; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; outline: 0 none; padding: 0; vertical-align: baseline; list-style:none; text-decoration:none;}
+body{margin:0; padding:62px 0 0 ; font-family: 'articulate_lightregular'; font-size:15px; color:#909090;}
+a img{border:0px;}
+p{line-height:22px;}
+.about h1, .contact h1, .team h1, .press h1, .investment h1{float:left; text-align:center; width:100%; margin-bottom:38px;}
+.about h1 a, .contact h1 a, .investment h1 a, .press h1 a, .team h1 a{font-size:50px; color:#646464; display:inline-block; text-transform:uppercase; margin-top:62px;}
+.press h1 a{color:#d7a712;}
+
+
+.wrapper{float:left; width:100%; height:auto}
+.container{width:900px; margin:auto; position:relative;}
+.container a.logo{float:left; width:162px; height:62px;}
+.nav{height:62px; position:fixed; top:0; background:#262626; z-index:1000}
+.container nav{float:right; max-width:705px; margin-top:22px;}
+.container nav ul{float:right;}
+.container nav ul li{float:left; list-style:none; margin:0 10px;}
+.container nav ul li a{float:left; font-size:17px; font-family: 'articulate_narrowregular'; color:#808080;}
+.container nav ul li:hover a, .container nav ul li.active a{color:#ecbd2c;}
+
+.slider{background:url("images/slider_bg.jpg") no-repeat fixed 100% 62px / cover; height:1018px;}
+.slider.container{position:relative;}
+
+.about .icons{float:left; background:url(images/image_.jpg) top center no-repeat; height:108px; width:100%;}
+.about section{float:left; width:420px; margin:40px 0 23px; font-size:15px; line-height:22px}
+.about section h2{float:left; width:100%; font-size:20px; text-transform:uppercase; font-weight:bold; margin-bottom:40px;}
+.fright{float:right !important;}
+
+.team .content{float:left; width:100%; min-height:200px; background:#eceef0;}
+.team .top_part{background:url(images/top_part_team.jpg) no-repeat left top / cover; width:100%; height:115px; float:left}
+.team .bottom_part{background:url(images/bottom_part_team.jpg) no-repeat left top / cover; width:100%; height:115px; float:left}
+.team p{text-align:center;}
+.team section{float:left; position:relative; width:368px; background:#fff; border-radius:10px; -moz-box-shadow: 1px 3px 5px #cfd1d3; -webkit-box-shadow: 1px 3px 5px #cfd1d3; box-shadow: 1px 3px 5px #cfd1d3; min-height:330px; margin-top:77px; padding:18px 30px;}
+
+.team section h5{float:right; width:100%; text-indent:128px; margin:35px 0 0px 0; font-size:34px;}
+.team section .slogan{float:right; width:100%; text-indent:128px; font-size:15px; font-style:italic;}
+.team section p{float:left; width:100%;text-align:left; margin-top:45px; font-size:15px;}
+
+.press .content{float:left; width:100%; min-height:200px; background:#eceef0; padding-bottom:50px;}
+.press .top_part{background:url(images/top_part_team.jpg) no-repeat left top / cover; width:100%; height:115px; float:left}
+.press .bottom_part{background:url(images/bottom_part_team.jpg) no-repeat left top / cover; width:100%; height:115px; float:left}
+.press section{float:left; width:248px;}
+.press section .heading{xolor:#646464; font-size:18px; font-weight:bold; display:block}
+.press section .date{color:#b0b0b0; font-size:15px;display:block; margin:2px 0 15px;}
+.press section p{color:#909090; font-size:15px;display:block; margin:2px 0 15px; font-family: 'articulateregular';}
+.press .more{background:#d7a712; padding:7px 15px; color:#fff; text-transform:uppercase; font-size:12px; font-weight:bold; float:left; border-radius:5px;}
+.press .ml80{margin-left:70px;}
+
+.contact{background:#262626; min-height:500px;}
+.contact p{text-align:center; font-size:15px}
+.contact p a{display:inline-block; color:#ecbd2c; font-size:23px;}
+.contact .social{float:left; display:block; width:100%; text-align:center; margin-top:40px; background:url(images/border_bottom.jpg) bottom left repeat-x; padding-bottom:50px;}
+.contact .social a{display:inline-block; font-family: 'socialiconsmedium'; color:#fff; margin:0 22px;}
+.contact .social a#fb{font-size:31px;}
+.contact .social a#in{font-size:25px;}
+.contact .social a:hover{color:#ecbd2c;}
+.contact .social a#tweet{background:url(images/twitter.jpg) left top no-repeat; width:28px; height:23px;}
+.contact .social a#tweet:hover{background-position:-27px 0}
+.contact .location{float:left; width:100%; margin-top:45px;}
+.contact .location section{width:250px; float:left; text-align:center;}
+.map{float:left; width:100%; margin-top:65px;}
+.map img{width:100%; float:left;}
+
+.investment .pannel_container{float:left; width:100%;}
+.investment .pannel_container ul{float:left; width:100%; background:url(images/ul_bg.jpg) bottom center no-repeat; padding-bottom:20px;}
+
+.investment .pannel_container ul li{float:left; display:inline-block; position:relative; }
+.investment .pannel_container ul li:first-child a{margin-left:0px;}
+
+.investment .pannel_container ul li a{float:left; margin:0 40px; }
+.investment .text{float:left; width:100%; margin-top:37px; min-height:300px;}
+#veduca, #ondalocal, #startup, #janamesa{display:none;}
+.investment .text .left_image{float:left; width:364px; height:279px; border-radius:10px; -moz-box-shadow: 1px 3px 5px #cfd1d3; -webkit-box-shadow: 1px 3px 5px #cfd1d3; box-shadow: 1px 3px 5px #cfd1d3;}
+.investment .text .right{float:right; width:492px;}
+.investment .text .right p a{float:left; color:#d7a712; font-style:italic; margin-top:20px;}
+.pannel_container span {clear: both; display: block; float: left; position: absolute; bottom:-19px; background:url(images/hover.png) bottom center no-repeat; width:100%; display:block; height:20px; display:none}
+.pannel_container ul li:hover span{display:block;}
+
+.slider .new_text{position:absolute; left:0; display:block; width:100%; text-align:center; top:212px; font-size:31px; color:#fff;}
+.slider .new_text span{float:left; width:100%; display:inline-block; margin-bottom:9px;}
+.slider .new_text span a{color:#ecbd2c;}	
+
+/* -------------- changes on 20-08-2013 -----------------*/
+.team section .image img{border:solid 7px #fff; -moz-box-shadow: 1px 3px 5px #cfd1d3; -webkit-box-shadow: 1px 3px 5px #cfd1d3; box-shadow: 1px 3px 5px #cfd1d3; border-radius:50%}
+.team section .image{position:absolute; top:-29px; left:18px; width:119px; height:142px;}
+.slider .new_text{position:absolute; left:0; display:block; width:100%; text-align:center; top:212px; font-size:31px; color:#fff;}

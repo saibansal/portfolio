@@ -1,0 +1,282 @@
+
+/* Style.css
+==============================*/
+
+.home_pat {
+	background: url(../img/pat/absurdidad.png) repeat fixed 50% 0 transparent;          /* Pattern For Home Section */
+	height:100%;
+	width:100%;
+	position:absolute;
+	z-index:7;
+	top:0;
+}
+
+/* Home Section First Menu Style */	
+.selected1{
+text-transform:capitalize; color: #3c0908; font-size: 16px; padding:0px 12px; font-family: 'Cabin', sans-serif; font-weight:400;letter-spacing:1px;
+}
+.selected1:hover{ color:#3c0908;  cursor:pointer; }
+
+/* // Home Section First Menu Style */	
+
+/* Home page Special Menu SECTION
+=================================================== */
+.spmenu span {
+font-family: 'Cabin', sans-serif;
+font-size: 14px;
+text-transform:capitalize;
+color: #b83f27;
+font-weight:bold;
+display: block;
+vertical-align:none;
+}
+.sptext{ 
+-ms-transition:0.6s;
+-moz-transition:0.6s;
+-webkit-transition:0.6s;
+transition:0.6s;
+line-height: 16px;
+}
+.sptext span{/* font-size:13px;*/
+display:block;
+color: #b83f27;
+font-family:inherit;
+text-transform:inherit;
+font-weight:bold; 
+}
+
+.spcontainer {
+height: 130px;
+width: 400px;
+}
+
+.spmenu1
+{
+background:url(../img/brevery-videos.png) no-repeat;
+width:95px;
+height:95px;
+top:40px;
+left:15px;
+-ms-transform: rotate(30deg); /* IE 9 */
+-webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+transform: rotate(30deg);
+z-index: 144;
+ background-size:100%;
+}
+.spmenu1.forefront {
+width:105px;
+height:105px;
+top:40px;
+left:15px;
+-ms-transform: rotate(0deg); 
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+
+.spmenu2{
+background:url(../img/brevery-events.png) no-repeat;
+width:113px;
+height:113px;
+z-index: 144;
+top:20px;
+left:80px;
+-ms-transform: rotate(0deg); /* IE 9 */
+-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+transform: rotate(0deg);
+ background-size:100%;
+}
+.spmenu2.forefront {
+width:120px;
+height:120px;
+top:20px;
+left:80px;
+-ms-transform: rotate(0deg); 
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+.spmenu3 {
+background:url(../img/brevery-special.png) no-repeat;
+width:95px;
+height:95px;
+top:40px;
+left:170px;
+-ms-transform: rotate(330deg); 
+-webkit-transform: rotate(330deg); 
+transform: rotate(330deg);
+z-index: 143;
+ background-size:100%;
+}
+.spmenu3.forefront {
+width:105px;
+height:105px;
+top:20px;
+left:170px;
+-ms-transform: rotate(360deg); 
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+
+.spmenu
+{
+color:#fff;
+border:0;
+outline:none;
+ box-shadow:none;
+ display: block;
+}
+.spmenu.forefront{
+-ms-transition:0.6s;
+-moz-transition:0.6s;
+-webkit-transition:0.6s;
+transition:0.6s;
+z-index: 155;
+}
+.spmenu i{
+text-align:center;
+font-size:16px;
+color:#3c0908;
+position:relative;
+line-height:20px;
+padding:0;
+padding-bottom:3px;
+}
+
+.spmenu.forefront .sptext, .spmenu.forefront .sptext span{
+font-size:16px;
+-ms-transition:0.6s;
+-moz-transition:0.6s;
+-webkit-transition:0.6s;
+transition:0.6s;
+}
+.spmenu.forefront i{
+font-size:18px;
+padding-bottom:6px;
+-ms-transition:0.6s;
+-moz-transition:0.6s;
+-webkit-transition:0.6s;
+transition:0.6s;
+}
+
+.spmenu:before { display:none;}
+
+@media (max-width:991px) {
+.spcontainer {width: 260px;}
+}
+@media (min-width: 240px) and (max-width: 320px) {
+.spcontainer {width: 240px!important;}
+.spmenu .sptext{ display:none;}
+.spmenu1{width:75px; height:75px;}
+.spmenu1.forefront {width:80px; height:80px;}
+.spmenu2{width:95px; height:95px; left:70px;}
+.spmenu2.forefront {width:105px; height:105px; left:70px;}
+.spmenu3{width:85px; height:85px; left:140px;}
+.spmenu3.forefront {width:95px; height:95px; left:140px;}
+}
+
+/*//  Special Menu SECTION
+=================================================== */
+
+
+
+/* // Style.css
+==============================*/
+
+
+
+/* Menu.css
+==============================*/
+
+.menu-inner{width:100%;height:85px;top: 0px;box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);background: rgba(255,255,255,.5);border-radius: 0;border:none; border-left:none; border-right:none;	z-index:999;}
+#header{background: rgba(255,255,255,.7);}
+
+.menu-inner .brand{ padding:0;}
+.menu-inner .brand a{display:block;white-space:100%;height:100%; text-decoration:none; color:#333;}
+.menu-inner .brand a img{max-width:100%;max-height:100%; padding:4px 0px;}
+
+#mainheader .main-nav ul > li > a{color: #3c0908;}
+#mainheader .main-nav ul > li > a:hover, #mainheader .main-nav ul > li > a.selected{color: #3c0908;}
+#header .main-nav ul > li > a{color:#3c0908;}
+#header .main-nav ul > li > a:hover, #header .main-nav ul > li > a.selected{color: #3c0908;}
+
+ul.nav li a{
+font-family: 'Cabin', sans-serif;
+text-transform:capitalize;
+font-weight: 400;
+font-style: normal;
+font-size: 16px;
+color: #a6a9b9;
+width:100%;
+letter-spacing:1px;
+}
+
+@media (min-width:992px){
+#mainheader .main-nav ul ul li a:hover{background:rgba(247,179,36,1); color:#3c0908;}
+#header .main-nav ul ul li a:hover{background:rgba(247,179,36,1); color:#3c0908;}
+.main-nav ul ul li i{ color:#fff;}
+.main-nav ul ul li:hover i{ color:#3c0908;}
+#mainheader .main-nav ul ul li a{padding:12px 15px; color:#fff;  font-size: 16px;}
+#header .main-nav ul li li a {padding: 12px 15px;font-size: 16px;color: #fff;}
+#mainheader .main-nav ul li ul {background: rgba(60,9,8,0.98); color: #fff;}
+#header .main-nav ul li:hover>ul {background: rgba(60,9,8,0.8); color: #fff;}
+}
+
+@media (min-width:1200px){
+#mainheader .main-nav ul li li a.hover, #mainheader .main-nav ul li li a.selected{  background:rgba(247,179,36,1); color:#3c0908; border-radius:0;}
+#header .main-nav ul li li a.hover, #header .main-nav ul li li a.selected{  background:rgba(247,179,36,1); color:#3c0908; border-radius:0;}
+}
+
+@media (max-width: 991px) {
+
+@-moz-document url-prefix() { 
+ .menu-inner .brand, #header .brand {height:70px!important;} 
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+@-moz-document url-prefix() { 
+ .menu-inner .brand, #header .brand {height:85px!important;} 
+}
+}
+
+@-moz-document url-prefix() { 
+ #header .brand {height:85px;} 
+}
+/* Menu.css
+==============================*/
+
+/* Slicknav.css
+==============================*/
+
+.slicknav_nav a{ color:#3c0908; font-size: 12px; letter-spacing: 1px;}
+.slicknav_nav .slicknav_row:hover {
+     background:rgba(60,9,8,0.8);
+    color:#fff;
+	text-decoration:none;
+}
+.slicknav_nav :hover span{
+     background:transparent;
+    color:#f7b324;
+	text-decoration:none;	
+}
+.slicknav_nav :hover .fullcapse{ color:inherit;}
+.slicknav_nav .slicknav_arrow { color:#3c0908;}
+.slicknav_nav :hover a a {background: transparent;}
+.submenu .slicknav_nav .slicknav_row{background:transparent; color:#f7b324;}
+.submenu .slicknav_nav .slicknav_row:hover{background:transparent; color:#f7b324;}
+
+.slicknav_nav :hover a{
+     background:rgba(60,9,8,0.8);
+    color:#f7b324;
+	text-decoration:none;
+}
+
+.slicknav_nav li ul li a:hover{ background:rgba(247,179,36,1);    color:#3c0908; text-decoration:none; }
+.slicknav_nav li ul li a > a:hover{ background:transparent; color:#f7b324; text-decoration:none; }
+
+.slicknav_nav {color: #fff;background: rgba(247,179,36,1); font-family: 'Cabin', sans-serif;}
+.slicknav_nav a {color: #3c0908;}
+
+/* // Slicknav.css
+==============================*/

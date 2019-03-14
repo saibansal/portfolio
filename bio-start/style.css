@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+font-family: 'Roboto', 'sans-serif';
+font-family: 'Tauri', 'sans-serif';
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0 none; font-family: inherit; font-size: 100%; font-family: 'Roboto', 'sans-serif'; font-weight: inherit; margin: 0; outline: 0 none; padding: 0; vertical-align: baseline; list-style: none; text-decoration: none;}
+input[type=submit], input[type=value], input[type=button], button {cursor: pointer; border: 0; outline: none;}
+body {background: #fff; margin: 0px; padding: 0px; color: #757675; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 16px; width: 100%;}
+.outer {float: left; width: 100%;}
+.container {margin: auto; width: 940px;}
+header{float:left; width:100%; padding:15px 0}
+header .logo{float:left; width:206px; height:62px;}
+header .logo a{float:left;}
+header .right-sec{float:right; margin-top:15px; }
+header .right-sec .phone{float:right; background:url(images/phone-icon.jpg) left 5px no-repeat; padding-left:20px;}
+header .right-sec .mail em, header .right-sec .phone em{margin-left:15px; float:right; color:#000; font-family:Arial, Helvetica, sans-serif; font-size:12px;  font-style:normal;}
+header .right-sec .mail pre, header .right-sec .phone pre{margin-left:15px; float:right; color:#ea5b2c; font-family: 'Roboto', 'sans-serif'; font-size:14px;  font-style:normal;  clear:both}
+header .right-sec .mail pre a, header .right-sec .phone pre a{float:left;color:#ea5b2c;}
+header .right-sec .mail pre:hover a, header .right-sec .phone pre:hover a{text-decoration:underline;}
+header .right-sec .mail{float:left; background:url(images/mail-icon.jpg) left 5px no-repeat; padding-left:40px; border-right:solid 2px #e7e7e7; margin-right:20px; padding-right:20px;}
+nav{float:left; width:100%; background:#8e2c47; height:43px; box-shadow:0 1px 1px #000;}
+nav ul{float:left; width:100%;}
+nav ul li{float:left;}
+nav ul li a{float:left; padding:0 40px; line-height:43px; color:#fff; text-shadow:0 0 1px #000; font-family: 'Tauri', 'sans-serif';font-size:14px; background:url(images/nav-separator.jpg) right top no-repeat;}
+nav ul li a:hover, nav ul li.active a{background:#f29122; text-shadow:0 0 0 ; transition: background 0.3s linear 0s;}
+.slider{float:left; width:100%; margin-top:17px; border:solid 1px #8e2c47; position:relative}
+.slider img{float:left; width:100%;}
+.slider .caption{padding:15px 20px; background:url(images/captioonbg.png) repeat left top; position:absolute; top:115px; max-width:427px;}
+.slider .caption h2{float:left; width:100%; font-family: 'Roboto', 'sans-serif'; font-size:23px; text-transform:uppercase; color:#fff; margin-bottom:8px;}
+.slider .caption p{float:left; width:100%; font-family: 'Roboto', 'sans-serif'; font-size:13px; color:#fff; line-height:22px;}
+.slider .caption p a{display:inline-block; color:#f29122; text-decoration:underline;}
+.content-container{margin-top:48px;}
+.content-container .left-section{float:left; width:615px;}
+.content-container .left-section p{float:left; width:100%; line-height:22px; margin-bottom:10px; font-size:14px; font-family: 'Roboto', 'sans-serif';}
+.content-container .right-section{float:right; width:300px; border:solid 1px #bfbfbf; background:#efefef; font-family: 'Roboto', 'sans-serif';} 
+.content-container .right-section h1, .news h1{float:left; width:100%; background:#8f2d47 url(images/news-icon.jpg) 11px center no-repeat; height:48px; line-height:48px; color:#fff; font-weight:bold;  font-size:18px; text-transform:uppercase; text-indent:45px;} 
+.content-container .right-section .data{padding:16px; float:left;}
+.content-container .right-section p{line-height:22px;}
+.content-container .right-section .date, .date{float:left; width:100%; text-align:right; color:#ce6e00; font-size:13px; line-height:22px;}
+.categories{float:left; width:100%; margin-top:90px; background:#f2f2f2; border:solid 1px #cfcfcf; border-right:0; border-left:0; padding:35px 0}
+.categories .section{width:30%; padding:0 1%; text-align:center; float:left}
+.categories .section span{float:left; width:100%; margin-bottom:20px;}
+.categories .section span img{opacity:.7}
+.categories .section h3{float:left; width:100%; color:#8e2c47; text-transform:uppercase; font-weight:bold; font-size:18px; margin-bottom:20px;}
+.categories .section p, .news p{line-height:20px; margin-bottom:20px; width:100%;}
+.categories .section a{float:left; width:100%; color:#ce6e00; font-family: 'Tauri', 'sans-serif'; font-size:13px; font-weight:bold; letter-spacing:1px;} 
+.categories .section a em{text-decoration:underline; font-style:normal;}
+.categories .section:hover em{text-decoration:none;}
+.categories .section:hover img{opacity:1.0;}
+.news{float:left; margin-top:35px; width:100%;  border: 1px solid #BFBFBF;}
+
+/*------- for news section slider -------------*/
+.ca-container{ float:left; height:126px; padding:20px; position:relative; width:900px; background:#efefef;}
+.ca-wrapper{float:left; height:100%; margin-left:3%; position:relative; width:96%;}
+.ca-item{position:relative; float:left; width:300px; height:100%;}
+.ca-content-text p{padding-bottom:5px;}
+.ca-nav span{ width:13px; height:33px; background:transparent url(images/arrows.png) no-repeat top left; position:absolute; top:50%; text-indent:-9000px; opacity:0.7; cursor:pointer; z-index:100;}
+.ca-nav span.ca-nav-next{background-position:top right; left:auto; right:20px; }
+.ca-nav span:hover{ opacity:1.0;}
+.news p{text-align:left; margin-bottom:7px;}
+.news .data{float:left; width: 250px;}
+footer{margin-top:25px; float:left; width:100%; padding:17px 0; background:#8e2c47;}
+footer p{float:left; width:100%; color:#fff; text-align:center; line-height:22px; font-size:13px; font-family: 'Roboto', 'sans-serif';}
+footer p a{display:inline-block; color:#fff; padding:0 10px; font-family: 'Roboto', 'sans-serif'; font-size:13px;}
+footer p a:hover{text-decoration:underline;}

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<title>Penny Earned</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="custom.css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- header starts -->
+<header>
+  <div class="container"> 
+    <!-- logo starts -->
+    <div class="col-lg-3"><a href="javascript:;"><img src="images/logo.png" alt="logo"></a></div>
+    <!-- logo finish --> 
+    <!-- right side starts -->
+    <div class="col-lg-9">
+      <div class="top-right-content"> <a href="javascript:;" class="logout">Log Out</a> <span class="profile-name"> <img src="images/profile-pic.jpg" alt="profile pic"> Welcome, <em> John Doe</em></span> </div>
+    </div>
+    <!-- right side finsih --> 
+    <!-- navigation starts -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="#">Menu</a> </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Calender</a> <span class="downarow"><em class="caret"></em></span>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Drop Down 3</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="#">Contacts</a><span class="downarow"><em class="caret"></em></span></li>
+            <li><a href="#">Financial Planning</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Client Communication</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right search-form" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search Contact">
+              <button type="submit" class="btn btn-default"></button>
+            </div>
+          </form>
+        </div>
+        <!-- /.navbar-collapse --> 
+      </div>
+      <!-- /.container-fluid --> 
+    </nav>
+    <!-- navigation finsih --> 
+  </div>
+</header>
+<!-- header finsih --> 
+<!-- content container starts -->
+<div class="container content-container"> 
+  <!-- tabbed pannel starts-->
+  <div class="left-content col-md-12 tab-container"> 
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="active"><a href="#home" class="indiv" role="tab" data-toggle="tab">Individual</a></li>
+      <li><a href="#profile" role="tab" class="entity" data-toggle="tab">Entity</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active row" id="home"> 
+        <!-- left section start -->
+        <div class="col-lg-6">
+          <p>
+            <label class="col-sm-3 add-label">Name :</label>
+            <span class="col-sm-9 input-cont">
+            <select class="input w70">
+              <option>Mr.</option>
+              <option>Mrs.</option>
+            </select>
+            <input type="text" placeholder="First Name" class="input w142">
+            <input type="text" placeholder="Middle Name" class="input w142">
+            <input type="text" placeholder="last Name" class="input w142">
+            <input type="text" placeholder="Designation" class="input w142">
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Goes By :</label>
+            <span class="col-sm-9 input-cont">
+            <input type="text" placeholder="XXX - ZZZ" class="input w100">
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Employer :</label>
+            <span class="col-sm-9 input-cont">
+            <input type="text" placeholder="Sourabh Sharma" class="input w100">
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Industry :</label>
+            <span class="col-sm-9 input-cont">
+            <input type="text" placeholder="IT / Information Technology" class="input w100">
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Spouse :</label>
+            <span class="col-sm-9 input-cont">
+            <select class="input w70">
+              <option>Mr.</option>
+              <option>Mrs.</option>
+            </select>
+            <input type="text" placeholder="First Name" class="input w142">
+            <input type="text" placeholder="Middle Name" class="input w142">
+            <input type="text" placeholder="last Name" class="input w142">
+            <input type="text" placeholder="Designation" class="input w142">
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Spouse Goes By :</label>
+            <span class="col-sm-9 input-cont">
+            <input type="text" placeholder="IT / Information Technology" class="input w100">
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Employer :</label>
+            <span class="col-sm-9 input-cont">
+            <input type="text" placeholder="Penny Earned" class="input w100">
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Industry :</label>
+            <span class="col-sm-9 input-cont">
+            <input type="text" placeholder="Software Development" class="input w100">
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Status :</label>
+            <span class="col-sm-3 input-cont">
+            <select class="input w100">
+              <option> Active</option>
+              <option> Disabled</option>
+            </select>
+            </span>
+            <label class="col-sm-2 add-label">Type :</label>
+            <span class="col-sm-4 input-cont">
+            <select class="input w100">
+              <option> Client </option>
+              <option> Employer</option>
+            </select>
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Source :</label>
+            <span class="col-sm-4 input-cont">
+            <select class="input w100">
+              <option> Source 1</option>
+              <option> Source 2</option>
+            </select>
+            </span> <span class="col-sm-5 input-cont">
+            <input class="input w100" type="text" placeholder="Source Name">
+            </span> </p>
+          <!-- Family & Freinds section starts -->
+          <div class="container-section fandf">
+            <div class="row todo">
+              <div class="panel panel-default"> 
+                <!-- Default panel contents -->
+                <div class="panel-heading"><span class="glyphicon"><img src="images/frend-icon.png" alt="icon"></span>Friends & Family</div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="heading-sec">
+                      <div class="flag">
+                        <ul>
+                          <li> <span class="col-sm-5">Name</span> <span class="col-sm-4">Relation</span> <span class="col-sm-3">Contact Number</span> </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- content here for frends and family -->
+                    <ul>
+                      <li> <span class="col-sm-5">Cindi Critchfeild</span> <span class="col-sm-4">Sister</span> <span class="col-sm-3"></span> </li>
+                      <li> <span class="col-sm-5">Samantha Critchfeild</span> <span class="col-sm-4">Daughter</span> <span class="col-sm-3"></span> </li>
+                      <li> <span class="col-sm-5">Tom Critchfeild</span> <span class="col-sm-4">Son</span> <span class="col-sm-3"></span> </li>
+                      <li> <span class="col-sm-5">Pam Cook</span> <span class="col-sm-4">Sister in Law</span> <span class="col-sm-3"></span> </li>
+                    </ul>
+                    <!-- content finish for frends and family --> 
+                  </div>
+                </div>
+                <div class="bar-grey"><a class="add" href="javascript:;"><span>Add Family / Friend</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- family and friends section finish --> 
+          
+          <!-- identification starts -->
+          <div class="container-section fandf">
+            <div class="row todo">
+              <div class="panel panel-default"> 
+                <!-- Default panel contents -->
+                <div class="panel-heading"><span class="glyphicon"><img src="images/frend-icon.png" alt="icon"></span>Identification</div>
+                <div class="panel-body pt20">
+                  <p class="text-left">
+                    <label class="col-sm-3 add-label">Licence No. :</label>
+                    <span class="col-sm-3 input-cont">
+                    <input type="text" class="input w100" placeholder="PB 3019/E">
+                    </span>
+                    <label class="col-sm-3 add-label">Issue Date :</label>
+                    <span class="col-sm-3 input-cont">
+                    <input type="text" class="input w100 calender" placeholder="15/06/1987" contenteditable="true">
+                    </span> </p>
+                  <p class="text-left">
+                    <label class="col-sm-3 add-label">Issue State :</label>
+                    <span class="col-sm-3 input-cont">
+                    <select class="input w100">
+                      <option>California</option>
+                    </select>
+                    </span>
+                    <label class="col-sm-3 add-label">Expiration Date :</label>
+                    <span class="col-sm-3 input-cont">
+                    <input type="text" class="input w100 calender" placeholder="15/06/1987" contenteditable="true">
+                    </span> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- identification finsih --> 
+          
+          <!-- Phone Numbers section starts -->
+          <div class="container-section fandf">
+            <div class="row todo">
+              <div class="panel panel-default"> 
+                <!-- Default panel contents -->
+                <div class="panel-heading"><span class="glyphicon"><img src="images/phone2-icon.png" alt="icon"></span>Phone Numbers</div>
+                <div class="panel-body">
+                  <div class="row"> 
+                    <!-- content here for frends and family -->
+                    <ul>
+                      <li> <span class="col-sm-5">Home: </span> <span class="col-sm-7">097810-00000</span> </li>
+                      <li> <span class="col-sm-5">Work: </span> <span class="col-sm-7">097810-00000</span> </li>
+                      <li> <span class="col-sm-5">Spouse Work:</span> <span class="col-sm-7">01763-404040</span> </li>
+                      <li> <span class="col-sm-5">Mobile</span> <span class="col-sm-7">&nbsp;</span> </li>
+                      <li> <span class="col-sm-5">Spouse Mobile</span> <span class="col-sm-7">&nbsp;</span> </li>
+                    </ul>
+                    <!-- content finish for frends and family --> 
+                  </div>
+                </div>
+                <div class="bar-grey"><a class="add" href="javascript:;"><span>Add a Contact Number</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Phone Numbers section finish -->
+          
+          <p>
+            <label class="col-sm-3 add-label">Servicing Advisor :</label>
+            <span class="col-sm-7 input-cont">
+            <select class="input w100">
+              <option>From Site Producer List</option>
+            </select>
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Refering Advisor :</label>
+            <span class="col-sm-7 input-cont">
+            <select class="input w100">
+              <option>Refering Advisor</option>
+            </select>
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Writing Advisor :</label>
+            <span class="col-sm-7 input-cont">
+            <select class="input w100">
+              <option>Writing Advisor</option>
+            </select>
+            </span> </p>
+          <p>
+            <label class="col-sm-3 add-label">Writing Advisor :</label>
+            <span class="col-sm-7 input-cont">
+            <input type="text" class="input w100 calender" placeholder="13/01/2013">
+            </span> </p>
+        </div>
+        <!-- left section finsih --> 
+        <!-- right section starts -->
+        <div class="col-lg-6">
+          <p>
+            <label class="col-sm-4 add-label">Gender :</label>
+            <span class="col-sm-3 input-cont">
+            <select class="input w100">
+              <option>Male</option>
+              <option>Female </option>
+            </select>
+            </span>
+            <label class="col-sm-2 add-label">Tax ID :</label>
+            <span class="col-sm-3 input-cont">
+            <input type="text" class="input w100" placeholder="12345">
+            </span> </p>
+          <p>
+            <label class="col-sm-4 add-label">Greeting Name :</label>
+            <span class="col-sm-3 input-cont">
+            <input type="text" class="input w100" placeholder="Andrew">
+            </span>
+            <label class="col-sm-2 add-label">D.O.B :</label>
+            <span class="col-sm-3 input-cont">
+            <input type="text" class="input w100" placeholder="12345">
+            </span> </p>
+          <p>
+            <label class="col-sm-4 add-label">Occupation :</label>
+            <span class="col-sm-4 input-cont">
+            <input type="text" class="input w100" placeholder="Businessman">
+            </span> <span class="col-sm-3 input-cont" style="line-height:33px;">
+            <input type="checkbox" class="input">
+            Retired </span> </p>
+          <p>
+            <label class="col-sm-4 add-label">How Long With Employer :</label>
+            <span class="col-sm-3 input-cont">
+            <select class="input w100">
+              <option>Male</option>
+              <option>Female </option>
+            </select>
+            </span>
+            <label class="col-sm-2 add-label">Tax ID :</label>
+            <span class="col-sm-3 input-cont">
+            <input type="text" class="input w100" placeholder="12345">
+            </span> 
+          <p>
+           <label class="col-sm-4 add-label">Marital Status :</label>
+            <span class="col-sm-3 input-cont">
+            <select class="input w100">
+              <option>Single</option>
+              <option>Married</option>
+            </select>
+            </span>
+          </p>
+          <p>
+            <label class="col-sm-4 add-label">Gender :</label>
+            <span class="col-sm-3 input-cont">
+            <select class="input w100">
+              <option>Female</option>
+              <option>Male</option>
+            </select>
+            </span> </p>
+          <p>
+            <label class="col-sm-4 add-label">Date of Birth :</label>
+            <span class="col-sm-3 input-cont">
+            <input type="text" class="input w100 calender" placeholder="11/11/1987">
+            </span>
+             </p>
+          <p>
+            <label class="col-sm-4 add-label">Occupation :</label>
+            <span class="col-sm-4 input-cont">
+            <input type="text" class="input w100" placeholder="Businessman">
+            </span> <span class="col-sm-3 input-cont" style="line-height:33px;">
+            <input type="checkbox" class="input">
+            Retired </span> </p>
+          <p>
+            <label class="col-sm-4 add-label">How Long With Employer :</label>
+            <span class="col-sm-3 input-cont">
+            <select class="input w100">
+              <option>Male</option>
+              <option>Female </option>
+            </select>
+            </span>
+            <label class="col-sm-2 add-label">Tax ID :</label>
+            <span class="col-sm-3 input-cont">
+            <input type="text" class="input w100" placeholder="12345">
+            </span> </p>
+            </p>
+           <p><br><br></p>
+          <p>
+            <label class="col-sm-4 add-label">Segment :</label>
+            <span class="col-sm-3 input-cont">
+            <select class="input w100">
+              <option>Gold</option>
+              <option>Bronze</option>
+            </select>
+            </span> </p>
+          <p><br><br></p>
+          
+          <!-- Address Section starts -->
+          <div class="container-section fandf" style="margin-top:4px;">
+            <div class="row todo">
+              <div class="panel panel-default"> 
+                <!-- Default panel contents -->
+                <div class="panel-heading"><span class="glyphicon"><img src="images/address-icon.png" alt="icon"></span>Phone Numbers</div>
+                <div class="panel-body">
+                  <div class="row"> 
+                    <!-- content here for frends and family -->
+                    <ul>
+                      <li> <span class="col-sm-3">Home: </span> <span class="col-sm-9">1215 Plimas Street, yuba City, CA 95993</span> </li>
+                      <li> <span class="col-sm-3">Seasonal: </span> <span class="col-sm-9">123 Main Street, Napa, CA 95659</span> </li>
+                      <li> <span class="col-sm-3">Mailing:</span> <span class="col-sm-9">PO Box 143, Marrysville, Yuba City, CA 95991</span> </li>
+                      <li> <span class="col-sm-3">Work</span> <span class="col-sm-9">1512 Bradshaw Street, Yuba City, CA 95991</span> </li>
+                      <li> <span class="col-sm-3">Spouse Mobile</span> <span class="col-sm-9">354 Bridge Street, Yuba City, CA 95993</span> </li>
+                    </ul>
+                    <!-- content finish for frends and family --> 
+                  </div>
+                </div>
+                <div class="bar-grey"><a class="add" href="javascript:;"><span>Add on Address</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Address section finish --> 
+          
+          <!-- Social Networking starts -->
+          <div class="container-section fandf">
+            <div class="row todo">
+              <div class="panel panel-default"> 
+                <!-- Default panel contents -->
+                <div class="panel-heading"><span class="glyphicon"><img src="images/frend-icon.png" alt="icon"></span>Social Networking</div>
+                <div class="panel-body">
+                  <div class="row"> 
+                    <!-- content here for frends and family -->
+                    <ul>
+                      <li> <span class="col-sm-3">Facebook Id: </span> <span class="col-sm-9">http://www.facebeook.com/saibansal</span> </li>
+                      <li> <span class="col-sm-3">Linkedin Id: </span> <span class="col-sm-9">http://www.in.linkedin.com/pub/vishal-bansal/36/741/813/</span> </li>
+                    </ul>
+                    <!-- content finish for frends and family --> 
+                  </div>
+                </div>
+                <div class="bar-grey"><a class="add" href="javascript:;"><span>Add Social Network Connection </span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Social Networking  finsih -->
+          <p style="margin-bottom:0;">&nbsp;</p>
+          <!-- Professional Contact section starts -->
+          <div class="container-section fandf">
+            <div class="row todo">
+              <div class="panel panel-default"> 
+                <!-- Default panel contents -->
+                <div class="panel-heading"><span class="glyphicon"><img src="images/frend-icon.png" alt="icon"></span>Profssional Contact</div>
+                <div class="panel-body">
+                  <div class="row"> 
+                    <!-- content here for frends and family -->
+                    <ul>
+                      <li> <span class="col-sm-4">Tax Professional : </span> <span class="col-sm-8">Vishal bansal</span> </li>
+                      <li> <span class="col-sm-4">Estate Planning Authority : </span> <span class="col-sm-8">Planning</span> </li>
+                      <li> <span class="col-sm-4">Insurance Professional : </span> <span class="col-sm-8">Vishal bansal</span> </li>
+                      <li> <span class="col-sm-4">Attorney : </span> <span class="col-sm-8">Planning</span> </li>
+                    </ul>
+                    <!-- content finish for frends and family --> 
+                  </div>
+                </div>
+                <div class="bar-grey"><a class="add" href="javascript:;"><span>Add Social Network Connection </span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Contact section finish -->
+          <p></p>
+          <!-- Email section starts -->
+          <div class="container-section fandf">
+            <div class="row todo">
+              <div class="panel panel-default"> 
+                <!-- Default panel contents -->
+                <div class="panel-heading"><span class="glyphicon"><img src="images/email-icon.png" alt="icon"></span>Email Address</div>
+                <div class="panel-body">
+                  <div class="row"> 
+                    <!-- content here for frends and family -->
+                    <ul>
+                      <li> <span class="col-sm-12">newsomeone@pennyearned.com </span> </li>
+                    </ul>
+                    <!-- content finish for frends and family --> 
+                  </div>
+                </div>
+                <div class="bar-grey"><a class="add" href="javascript:;"><span>Add Social Network Connection </span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Email  section finish --> 
+        </div>
+        <!-- right section finish --> 
+        <!-- know your client section starts -->
+        <div class="row">
+          <div class="container-fluid">
+            <div class="col-lg-12">
+              <div class="container-section fandf">
+                <div class="row todo">
+                  <div class="panel panel-default"> 
+                    <!-- Default panel contents -->
+                    <div class="panel-heading"><span class="glyphicon glyphicon-earphone"></span>Phone Numbers</div>
+                    <div class="panel-body pt20"> 
+                      <!-- first column starts -->
+                      <div class="col-lg-3">
+                        <p>
+                          <label class="col-sm-6 add-label">Annual Income</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="1 Lakh">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Net Worth</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="1 Lakh">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Liquid Net Worth</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="2 Lakh">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Fedderal Text :</label>
+                          <span class="col-sm-6">
+                          <select class="input w100">
+                            <option>Fedderal Text</option>
+                          </select>
+                          </span> </p>
+                      </div>
+                      <!-- first column finish --> 
+                      
+                      <!-- second section starts -->
+                      <div class="col-lg-3">
+                        <p>
+                          <label class="col-sm-6 add-label">Annuity</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="Annuity">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Bonds</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="Bond">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Managed Accounts</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="Managed Accounts">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Alternative Investments</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="Alternative Investments">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Options</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="Options">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Stocks</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="Stocks">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Mutual Funds</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="Mutual Funds">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Others</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="Others">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Employer Sponsored Plan</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="Plan">
+                          </span> </p>
+                      </div>
+                      <!-- second section finsih --> 
+                      
+                      <!-- third section starts -->
+                      <div class="col-lg-3">
+                        <p>
+                          <label class="col-sm-7 add-label">Assets Held Outside</label>
+                          <span class="col-sm-5">
+                          <select class="input w100">
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-7 add-label">Assets Held Outside</label>
+                          <span class="col-sm-5">
+                          <select class="input w100">
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-7 add-label">Assets Held Outside</label>
+                          <span class="col-sm-5">
+                          <select class="input w100">
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-7 add-label">Assets Held Outside</label>
+                          <span class="col-sm-5">
+                          <select class="input w100">
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-7 add-label">Assets Held Outside</label>
+                          <span class="col-sm-5">
+                          <select class="input w100">
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-7 add-label">Assets Held Outside</label>
+                          <span class="col-sm-5">
+                          <select class="input w100">
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-7 add-label">Assets Held Outside</label>
+                          <span class="col-sm-5">
+                          <select class="input w100">
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-7 add-label">Assets Held Outside</label>
+                          <span class="col-sm-5">
+                          <select class="input w100">
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                          </span> </p>
+                      </div>
+                      <!-- third section finsih --> 
+                      
+                      <!-- fourth section starts -->
+                      <div class="col-lg-3">
+                        <p>
+                          <label class="col-sm-6 add-label">Estimated Value</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="$2000.00">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Estimated Value</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="$2000.00">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Estimated Value</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="$2000.00">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Estimated Value</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="$2000.00">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Estimated Value</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="$2000.00">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Estimated Value</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="$2000.00">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Estimated Value</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="$2000.00">
+                          </span> </p>
+                        <p>
+                          <label class="col-sm-6 add-label">Estimated Value</label>
+                          <span class="col-sm-6">
+                          <input type="text" class="input w100" placeholder="$2000.00">
+                          </span> </p>
+                      </div>
+                      <!-- fourth section finish --> 
+                    </div>
+                  </div>
+                </div>
+                <!-- buttons div here -->
+                <div class="row pt20 fl text-center">
+                  <div class="container">
+                    <button class="button-set">Create Contact</button>
+                    <button class="button-set">Cancel</button>
+                  </div>
+                </div>
+                <!-- buttons div finish --> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- know your client section finsih -->
+        <div class="clearfix">&nbsp;</div>
+      </div>
+      <!-- Entity content container starts -->
+      <div class="tab-pane" id="profile">..a.</div>
+      <!-- Enitty content container finsih--> 
+      
+    </div>
+
+  </div>
+  <!-- tabbed pannel finish --> 
+</div>
+<!-- content container finish --> 
+<footer>
+ <div class="container">
+  <span class="col-lg-3">
+   Recently Reviewed
+  </span>
+  <span class="col-lg-3 pull-right text-right">Quick Reports</span>
+ </div>
+</footer>
+<script type="text/javascript">
+ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  e.target // activated tab
+  e.relatedTarget // previous tab
+})
+</script> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Signika', sans-serif;
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0 none; font-family: inherit; font-size: 100%; font-family: 'Open Sans', sans-serif; font-weight: inherit; margin: 0; outline: 0 none; padding:0; vertical-align:baseline; list-style:none; text-decoration:none;}
+input[type=submit], input[type=value], input[type=button], button {cursor:pointer; border:0; outline:none;}
+body{background:#eff0f0; margin:0px; padding:0px; color:#757675; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 16px; text-align: justify; width: 100%;}
+.outer{float:left; width:100%; background:#fff;}
+.black{background:#000; height:124px; position:fixed}
+.container{margin:auto; width:940px;}
+header a{float:left;}
+header .logo{float:left; margin:20px 0;}
+nav{float:right}
+nav ul{float:left; list-style:none}
+nav ul li{float:left; height:118px; padding:0 20px; margin-top:3px;}
+nav ul li a{float:left; font-size:22px; font-family: 'Oswald', sans-serif; color:#fff; font-weight:normal;  padding-top:60px; height:55px;}
+nav ul li a.home{background:url(images/home.png) center 20px no-repeat;}
+nav ul li a.price{background:url(images/price.png) center 20px no-repeat;}
+nav ul li a.contact{background:url(images/contact.png) center 20px no-repeat;}
+nav ul li.active, nav ul li:hover{background:#ff691c;}
+.new-content{float:left; width:100%;}
+.cl{clear:both;} .mt126{margin-top:126px;}
+.slider{float:left; width:590px; height:352px; background:url(images/slider.jpg) left top no-repeat; margin-top:30px;}
+.slider h1{float:left; margin:47px 0 0 195px; font-size:26px; line-height:41px; color:#e6790f; font-family: 'Oswald', sans-serif; width:326px;}
+.slider p{color:#716F6C; float:left; font-family:'Open Sans',sans-serif; font-size:15px; line-height:26px; margin:35px 0 0 250px; width:290px; text-align:left;}
+.slider p a{padding:0 30px; background:#fe650b; font-family: 'Oswald', sans-serif; color:#fff; font-size:19px; height:44px; line-height:44px; float:left; border-radius:6px; margin-top:15px; text-shadow:0px 1px 1px #000000;}
+.form{float:right; width:340px; background:#e4eaee; margin-top:30px;}
+.form h1{background: #45494d; /* Old browsers */
+background: -moz-linear-gradient(top,  #45494d 0%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45494d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #45494d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #45494d 0%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #45494d 0%,#000000 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #45494d 0%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45494d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+ width:100%; color:#fff; height:52px; line-height:52px; border:solid 1px #e4eaee; text-indent:20px; font-family: 'Oswald', sans-serif; font-size:22px;}
+.form form{float:left; margin:18px 0 0 20px;}
+textarea, .form form input[type=text], .form form input[type=tel], .form form input[type=email]{float:left; width:279px; background:#fff; padding:0 10px; color:#858282; font-family: 'Signika', sans-serif; font-size:13px; height:37px; line-height:37px; border:solid 1px #b2c4d4; margin-bottom:10px; border-radius:4px;}
+.form form input[type=submit]{background:#fe650b; font-family: 'Oswald', sans-serif; color:#fff; font-size:19px; height:44px; line-height:44px; float:left; border-radius:6px; margin-bottom:30px; text-shadow:0px 1px 1px #000000; width:299px;}
+.content-container{float:left; margin-top:30px; width:100%;}
+.form.contact h2, .content-container h1{float:left; width:100%; color:#000; font-family: 'Oswald', sans-serif; font-weight:300; font-size:26px; padding-bottom:11px; border-bottom:solid 1px #a4a1a1; margin-top:11px;}
+.content-container h1 span{color:#fe681a; font-family: 'Oswald', sans-serif; font-weight:300; font-size:26px;}
+.content-container p{float:left; width:100%; font-family: 'Open Sans', sans-serif; font-family:14px; line-height:23px; color:#919090; margin:10px 0}
+.content-container ul{float:left; width:100%;}
+.content-container ul li{float:left; width:100%; margin:10px 0}
+.content-container ul li span{float:left; width:100%; display:block; line-height:23px; font-family: 'Open Sans', sans-serif; color:#919090; font-size:14px;}
+.content-container ul li span.ques{float:left; font-family: 'Signika', sans-serif; font-size:17px; color:#4d4b4b;}
+.content-container ul li .video{float:left; width:100%;}
+.content-container ul li .text{float:right; width:100%; margin-top:0px;}
+.content-container ul.listing li{background:url(images/listing.jpg) left center no-repeat; padding-left:25px; margin:7px 0 0 0}
+.quote{padding:0 30px; background:#fe650b; font-family: 'Oswald', sans-serif; color:#fff; font-size:19px; height:44px; line-height:44px; float:left; border-radius:6px; margin-top:18px; text-shadow:0px 1px 1px #000000;}
+.back{float:left; text-align:center; width:100%; margin-top:43px;}
+.social{float:left; text-align:center; width:100%; margin-top:33px;}
+.social a{display:inline-block; width:40px; height:40px; background:url(images/socialicon.jpg) left top no-repeat; margin-right:13px;}
+.social a.twitter{background-position:0 0;}
+.social a.fb{background-position:-53px 0;}
+.social a.linkedin{background-position:-106px 0;}
+.social a.gplus{background-position:-159px 0;}
+footer{float:left; width:100%; margin-top:42px; height:55px; line-height:55px; background:#303030;}
+footer .left{float:left; color:#fff; font-family: 'Open Sans', sans-serif; font-size:12px;}
+footer .right{float:right; color:#fff; font-family: 'Open Sans', sans-serif; font-size:12px;}
+footer .right a{color:#fff; font-family: 'Open Sans', sans-serif; font-size:12px;}
+/*---------------- contact page starts --------------*/
+.form.contact{float:none; margin:auto; margin-top:40px; width:500px;}
+.bgnone{background:transparent;}
+.form.contact label{float:left; width:100%; margin-bottom:5px; text-indent:5px; font-weight:400; font-family: 'Signika', sans-serif;}
+.form.contact form input[type=text], .form.contact form input[type=tel], .form.contact form input[type=email], textarea{width:480px;}
+.form.contact form textarea{float:left; height:100px; resize:none}
+.form.contact form {margin-left:0}
+ .form.contact form input[type=submit]{width:500px;}
+.content-container ul li .text,  .content-container ul.listing1 li{background:url(images/listing.jpg) left 7px no-repeat; line-height:22px; padding-left:25px; margin:7px 0 0 0; float:left}

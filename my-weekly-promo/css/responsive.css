@@ -1,0 +1,511 @@
+@charset "utf-8";
+/* CSS Document */
+
+.toggleMenu {
+	display: none;
+	padding: 10px 15px;
+	color: #fff;
+	font-family: 'Signika', sans-serif;
+	font-size: 17px;
+	font-weight: 600;
+	width: 76%
+}
+.nav {
+	list-style: none;
+*zoom: 1;
+}
+.nav:before, .nav:after {
+	content: " ";
+	display: table;
+}
+.nav:after {
+	clear: both;
+}
+.nav ul {
+	list-style: none;
+	width: 9em;
+}
+.nav a {
+	padding: 0 20px;
+	color: #fff;
+	font-family: 'Signika', sans-serif;
+	font-size: 17px;
+	font-weight: 600;
+}
+.nav li {
+	position: relative;
+}
+.nav li:hover a, .nav li.active a {
+	background: #17355D;
+}
+.nav > li {
+	float: left;
+	height: 69px;
+	line-height: 69px;
+}
+.nav > li > .parent {
+	background-image: url("images/downArrow.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.nav > li ul {
+	width: 200px;
+}
+.nav > li ul li {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+}
+.nav > li > a {
+	display: block;
+}
+.nav li ul {
+	position: absolute;
+	left: -9999px;
+}
+.nav > li.hover > ul {
+	left: 0;
+}
+.nav li li.hover ul {
+	left: 100%;
+	top: 0;
+}
+.nav li li a {
+	display: block;
+	background: #1d7a62;
+	position: relative;
+	z-index: 100;
+	border-top: 1px solid #175e4c;
+}
+.nav li li li a {
+	background: #249578;
+	z-index: 200;
+	border-top: 1px solid #1d7a62;
+}
+@media screen and (max-width:919px) {
+footer {
+	width: 100%;
+	padding-bottom: 20px;
+}
+footer .footer-container {
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+}
+@media screen and (max-width:800px) {
+.active {
+	display: block;
+}
+.nav > li {
+	float: none;
+	height: 30px;
+	line-height: 30px;
+}
+.nav > li > .parent {
+	background-position: 95% 50%;
+}
+.nav li li .parent {
+	background-image: url("images/downArrow.png");
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+.nav ul {
+	display: block;
+	width: 100%;
+}
+.nav > li.hover > ul, .nav li li.hover ul {
+	position: static;
+}
+.container .rightsection {
+	width: 55%;
+}
+.container .pricing li {
+	width: 47%;
+	margin-bottom: 4%;
+}
+.previousdeal .deal-section {
+	width: 32%;
+	margin-bottom: 10px;
+}
+.previousdeal .deal-section .name {
+	padding-left: 37%;
+	width: 63%;
+}
+header {
+	float: left;
+	width: 98%;
+	margin: 0 1%;
+}
+.wrapper {
+	width: 98%;
+	padding: 0 1%;
+	float: left;
+}
+.nav li ul {
+	width: 100%;
+}
+.nav-outer {
+	margin-bottom: 20px;
+}
+.container .image_slider {
+	width: 40%;
+	margin: 0 1%
+}
+.container .image_slider img {
+	float: left;
+	width: 100%;
+}
+.container .rightsection .dealtime {
+	font-size: 19px;
+}
+.container .pricing {
+	margin-bottom: 0;
+}
+.amount span.fr label {
+	width: 135px;
+}
+h1, h2 {
+	width: 100%;
+}
+.details {
+	width: 94%;
+	margin: 0 2%;
+}
+.previousdeal h1, .productpricing h1 {
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+.previousdeal {
+	width: 96%;
+}
+.previousdeal .deal-section img {
+	width: 100%;
+}
+}
+@media screen and (max-width:768px) {
+}
+@media screen and (max-width:740px) {
+}
+@media screen and (max-width:730px) {
+h1, h2 {
+	width: 96%;
+	margin: 0 2%;
+}
+}
+@media screen and (max-width:685px) {
+}
+@media screen and (max-width:640px) {
+header .rightpart .time {
+	font-size: 23px;
+}
+.logo {
+	width: 188px;
+}
+.logo img {
+	width: 100%;
+	float: left;
+}
+header .rightpart {
+	width: 50%;
+}
+header .rightpart .searchbox input[type="text"] {
+	width: 74%;
+}
+.container .rightsection {
+	width: 92%;
+	margin: 1% 2%;
+}
+.productpricing .row .first, .productpricing .row .second {
+	width: 29%;
+}
+.productpricing .row .third {
+	padding-right: 16px;
+	width: 29%;
+}
+.productpricing.detail .table .row .second {
+	padding-right: 14px;
+	width: 56%;
+}
+.productpricing {
+	width: 46%;
+	margin: 0 2%;
+}
+.deal-section.second {
+	margin-left: 10px;
+}
+.previousdeal .deal-section {
+	width: 32%;
+	margin-bottom: 10px;
+}
+.previousdeal .deal-section .name {
+	padding-left: 47%;
+	width: 53%;
+}
+footer .footer-container .left {
+	text-align: center;
+}
+footer .footer-container .social {
+	margin-top: 10px;
+	float: right;
+	margin-left: 10px;
+}
+.container .pricing li {
+	width: 48%;
+	margin-bottom: 4%;
+}
+header {
+	float: left;
+	width: 98%;
+	margin: 0 1%;
+}
+.wrapper {
+	width: 98%;
+	padding: 0 1%;
+	float: left;
+}
+.nav li ul {
+	width: 100%;
+}
+.nav-outer {
+	margin-bottom: 20px;
+}
+.container .image_slider {
+	width: 95%;
+	margin: 0 2%
+}
+.container .image_slider img {
+	float: left;
+	width: 100%;
+}
+.container .rightsection .dealtime {
+	font-size: 19px;
+}
+.container .pricing {
+	margin-bottom: 0;
+}
+.amount span.fr label {
+	width: 135px;
+}
+h1, h2 {
+	width: 96%;
+	margin: 0 2%;
+}
+.details {
+	width: 94%;
+	margin: 0 2%;
+}
+.previousdeal h1, .productpricing h1 {
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+.previousdeal {
+	width: 96%;
+	margin: 3% 2%;
+}
+.previousdeal .deal-section img {
+	width: 100%;
+}
+}
+@media screen and (max-width:630px) {
+}
+@media screen and (max-width:600px) {
+}
+@media screen and (max-width:568px) {
+footer .footer-container .left {
+	text-align: center;
+	width: 100%;
+}
+footer .footer-container .footer-nav {
+	margin-top: 10px;
+}
+footer .footer-container .social {
+	margin-top: 10px;
+	float: left;
+	margin-left: 10px;
+}
+}
+@media screen and (max-width:500px) {
+}
+@media screen and (max-width:480px) {
+.previousdeal .deal-section .name {
+	padding-left: 30%;
+	width: 70%;
+}
+header .rightpart .time {
+	font-size: 18px;
+}
+.logo {
+	width: 188px;
+}
+.logo img {
+	width: 100%;
+	float: left;
+}
+header .rightpart {
+	width: 50%;
+}
+header .rightpart .searchbox input[type="text"] {
+	width: 74%;
+}
+.container .rightsection {
+	width: 92%;
+	margin: 1% 2%;
+}
+.productpricing .row .first, .productpricing .row .second {
+	width: 29%;
+}
+.productpricing .row .third {
+	padding-right: 15px;
+	width: 34%;
+}
+.productpricing.detail .table .row .second {
+	padding-right: 13px;
+	width: 72%;
+}
+}
+@media screen and (max-width:430px) {
+}
+@media screen and (max-width:380px) {
+header {
+	float: left;
+	width: 98%;
+	margin: 0 1%;
+}
+.wrapper {
+	width: 98%;
+	padding: 0 1%;
+	float: left;
+}
+.logo {
+	width: 92%;
+	text-align: center;
+}
+.logo img {
+	width: auto;
+	float: none;
+}
+header .rightpart {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+header .rightpart .time {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+}
+header .rightpart .searchbox {
+	float: left;
+	margin-left: 20px;
+}
+.nav li ul {
+	width: 100%;
+}
+.nav-outer {
+	margin-bottom: 20px;
+}
+.container .image_slider {
+	width: 95%;
+	margin: 0 2%
+}
+.container .image_slider img {
+	float: left;
+	width: 100%;
+}
+.container .rightsection {
+	width: 88%;
+	margin: 1% 2%;
+}
+.container .rightsection .dealtime {
+	font-size: 19px;
+}
+.container .pricing {
+	margin-bottom: 0;
+}
+.container .pricing li {
+	width: 46%;
+	margin-bottom: 4%;
+}
+.amount span {
+	float: left;
+	width: 100%;
+}
+.amount span.fr label {
+	width: 135px;
+}
+.likeus img {
+	float: left;
+	width: 100%;
+}
+h1, h2 {
+	width: 96%;
+	margin: 0 2%;
+}
+.details {
+	width: 94%;
+	margin: 0 2%;
+}
+.productpricing {
+	width: 96%;
+	margin: 0 2%;
+}
+.previousdeal h1, .productpricing h1 {
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+.previousdeal {
+	width: 96%;
+	margin: 3% 2%;
+}
+.previousdeal .deal-section {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.previousdeal .deal-section img {
+	width: 100%;
+}
+.previousdeal .deal-section.second {
+	margin-left: 0
+}
+footer .footer-container .footer-nav {
+	margin-top: 10px;
+}
+footer .footer-container .social {
+	margin-top: 10px;
+	float: left;
+	margin-left: 10px;
+}
+header .rightpart .searchbox input[type="text"] {
+	width: 200px;
+}
+}
+@media screen and (max-width:360px) {
+.productpricing .row .first, .productpricing .row .second {
+	width: 29%;
+}
+.productpricing .row .third {
+	padding-right: 13px;
+	width: 32%;
+}
+.productpricing.detail .table .row .second {
+	padding-right: 12px;
+	width: 63%;
+}
+}
+@media screen and (max-width:320px) {
+.productpricing .row .first, .productpricing .row .second {
+	width: 29%;
+}
+.productpricing .row .third {
+	width: 31%;
+	padding-right: 11px;
+}
+.productpricing.detail .table .row .second {
+	padding-right: 2px;
+	width: 62%;
+}
+}
+@media screen and (max-width:240px) {
+}

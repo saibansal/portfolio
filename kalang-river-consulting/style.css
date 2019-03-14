@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0 none; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; outline: 0 none; padding: 0; vertical-align: baseline; list-style:none; text-decoration:none;}
+body{margin:0; padding:0; font-family: 'robotoregular'; font-size:15px; color:#909090;}
+
+a img{border:0px;}
+p{line-height:22px;}
+.outer{float:left; width:100%;}
+
+.land-wrapper{width:100%; margin:auto; max-width:1170px;}
+.land-wrapper .logo{float:left; width:100%; text-align:center;}
+
+footer.fixed{position:fixed; left:0; bottom:0;}
+footer p{float:left; width:100%; color:#fff; font-size:12px; margin-top:10px; text-align:center}
+footer a{display:inline-block; margin:0 2px; color:#fff; opacity:.7}
+footer a:hover{opacity:1}
+.land-wrapper .logo a{display:inline-block;}
+.wrapper{width:100%; margin:auto; max-width:1000px;}
+header{float:left; width:100%; margin-top:30px;}
+.logo{float:left;}
+
+/*nav ul{float:right;}
+nav ul li{float:left; margin-left:10px;}
+nav ul li a{padding:0 20px; background:#000; border:solid 1px #000; height:40px; line-height:40px; float:left; border-radius:5px; color:#fff; font-family: 'robotoregular'; font-size:15px; font-weight:normal;}
+nav ul li:hover a, nav ul li.active a{background:#fff; color:#000; transition: background 0.3s linear 0s;}*/
+.slider{float:left; width:100%; margin-top:10px; position:relative;}
+.slider img{border:solid 3px #878686; border-radius:5px; width:100%; max-width:994px;}
+.slider .caption{position:absolute; right:3px; bottom:44px; background:url(images/caption-bg.png) repeat left top; padding:0 20px; line-height:66px; height:66px; border-radius:5px 0 0 5px; color:#fff; font-family: 'oswaldregular'; font-size:19px; font-weight:normal; text-transform:uppercase; letter-spacing:1px}
+.content-container{float:left; width:100%; margin-top:25px;}
+.content{float:left; width:100%;}
+.t-cent{text-align:center;}
+h1{color:#747474; font-size:29px; padding:0 200px; display:inline-block; margin:auto; font-family: 'signikaregular'; font-weight:normal;}
+h1 span{display:inline-block; background:#fff; padding:0 8px; font-family: 'signikaregular'; font-weight:normal; margin:20px 0;}
+p{float:left; width:100%; line-height:22px; font-size:14px; text-align:left;}
+.service{margin-top:30px;}
+.services{float:left; width:100%;}
+.services ul{float:left; width:100%; margin:15px 0 25px 0;}
+.services ul li{float:left; width:100%; max-width:198px; padding:20px 50px; background:#f2f2f2; text-align:center;}
+.services ul li a{float:left;}
+.services ul li .image{float:left; width:100%; padding:0 0 12px 0; font-weight:normal;}
+.services ul li h4{float:left; width:100%; color:#535353; font-family: 'signikaregular'; font-size:24px;}
+.services ul li:nth-child(2){margin:0 50px}
+.services ul li:hover{background:#9de5ea;  transition: background 0.4s linear 0s;}
+.testimonial{float:left; width:100%; background:#f7f7f7; padding:30px 0}
+.testimonial h2{float:left; max-width:100%; background:url(images/testimonial-left.png) left top no-repeat; padding-left:60px; font-family: 'oswaldregular'; font-size:25px; color:#888; padding-top:25px;}
+.testimonial p{float:left; width:89%; line-height:28px; font-size:18px; color:#919191; margin-left:60px}
+.testimonial .content{background:url(images/testimonial-right.png) right bottom no-repeat; padding-bottom:40px}
+.contact{float:left; margin:40px 0;}
+.contact address{float:left; width:100%; max-width:400px}
+.contact address b{color:#901e2d; font-size:14px; font-family: 'robotomedium'; font-weight:normal; width:100%; float:left; letter-spacing:1px}
+.contact address em{float:left; width:100%; line-height:28px; color:#959595; font-style:normal;}
+.contact address em a{color:#0063a7; display:inline-block; text-decoration:underline;}
+.map{float:right; width:100%; max-width:584px;}
+
+@media (min-width:10px) and (max-width:768px) {
+ .land-wrapper .logo img{width:70%}
+ .land-text{font-size:18px; line-height:36px; margin-left:20px; margin-top:6%; width:89%; text-align:center;}
+ .navi {float: left; max-width: none; width: 100%;}
+ .wrapper{max-width:none; width:97%;}
+ h1{padding:0; background:none; font-size:1.5em; width:100%;}
+ p{text-align:justify; width:94%; padding-left:10px;}
+ .services ul {margin-left:6px;}
+ .services ul li{margin-bottom:15px;}
+ .services ul li:nth-child(2){margin-left:0; margin-right:0; margin-bottom:15px;}
+ .testimonial{margin-left:10px; width:94%;}
+ .testimonial h2{padding:0; background:none; text-align:center; width:100%; margin-bottom:15px;}
+ .testimonial p{margin-left:0; width:100%; padding-left:0; font-size:1em; line-height:1.4em;}
+ .testimonial .content{background:none; padding-bottom:0;}
+ .contact address{margin-left:10px; width:95%; font-size:14px; margin-bottom:15px;}
+ .contact .map img, .contact .map{width:98%;}
+ .contact{margin-bottom:20px;} 
+}
+@media (min-width:10px) and (max-width:560px) {
+ .slider{display:none;}
+ .land-text{margin-bottom:60%}
+ footer.fixed{position:static; margin-top:40px;}
+ .services ul li{background:#f2f2f2; float:left; padding:20px 30px; text-align:center; width:84%; max-width:none}
+.services ul li a{float:left; width:100%;}
+}
+@media (min-width:560px) and (max-width:600px) {
+ .slider{display:none;}
+ .land-text{margin-bottom:60%}
+ footer.fixed{position:static; margin-top:40px;}
+ .services ul li{background:#f2f2f2; float:left; padding:20px 30px; text-align:center; width:84%; max-width:none}
+.services ul li a{float:left; width:100%;}
+}
+@media (min-width:10px) and (max-width:760px){
+	.logo{width:100%; text-align:center}
+	.navi{background:#292929;}
+	.navi span{color:#fff;}
+	.navi .btn-navbar .icon-bar{background-color:#fff; float:left;}
+	.navi .nav-text{display:block;}
+}
+@media (min-width:768px) and (max-width:1170px) {
+  .land-text{font-size:1.5em; line-height:46px; margin-left:20px; margin-top:6%; width:89%; text-align:center}
+  .navi .pull-left {float: none;}
+  ul.the-nav{text-align:center;}
+  .logo{width:100%; text-align:center;}
+  .nav-collapse{text-align:center;}
+  .services ul li{max-width:none; width:25.6%; padding:20px;}
+  .services ul li:nth-child(2){margin:0 20px;}
+  .contact address{margin-left:10px; width:36%; font-size:14px; margin-bottom:15px;}
+  .contact .map{float:right; width:60%;}
+  .contact .map img{width:100%;}
+}
+@media (min-width:768px) and (max-width:1023px) {
+.navi{max-width:none; width:100%}
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+.logo{width:auto;}
+}
+
+.nav-text{float:left; margin:7px 0 0 10px; color:#000; font-weight:bold; display:none;}
+.land-wrapper .navi{float:left; max-width:none; width:100%;}
+.land-wrapper .nav-collapse{float:none; text-align:center; width:100%;}
+.land-wrapper .pull-left{float:none;}
+
+/* -- css changes by vishal on 05-12-2015 --*/
+.navi{float:right; max-width:700px; margin-top:33px;}
+.landing{background:url(images/design-bg.jpg) left top no-repeat fixed; background-size:cover; padding:0}
+.land-text{float:left; margin-top:10%; font-family: 'oswaldregular'; font-size:32px; text-shadow:2px 1px 1px #fff; color:#292929; width:80%; text-transform:uppercase; line-height:50px;}
+.landing header .wrapper{width:100%; background:#fff; padding:15px 0; margin-top:0; max-width:1170px;}
+.landing header {background:#fff;  margin-top:0; padding-bottom:20px;}
+.landing footer{padding:20px 0 15px; opacity:.8}
+
+/* -- new css added by vishal on 05-12-2015 --*/
+.services ul li .image img{opacity:0.8;}
+.services ul li:hover .image img{opacity:1; transition:opacity 0.6s linear 1s}
+.services ul li:nth-child(2n) .image img{margin:25px 0;}
+footer{background:#292929; float:left; width:100%; padding:35px 0; text-align:center; margin-top:60px;}
+

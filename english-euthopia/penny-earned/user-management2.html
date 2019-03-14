@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<title>Penny Earned</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="custom.css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- header starts -->
+<header>
+  <div class="container"> 
+    <!-- logo starts -->
+    <div class="col-lg-3"><a href="javascript:;"><img src="images/logo.png" alt="logo"></a></div>
+    <!-- logo finish --> 
+    <!-- right side starts -->
+    <div class="col-lg-9">
+      <div class="top-right-content"> <a href="javascript:;" class="logout">Log Out</a> <span class="profile-name"> <img src="images/profile-pic.jpg" alt="profile pic"> Welcome, <em> John Doe</em></span> </div>
+    </div>
+    <!-- right side finsih --> 
+    <!-- navigation starts -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="#">Menu</a> </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Calender</a> <span class="downarow"><em class="caret"></em></span>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Drop Down 3</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="#">Contacts</a><span class="downarow"><em class="caret"></em></span></li>
+            <li><a href="#">Financial Planning</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Client Communication</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right search-form" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Manage Producer Search">
+              <button type="submit" class="btn btn-default"></button>
+            </div>
+          </form>
+        </div>
+        <!-- /.navbar-collapse --> 
+      </div>
+      <!-- /.container-fluid --> 
+    </nav>
+    <!-- navigation finsih --> 
+  </div>
+</header>
+<!-- header finsih --> 
+<!-- content container starts -->
+<div class="container content-container">
+ <!-- User Management List Starts -->
+  <div class="panel panel-primary todo user-mgmt">
+  <!-- Default panel contents -->
+  <div class="panel-heading bold"><i class="glyphicon"><img src="images/frend-icon.png" alt="icon"></i>User management</div>
+  <div class="panel-body " style="overflow-x:scroll">
+  <div class="row">
+   <!-- Table -->
+    <table width="100%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <th width="11%" valign="middle" scope="col">Producer Name</th>
+        <th width="15%" valign="middle" scope="col">User Name</th>
+        <th width="8%" valign="middle" scope="col" class="text-center">Last Login</th>
+        <th width="5%" valign="middle" scope="col" class="text-center">Admin</th>
+        <th width="11%" valign="middle" scope="col" class="text-center">Password Change</th>
+        <th width="10%" valign="middle" scope="col" class="text-center">A/c Locked Out</th>
+        <th width="10%" valign="middle" scope="col" class="text-center">Role</th>
+        <th width="30%" valign="middle" scope="col">
+         Site Level Logo
+         <span class="off"><a class="onoff" href="javascript:;">On</a></span>
+         <button class="button-set pull-right">Add User</button>
+        </th>
+      </tr>
+      <tr>
+        <td valign="middle">Tom Cook</td>
+        <td valign="middle">tcook@woodbury.com</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle">
+         <select class="input">
+          <option>Producer</option>
+         </select>
+        </td>
+        <td valign="middle">
+         <button class="button-set">Upload Logo</button>
+         <button class="button-set">Disable Account</button>
+        </td>
+      </tr>
+      <tr>
+        <td valign="middle">Tom Cook</td>
+        <td valign="middle">tcook@woodbury.com</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle">
+         <select class="input">
+          <option>Producer</option>
+         </select>
+        </td>
+        <td valign="middle">
+         <button class="button-set">Upload Logo</button>
+         <button class="button-set">Disable Account</button>
+        </td>
+      </tr>
+      <tr>
+        <td valign="middle">Tom Cook</td>
+        <td valign="middle">tcook@woodbury.com</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle">
+         <select class="input">
+          <option>Producer</option>
+         </select>
+        </td>
+        <td valign="middle">
+         <button class="button-set">Upload Logo</button>
+         <button class="button-set">Disable Account</button>
+        </td>
+      </tr>
+      <tr>
+        <td valign="middle">Tom Cook</td>
+        <td valign="middle">tcook@woodbury.com</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle">
+         <select class="input">
+          <option>Producer</option>
+         </select>
+        </td>
+        <td valign="middle">
+         <button class="button-set">Upload Logo</button>
+         <button class="button-set">Disable Account</button>
+        </td>
+      </tr>
+    </table>
+   </div>
+  </div>
+
+ 
+</div>
+ <!-- user management list finsih -->
+ <!-- disabled account list -->
+  <div class="panel panel-primary todo user-mgmt">
+  <!-- Default panel contents -->
+  <div class="panel-heading bold">
+   <i class="glyphicon glyphicon-ban-circle" style="margin-top:3px;"></i>Disbaled Account
+   <div class="col-lg-3 pull-right"><button class="button-set pull-right">Edit Site Access</button></div> 
+  </div>
+  <div class="panel-body " style="overflow-x:scroll">
+  <div class="row">
+   <!-- Table -->
+    <table width="100%" border="0" cellspacing="5" cellpadding="5">
+      <tr>
+        <th width="11%" valign="middle" scope="col">Producer Name</th>
+        <th width="15%" valign="middle" scope="col">User Name</th>
+        <th width="8%" valign="middle" scope="col" class="text-center">Last Login</th>
+        <th width="5%" valign="middle" scope="col" class="text-center">Admin</th>
+        <th width="11%" valign="middle" scope="col" class="text-center">Password Change</th>
+        <th width="10%" valign="middle" scope="col" class="text-center">Disbaled Date</th>
+      </tr>
+      <tr>
+        <td valign="middle">Tom Cook</td>
+        <td valign="middle">tcook@woodbury.com</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+      </tr>
+      <tr>
+        <td valign="middle">Tom Cook</td>
+        <td valign="middle">tcook@woodbury.com</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+      </tr>
+      <tr>
+        <td valign="middle">Tom Cook</td>
+        <td valign="middle">tcook@woodbury.com</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+      </tr>
+      <tr>
+        <td valign="middle">Tom Cook</td>
+        <td valign="middle">tcook@woodbury.com</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center"><input type="checkbox" checked class="input"></td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+        <td valign="middle" class="text-center">12/08/2014</td>
+      </tr>
+    </table>
+   </div>
+  </div>
+
+ 
+</div>
+ <!-- disabled accoutn list finish -->
+ 
+ <!--team member list -->
+ <div class="row">
+  <div class="col-lg-5">
+   <div class="panel panel-primary todo user-mgmt team">
+  <!-- Default panel contents -->
+  <div class="panel-heading bold"><i class="glyphicon"><img src="images/frend-icon.png" alt="icon"></i>Team Members</div>
+  <div class="panel-body " style="overflow-x:scroll">
+  <div class="row">
+   <!-- Table -->
+    <table width="100%" border="0" cellspacing="5" cellpadding="5">
+     <tr>
+        <th valign="middle" scope="col"><button class="button-set ml0">Create Team</button></th>
+        <th width="30%" scope="col">&nbsp;</th>
+      </tr>
+     <tr>
+        <td valign="middle">
+         tcook@woodbury.com
+         <span class="teammember">Team Member <em><a href="javascript:;">Vishal</a>, <a href="javascript:;">Sourabh</a>, <a href="javascript:;">MC Critch 
+         Feild</a></em></span>
+        </td>
+        <td><a href="javascript:;" class="remove">Remove Member</a></td>
+      </tr>
+     <tr>
+        <td valign="middle">tcook@woodbury.com</td>
+        <td><a href="javascript:;" class="remove">Remove Member</a></td>
+      </tr>
+     <tr>
+        <td valign="middle">tcook@woodbury.com</td>
+        <td><a href="javascript:;" class="remove">Remove Member</a></td>
+      </tr>
+    </table>
+   </div>
+  </div>
+
+ 
+</div>
+  </div>
+ </div>
+ <!-- team member list finsih -->
+  
+</div>
+<!-- content container finish -->
+<footer>
+  <div class="container"> <span class="col-lg-3"> Recently Reviewed </span> <span class="col-lg-3 pull-right text-right">Quick Reports</span> </div>
+</footer>
+<script type="text/javascript">
+ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  e.target // activated tab
+  e.relatedTarget // previous tab
+})
+</script> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

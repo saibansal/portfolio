@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0 none; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; outline: 0 none; padding: 0; vertical-align: baseline; list-style:none; text-decoration:none;}
+body{margin:0; padding:0 ; font-family: 'open_sansregular'; font-size:13px; color:#333; background:url(images/body-bg.png) left top fixed no-repeat;  border-top:#204464 solid 3px; position:relative;}
+.outer{width:100%; float:left;}
+header{margin-top:18px;}
+.logo{float:left;}
+.logo img{width:219px; height:133px;}
+.social-icon{float:right; text-align:right; margin-top:17px; width:100%;}
+.social-icon a{display:inline-block; background:url(images/social.png) left top no-repeat; height:28px; width:28px;}
+.social-icon a.fb{background-position:0 0;}
+.social-icon a.fb:hover{background-position:0 -29px;}
+.social-icon a.tweet{background-position:-29px 0;}
+.social-icon a.tweet:hover{background-position:-29px -29px;}
+.social-icon a.rss{background-position:-58px 0;}
+.social-icon a.rss:hover{background-position:-58px -29px;}
+.social-icon a.linkedin{background-position:-87px 0;}
+.social-icon a.linkedin:hover{background-position:-87px -29px;}
+.nav{float:right; position:absolute; right:0; top:90px; background:url(images/nav-bg.png) left top repeat; list-style:none; *zoom:1;}
+.nav{padding-right:30px;}
+.toggleMenu{display:none; background:#346c9b; padding:10px 15px; color:#fff; text-decoration:none;}
+.toggleMenu:hover{color:#fff; background:#000; text-decoration:none;}
+.nav:before, .nav:after{content: " "; display: table;}
+.nav:after{clear:both;}
+.nav ul{list-style: none;}
+.nav a{padding:10px 15px; color:#000; font-family:'open_sanssemibold'; font-size:16px; text-transform:uppercase;}
+.nav li {position: relative;}
+.nav > li {float: left;}
+.nav > li > .parent{background-image:url("images/downArrow.png"); background-repeat:no-repeat; background-position:right; background-position: 95% 19px; padding-right:30px;}
+.nav > li > a {display: block;}
+.nav li  ul {position: absolute; left: -9999px; width:165px; border-radius:5px; }
+.nav > li.hover > ul {left: 0;}
+.nav li li.hover ul {left: 100%; top: 0;}
+.nav li li a {display: block; background: #346c9b; color:#fff; position: relative; z-index:100; border-top: 1px solid #fff; text-align:center; text-decoration:none;}
+.nav li li:hover a{background:#000;}
+.nav li li li a {background:#249578; z-index:200; border-top: 1px solid #fff;}
+@media screen and (max-width: 768px) {
+    .active {display: block;}
+    .nav > li {float: none;}
+    .nav > li > .parent {background-position: 95% 50%;}
+    .nav li li .parent {background-image: url("images/downArrow.png"); background-repeat: no-repeat; background-position: 95% 50%;}
+    .nav ul {display: block; width: 100%;}
+   .nav > li.hover > ul , .nav li li.hover ul {position: static;}
+   .nav{padding-right:4px; top:100%;}
+   .toggleMenu a:hover, .toggleMenu a:focus{color:#fff;}
+}
+.crousel-slider {margin-top:230px;}
+.crousel-slider ul{float:left;}
+.crousel-slider ul li{float:left; background:url(images/crousel-bg.png) left top repeat; padding:15px; text-align:center; margin:0 15px;}
+.crousel-slider ul li .prod-image{width:178px; float:left;}
+.crousel-slider ul li p{float:left; width:178px; text-transform:uppercase; clear:both; margin:12px 0 0 0; font-size:14px; font-family: 'signikasemibold'; color:#000;}
+.crousel-slider .next{float:left; background:url(images/slider-arrow.png) left top no-repeat; width:17px; height:86px; margin-top:80px; margin-right:15px;}
+.crousel-slider .next:hover{background-position:0 -86px;}
+.crousel-slider .prev{float:left; background:url(images/slider-arrow.png) -17px top no-repeat; width:17px; height:86px; margin-top:80px; margin-left:15px;}
+.crousel-slider .prev:hover{background-position:-17px -86px;}
+.mt60{margin-top:60px;}
+.left-category{background:#fff; width:100%; float:left;}
+.left-category h2{font-size:17px; text-transform:uppercase; color:#1b3a57; font-family: 'open_sansbold'; padding:15px; margin:15px 0 0 0 }
+.left-category ul{float:left; width:95%; margin-left:15px;}
+.left-category ul li{float:left; width:100%;}
+.left-category ul li a{float:left; color:#000; font-family: 'open_sansregular'; font-size:15px; padding:8px}
+
+.right-section{background:#fff;}
+.right-section h2{font-size:20px; text-transform:uppercase; color:#1b3a57; font-family: 'signikasemibold';}
+.right-section p{float:left; color:#284d69; font-family: 'open_sansregular'; font-size:15px; padding:8px 0; line-height:32px}
+.right-section .crousel-slider{margin-top:0;}
+.right-section .crousel-slider ul li{width:31%; margin:0 2% 50px 0; padding:0;}
+.crousel-slider ul{width:100%;}
+.crousel-slider ul li p{clear:both; color:#193853; float:left; font-family:"signikaregular"; font-size:12px; margin:12px 0 0; text-transform:uppercase; width:100%; line-height:22px;}
+.crousel-slider ul li a{float:left; width:100%;}
+.crousel-slider ul li .prod-image{float:left; width:220px; height:220px;}
+.right-section .crousel-slider ul li:nth-child(3){margin-right:0;}
+.right-section .crousel-slider ul li .skucode{float:left; font-size:16px; font-family: 'signikalight'; font-size:16px;}
+.right-section .crousel-slider ul li .price{float:right; font-family:'signikasemibold'; font-size:16px;}
+.right-section .crousel-slider ul li .bottom-row{padding:0;}
+footer{margin-top:10px; background:#193853; color:#fff; padding:20px 0; width:100%; float:left; clear:both;}
+footer p{text-align:center; text-transform:uppercase; font-family:"signikaregular"; font-size:13px; }
+footer p a{display:inline-block; color:#fff; font-family:"signikaregular"; font-size:13px; text-transform:uppercase;}
+footer p a:hover{color:#fff;}
+
+@media only screen and (max-width:800px) {.cl{clear:both; height:20px;}}

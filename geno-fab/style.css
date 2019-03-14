@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+/*   font-family: 'Open Sans', sans-serif;   font-family: 'Signika', sans-serif;*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0 none; font-family: inherit; font-size: 100%; font-family: 'Open Sans', sans-serif; font-weight: inherit; margin: 0; outline: 0 none; padding: 0; vertical-align: baseline; list-style: none; text-decoration: none;}
+input[type=submit], input[type=value], input[type=button], button {cursor: pointer; border: 0; outline: none;}
+body {background: #fff; margin: 0px; padding: 0px; color: #858585; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 16px; width: 100%;}
+.outer{float:left; width:100%;}
+.footer-container, .container, .wrapper{width:940px; margin:auto;}
+header{float:left; width:100%; margin:15px 0;}
+header .logo{float:left; width:auto;}
+header .logo a{float:left;}
+nav{float:right; max-width:630px; margin-top:30px}
+nav ul{float:left; list-style:none;}
+nav ul li{float:left;}
+nav ul li a{float:left; height:40px; line-height:40px; padding:0 20px; background:#0063a7; color:#fff; font-family: 'Signika', sans-serif; font-size:15px; margin-left:10px; text-decoration:none;}
+nav ul li:hover a, nav ul li.active a{background:#901e2d; transition: background 0.3s linear 0s;}
+.slider-wrapper{float:left; width:100%; background:#f4f3f3; padding:38px 0 15px 0 ;}
+.slider{float:left; width:100%; background:url(images/slider.jpg) right 90% no-repeat; min-height:325px;}
+.slider h1{float:left; font-family:'agency FB', sans-serif; font-size:32px; color:#901e2d; margin-top:6px;}
+.slider .textsection{float:left; max-width:530px; margin-top:32px}
+p{float:left; width:100%; font-family: 'Open Sans', sans-serif; font-size:14px; color:#858585; line-height:22px;}
+.slider ul{float:left; list-style:none; margin-top:20px;}
+.slider li{background:url(images/li-tick.jpg) left 6px no-repeat; padding-bottom:10px; padding-left:37px; line-height:22px;}
+.content-container{float:left; min-height:100px; width:100%; padding-top:20px; color:#0063a7;}
+.content-container h1{float:left; text-align:center; width:100%; font-family: 'Signika', sans-serif; font-size:32px; font-weight:normal;  margin:50px 0}
+.content-container h1 span{font-family: 'Signika', sans-serif; font-weight:normal;}
+.mr50{margin-right:50px} .ml50{margin-left:50px}
+.contact-left{float:left; width:330px; margin-right:20px;}
+.contact-left strong{color:#901e2d; font-weight:600}
+.contact-left p{line-height:30px;}
+.map{float:left; width:585px;}
+a{color:#0063a7; text-decoration:underline;}
+.content-container h2{float:left; text-align:center; width:100%; font-family: 'agency FB', sans-serif; font-size:36px; color:#901e2d; font-weight:normal;  margin:0 0 50px 0}
+.avtaar-pic{float:right; width:268px; height:274px; margin:0 0 10px 10px; }
+.avtaar p{float:none; margin-bottom:10px; font-size:13px;}
+.avtaar {background:url(images/sep.jpg) bottom center no-repeat; padding-bottom:50px; margin-bottom:50px;}
+.section{float:left; width:100%;}
+.avtaar.second{padding-bottom:35px; margin:0; background:none;}
+.footer-image{float:left; width:100%; background:url(images/bottompic.jpg) top center no-repeat; background-size:100%; min-height:317px;}
+footer{float:left; width:100%; float:left; background:#003554; padding:57px 0}
+footer p{text-align:center; color:#fff; font-size:13px; margin-bottom:30px;}
+footer p a{display:inline-block; margin:0 15px;}

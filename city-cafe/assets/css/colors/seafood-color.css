@@ -1,0 +1,118 @@
+/* Preloader */
+#circle {background: #c96f00;}
+
+/* menu */
+.brand span {color: #c96f00;}
+
+@media (min-width:992px){
+#mainheader .main-nav ul > li > a:hover, #mainheader .main-nav ul > li > a.selected{ color:#c96f00;}
+#header .main-nav ul > li > a:hover, #header .main-nav ul > li > a.selected{ color:#c96f00;}
+}
+.selected1{ color: #c96f00;}
+.selected1:hover{ color: #c96f00;}
+
+p span {color: #c96f00;}
+span a:hover, a:hover {text-decoration: none; color: #c96f00;}
+.border_bottom {border-bottom: 1px dotted rgba(201, 111, 0,0.9);}
+
+/* About */
+.days {color: #c96f00;}
+.button {background: rgba(201, 111, 0,0.95);}
+
+/*  Menu Toggle */
+.price-round{background-color: #c96f00;}
+
+/* Menu Special */
+.specials-round {background-color: #c96f00;}
+
+/* Location */
+.location-phone i{color:#c96f00;}
+
+/* Private Dining */
+.pd_list ul li i{color:#c96f00;}
+
+
+/* Gallery */
+#slides .prev, #slides .next{background: #c96f00;}
+#slides .cycle-overlay div{background: rgba(201, 111, 0,0.9);}
+.caption4 span{color: #c96f00;}
+
+/* Event */
+.left_content p {color: #c96f00;}
+
+/* Reservation */
+#reservation_form .submitBtn {background-color: #c96f00;}
+.reserve_form input:focus, .reserve_form textarea:focus ,input:valid:focus{ 
+  	/* IE6-9 */
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(201, 111, 0,0.8);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(201, 111, 0,0.8);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(201, 111, 0,0.8); 
+}
+
+/* Contact */
+.address i{ color:#c96f00;}
+.phone i{ color:#c96f00;}
+a.mail-text:hover{color: #c96f00;}
+.mail-text i{color:#c96f00;}
+#contact_form .submitBtn {background-color: #c96f00;}
+.cont_form input:focus, .cont_form textarea:focus ,input:valid:focus{ 
+  	/* IE6-9 */
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(201, 111, 0,0.8);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(201, 111, 0,0.8);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(201, 111, 0,0.8); 
+}
+
+/* Scroll Pane */
+.jspDrag {background: #c96f00;}
+.jspDrag:hover {background: #c96f00;}
+
+/* Special Menu */
+/*.spmenu{background: rgba(201, 111, 0,0.95);}
+.spmenu1:before, .spmenu2:before, .spmenu3:before, .spmenu4:before
+{
+border-top: 17px solid rgba(201, 111, 0,0.95); 
+border-right: 13px solid transparent;
+border-bottom: 13px solid transparent;
+border-left: 0px solid transparent;
+}*/
+
+
+/* Special Menu */
+#lightbox .close, #lightbox2 .close, #lightbox3 .close{background:#c96f00;}
+
+#progress { 
+		position: absolute; top: 0; left:0; height: 7px; width: 0px; 
+		background: -moz-linear-gradient(left, rgba(201, 111, 0,0.3) 0%, rgba(201, 111, 0,0.8) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(201, 111, 0,0.3)), color-stop(100%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left, rgba(201, 111, 0,0.3) 0%,rgba(201, 111, 0,0.8) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left, rgba(201, 111, 0,0.3) 0%,rgba(201, 111, 0,0.8) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left, rgba(201, 111, 0,0.3) 0%,rgba(201, 111, 0,0.8) 100%); /* IE10+ */
+		background: linear-gradient(to right, rgba(201, 111, 0,0.3) 0%,rgba(201, 111, 0,0.8) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d1e1e1e', endColorstr='#cc000000',GradientType=1 ); /* IE6-9 */
+			z-index: 99999; 
+		-webkit-border-top-right-radius: 50px;
+		-webkit-border-bottom-right-radius: 50px;
+		-moz-border-radius-topright: 50px;
+		-moz-border-radius-bottomright: 50px;
+		border-top-right-radius: 50px;
+		border-bottom-right-radius: 50px;
+}
+
+.nicescroll-rails div{background-color:#c96f00!important;}
+
+/* seafood.css */
+
+#mainheader .main-nav ul > li > a:hover, #mainheader .main-nav ul > li > a.selected{color: #c96f00;}
+#header .main-nav ul > li > a:hover, #header .main-nav ul > li > a.selected{color: #c96f00;}
+@media (min-width:1200px){ }
+#mainheader .main-nav ul li li a.hover, #mainheader .main-nav ul li li a.selected{  background:rgba(247,179,36,1); color:#c96f00; border-radius:0;}
+#header .main-nav ul li li a.hover, #header .main-nav ul li li a.selected{  background:rgba(247,179,36,1); color:#c96f00; border-radius:0;}
+}
+
+.slicknav_nav a{ color:#c96f00;}
+.submenu .slicknav_nav .slicknav_row{color:#c96f00;}
+.submenu .slicknav_nav .slicknav_row:hover{color:#c96f00;}
+.slicknav_nav li ul li a:hover{ background:rgba(201,111,0,1);}
+.slicknav_nav {background: rgba(201,111,0,1);}
+
+/* // seafood.css */

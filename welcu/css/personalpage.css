@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+.wlc-wrapper-grey{background:#333; bottom:0; left:0; position:fixed; top:0; width:60%; z-index:-1;}
+body#wlc-marketing #wlc-wrapper{width:940px;}
+#wlc-wrapper{margin:0 auto; min-height:1000px; position:relative; z-index:2;}
+#wlc-wrapper:before {background: url(../images/asidegradient.png) repeat-y scroll 0 0 rgba(0, 0, 0, 0); bottom: 0; content: ""; position: absolute; top: 0; width: 2px; z-index: 2;}
+#wlc-wrapper .wlc-wrapper-mask {background:#FFF; bottom: 0; left: 0; position: absolute; right: 0; top: 0; z-index: 0;}
+body#wlc-marketing #wlc-wrapper:before{left:178px;}
+body#wlc-marketing #wlc-wrapper .wlc-wrapper-mask div {width: 180px;}
+#wlc-wrapper .wlc-wrapper-mask div {background:#333; bottom: 0; left: 0; position: absolute; top: 0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
+#wlc-wrapper aside#wlc-aside{background:#333333; float:left; padding:20px 0 40px; position:relative; z-index:1;}
+body#wlc-marketing #wlc-wrapper aside#wlc-aside{width:180px;}
+figure.profile-figure{background-position:center center; background-size:100% 100%; height:180px; margin:-20px 0 0; width:180px;}
+.heading-profile{border-bottom: 1px solid #393939; margin:0 0 20px; padding:10px 20px; text-align:center;}
+.heading-profile h5{color: #FFF; line-height:1.3em;}
+.wrapper-navigation h6{color:#595959; font-size:12px; overflow:hidden; padding:0 20px; text-overflow:ellipsis; white-space:nowrap;}
+.wrapper-navigation ul{border-bottom: 1px solid #393939; margin: 0 0 20px; padding: 10px 0 20px;}
+.wrapper-navigation ul li a{color:#AEAEAE; background:url("../images/icons-left.png") no-repeat left top; display:block; font-size:13px; font-weight:bold; height:30px; line-height:30px; overflow:hidden; padding:0 20px 0 50px; position:relative; text-overflow:ellipsis; white-space:nowrap; font-family:'Open Sans', sans-serif; font-weight:600; margin-bottom:2px;}
+.wrapper-navigation ul li.amigos a{background-position:20px 6px;}
+.wrapper-navigation ul li.tickets a{background-position:20px -17px;}
+.wrapper-navigation ul li.compras a{background-position:20px -41px;}
+.wrapper-navigation ul li.eventos a{background-position:20px -66px;}
+.wrapper-navigation ul li.config a{background-position:20px -90px;}
+.wrapper-navigation ul li:hover a{background:url(../images/icon-hover.png) left top no-repeat;}
+.wrapper-navigation ul li.amigos:hover a{background-position:19px 6px;}
+.wrapper-navigation ul li.tickets:hover a{background-position:19px -17px;}
+.wrapper-navigation ul li.compras:hover a{background-position:19px -41px;}
+.wrapper-navigation ul li.eventos:hover a{background-position:19px -66px;}
+.wrapper-navigation ul li.config:hover a{background-position:19px -90px;}
+.wrapper-navigation ul li.eventos.active a{background:url(../images/icon-hover.png) 19px -117px no-repeat; color:#fff; background-color:#545390}
+body#wlc-marketing #wlc-wrapper #wlc-page{width:700px;}
+#wlc-wrapper #wlc-page{background:#FFF; float:left; padding:30px; position:relative;}
+.heading-title{border-bottom:1px solid rgba(0, 0, 0, 0); color:#222; margin:0 0 30px; position:relative;}
+.heading-title h3{font-size:19px; font-weight:normal; line-height:24px;}
+.heading-title h6{color:#9C9CA0; font-size:15px; font-weight:normal; line-height:1.4em;}
+.advice{line-height:1.5em; position:relative; text-align:center;}
+.advice h5 {font-size: 16px;}
+.advice h6, .advice h5, .advice h2{color:#434649; margin:0;}
+.advice p, .advice ul, .advice dl{margin:10px 0 0;}
+.advice .advice-actions{margin:19px 0 0; text-align:center;}
+.wrapper-navigation ul li a:hover{color:#9F9CC5}

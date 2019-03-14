@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+font-family: 'Signika', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+.body-bg{background:url(images/body-bg.jpg) left -20px no-repeat; border-top:#020000 solid 4px; background-size:100% 100%}
+header{margin:38px 0}
+.logo{float:left; text-align:right;}
+.logo a {display:inline-block;}
+.navbar .container{text-align:center; height:50px;}
+.nav-collapse.collapse{display:inline-block;}
+.home-container{min-height:640px;}
+footer p{display:inline;}
+
+.login a{display:inline-block; margin-top:6%; float:right; background:url(images/login.png) left 3px no-repeat; padding-left:22px;}
+footer .social{text-align:right;}
+footer .social a{background:url(images/social.png) left top no-repeat; height:22px; width:22px; text-indent:-99999; display:inline-block; margin-left:8px;}
+footer .social a:hover{transition: background 0.2s linear 0s}
+footer .social a.fb{background-position:0 0;}
+
+footer .social a.tw{background-position:-23px 0;}
+
+footer .social a.rss{background-position:-45px 0;}
+
+footer .social a.in{background-position:-67px 0;}
+
+.inner-container {padding:2% 0 4% 0;}
+
+/*changes on 20-05 evening*/
+footer{background:#fff; padding:20px; color:#000; font-family: 'Open Sans', sans-serif; font-size:12px;}
+footer a{display:inline-block; color:#000; text-decoration:underline;}
+footer .social a.fb:hover{background-position: 0 -23px;}
+footer .social a.tw:hover{background-position: -23px -23px;}
+footer .social a.rss:hover{background-position: -44px -23px;}
+footer .social a.in:hover{background-position: -66px -23px;}

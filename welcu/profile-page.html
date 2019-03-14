@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingresa a Welcu - Personal Profile Page</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Signika:400,700,600,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/global.css">
+<link rel="stylesheet" type="text/css" href="css/popup.css">
+<link rel="stylesheet" type="text/css" href="css/personalpage.css">
+<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="css/ie9.css"> <![endif]-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="js/sitescript.js"></script>
+<script src="js/popup.js"></script>
+</head>
+<body id="wlc-marketing">
+<!-- error or success sms div here -->
+<div class="alert alert-success"><a href="javascript:;" class="close" id="hide">×</a> Sesión iniciada.</div>
+<!-- error or success sms div finsih --> 
+<!-- header starts -->
+<header>
+  <div class="container"> 
+    <!-- logo starts --> 
+    <a href="javascript:;" class="logo"></a> 
+    <!-- logo finish --> 
+    <!-- search bar starts -->
+    <div class="search" id="rt">
+      <form method="get" action="javascript:;" >
+        <input type="submit" value="" class="btn">
+        <input type="text" placeholder="Buscar eventos..." class="search-box">
+      </form>
+    </div>
+    <!-- search bar finish -->
+    <ul id="logged_bar">
+      <li class="login"> <a href="javascript:;" class="setting" onClick="login()"></a>
+        <ul id="dropdown">
+          <h6>Esta utilizando Welcu como:</h6>
+          <li class="purple"><a href="javascript:;">Vishal Bansal</a></li>
+          <div class="dropdown-loggedbar_footer"> <a class="btn" href="javascript:;">Salir</a> <a class="right btn" href="javascript:;">Mi cuenta</a> </div>
+        </ul>
+      </li>
+    </ul>
+    <!-- navigation starts -->
+    <nav> <a class="toggleMenu" href="#">Menu</a>
+      <ul class="nav">
+        <li class="test"><a href="#">Descubre</a></li>
+        <li><a href="#">Tour</a></li>
+        <li><a href="#">Crea un evento</a></li>
+        <li><a href="#">Mis tickets</a></li>
+        <li><a href="#">Soporte y ayuda</a></li>
+      </ul>
+    </nav>
+    <!-- navigation finish --> 
+  </div>
+</header>
+<!-- header finish -->
+<div class="wlc-wrapper-grey"></div>
+<!-- personal page wrapper starts -->
+<section id="wlc-wrapper" class="wlc-profile">
+  <div class="wlc-wrapper-mask">
+    <div></div>
+  </div>
+  <!-- left bar starts -->
+  <aside id="wlc-aside" class="wrapper-navigation"> 
+    <!-- profile pic starts -->
+    <figure class="profile-figure" style="background-image:url(images/avtaar.png);"></figure>
+    <div class="heading-profile">
+      <h5>Vishal</h5>
+    </div>
+    <!-- profile pic finsh -->
+    <h6>Mis cosas</h6>
+    <!-- left navigation starts -->
+    <ul>
+      <li class="amigos"> <a href="javascript:;">Mis amigos</a></li>
+      <li class="tickets"> <a href="javascript:;">Mis tickets</a></li>
+      <li class="compras"> <a href="javascript:;">Mis compras</a></li>
+      <li class="eventos active"> <a href="javascript:;">Mis eventos</a></li>
+    </ul>
+    <ul>
+      <li class="config"><a href="javascript:;">Configuración</a></li>
+    </ul>
+    <!-- left navigation finsih --> 
+  </aside>
+  <!-- left bar finish --> 
+  <!-- right section starts -->
+  <section id="wlc-page">
+    <div class="heading-title">
+      <h3>Mis eventos</h3>
+      <h6>Eventos que administras</h6>
+    </div>
+    <div class="advice"> <i class="flaticon stroke icon-calendar-5 icon-lightgrey icon-64"><img src="images/center-grey-icon.png" alt="image"></i>
+      <h5>Aún no estas organizando eventos con Welcu</h5>
+      <p>Usa welcu para tu conferencia, lanzamiento, premiere, seminario, fiesta, etc.</p>
+      <div class="advice-actions"> <a class="btn btn-green create-event" href="javascript:;">Crea tu primer evento</a> 
+        
+        <!----- popup-------->
+        <!--<div id="toPopup">
+          <div id="popup_content">
+            <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
+              feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi 
+              vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, 
+              commodo Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique 
+              senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
+              feugiat vitae, ultricies eget, tempor sit amet, ante. </p>
+            <br />
+            <p> Donec eu libero sit amet quam egestas semper. Aenean ultricies mi 
+              vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, 
+              commodo Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+            <p align="center"><a href="#" class="livebox">Click Here Trigger</a></p>
+          </div>          
+        </div>-->
+        <!--toPopup end-->
+        
+        <div class="loader"></div>
+        <div id="backgroundPopup"></div>
+        <!----- popup--------> 
+        
+      </div>
+    </div>
+  </section>
+  <!-- right section finish --> 
+</section>
+<!-- personal page wrapper finsih --> 
+<!-- footer starts -->
+<footer>
+  <div class="container"> <a href="javsacript:;" class="footerlogo"></a>
+    <nav>
+      <ul>
+        <li><a href="javascript:;">Descubre</a></li>
+        <li><a href="javascript:;">Tour</a></li>
+        <li><a href="javascript:;">Precios</a></li>
+        <li><a href="javascript:;">Soporte y ayuda</a></li>
+        <li class="social"> <a href="javascript:;" class="fb"></a> <a href="javascript:;" class="twitter"></a> </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<!-- footer finish --> 
+<script src="js/jquery.placeholder.js"></script> 
+<!-- <script type="text/javascript" src="js/script.js"></script> -->
+
+</body>
+</html>

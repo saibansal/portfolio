@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title></title>
+ <link href="css/style.css" type="text/css" rel="stylesheet" />
+ <!-- for banner slider -->
+  <link rel="stylesheet" href="Slides/examples/images-with-captions/css/global.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+  <script src="Slides/source/slides.min.jquery.js" type="text/javascript"></script>
+  <script type="text/javascript">
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 4000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},400);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},500);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},700);
+				}
+			});
+		});
+	</script>
+  <style type="text/css">
+   a {
+       outline: none;
+    }
+   .special {
+    margin-left: 7px;
+    margin-top: 30px;
+    float: right;
+    position: relative;
+   }
+   .special:hover {
+    margin-top: 7px;
+   }
+  </style>
+  </head>
+  <body>
+   <!-- Outer starts -->
+    -
+    <div id="outer">
+     <!-- wrapper starts -->
+      <div id="wrapper">
+       <!-- header starts -->
+        <div id="header">
+         <!-- logo starts -->
+          <div id="logo">
+           <a href="javascript:;" title="Show my case logo"><img src="images/logo.png" alt="Show my case logo"></a>
+          </div>
+         <!-- logo finish -->
+         <!-- Advertisement here -->
+          <div id="advertisement">
+           <marquee behavior="scroll" dir="ltr" direction="right" scrollamount="5" scrolldelay="6" style=" float: left; margin-left: 95px; width: 249px;">
+            <a href="javascript:;" title="advertisement" style="margin-top: 10px; font-size:20px; width:245px; text-align:center; color:#000;">
+             <span>Revolutionary 3D cases</span>
+             <font style="color:red;">Starting $ 24.99</font>
+            </a>
+           </marquee>
+            </div>
+           <!-- advertisement finsih -->
+           <!-- log in section starts -->
+            <div id="login_section">
+             <input type="text" name="username" value="enter user name">
+             <input type="password" value="enter password" name="password">
+             <input type="submit" value="Login" name="submit">
+             <input type="submit" value="Register" name="Register" style="margin-right:10px;">
+            </div>
+           <!-- log in section finish -->
+              <!-- top right section starts -->
+            <!--<div id="top_right_section">
+             <input type="text" value="Enter Keyword Here to Search" name="search" />
+             <input type="submit" value="" name="submit" />
+            </div>-->
+           <!-- top right section finish -->
+           <!-- nav starts -->
+            <div id="nav">
+             <ul>
+              <li><a href="javascript:;" title="home" id="home" class="active"></a></li>
+              <li><a href="javascript:;" title="Our Case" id="our_case"></a></li>
+              <li><a href="javascript:;" title="Create Case" id="create_case"></a></li>
+              <li><a href="javascript:;" title="Case Library" id="case_library"></a></li>
+              <!--<li><a href="javascript:;" title="blend it" id="blend_it"></a></li> -->
+             </ul>
+            </div>
+           <!-- navigation finish --> 
+          </div>
+         <!-- header finsih -->
+         <!-- banner slider starts -->
+          <div id="slider">
+           <div id="container" style="background:none; -moz-box-shadow: 0px 0px 0px #000000; -webkit-box-shadow:0px 0px 0px #000000; box-shadow: 	
+           0px 0px 0px #000000;">
+            <div id="example">
+			 <div id="slides">
+		      <div class="slides_container">
+			  <div class="slide">
+		       <a href="#" title="#" target="_blank"><img src="images/banner2.png"  alt="Slide 1"></a>
+	 			<div class="caption">
+	             <h3>Customise Your Case </h3><ul style="float:left; margin: 0px; padding: 0px;">
+                  <li> Experts in personalised iPad, iPhone 4/4s, iPhone 5, Samsung Galaxy s3 cases.</li>
+	              <li>Revolutionary 3D Technology</li>
+	              <li>Durable, lightweight and slim fit cases</li></ul>
+                  <a href="create_design.html" title="generate case" class="generatecase"><img src="images/ganerate_button.png" alt="genrate" /></a>
+	            </div>
+		      </div>
+			  <div class="slide">
+	            <a href="#" title="#" target="_blank"><img src="images/banner7.png"  alt="Slide 1"></a>
+	            <div class="caption">
+	             <h3>Revolutionary 3D Technology</h3>
+                 <ul style="float:left; margin: 0px; padding: 0px;">
+	             <li> Unlike 2D covers, using this latest technology you get a sharp clear image on all sides.</li>
+          	     <li> Creates an overall excellent and smarter looking cover with no awkward white spaces on the sides.</li>
+                  </ul>
+                 <a href="create_design.html" title="generate case" class="generatecase"><img src="images/ganerate_button.png" alt="genrate" /></a>
+          	  </div>
+	         </div>
+			  <div class="slide">
+	           <a href="#" title="#"><img src="images/banner_8.png"  alt="Slide 1"></a>
+             	<div class="caption">
+	             <h3>Personalise Your Case</h3>
+                 <p>Using your favourite photo or choosing from our fabulous designs, create your trendy cover in just a few clicks.</p>
+                 <a href="create_design.html" title="generate case" class="generatecase"><img src="images/ganerate_button.png" alt="genrate" /></a>
+	             </div>
+	            </div>
+			  <div class="slide">
+              <!--<a href="#" title="#" target="_blank" class="special"><img src="images/slider_4.2.png" alt="Slide 1"></a>
+              <a href="#" title="#" target="_blank" class="special"><img src="images/slider_4.4.png" alt="Slide 1"></a>-->
+              <a href="javascript:;" target="_blank" title="#" class="special"><img src="images/4th_ipad.png" alt="slide 3"> <span style="padding-right:35px;">Ipad</span> </a>
+              <a href="#" title="#" target="_blank" class="special"><img src="images/4th_s3.png" alt="Slide 2"> <span>Galaxy S3</span> </a>
+              <a href="#" title="#" target="_blank" class="special"><img src="images/4th_iphone.png" alt="Slide 1"> <span>iPhone 4</span></a>
+              <a href="#" title="#" target="_blank" class="special"><img src="images/4th_iphone5.png" alt="Slide 1"> <span>iPhone 5</span></a>
+              <div class="caption">
+               <h3>We have variety</h3>
+               <p>Choose from an extensive range of smart phone covers and get everyone talking about your trendy cover.</p>
+               <a href="create_design.html" title="generate case" class="generatecase"><img src="images/ganerate_button.png" alt="genrate" /></a>
+              </div>
+             </div>
+              </div>
+             </div>
+		    </div>
+           </div>
+ 		  </div>
+         <!-- banner slider finish -->
+         <!-- content container starts -->
+          <div id="content_container">
+           <!-- case library section starts -->
+            <!--<div class="section">
+             <h1>
+              Design Gallery
+               <span>Choose from our collection of Art Work and Designs.</span>
+             </h1>
+             <ul>
+              <li><a href="javascript:;" title="case library"><img src="images/1.jpg" alt="case library" /></a></li>
+              <li><a href="javascript:;" title="case library"><img src="images/2.jpg" alt="case library" /></a></li>
+              <li><a href="javascript:;" title="case library"><img src="images/3.jpg" alt="case library" /></a></li>
+              <li><a href="javascript:;" title="case library"><img src="images/4.jpg" alt="case library" /></a></li>
+              <li><a href="javascript:;" title="case library"><img src="images/5.jpg" alt="case library" /></a></li>
+              <li><a href="javascript:;" title="case library"><img src="images/6.jpg" alt="case library" /></a></li>
+              <li><a href="javascript:;" title="case library"><img src="images/7.jpg" alt="case library" /></a></li>
+              <li><a href="javascript:;" title="case library"><img src="images/8.jpg" alt="case library" /></a></li>
+             </ul>
+            </div> -->
+           <!-- case library section finish -->
+           <!-- how it works starts -->
+            <div class="section margin_top_70">
+             <h1>Design your case in 4 easy steps</h1>
+             <ul>
+              <li><a href="javascript:;" title="upload"><img src="images/upload.jpg" alt="upload" /></a></li>
+                 <li><a href="javascript:;" title="Select Device"><img src="images/selectdevice.jpg" alt="Select Device" /></a></li>
+                 <li><a href="javascript:;" title="print"><img src="images/print.jpg" alt="Print" /></a></li>
+                 <li><a href="javascript:;" title="send"><img src="images/send.jpg" alt="send" /></a></li>
+             </ul>
+            </div>
+           <!-- how it works finish -->
+          </div> 
+         <!-- ccontent container finish -->
+        </div> 
+       <!-- wrapper finish -->
+       <!-- footer starts -->
+        <div id="footer">
+         <!-- footer container starts -->
+          <div id="footer_container">
+           <!-- top part starts -->
+            <div id="footer_top">
+             <!-- fist section starts -->
+              <div class="footer_section">
+                 <h1>Navigate</h1>
+                 <ul>
+                  <li><a href="javascript:;" title="home">Home</a></li>
+                  <li><a href="javascript:;" title="about us">About Us</a></li>
+                  <li><a href="javascript:;" title="FAQ">FAQ</a></li>
+                  <li><a href="javascript:;" title="Contact Us">Contact Us</a></li>
+                  <li><a href="javascript:;" title="Our Products">Our Products</a></li
+                 ></ul>
+                </div>
+             <!-- first section finish -->
+             <!-- second section starts -->
+              <div class="footer_section">
+               <h1>Case</h1>
+               <ul>
+                <li><a href="javascript:;" title="Iphone 4 cases">iPhone 4 Cases</a></li>
+                <li><a href="javascript:;" title="iPhone 5 Cases">iPhone 5 Cases</a></li>
+                <li><a href="javascript:;" title="Ipad Cases">iPad Cases</a></li>
+                <li><a href="javascript:;" title="Samsung Galaxy Cases">Samsung Galaxy Cases</a></li>
+               </ul>
+              </div>
+             <!-- second section finish -->
+             <!-- thir dsection starts -->
+              <div class="footer_section">
+               <h1>Terms &amp; Conditions</h1>
+                <ul>
+                <li><a href="javascript:;" title="Order Tracking">Order Tracking</a></li>
+                <li><a href="javascript:;" title="Shipping Information">Shipping Information</a></li>
+                <li><a href="javascript:;" title="Returns">Returns</a></li>
+                <li><a href="javascript:;" title="Gift Vouchers">Gift Vouchers</a></li>
+               </ul>
+              </div>
+             <!-- third section finsih -->
+            </div>
+           <!-- footer top finish -->
+           <!-- footer bottom starts -->
+            <div id="footer_bottom">
+             <p>Copyright &copy; 2012, All Rights are reserved</p>
+             <div class="fb_like"><img src="images/likeus.png" alt="like us"></div>
+            <!-- email newsletter starts -->
+             <!--<div id="right">
+              <input type="text" name="search" value="Subscribe our newsletter">
+              <input type="submit" name="submit" value="">
+             </div>-->
+            <!-- right finish -->
+            </div>
+           <!-- footer bottom finish -->
+          </div>
+         <!-- footer container finish -->     
+        </div>
+       <!-- footer finish -->
+       </div>
+      <!-- outer finsih -->
+    </body>
+</html>

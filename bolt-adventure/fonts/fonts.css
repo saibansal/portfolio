@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'articulate_lightregular';
+	src: url('arln___-webfont.eot');
+	src: url('arln___-webfont.eot?#iefix') format('embedded-opentype'),  url('arln___-webfont.woff') format('woff'),  url('arln___-webfont.ttf') format('truetype'),  url('arln___-webfont.svg#articulate_lightregular') format('svg');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'articulateregular';
+	src: url('arn____-webfont.eot');
+	src: url('arn____-webfont.eot?#iefix') format('embedded-opentype'),  url('arn____-webfont.woff') format('woff'),  url('arn____-webfont.ttf') format('truetype'),  url('arn____-webfont.svg#articulateregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'articulate_narrowbold';
+	src: url('arnb___-webfont.eot');
+	src: url('arnb___-webfont.eot?#iefix') format('embedded-opentype'),  url('arnb___-webfont.woff') format('woff'),  url('arnb___-webfont.ttf') format('truetype'),  url('arnb___-webfont.svg#articulate_narrowbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'articulatebold';
+	src: url('arb____-webfont.eot');
+	src: url('arb____-webfont.eot?#iefix') format('embedded-opentype'),  url('arb____-webfont.woff') format('woff'),  url('arb____-webfont.ttf') format('truetype'),  url('arb____-webfont.svg#articulatebold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'articulatebold_italic';
+	src: url('arbi___-webfont.eot');
+	src: url('arbi___-webfont.eot?#iefix') format('embedded-opentype'),  url('arbi___-webfont.woff') format('woff'),  url('arbi___-webfont.ttf') format('truetype'),  url('arbi___-webfont.svg#articulatebold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'articulate_extrabolditalic';
+	src: url('arei___-webfont.eot');
+	src: url('arei___-webfont.eot?#iefix') format('embedded-opentype'),  url('arei___-webfont.woff') format('woff'),  url('arei___-webfont.ttf') format('truetype'),  url('arei___-webfont.svg#articulate_extrabolditalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'articulate_extraboldregular';
+	src: url('aren___-webfont.eot');
+	src: url('aren___-webfont.eot?#iefix') format('embedded-opentype'),  url('aren___-webfont.woff') format('woff'),  url('aren___-webfont.ttf') format('truetype'),  url('aren___-webfont.svg#articulate_extraboldregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'articulateitalic';
+	src: url('ari____-webfont.eot');
+	src: url('ari____-webfont.eot?#iefix') format('embedded-opentype'),  url('ari____-webfont.woff') format('woff'),  url('ari____-webfont.ttf') format('truetype'),  url('ari____-webfont.svg#articulateitalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'articulate_lightitalic';
+	src: url('arli___-webfont.eot');
+	src: url('arli___-webfont.eot?#iefix') format('embedded-opentype'),  url('arli___-webfont.woff') format('woff'),  url('arli___-webfont.ttf') format('truetype'),  url('arli___-webfont.svg#articulate_lightitalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'articulate_narrowbold_italic';
+	src: url('arnbi__-webfont.eot');
+	src: url('arnbi__-webfont.eot?#iefix') format('embedded-opentype'),  url('arnbi__-webfont.woff') format('woff'),  url('arnbi__-webfont.ttf') format('truetype'),  url('arnbi__-webfont.svg#articulate_narrowbold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'articulate_narrowitalic';
+	src: url('arni___-webfont.eot');
+	src: url('arni___-webfont.eot?#iefix') format('embedded-opentype'),  url('arni___-webfont.woff') format('woff'),  url('arni___-webfont.ttf') format('truetype'),  url('arni___-webfont.svg#articulate_narrowitalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'articulate_narrowregular';
+	src: url('arnn___-webfont.eot');
+	src: url('arnn___-webfont.eot?#iefix') format('embedded-opentype'),  url('arnn___-webfont.woff') format('woff'),  url('arnn___-webfont.ttf') format('truetype'),  url('arnn___-webfont.svg#articulate_narrowregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'socialiconsmedium';
+    src: url('socialicons-webfont.eot');
+    src: url('socialicons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('socialicons-webfont.woff') format('woff'),
+         url('socialicons-webfont.ttf') format('truetype'),
+         url('socialicons-webfont.svg#socialiconsmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

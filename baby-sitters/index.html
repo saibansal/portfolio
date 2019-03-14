@@ -1,0 +1,2297 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <title>Baby Sister</title>
+   <!-- Bootstrap core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!-- Custom styles for this template -->
+   <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+   <script src="js/ie-emulation-modes-warning.js"></script>
+<!--   <script src="js/npm.js"></script> -->
+   <link href="fonts/fonts.css" rel="stylesheet">
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="custom.css">
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext,latin-ext,greek-ext,greek,vietnamese' rel='stylesheet' type='text/css'>
+   <!-- for select box -->
+    <script type="text/javascript" src="js/jquery.selectBox.js"></script>
+	<script>
+
+	$(document).ready(function () {
+     $('select')
+	  .selectBox({
+		  mobile: true
+		 })
+                    .focus(function () {
+                        $('#console').append('Focus on ' + $(this).attr('name') + '<br />');
+                        $('#console')[0].scrollTop = $('#console')[0].scrollHeight;
+                    })
+                    .blur(function () {
+                        $('#console').append('Blur on ' + $(this).attr('name') + '<br />');
+                        $('#console')[0].scrollTop = $('#console')[0].scrollHeight;
+                    })
+                    .change(function () {
+                        $('#console').append('Change on ' + $(this).attr('name') + ': ' + $(this).val() + '<br />');
+                        $('#console')[0].scrollTop = $('#console')[0].scrollHeight;
+                    });
+        });
+		
+		
+		 $(document).ready(function() {
+    $('#checkbox_n01').click(function(event) {  //on click 
+        if(this.checked) { // check select status
+            $('.sme').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"               
+            });
+        }else{
+            $('.sme').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                       
+            });         
+        }
+    });
+    
+});
+		</script>
+           <script src="datetimepicker_css.js"></script>
+    </head>
+<body>
+
+
+<!-- container starts -->
+ <div class="container">
+  <!-- tabbed pannel starts -->
+   <ul id="myTab1" class="nav nav-tabs navi-tab">
+    <li class="active"><a href="#basket" data-toggle="tab"><span>My Basket</span></a></li>
+    <li><a href="#agent" data-toggle="tab"><span>Smart Agent</span></a></li>
+    <li><a href="#manage-ad" data-toggle="tab"><span>Manage My Ad</span></a></li>
+    <li><a href="#detail" data-toggle="tab"><span>Personal Details</span></a></li>
+    <li><a href="#payment" data-toggle="tab"><span>Payment Method</span></a></li>
+  </ul>
+  
+  <div id="myTabContent1" class="tab-content">
+   <!-- basket content starts -->
+    <div class="tab-pane fade active in" id="basket">
+     <div class="panel-group conten-tab" id="accordion">
+      <div class="table-responsive">
+       <table class="table">
+        <thead>
+          <tr>
+            <th>
+             <input type="checkbox" checked="checked" class="css-checkbox sme" id="checkbox_n01">
+			 <label for="checkbox_n01" class="css-label sme depressed"></label>
+            </th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th align="center">Neighbourhood</th>
+            <th>Phone</th>
+            <th>Type of Work</th>
+            <th>Experience</th>
+            <th>Start Date</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+		
+         <tr valign="middle">
+          <td scope="row" valign="middle">
+           <input type="checkbox" checked="checked" class="css-checkbox sme" id="checkbox_n03">
+		   <label for="checkbox_n03" name="check[]" class="css-label sme depressed"></label>
+          </td>
+          <td>Ruth</td>
+          <td>32</td>
+          <td>NY</td>
+          <td>Brookleyn</td>
+          <td>0123456789</td>
+          <td>Partial</td>
+          <td>5+</td>
+          <td>03-19-2015</td>
+          <td align="center">
+           <a data-toggle="collapse" data-parent="#accordion" href="#one" class="more-detail">More Details </a>
+          </td>
+         </tr>
+         <tr class="panel-collapse collapse" id="one">
+          <td colspan="10">
+           <div class="col-lg-12 pt15">
+            <p>Hello!</p>
+            <p>My name is Kelly, 34 years old, I'm looking for a lovely part time family. I love to work with kids. I work in All Soul Episcopal Church in the             nursery only sunday morning.</p>
+			<p>I have excellent references. I speak english and spanish i have my own transportation. Im a very resposible person, the most important for me 
+            is keep your kids safe and happy. I love to follow the parents rules and im very friendly. Email me <a href="#">Elisabeth@contactme.com</a></p>
+            
+            <div class="col-lg-12 pt15">
+             <div class="col-lg-7 click-detail">
+              <div class="row">
+               <span class="col-lg-5 bold">Phone :</span>
+               <span class="col-lg-7">017-1314552</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Adddress :</span>
+               <span class="col-lg-7">Washington DC</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Start Date :</span>
+               <span class="col-lg-7">03-15-2015</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Salary per hours  :</span>
+               <span class="col-lg-7">$25</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Years of Experience :</span>
+               <span class="col-lg-7">8+</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Experience With :</span>
+               <span class="col-lg-7">Single child, twins chid & special need of child</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Mother Tongue :</span>
+               <span class="col-lg-7">English</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Other Language :</span>
+               <span class="col-lg-7">French</span>
+              </div>
+              
+             </div>
+             <div class="col-lg-5">
+              <span class="thumb"><img src="images/image.jpg" alt="image"></span>
+             </div>
+            </div>
+            
+            <div class="pt15 click-detail col-lg-12 row">
+             <div class="col-lg-12">
+              <span class="col-lg-12">Requested Job Hours :</span>
+              <div class="col-lg-12 table-responsive new-detail">
+               <table class="table">
+                <thead>
+                  <th>SUN <input type="checkbox" checked disabled></th>
+                  <th>MON <input type="checkbox" checked disabled></th>
+                  <th>TUE <input type="checkbox" checked disabled></th>
+                  <th>WED <input type="checkbox" checked disabled></th>
+                  <th>THU <input type="checkbox" checked disabled></th>
+                  <th>FRI <input type="checkbox" checked disabled></th>
+                  <th>SAT <input type="checkbox" checked disabled></th>
+                 </thead>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+               </table>
+               </div>
+               <div class="col-lg-12 tool-tip-1">
+                <span class="col-lg-4"> Message Changing date :   08-01-2015</span>
+                <span class="pull-right">
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-1.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-2.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-3.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-4.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-5.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-6.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-7.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-8.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-9.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-10.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-11.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-12.jpg" alt="image">
+                 </a>
+                </span>
+               </div>
+              </div>
+            </div>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td scope="row">
+           <input type="checkbox" checked="checked" class="css-checkbox sme" id="eli">
+		   <label for="eli" name="check[]" class="css-label sme depressed"></label>
+          </td>
+          <td>Elisabeth</td>
+          <td>25</td>
+          <td>Texas</td>
+          <td>Brookleyn</td>
+          <td>0123456789</td>
+          <td>Full</td>
+          <td>2</td>
+          <td>03-19-2015</td>
+          <td align="center"><a data-toggle="collapse" data-parent="#accordion" href="#two" class="more-detail">More Details </a></td>
+         </tr>
+         <tr class="panel-collapse collapse" id="two">
+          <td colspan="10">
+           <div class="col-lg-12 pt15">
+            <p>Hello!</p>
+            <p>My name is Kelly, 34 years old, I'm looking for a lovely part time family. I love to work with kids. I work in All Soul Episcopal Church in the             nursery only sunday morning.</p>
+			<p>I have excellent references. I speak english and spanish i have my own transportation. Im a very resposible person, the most important for me 
+            is keep your kids safe and happy. I love to follow the parents rules and im very friendly. Email me <a href="#">Elisabeth@contactme.com</a></p>
+            
+            <div class="col-lg-12 pt15">
+             <div class="col-lg-7 click-detail">
+              <div class="row">
+               <span class="col-lg-5 bold">Phone :</span>
+               <span class="col-lg-7">017-1314552</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Adddress :</span>
+               <span class="col-lg-7">Washington DC</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Start Date :</span>
+               <span class="col-lg-7">03-15-2015</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Salary per hours  :</span>
+               <span class="col-lg-7">$25</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Years of Experience :</span>
+               <span class="col-lg-7">8+</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Experience With :</span>
+               <span class="col-lg-7">Single child, twins chid & special need of child</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Mother Tongue :</span>
+               <span class="col-lg-7">English</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Other Language :</span>
+               <span class="col-lg-7">French</span>
+              </div>
+              
+             </div>
+             <div class="col-lg-5">
+              <span class="thumb"><img src="images/image.jpg" alt="image"></span>
+             </div>
+            </div>
+            
+            <div class="pt15 click-detail col-lg-12 row">
+             <div class="col-lg-12">
+              <span class="col-lg-12">Requested Job Hours :</span>
+              <div class="col-lg-12 table-responsive new-detail">
+               <table class="table">
+                <thead>
+                 <thead>
+                  <th>SUN <input type="checkbox" checked disabled></th>
+                  <th>MON <input type="checkbox" checked disabled></th>
+                  <th>TUE <input type="checkbox" checked disabled></th>
+                  <th>WED <input type="checkbox" checked disabled></th>
+                  <th>THU <input type="checkbox" checked disabled></th>
+                  <th>FRI <input type="checkbox" checked disabled></th>
+                  <th>SAT <input type="checkbox" checked disabled></th>
+                 </thead>
+                 </thead>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+               </table>
+               </div>
+               <div class="col-lg-12 tool-tip-1">
+                <span class="col-lg-4"> Message Changing date :   08-01-2015</span>
+                <span class="pull-right">
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-1.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-2.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-3.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-4.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-5.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-6.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-7.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-8.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-9.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-10.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-11.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-12.jpg" alt="image">
+                 </a>
+                </span>
+               </div>
+              </div>
+            </div>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td scope="row">
+           <input type="checkbox" checked="checked" class="css-checkbox sme" id="checkbox_n04">
+	       <label for="checkbox_n04" name="checkbox_n02_lbl" class="css-label sme depressed"></label>
+          </td>
+          <td>Kelly</td>
+          <td>34</td>
+          <td>CA</td>
+          <td>Brookleyn</td>
+          <td>0123456789</td>
+          <td>Partial</td>
+          <td>6+</td>
+          <td>03-19-2015</td>
+          <td align="center"><a data-toggle="collapse" data-parent="#accordion" href="#three" class="more-detail">More Details</a></td>
+         </tr>
+         <tr class="panel-collapse collapse" id="three">
+          <td colspan="10">
+           <div class="col-lg-12 pt15">
+            <p>Hello!</p>
+            <p>My name is Kelly, 34 years old, I'm looking for a lovely part time family. I love to work with kids. I work in All Soul Episcopal Church in the             nursery only sunday morning.</p>
+			<p>I have excellent references. I speak english and spanish i have my own transportation. Im a very resposible person, the most important for me 
+            is keep your kids safe and happy. I love to follow the parents rules and im very friendly. Email me <a href="#">Elisabeth@contactme.com</a></p>
+            
+            <div class="col-lg-12 pt15">
+             <div class="col-lg-7 click-detail">
+              <div class="row">
+               <span class="col-lg-5 bold">Phone :</span>
+               <span class="col-lg-7">017-1314552</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Adddress :</span>
+               <span class="col-lg-7">Washington DC</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Start Date :</span>
+               <span class="col-lg-7">03-15-2015</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Salary per hours  :</span>
+               <span class="col-lg-7">$25</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Years of Experience :</span>
+               <span class="col-lg-7">8+</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Experience With :</span>
+               <span class="col-lg-7">Single child, twins chid & special need of child</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Mother Tongue :</span>
+               <span class="col-lg-7">English</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Other Language :</span>
+               <span class="col-lg-7">French</span>
+              </div>
+              
+             </div>
+             <div class="col-lg-5">
+              <span class="thumb"><img src="images/image.jpg" alt="image"></span>
+             </div>
+            </div>
+            
+            <div class="pt15 click-detail col-lg-12 row">
+             <div class="col-lg-12">
+              <span class="col-lg-12">Requested Job Hours :</span>
+              <div class="col-lg-12 table-responsive new-detail">
+               <table class="table">
+                <thead>
+                 <thead>
+                  <th>SUN <input type="checkbox" checked disabled></th>
+                  <th>MON <input type="checkbox" checked disabled></th>
+                  <th>TUE <input type="checkbox" checked disabled></th>
+                  <th>WED <input type="checkbox" checked disabled></th>
+                  <th>THU <input type="checkbox" checked disabled></th>
+                  <th>FRI <input type="checkbox" checked disabled></th>
+                  <th>SAT <input type="checkbox" checked disabled></th>
+                 </thead>
+                 </thead>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+               </table>
+               </div>
+               <div class="col-lg-12 tool-tip-1">
+                <span class="col-lg-4"> Message Changing date :   08-01-2015</span>
+                <span class="pull-right">
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-1.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-2.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-3.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-4.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-5.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-6.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-7.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-8.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-9.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-10.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-11.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-12.jpg" alt="image">
+                 </a>
+                </span>
+               </div>
+              </div>
+            </div>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td scope="row">
+           <input type="checkbox" checked="checked" class="css-checkbox sme" id="checkbox_n05">
+		   <label for="checkbox_n05" name="check[]" class="css-label sme depressed"></label>
+           
+          </td>
+          <td>Kimm S</td>
+          <td>32</td>
+          <td>Dalas</td>
+          <td>Brookleyn</td>
+          <td>0123456789</td>
+          <td>Full</td>
+          <td>10+</td>
+          <td>03-19-2015</td>
+          <td align="center"><a data-toggle="collapse" data-parent="#accordion" href="#four" class="more-detail">More Details</a></td>
+         </tr>
+         <tr class="panel-collapse collapse" id="four">
+          <td colspan="10">
+           <div class="col-lg-12 pt15">
+            <p>Hello!</p>
+            <p>My name is Kelly, 34 years old, I'm looking for a lovely part time family. I love to work with kids. I work in All Soul Episcopal Church in the             nursery only sunday morning.</p>
+			<p>I have excellent references. I speak english and spanish i have my own transportation. Im a very resposible person, the most important for me 
+            is keep your kids safe and happy. I love to follow the parents rules and im very friendly. Email me <a href="#">Elisabeth@contactme.com</a></p>
+            
+            <div class="col-lg-12 pt15">
+             <div class="col-lg-7 click-detail">
+              <div class="row">
+               <span class="col-lg-5 bold">Phone :</span>
+               <span class="col-lg-7">017-1314552</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Adddress :</span>
+               <span class="col-lg-7">Washington DC</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Start Date :</span>
+               <span class="col-lg-7">03-15-2015</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Salary per hours  :</span>
+               <span class="col-lg-7">$25</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Years of Experience :</span>
+               <span class="col-lg-7">8+</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Experience With :</span>
+               <span class="col-lg-7">Single child, twins chid & special need of child</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Mother Tongue :</span>
+               <span class="col-lg-7">English</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Other Language :</span>
+               <span class="col-lg-7">French</span>
+              </div>
+              
+             </div>
+             <div class="col-lg-5">
+              <span class="thumb"><img src="images/image.jpg" alt="image"></span>
+             </div>
+            </div>
+            
+            <div class="pt15 click-detail col-lg-12 row">
+             <div class="col-lg-12">
+              <span class="col-lg-12">Requested Job Hours :</span>
+              <div class="col-lg-12 table-responsive new-detail">
+               <table class="table">
+                <thead>
+                 <thead>
+                  <th>SUN <input type="checkbox" checked disabled></th>
+                  <th>MON <input type="checkbox" checked disabled></th>
+                  <th>TUE <input type="checkbox" checked disabled></th>
+                  <th>WED <input type="checkbox" checked disabled></th>
+                  <th>THU <input type="checkbox" checked disabled></th>
+                  <th>FRI <input type="checkbox" checked disabled></th>
+                  <th>SAT <input type="checkbox" checked disabled></th>
+                 </thead>
+                 </thead>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+               </table>
+               </div>
+               <div class="col-lg-12 tool-tip-1">
+                <span class="col-lg-4"> Message Changing date :   08-01-2015</span>
+                <span class="pull-right">
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-1.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-2.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-3.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-4.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-5.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-6.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-7.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-8.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-9.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-10.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-11.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-12.jpg" alt="image">
+                 </a>
+                </span>
+               </div>
+              </div>
+            </div>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td scope="row"><input type="checkbox" checked="checked" class="css-checkbox sme" id="checkbox_n06">
+	<label for="checkbox_n06" name="checkbox_n02_lbl" class="css-label sme depressed"></label></td>
+          <td>Ruth</td>
+          <td>32</td>
+          <td>NY</td>
+          <td>Brookleyn</td>
+          <td>0123456789</td>
+          <td>Partial</td>
+          <td>5+</td>
+          <td>03-19-2015</td>
+          <td align="center"><a data-toggle="collapse" data-parent="#accordion" href="#five" class="more-detail">More Details</a></td>
+         </tr>
+         <tr class="panel-collapse collapse" id="five">
+          <td colspan="10">
+           <div class="col-lg-12 pt15">
+            <p>Hello!</p>
+            <p>My name is Kelly, 34 years old, I'm looking for a lovely part time family. I love to work with kids. I work in All Soul Episcopal Church in the             nursery only sunday morning.</p>
+			<p>I have excellent references. I speak english and spanish i have my own transportation. Im a very resposible person, the most important for me 
+            is keep your kids safe and happy. I love to follow the parents rules and im very friendly. Email me <a href="#">Elisabeth@contactme.com</a></p>
+            
+            <div class="col-lg-12 pt15">
+             <div class="col-lg-7 click-detail">
+              <div class="row">
+               <span class="col-lg-5 bold">Phone :</span>
+               <span class="col-lg-7">017-1314552</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Adddress :</span>
+               <span class="col-lg-7">Washington DC</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Start Date :</span>
+               <span class="col-lg-7">03-15-2015</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Salary per hours  :</span>
+               <span class="col-lg-7">$25</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Years of Experience :</span>
+               <span class="col-lg-7">8+</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Experience With :</span>
+               <span class="col-lg-7">Single child, twins chid & special need of child</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Mother Tongue :</span>
+               <span class="col-lg-7">English</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Other Language :</span>
+               <span class="col-lg-7">French</span>
+              </div>
+              
+             </div>
+             <div class="col-lg-5">
+              <span class="thumb"><img src="images/image.jpg" alt="image"></span>
+             </div>
+            </div>
+            
+            <div class="pt15 click-detail col-lg-12 row">
+             <div class="col-lg-12">
+              <span class="col-lg-12">Requested Job Hours :</span>
+              <div class="col-lg-12 table-responsive new-detail">
+               <table class="table">
+                <thead>
+                 <th>SUN <input type="checkbox" checked disabled></th>
+                  <th>MON <input type="checkbox" checked disabled></th>
+                  <th>TUE <input type="checkbox" checked disabled></th>
+                  <th>WED <input type="checkbox" checked disabled></th>
+                  <th>THU <input type="checkbox" checked disabled></th>
+                  <th>FRI <input type="checkbox" checked disabled></th>
+                  <th>SAT <input type="checkbox" checked disabled></th>
+                 </thead>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+               </table>
+               </div>
+               <div class="col-lg-12 tool-tip-1">
+                <span class="col-lg-4"> Message Changing date :   08-01-2015</span>
+                <span class="pull-right">
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-1.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-2.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-3.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-4.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-5.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-6.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-7.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-8.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-9.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-10.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-11.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-12.jpg" alt="image">
+                 </a>
+                </span>
+               </div>
+              </div>
+            </div>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td scope="row"><input type="checkbox" checked="checked" class="css-checkbox sme" id="checkbox_n07">
+	<label for="checkbox_n07" name="checkbox_n02_lbl" class="css-label sme depressed"></label></td>
+          <td>Elisabeth</td>
+          <td>25</td>
+          <td>Texas</td>
+          <td>Brookleyn</td>
+          <td>0123456789</td>
+          <td>Full</td>
+          <td>2</td>
+          <td>03-19-2015</td>
+          <td align="center"><a data-toggle="collapse" data-parent="#accordion" href="#six" class="more-detail">More Details</a></td>
+         </tr>
+         <tr class="panel-collapse collapse" id="six">
+          <td colspan="10">
+           <div class="col-lg-12 pt15">
+            <p>Hello!</p>
+            <p>My name is Kelly, 34 years old, I'm looking for a lovely part time family. I love to work with kids. I work in All Soul Episcopal Church in the             nursery only sunday morning.</p>
+			<p>I have excellent references. I speak english and spanish i have my own transportation. Im a very resposible person, the most important for me 
+            is keep your kids safe and happy. I love to follow the parents rules and im very friendly. Email me <a href="#">Elisabeth@contactme.com</a></p>
+            
+            <div class="col-lg-12 pt15">
+             <div class="col-lg-7 click-detail">
+              <div class="row">
+               <span class="col-lg-5 bold">Phone :</span>
+               <span class="col-lg-7">017-1314552</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Adddress :</span>
+               <span class="col-lg-7">Washington DC</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Start Date :</span>
+               <span class="col-lg-7">03-15-2015</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Salary per hours  :</span>
+               <span class="col-lg-7">$25</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Years of Experience :</span>
+               <span class="col-lg-7">8+</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Experience With :</span>
+               <span class="col-lg-7">Single child, twins chid & special need of child</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Mother Tongue :</span>
+               <span class="col-lg-7">English</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Other Language :</span>
+               <span class="col-lg-7">French</span>
+              </div>
+              
+             </div>
+             <div class="col-lg-5">
+              <span class="thumb"><img src="images/image.jpg" alt="image"></span>
+             </div>
+            </div>
+            
+            <div class="pt15 click-detail col-lg-12 row">
+             <div class="col-lg-12">
+              <span class="col-lg-12">Requested Job Hours :</span>
+              <div class="col-lg-12 table-responsive new-detail">
+               <table class="table">
+                <thead>
+                  <th>SUN <input type="checkbox" checked disabled></th>
+                  <th>MON <input type="checkbox" checked disabled></th>
+                  <th>TUE <input type="checkbox" checked disabled></th>
+                  <th>WED <input type="checkbox" checked disabled></th>
+                  <th>THU <input type="checkbox" checked disabled></th>
+                  <th>FRI <input type="checkbox" checked disabled></th>
+                  <th>SAT <input type="checkbox" checked disabled></th>
+                 </thead>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+               </table>
+               </div>
+               <div class="col-lg-12 tool-tip-1">
+                <span class="col-lg-4"> Message Changing date :   08-01-2015</span>
+                <span class="pull-right">
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-1.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-2.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-3.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-4.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-5.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-6.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-7.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-8.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-9.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-10.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-11.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-12.jpg" alt="image">
+                 </a>
+                </span>
+               </div>
+              </div>
+            </div>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td scope="row"><input type="checkbox" checked="checked" class="css-checkbox sme" id="checkbox_n08">
+	<label for="checkbox_n08" name="checkbox_n02_lbl" class="css-label sme depressed"></label></td>
+          <td>Kelly</td>
+          <td>34</td>
+          <td>CA</td>
+          <td>Brookleyn</td>
+          <td>0123456789</td>
+          <td>Partial</td>
+          <td>6+</td>
+          <td>03-19-2015</td>
+          <td align="center"><a data-toggle="collapse" data-parent="#accordion" href="#seven" class="more-detail">More Details</a></td>
+         </tr>
+         <tr class="panel-collapse collapse" id="seven">
+          <td colspan="10">
+           <div class="col-lg-12 pt15">
+            <p>Hello!</p>
+            <p>My name is Kelly, 34 years old, I'm looking for a lovely part time family. I love to work with kids. I work in All Soul Episcopal Church in the             nursery only sunday morning.</p>
+			<p>I have excellent references. I speak english and spanish i have my own transportation. Im a very resposible person, the most important for me 
+            is keep your kids safe and happy. I love to follow the parents rules and im very friendly. Email me <a href="#">Elisabeth@contactme.com</a></p>
+            
+            <div class="col-lg-12 pt15">
+             <div class="col-lg-7 click-detail">
+              <div class="row">
+               <span class="col-lg-5 bold">Phone :</span>
+               <span class="col-lg-7">017-1314552</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Adddress :</span>
+               <span class="col-lg-7">Washington DC</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Start Date :</span>
+               <span class="col-lg-7">03-15-2015</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Salary per hours  :</span>
+               <span class="col-lg-7">$25</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Years of Experience :</span>
+               <span class="col-lg-7">8+</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Experience With :</span>
+               <span class="col-lg-7">Single child, twins chid & special need of child</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Mother Tongue :</span>
+               <span class="col-lg-7">English</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Other Language :</span>
+               <span class="col-lg-7">French</span>
+              </div>
+              
+             </div>
+             <div class="col-lg-5">
+              <span class="thumb"><img src="images/image.jpg" alt="image"></span>
+             </div>
+            </div>
+            
+            <div class="pt15 click-detail col-lg-12 row">
+             <div class="col-lg-12">
+              <span class="col-lg-12">Requested Job Hours :</span>
+              <div class="col-lg-12 table-responsive new-detail">
+               <table class="table">
+                <thead>
+                 <th>SUN <input type="checkbox" checked disabled></th>
+                  <th>MON <input type="checkbox" checked disabled></th>
+                  <th>TUE <input type="checkbox" checked disabled></th>
+                  <th>WED <input type="checkbox" checked disabled></th>
+                  <th>THU <input type="checkbox" checked disabled></th>
+                  <th>FRI <input type="checkbox" checked disabled></th>
+                  <th>SAT <input type="checkbox" checked disabled></th>
+                 </thead>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+               </table>
+               </div>
+               <div class="col-lg-12 tool-tip-1">
+                <span class="col-lg-4"> Message Changing date :   08-01-2015</span>
+                <span class="pull-right">
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-1.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-2.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-3.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-4.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-5.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-6.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-7.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-8.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-9.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-10.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-11.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-12.jpg" alt="image">
+                 </a>
+                </span>
+               </div>
+              </div>
+            </div>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td scope="row"><input type="checkbox" checked="checked" class="css-checkbox sme" id="checkbox_n09">
+	<label for="checkbox_n09" name="checkbox_n02_lbl" class="css-label sme depressed"></label></td>
+          <td>Kimm S</td>
+          <td>32</td>
+          <td>Dalas</td>
+          <td>Brookleyn</td>
+          <td>0123456789</td>
+          <td>Full</td>
+          <td>10+</td>
+          <td>03-19-2015</td>
+          <td align="center"><a data-toggle="collapse" data-parent="#accordion" href="#eight" class="more-detail">More Details</a></td>
+         </tr>
+         <tr class="panel-collapse collapse" id="eight">
+          <td colspan="10">
+           <div class="col-lg-12 pt15">
+            <p>Hello!</p>
+            <p>My name is Kelly, 34 years old, I'm looking for a lovely part time family. I love to work with kids. I work in All Soul Episcopal Church in the             nursery only sunday morning.</p>
+			<p>I have excellent references. I speak english and spanish i have my own transportation. Im a very resposible person, the most important for me 
+            is keep your kids safe and happy. I love to follow the parents rules and im very friendly. Email me <a href="#">Elisabeth@contactme.com</a></p>
+            
+            <div class="col-lg-12 pt15">
+             <div class="col-lg-7 click-detail">
+              <div class="row">
+               <span class="col-lg-5 bold">Phone :</span>
+               <span class="col-lg-7">017-1314552</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Adddress :</span>
+               <span class="col-lg-7">Washington DC</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Start Date :</span>
+               <span class="col-lg-7">03-15-2015</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Salary per hours  :</span>
+               <span class="col-lg-7">$25</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Years of Experience :</span>
+               <span class="col-lg-7">8+</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Experience With :</span>
+               <span class="col-lg-7">Single child, twins chid & special need of child</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Mother Tongue :</span>
+               <span class="col-lg-7">English</span>
+              </div>
+              
+              <div class="row">
+               <span class="col-lg-5">Other Language :</span>
+               <span class="col-lg-7">French</span>
+              </div>
+              
+             </div>
+             <div class="col-lg-5">
+              <span class="thumb"><img src="images/image.jpg" alt="image"></span>
+             </div>
+            </div>
+            
+            <div class="pt15 click-detail col-lg-12 row">
+             <div class="col-lg-12">
+              <span class="col-lg-12">Requested Job Hours :</span>
+              <div class="col-lg-12 table-responsive new-detail">
+               <table class="table">
+                <thead>
+                 <th>SUN <input type="checkbox" checked disabled></th>
+                  <th>MON <input type="checkbox" checked disabled></th>
+                  <th>TUE <input type="checkbox" checked disabled></th>
+                  <th>WED <input type="checkbox" checked disabled></th>
+                  <th>THU <input type="checkbox" checked disabled></th>
+                  <th>FRI <input type="checkbox" checked disabled></th>
+                  <th>SAT <input type="checkbox" checked disabled></th>
+                 </thead>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+               </table>
+               </div>
+               <div class="col-lg-12 tool-tip-1">
+                <span class="col-lg-4"> Message Changing date :   08-01-2015</span>
+                <span class="pull-right">
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-1.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-2.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-3.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-4.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-5.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-6.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-7.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-8.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-9.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-10.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-11.jpg" alt="image">
+                 </a>
+                 
+                 <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  <img src="images/icon-12.jpg" alt="image">
+                 </a>
+                </span>
+               </div>
+              </div>
+            </div>
+           </div>
+          </td>
+         </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="row bottom-links">
+       <div class="col-lg-3"><a href="#" class="more-detail col-lg-8">Select All Message</a></div>
+       <div class="col-lg-9" align="right">
+        <a href="#" class="more-detail">Print</a>
+        <a href="#" class="more-detail">Send to Email</a>
+        <a href="#" class="more-detail red">Delete</a>
+       </div>
+      </div>
+      
+     </div>
+    </div>
+   <!-- basket content finsih -->
+   <!-- agent content starts -->
+    <div class="tab-pane fade row" id="agent">
+     <div class="col-lg-12">
+      <div class="red-border">
+       <h3>Define New Smart Agent</h3>
+       <div class="col-lg-12">
+        <div class="panel-group" id="accordion1">
+         <!-- job description starts -->
+         <div class="panel">
+          <div class="panel-heading">
+           <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion1" href="#jd" class="red-panel" aria-expanded="true"> Job Description </a> </h4>
+          </div>
+          <div id="jd" class="panel-collapse collapse in">
+           <div class="panel-body row">
+            <p class="col-lg-12 row">
+             <label class="col-lg-3">Request Job Type : </label>
+             <span class="col-lg-8">
+              <select class="input-box col-lg-12"><option>Babysitters Job Type</option></select>
+             </span>
+            </p>
+            
+            <p class="col-lg-12 row">
+             <label class="col-lg-3">Requested Working Hours : </label>
+             <span class="radio-btns col-lg-8 radio">
+              <input type="radio" value="m" name="rwh-1" id="radio01">
+			  <label for="radio01"><span></span>Full Time</label>
+              <input type="radio" name="rwh-1" id="radio02">
+			  <label for="radio02"><span></span>Partial</label>
+             </span>
+            </p>
+            
+            <div class="col-lg-12 table-responsive new-detail">
+             <table class="table">
+              <thead>
+               <th>SUN <input type="checkbox" checked disabled></th>
+               <th>MON <input type="checkbox" checked disabled></th>
+               <th>TUE <input type="checkbox" checked disabled></th>
+               <th>WED <input type="checkbox" checked disabled></th>
+               <th>THU <input type="checkbox" checked disabled></th>
+               <th>FRI <input type="checkbox" checked disabled></th>
+               <th>SAT <input type="checkbox" checked disabled></th>
+              </thead>
+              <tbody>
+               <tr>
+                <td align="center">
+                 <span class="time">09:00 AM</span>
+                 <span class="time">09:00 AM</span>
+                </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+               </tr></tbody>
+               </table>
+            </div>
+            
+            <p class="col-lg-12 row">
+             <label class="col-lg-3">Cost for Hours : </label>
+             <span class="col-lg-8">
+     		  <input type="text" placeholder="Enter Cost for Hours" class="col-lg-8 input-box"> 
+             </span>
+            </p>
+            <style type="text/css">
+			 .calender-cont input[type=text]{border-right:0;}
+			</style>
+            <p class="col-lg-12 row">
+             <label class="col-lg-3">Start Working Date : </label>
+             <span class="col-lg-9 calender-cont">
+             <input type="Text" id="demo1" maxlength="25" size="25" class="col-lg-9 input-box" />
+             <img src="images/calender.gif" onclick="javascript:NewCssCal('demo1')" style="cursor:pointer;" />
+             </span>
+            </p>
+            
+            <p class="col-lg-12 row">
+             <label class="col-lg-3">City : </label>
+             <span class="col-lg-8">
+     		  <input type="text" placeholder="City name" class="col-lg-8 input-box"> 
+             </span>
+            </p>
+            
+            <p class="col-lg-12 row">
+             <label class="col-lg-3">Neighbourhood : </label>
+             <span class="col-lg-8">
+     		  <input type="text" placeholder="Your Location" class="col-lg-8 input-box"> 
+             </span>
+            </p>
+           
+          </div>
+         </div>
+         </div>
+         <!-- job description finsih -->
+         <!-- experience with content here -->
+         <div class="panel">
+          <div class="panel-heading">
+           <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion1" href="#exp" class="red-panel">Experience With</i></a>
+           </h4>
+          </div>
+          
+          <div id="exp" class="panel-collapse collapse">
+           <div class="panel-body row"> 
+            <p class="col-lg-12 row">
+             <label class="col-lg-12">Years of Experience </label>
+             <span class="col-lg-12">
+     		  <select class="input-box col-lg-12"><option>Babysitters Job Type</option></select>
+             </span>
+            </p>
+            <p class="col-lg-12 row">
+             <label class="col-lg-12">The With Children</label>
+             <span class="col-lg-8 radio row">
+			  <input type="radio" value="m" name="twc-1" id="twc11">
+			  <label for="twc11"><span></span>Single</label>
+              
+              <input type="radio" value="m" name="twc-1" id="twc12">
+			  <label for="twc12"><span></span>Twins</label>              
+              
+              <input type="radio" value="m" name="twc-1" id="twc13">
+			  <label for="twc13"><span></span>Special Need</label>
+             </span>
+            </p>
+            <p class="col-lg-12 row">
+             <label class="col-lg-12">Years of Experience </label>
+             <span class="col-lg-12">
+     		  <select class="input-box col-lg-12"><option>Babysitters Job Type</option></select>
+             </span>
+            </p>
+            <p class="col-lg-12 row">
+             <label class="col-lg-12">The With Children</label>
+             <span class="col-lg-8 radio row">
+			  <input type="radio" value="m" name="twc-2" id="twc1">
+			  <label for="twc1"><span></span>Single</label>
+              
+              <input type="radio" value="m" name="twc-2" id="twc2">
+			  <label for="twc2"><span></span>Twins</label>              
+              
+              <input type="radio" value="m" name="twc-2" id="twc3">
+			  <label for="twc3"><span></span>Special Need</label>
+             </span>
+            </p>
+           </div>
+         </div>
+         </div>
+         <!-- experience with content finsih -->
+         <!-- who i am content here -->
+         <div class="panel">
+          <div class="panel-heading">
+           <h4 class="panel-title"> 
+            <a data-toggle="collapse" data-parent="#accordion1" href="#who" class="red-panel"> Who I am</a>
+           </h4>
+          </div>
+          <div id="who" class="panel-collapse collapse">
+           <div class="panel-body">
+ 			<div class="row">
+             <p class="col-lg-3"><img src="images/gender-icon.png" alt=""> <strong>Gender:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="gender" id="gend-1">
+			  <label for="gend-1"><span></span>Male</label>
+              
+              <input type="radio" value="m" name="gender" id="gend-2">
+			  <label for="gend-2"><span></span>Female</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/family-status.png" alt=""> <strong>Family Status:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="fs-1" id="fs1">
+			  <label for="fs1"><span></span>Single</label>
+              
+              <input type="radio" value="m" name="fs-1" id="fs2">
+			  <label for="fs2"><span></span>Married</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/has-children.png" alt=""> <strong>Has Children:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="hs-1" id="hs1">
+			  <label for="hs1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="hs-1" id="hs2">
+			  <label for="hs2"><span></span>No</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/citizenship.png" alt=""> <strong>Has Citizenship:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="hct-1" id="hct1">
+			  <label for="hct1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="hct-1" id="hct2">
+			  <label for="hct2"><span></span>No</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/smoking.png" alt=""> <strong>Smoking:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="smk-1" id="smk1">
+			  <label for="smk1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="smk-1" id="smk2">
+			  <label for="smk2"><span></span>No</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/knowledge.png" alt=""> <strong>Resuscitation Knowledge:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="rk-1" id="rk1">
+			  <label for="rk1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="rk-1" id="rk2">
+			  <label for="rk2"><span></span>No</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/driving.png" alt=""> <strong>Driving Licence:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="dl-1" id="dl1">
+			  <label for="dl1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="dl-1" id="dl2">
+			  <label for="dl2"><span></span>No</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/car.png" alt=""> <strong>Has Car:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="hca-1" id="hca1">
+			  <label for="hca1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="hca-1" id="hca2">
+			  <label for="hca2"><span></span>No</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/english.png" alt=""> <strong>English as mother tongue:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="mt-1" id="mt1">
+			  <label for="mt1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="mt-1" id="mt2">
+			  <label for="mt2"><span></span>No</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/english.png" alt=""> <strong>Other Language:</strong></p>
+             <p class="col-lg-7"><select class="input-box col-lg-12"><option>Babysitters Job Type</option></select> </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/english.png" alt=""> <strong>Education:</strong></p>
+             <p class="col-lg-7"><select class="input-box col-lg-12"><option>Your Highest Degree</option></select> </p>
+            </div>
+            
+           </div>
+          </div>
+         </div>
+         <!-- whp i am content finish -->
+         <!-- i am willing to content here -->
+         <div class="panel">
+          <div class="panel-heading">
+           <h4 class="panel-title"> 
+            <a data-toggle="collapse" data-parent="#accordion1" href="#willing" class="red-panel"> I Am Willing To </a>
+           </h4>
+          </div>
+          <div id="willing" class="panel-collapse collapse">
+           <div class="panel-body"> 
+            <div class="row">
+             <p class="col-lg-3"><img src="images/food.png" alt=""> <strong>Prepare Food:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="pf-1" id="pf1">
+			  <label for="pf1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="pf-1" id="pf2">
+			  <label for="pf2"><span></span>No</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/has-children.png" alt=""> <strong>Work With Several Childrens:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="wsc-1" id="wsc1">
+			  <label for="wsc1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="wsc-1" id="wsc2">
+			  <label for="wsc2"><span></span>No</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/school.png" alt=""> <strong>Collect from School:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="cfs-1" id="cfs1">
+			  <label for="cfs1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="cfs-1" id="cfs2">
+			  <label for="cfs2"><span></span>No</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/help.png" alt=""> <strong>Help with Homework:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="hh-1" id="hh1">
+			  <label for="hh1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="hh-1" id="hh2">
+			  <label for="hh2"><span></span>No</label>
+             </p>
+            </div>
+            
+            <div class="row">
+             <p class="col-lg-3"><img src="images/escort.png" alt=""> <strong>Escort to Friends:</strong></p>
+             <p class="col-lg-7">
+              <input type="radio" value="m" name="ef-1" id="ef1">
+			  <label for="ef1"><span></span>Yes</label>
+              
+              <input type="radio" value="m" name="ef-1" id="ef2">
+			  <label for="ef2"><span></span>No</label>
+             </p>
+            </div>
+           </div>
+      </div>
+     </div>
+         <!-- i am willing to finish -->
+        </div>
+       </div>
+       <div class="col-lg-12">
+       <p class="col-lg-12">
+        <label class="col-lg-3">Agent Name : </label>
+        <span class="col-lg-8"><input type="text" placeholder="Agent Name" class="col-lg-8 input-box">  </span>
+       </p>
+       <p class="col-lg-12">
+             <label class="col-lg-3">&nbsp; </label>
+             <span class="col-lg-8"><button class="change-pwd">Create Agent</button></span>
+            </p>
+      </div>
+      </div>
+     </div>
+     
+	 <div class="col-lg-12 mt15">
+      <div class="red-border agent1">
+       <h3>My Smart Agent</h3>
+       <div class="col-lg-12 table-responsive new-detail">
+        <table class="table">
+         <thead>
+          <th>Agent Name</th>
+          <th>Edit </th>
+          <th>Remove</th>
+          <th>Show Ads</th>
+         </thead>
+         <tbody>
+          <tr>
+           <td>Babysitters for my son </td>
+           <td><i class="glyphicon glyphicon-edit"></i> </td>
+           <td><i class="glyphicon glyphicon-trash"></i> </td>
+           <td><a href="#" class="more-detail">Show Ads</a></td>
+          </tr>
+           <tr>
+           <td>Take children from school </td>
+           <td><i class="glyphicon glyphicon-edit"></i> </td>
+           <td><i class="glyphicon glyphicon-trash"></i> </td>
+           <td><a href="#" class="more-detail">Show Ads</a></td>
+          </tr>
+          <tr>
+           <td>Babysitters for my son </td>
+           <td><i class="glyphicon glyphicon-edit"></i> </td>
+           <td><i class="glyphicon glyphicon-trash"></i> </td>
+           <td><a href="#" class="more-detail">Show Ads</a></td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+     </div>
+     </div>
+     
+     <div class="col-lg-12 mt15">
+      <div class="red-border agent1">
+       <h3>Definitions</h3>
+       <div class="col-lg-12 table-responsive new-detail">
+        <p> 
+         <input type="checkbox" id="def_01" class="css-checkbox sme" checked="checked">
+         <label class="css-label sme depressed" name="def-1" for="def_01"></label>
+         Get Notifications sevral times during the day.
+        </p>
+        <p>
+         <input type="checkbox" id="def_02" class="css-checkbox sme" checked="checked">
+         <label class="css-label sme depressed" name="def-1" for="def_02"></label>Get Summary at the end of the day
+        </p>
+        <p><button class="change-pwd">Save</button></p>
+       </div>
+     </div>
+     </div>
+    </div>
+   <!-- Agent content starts -->
+   <!-- Manage Add Content Starts -->
+    <div class="tab-pane fade" id="manage-ad">
+     <ul id="myTab1" class="nav nav-tabs">
+    <li class="active"><a href="#adfirst" data-toggle="tab"><span>My 1st AD</span></a></li>
+    <li><a href="#adsecond" data-toggle="tab"><span>My 2nd AD</span></a></li>
+    <li><a href="#adthird" data-toggle="tab"><span>My 3rd AD</span></a></li>
+  </ul>
+     <div id="myTabContent2" class="tab-content">
+      <!-- first add content starts -->
+      <div class="tab-pane fade in active" id="adfirst">
+       <div class="col-lg-12 pt15">
+        <div class="col-lg-4 row">
+         <div class="row"> <span class="thumb"><img alt="image" src="images/image.jpg"></span> </div>
+         <div class="row pt15">
+         <div class="thumb2">
+          <div class="col-lg-12 row">
+           <p>
+            <b class="col-lg-9"> Publish Date :</b>
+            <span class="col-lg-3 text-right">03-02-2015</span> 
+           </p>
+           <p>
+            <b class="col-lg-9"> Update Date :</b>
+            <span class="col-lg-3 text-right">03-02-2015</span>
+           </p>
+           <p>
+            <b class="col-lg-9"> How many watch me :</b>
+            <span class="col-lg-3 text-right">52</span>
+           </p>
+           <p>
+            <b class="col-lg-9"> How many add me to their basket :</b>
+            <span class="col-lg-3 text-right">25</span>
+           </p>
+           <p>
+            <b class="col-lg-9"> Status AD : </b>
+            <span class="col-lg-3 text-right">Not Active</span> 
+           </p>
+           <p class="col-lg-12">
+            <button class="change-pwd">Acticate AD</button>
+            <button class="change-pwd">Edit AD</button>
+            <button class="change-pwd">Advance AD</button>
+           </p>
+          </div>
+         </div>
+        </div>
+        </div>
+        <div class="col-lg-8 pt15 ">
+         <div class="col-lg-12 click-detail">
+          <p>Hello!</p>
+          <p> </p>
+          <p>My name is Kelly, 34 years old, I'm looking for a lovely part time family. I love to work with kids. 
+          I work in All Soul Episcopal Church in the nursery only sunday morning.</p>
+          
+          <p>I have excellent references. I speak english and spanish i have my own transportation. Im a very 
+          resposible person, the most important for me is keep your kids safe and happy. I love to follow the 
+          parents rules and im very friendly. Email me <a href="#">Elisabeth@contactme.com</a></p>
+          
+          <p></p>
+          
+          <div class="row">
+           <span class="col-lg-5 bold">Phone :</span>
+           <span class="col-lg-7">017-1314552</span>
+          </div>
+              
+          <div class="row">
+           <span class="col-lg-5">Adddress :</span>
+           <span class="col-lg-7">Washington DC</span>
+          </div>
+              
+          <div class="row">
+           <span class="col-lg-5">Start Date :</span>
+           <span class="col-lg-7">03-15-2015</span>
+          </div>
+          
+          <div class="row">
+           <span class="col-lg-5">Requested Job:</span>
+           <span class="col-lg-7">Babysitters</span>
+          </div>
+              
+          <div class="row">
+           <span class="col-lg-5">Salary per hours  :</span>
+           <span class="col-lg-7">$25</span>
+          </div>
+              
+          <div class="row">
+           <span class="col-lg-5">Years of Experience :</span>
+           <span class="col-lg-7">8+</span>
+          </div>
+              
+          <div class="row">
+           <span class="col-lg-5">Experience With :</span>
+           <span class="col-lg-7">Single child, twins chid &amp; special need of child</span>
+          </div>
+              
+          <div class="row">
+           <span class="col-lg-5">Mother Tongue :</span>
+           <span class="col-lg-7">English</span>
+          </div>
+              
+          <div class="row">
+           <span class="col-lg-5">Other Language :</span>
+           <span class="col-lg-7">French</span>
+          </div>
+              
+          <div class="row">
+           <span class="col-lg-12">Requested Job Hours :</span>
+              <div class="col-lg-12 table-responsive new-detail">
+               <table class="table">
+                <thead>
+                 <th>SUN <input type="checkbox" checked disabled></th>
+                  <th>MON <input type="checkbox" checked disabled></th>
+                  <th>TUE <input type="checkbox" checked disabled></th>
+                  <th>WED <input type="checkbox" checked disabled></th>
+                  <th>THU <input type="checkbox" checked disabled></th>
+                  <th>FRI <input type="checkbox" checked disabled></th>
+                  <th>SAT <input type="checkbox" checked disabled></th>
+                 </tr></thead>
+                <tbody><tr><td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+                 <td align="center">
+                  <span class="time">09:00 AM</span>
+                  <span class="time">09:00 AM</span>
+                 </td>
+               </tr></tbody>
+               </table>
+               </div>
+               <div class="col-lg-12 tool-tip-1">
+                <span class="col-lg-4"> Message Changing date :   08-01-2015</span>
+                <span class="pull-right">
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-1.jpg">
+                 </a>
+                 
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-2.jpg">
+                 </a>
+                 
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-3.jpg">
+                 </a>
+                 
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-4.jpg">
+                 </a>
+                 
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-5.jpg">
+                 </a>
+                 
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-6.jpg">
+                 </a>
+                 
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-7.jpg">
+                 </a>
+                 
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-8.jpg">
+                 </a>
+                 
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-9.jpg">
+                 </a>
+                 
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-10.jpg">
+                 </a>
+                 
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-11.jpg">
+                 </a>
+                 
+                 <a title="" data-placement="top" data-toggle="tooltip" href="javascript:;" data-original-title="Tooltip on top">
+                  <img alt="image" src="images/icon-12.jpg">
+                 </a>
+                </span>
+               </div>
+              </div>
+              
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- first ad content finsih -->
+      <!-- second ad content starts -->
+       <div class="tab-pane fade" id="adsecond">
+        <p>Second AD Container code here</p>
+       </div>
+      <!-- second ad content finish -->
+      <!-- third ad content starts -->
+       <div class="tab-pane fade" id="adthird">
+        <p> Third AD container code here</p>
+       </div>
+    
+  </div>
+    </div>
+   <!-- Manage Ad Content finsih -->
+   <!-- Personal Detail Content starts-->
+    <div class="tab-pane fade" id="detail">
+     <div class="col-lg-12 red-border">
+      <h3>Personal Info</h3>
+       <div class="col-lg-12">
+        <form method="post" action="javascript:;">
+         <div class="row">
+          <div class="col-lg-1">&nbsp;</div>
+          <label class="col-lg-3">Username :</label>
+          <div class="col-lg-4"><input type="text" placeholder="Username" class="input-box col-lg-12"></div>
+         </div>
+         
+         <div class="row">
+          <div class="col-lg-1">&nbsp;</div>
+          <label class="col-lg-3">Password :</label>
+          <div class="col-lg-4"><input type="password" placeholder="Enter Password" class="input-box col-lg-12"></div>
+          <div class="col-lg-3"><a href="javascript:;" onClick="chng(1)" class="change-pwd col-lg-7">Change Password</a></div>
+         </div>
+         
+         <div id="chng-pwd" style="display:none;">
+          <div class="row">
+           <div class="col-lg-1">&nbsp;</div>
+          <label class="col-lg-3">New Password :</label>
+          <div class="col-lg-4"><input type="password" placeholder="Enter Password" class="input-box col-lg-12"></div>
+         </div>
+         
+          <div class="row">
+           <div class="col-lg-1">&nbsp;</div>
+           <div class="col-lg-3">&nbsp;</div>
+           <div class="col-lg-4"><button class="mb10 change-pwd">Update</button> <button class="change-pwd">Cancel</button></div>
+         </div>
+         </div>
+         
+         <div class="row">
+          <div class="col-lg-1">&nbsp;</div>
+          <label class="col-lg-3">Email Address :</label>
+          <div class="col-lg-4"><input type="email" placeholder="in@domain.com" class="input-box col-lg-12"></div>
+          <div class="col-lg-3"><a href="javascript:;" class="change-pwd col-lg-7">Change Email Id</a></div>         </div>
+          
+             
+         <div class="row">
+          <div class="col-lg-1">&nbsp;</div>
+          <label class="col-lg-3">I am a member since :</label>
+          <div class="col-lg-4"><input type="text" placeholder="Member Since" class="input-box col-lg-12"></div>
+         </div>
+         
+         <div class="row last-button">
+          <div class="col-lg-1">&nbsp;</div>
+          <label class="col-lg-3">&nbsp;</label>
+          <div class="col-lg-4"><button>Delete Account</button></div>
+         </div>
+         
+        </form>
+       </div>
+     </div>
+    </div>
+   <!-- Personal Detail Content finsih -->
+   <!-- Payment method Content starts-->
+    <div class="tab-pane fade" id="payment">
+     <div class="col-lg-6">
+      <div class="red-border">
+       <h3>Add a Credit Card</h3>
+       <div class="col-lg-12">
+        <form method="post" action="javascript:;">
+         <div class="row">
+          <label class="col-lg-5">Name on Card :</label>
+          <div class="col-lg-6"><input type="text" placeholder="Username" class="input-box col-lg-12"></div>
+         </div>
+         
+         <div class="row">
+          <label class="col-lg-5">Type :</label>
+          <div class="col-lg-6">
+           <select class="col-lg-12">
+            <option>Visa 1</option>
+            <option>Visa 2</option>
+            <option>Visa 3</option>
+            <option>Visa 4</option>
+           </select>
+          </div>
+         </div>
+         
+         <div class="row">
+          <label class="col-lg-5">Card No. :</label>
+          <div class="col-lg-6"><input type="text" placeholder="XXXXXXXXXXXXXXXX" class="input-box col-lg-12"></div>
+         </div>
+         
+         <div class="row">
+          <label class="col-lg-5">Expiration Month :</label>
+          <div class="col-lg-6"><select class="col-lg-12 input-box"><option>MM</option></select></div>
+         </div>
+         
+         <div class="row">
+          <label class="col-lg-5">Expiration Year :</label>
+          <div class="col-lg-6"><select class="col-lg-12 input-box"><option>YYYY</option></select></div>
+         </div>
+         
+          <div class="row">
+          <label class="col-lg-5">&nbsp;</label>
+          <div class="col-lg-6">
+           <input type="checkbox" id="checkbox_n013" class="css-checkbox sme" checked="checked">
+           <label class="css-label sme depressed" name="checkbox_n02_lbl" for="checkbox_n013"></label>
+           <span>Set as a Default Card</span></div>
+         </div>
+         
+         <div class="row">
+          <label class="col-lg-5">&nbsp;</label>
+          <div class="col-lg-6"><button class="col-lg-7 change-pwd">Apply</button></div>
+         </div>
+         
+        </form>
+       </div>
+      </div>
+     </div>
+     
+     <div class="col-lg-6">
+      <div class="red-border">
+       <h3>Saved Credit Card</h3>
+       <div class="col-lg-12">
+        <form method="post" action="javascript:;">
+         <p>John Smith</p>	
+         <p>Visa</p>
+         <p>*************************1234</p>
+         <p>Expire on : 12/2019</p>
+         <button class="col-lg-5 change-pwd">Make as a Default Card</button> 
+         <button class="col-lg-3 change-pwd">Remove Card</button> 
+        </form>
+       </div>
+      </div>
+     </div>
+    </div>
+   <!-- Payment method Content finsih -->
+  </div>
+  <!-- tabbed pannel finsih -->
+ </div>
+<!-- container finish -->
+
+<!-- JavaScript Includes --> 
+<script src="js/transition.js"></script> 
+<script src="js/collapse.js"></script>
+<script src="js/tab.js"></script> 
+ <script src="js/button.js"></script> 
+<script src="js/tooltip.js"></script>
+
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+function chng(links){
+    if (links == 1) {
+      document.getElementById('chng-pwd').style.display = 'block'; 
+    }
+}
+</script>
+
+</body>
+</html>
