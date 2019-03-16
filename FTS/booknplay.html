@@ -659,12 +659,27 @@
        <div class="col-md-9 col-lg-9">
        <!-- sort by section starts -->
         <div class="col-md-12">
-          <ul  class="sortby w-100 float-left mt-2">
+          <ul  class="sortby w-100 float-left mt-2 d-none d-sm-none d-md-block">
             <li> Sort By</li>
             <li><a href="#">Most Popular </a></li>
             <li class="active"><a href="#">Lowest Price </a></li>
             <li><a href="#">Highest Price </a></li>
           </ul>
+          <div class="col-md-12 float-left d-block d-sm-block d-md-none">
+            <div class="row">
+              <span class="float-left col-3 col-sm-3 pl-0">Sort by</span>
+              <span class="float-right col-9 col-sm-9 pr-0">
+                
+                  <select class="mt-0 custom-select">
+                      <option selected>Most Popular</option>
+                      <option value="1">Lowest Price</option>
+                      <option value="2">Highest Price</option>
+                    </select>
+              </span>
+            </div>
+
+          </div>
+          
         </div>
        <!-- sort by section finsih -->
         <!-- cards starts -->
@@ -687,7 +702,7 @@
                  <h5 class="mt-0  text-white">Nagpur</h5>
                  <a href="#">Get Direction</a>
                </div>
-               <div class="float-right font-22 text-white">Sport</div>
+               <div class="float-right font-22 card-listfooter text-white">Sport</div>
              </div>
 
              <div class="media mb-3">
@@ -695,7 +710,7 @@
                <div class="media-body">
                  <h5 class="mt-0  text-white">10:.00 - 22:00</h5>
                </div>
-               <div class="float-right font-22 text-white">Court Type</div>
+               <div class="float-right font-22 card-listfooter text-white">Court Type</div>
              </div>
 
              <div class="media mb-3">
@@ -703,7 +718,7 @@
                <div class="media-body">
                  <h5 class="mt-0  text-white">Rs 100/hour</h5>
                </div>
-               <div class="float-right font-22 text-white">Offers</div>
+               <div class="float-right font-22 card-listfooter text-white">Offers</div>
              </div>
 
              <div class="mt-2 col-md-12 float-left mb-2 card-buttons"><div class="row">
@@ -737,7 +752,7 @@
                    <h5 class="mt-0  text-white">Nagpur</h5>
                    <a href="#">Get Direction</a>
                  </div>
-                 <div class="float-right font-22 text-white">Sport</div>
+                 <div class="float-right font-22 card-listfooter text-white">Sport</div>
                </div>
  
                <div class="media mb-3">
@@ -745,7 +760,7 @@
                  <div class="media-body">
                    <h5 class="mt-0  text-white">10:.00 - 22:00</h5>
                  </div>
-                 <div class="float-right font-22 text-white">Court Type</div>
+                 <div class="float-right font-22  card-listfooter text-white">Court Type</div>
                </div>
  
                <div class="media mb-3">
@@ -753,7 +768,7 @@
                  <div class="media-body">
                    <h5 class="mt-0  text-white">Rs 100/hour</h5>
                  </div>
-                 <div class="float-right font-22 text-white">Offers</div>
+                 <div class="float-right font-22 card-listfooter text-white">Offers</div>
                </div>
  
                <div class="mt-2 col-md-12 float-left mb-2 card-buttons"><div class="row">
@@ -787,7 +802,7 @@
                    <h5 class="mt-0  text-white">Nagpur</h5>
                    <a href="#">Get Direction</a>
                  </div>
-                 <div class="float-right font-22 text-white">Sport</div>
+                 <div class="float-right font-22 card-listfooter text-white">Sport</div>
                </div>
  
                <div class="media mb-3">
@@ -795,7 +810,7 @@
                  <div class="media-body">
                    <h5 class="mt-0  text-white">10:.00 - 22:00</h5>
                  </div>
-                 <div class="float-right font-22 text-white">Court Type</div>
+                 <div class="float-right font-22 card-listfooter text-white">Court Type</div>
                </div>
  
                <div class="media mb-3">
@@ -803,7 +818,7 @@
                  <div class="media-body">
                    <h5 class="mt-0  text-white">Rs 100/hour</h5>
                  </div>
-                 <div class="float-right font-22 text-white">Offers</div>
+                 <div class="float-right font-22 card-listfooter text-white">Offers</div>
                </div>
  
                <div class="mt-2 col-md-12 float-left mb-2 card-buttons"><div class="row">
@@ -1123,7 +1138,6 @@
           <!-- end verify OTP modal body-->
 		  <script>
 		  $(document).ready(function(){
-          
           if (window.screen.width <768) {
             $(".filter-heading").click(function(){
             $(".left-filters").toggle();
