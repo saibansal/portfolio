@@ -5220,7 +5220,7 @@ margin-left: 0px;
 	bottom: 0px;
 }
 
-/*---------- css added by vishal on 15032019 ----------*/
+/*---------- css added by vishal for book and play on 15032019 ----------*/
 .breadcrumb-item+.breadcrumb-item:before, .breadcrumb a, .breadcrumb-item.active{
     color:#F05327;
      font-size:16px;
@@ -5238,7 +5238,7 @@ margin-left: 0px;
     
     .content-container h3{
         font-weight:bold;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding:10px;
         box-shadow: 0 6px 8px rgba(0,0,0,.2);
         color:#f05327
@@ -5254,9 +5254,12 @@ margin-left: 0px;
         float:left; 
         width:100%;
         text-align: left;
-        font-size: 20px;
+        font-size: 28px;
+        font-weight: 600;
         color: #19191B;
-        font-weight:bold
+    }
+    .left-filters .card-header .btn i{
+        color:#F05327;
     }
     .left-filters .card-header:hover .btn{text-decoration: none}
     .show-more{
@@ -5318,7 +5321,7 @@ margin-left: 0px;
         font-weight: normal;
         list-style: none;
         float: left;
-        font-size: 18px;
+        font-size: 20px;
         line-height: normal; color:#000;}
         .sortby li a{border-bottom: dashed 2px transparent}
         .sortby li {margin-right:30px;}
@@ -5344,6 +5347,14 @@ margin-left: 0px;
     .card-buttons .col-sm-6:nth-child(3n) button:hover, .card-buttons .col-sm-6:nth-child(4n) button:hover{background:#fff; border-color:#fff}        
     
     .left-filters{display: block}
+    .Page.navigation{clear: both;}
+    .paging{float: left; width:100%; margin-top: 2rem; text-align: center;}
+    .paging li{display: inline-block;}
+    .paging li.page-item  a.page-link{color:#FC9B04; margin-right: 0}
+    .paging li.page-item.active  a.page-link{border: 2px solid #FC9B04;}
+    .grey-bg{background:#E5E5E5}
+    h1.page-heading{font-size: 48px}
+
     @media (max-width: 767px){
         .sortby li{ margin-right:10px;}
         .card-buttons button{margin-bottom:10px;}
