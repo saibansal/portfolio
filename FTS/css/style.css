@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+.body{
+    font-family: 'Montserrat', sans-serif;
+}
 .home{
     width:100%;
     overflow-x: hidden;
@@ -5237,6 +5240,7 @@ margin-left: 0px;
     }
     
     .content-container h3{
+        font-family: 'Montserrat', sans-serif;
         font-weight:bold;
         font-size: 1.5rem;
         padding:10px;
@@ -5250,6 +5254,7 @@ margin-left: 0px;
         border-bottom: 0px;
     }
     .left-filters .card-header .btn{
+        font-family: 'Montserrat', sans-serif;
         padding:0;
         float:left; 
         width:100%;
@@ -5283,6 +5288,7 @@ margin-left: 0px;
         color: #19191B;
         font-size: 16px;
         margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
     }
     .left-filters .custom-control{
         padding-left:2rem;
@@ -5323,13 +5329,14 @@ margin-left: 0px;
         float: left;
         font-size: 20px;
         line-height: normal; color:#000;}
-        .sortby li a{border-bottom: dashed 2px transparent}
+        .sortby li a{border-bottom: dashed 2px #000}
         .sortby li {margin-right:30px;}
         .sortby li:hover a{
             text-decoration: none;
         }
-        .sortby li.active a{color: #F05327; font-weight: bold; border-bottom: dashed 2px #f05327}
-    .card-list{
+        .sortby li:hover a, .sortby li.active a, .sortby li.active:hover a{color: #F05327; font-weight: bold; border-bottom: dashed 2px #f05327}
+        .sortby li:hover a{font-weight: normal}
+        .card-list{
         background-image: url(../images/ROSS.png);
         background-position: center center;
         background-repeat:  no-repeat; 
@@ -5340,7 +5347,7 @@ margin-left: 0px;
     .card-list .btn{border-radius: 20px; background:#F05327; padding:3px 15px; border:0; font-size: 1rem}
     .cardlist-details a{color:#FC9B04; font-size: 16px; font-weight: normal}
     .cardlist-details h5{font-size:1.3rem; font-weight: normal; margin-bottom: 0}
-    .card-buttons button{float:left; width:100%; color:#fc9b04; font-weight: normal; border: 2px solid #FC9B04; box-sizing: border-box; margin-top:0; padding:5px 0;}
+    .card-buttons button{float:left; width:100%; color:#fc9b04; font-weight: normal; border: 2px solid #FC9B04; box-sizing: border-box; margin-top:0; padding:8px 0;}
     .card-buttons button:hover{border-color:#fff; color:#fff;}
     .card-buttons .col-sm-6:nth-child(3n) button{background: #F05327; font-weight: bold; border: 2px solid #F05327; box-sizing: border-box; color:#000}
     .card-buttons .col-sm-6:nth-child(4n) button{background: #FC9B04; font-weight: bold; border: 2px solid #FC9B04; box-sizing: border-box; color:#000}
