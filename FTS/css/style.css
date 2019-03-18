@@ -5361,7 +5361,7 @@ margin-left: 0px;
     .paging li.page-item.active  a.page-link{border: 2px solid #FC9B04;}
     .grey-bg{background:#E5E5E5}
     h1.page-heading{font-size: 48px}
-
+    .card-listfooter{font-weight:normal;}
     @media (max-width: 767px){
         .sortby li{ margin-right:10px;}
         .card-buttons button{margin-bottom:10px;}
@@ -5380,5 +5380,14 @@ margin-left: 0px;
         .cardlist-details img{margin-right:.5rem !important;}
         .cardlist-details h5{font-size: 1rem}
         .cardlist-details .media{margin-bottom: 10px !important;}
-        .card-listfooter{font-size: 16px !important}
+        .card-listfooter{font-size: 16px !important;}
+        .card-list .starrating{float: left !important;}
     }
+    @media (max-width:400px){
+        .card-buttons{padding-right:0 !important}
+        .card-buttons button{font-size: 13px;}
+        .card-buttons .col-6{padding-left:0}
+    }
+    
+
+    
