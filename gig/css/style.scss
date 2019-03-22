@@ -1,0 +1,1115 @@
+/* Scss Document */
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+/*font-family: 'Open Sans', sans-serif;
+ font-family: 'freightsans_bold';
+ font-family: 'freightsans_book';
+font-family: 'freightsans_black';
+font-family: 'freightsans_light';
+font-family: 'freightsans_medium';
+
+*/
+
+$color-white: #fff;
+$color-black: #312C32;
+$color-blue: #101257;
+
+$bg-white: #fff;
+$bg-black: #312C32;
+$footer-bg:#D4D0CB;
+$bg-blue: #101257;
+a{
+	text-decoration: none;
+	&:hover{
+	text-decoration: none;	
+	}
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400
+}
+header{
+	float: left;
+	height: 100%;
+	width: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cecac4+0,ffffff+100 */
+background: rgb(206,202,196); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(206,202,196,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(206,202,196,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(206,202,196,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecac4', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+/*
+	background-image: url("../images/header-bg-gradient@2x.png");
+	background-attachment: fixed;
+	background-position: right top;
+	background-size: cover;
+	object-fit: cover;*/
+ .shell{
+	    background: url(../images/VI_navy.png) left 160% no-repeat;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -540px;
+    height: 980px;
+    width: 960px;
+    background-size: 100%;
+} 
+	
+	/*------ nav css here --*/
+	nav{
+		ul{
+			margin:0;
+			float: right;
+			li{
+				list-style: none;
+				a{
+					color: $color-white;
+					text-transform: uppercase;
+					font-weight: 500;
+					letter-spacing: 2px;
+					font-family: 'freightsans_bold';
+					font-size: 18px;
+					padding: 5px 1.2rem !important;
+				}
+				&:hover a{
+					color: $color-white;
+					text-decoration: overline;
+				}
+			}
+		}
+	}
+	/*--------- nav css finsih ---------*/
+	.header-heading{
+		padding-top: 15rem;
+		h2{
+			font-size: 4rem;
+			font-weight:400;
+			position: absolute; 
+			left: 0;
+			top: 20px;
+   font-family: 'freightsans_bold';
+		}
+		h4{
+			font-size: 1.4rem;
+			position: absolute; 
+			left: 0;
+			font-family: 'freightsans_bold';
+			top: 138px;
+		}
+	}
+}
+
+/*---------- header close ------------*/
+.section{
+	padding: 0;
+	position: relative;
+	.section-caption{
+/*		margin-top: 15rem;*/
+		h2{
+			color: $color-blue;
+			font-size: 1.5rem;
+			span{
+			  font-family: 'freightsans_light';				
+			}
+		}
+		p{
+			font-size: 1.2rem;
+			color: $color-black;
+			font-weight: 400;
+		}
+		.sub-title{
+			 color: $color-blue;
+			 font-size: 18px;
+			 font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+			
+			big{
+				text-transform: uppercase;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+/*----------- section css finsih ----------*/
+.section-btn{
+	border-radius: 30px;
+	color: $color-blue;
+	padding:8px 20px;
+	border:solid 3px $color-blue;
+	font-size: 16px; 
+	font-weight: normal;
+	&:hover{
+		background: $bg-blue;
+		color:$color-white;	
+	/*	font-weight: bold;*/
+	}
+	&:first-child{
+		margin-right:25px !important;
+	}
+}
+
+/*------------ section btn links css finsih --*/
+.motor-insurance{
+	padding:21.5rem 0;
+	img{
+		position: absolute;
+		left: 16%;
+		top: 0;
+		height: 100%;
+	} 
+	&:after {
+		content: "";
+		background:  url("../images/motor-insurance-bg@2x.png") left  top no-repeat; 
+/*		background-attachment: fixed; */
+		background-size: 100%;
+   		top: 0;
+  		left: 0;
+  		bottom: 0;
+  		right: 0;
+  		position: absolute;
+  		z-index: -1;   
+ 	}
+} 
+/*--------- motor insurance finish --  -------*/
+ 
+/*--------- travel plane animation finish ------------*/
+.travel-insurance{
+	padding:30rem 0;
+	  
+	&:after {
+  content: "";
+		background:url(../images/travel-insurance@2x.png) right top no-repeat;
+		top: 0;
+  		left: 0;
+		bottom: 0;
+  		right: 0;
+  		position: absolute;
+  		z-index: -1; 
+  		background-size: 100%;
+ }
+	.section-caption{
+		h2, p{
+			color:$color-blue;
+		}
+		.section-btn{
+			color:$color-blue;
+			border-color:$color-blue;
+			font-weight: normal !important;
+			&:hover{
+				border-color:$color-blue;
+				color:$color-white;
+				background:$bg-blue;
+				font-weight: bold !important;
+			}
+		}
+	}
+}
+
+/*----------- travel insurance finsih -------*/
+.individual{
+	padding:10em 0;
+	background: url("../images/indivual-bg@2x.png") left center no-repeat;
+	height:auto;
+/* background-attachment: fixed;  */
+	background-size: 100% !important;
+	h1{ 
+		color:$color-white;
+ font-family: 'freightsans_bold';
+		font-size: 2.8rem;
+	}
+	p{
+		color:$color-white;
+		font-size: 1.5rem;
+	}
+	.section-btn{
+		color:$color-white;
+		border-color:$color-white;
+		font-weight: normal;
+		&:hover{
+		border-color:$color-blue;
+		font-weight: bold;
+		}
+	}
+}
+/*----------- individual css finish -- */
+.business{
+	background:url("../images/business-bg@2x.png") right top no-repeat;
+/*	background-attachment: fixed;*/
+}
+
+/*----------- business insurance finsih -----------*/
+
+.marine-insurance{
+	overflow: hidden; 
+	padding:23rem 0;
+	 
+	&:after {
+		content: "";
+		background:  url(../images/marine-background@2x.png) left top no-repeat;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;   
+		background-size:100%;  
+ }
+	 
+	.section-caption{ 
+		h2{ 
+			width: 100%;
+			color:$color-blue;
+		}
+		p{
+			 
+			width: 100%;
+			color:#555;
+		}
+		.sub-title{
+			 
+			width:100%;
+			.section-btn{
+				color:$color-blue;
+				border-color:$color-blue;
+				font-weight: normal;
+				&:hover{
+					color:$color-white;
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}  
+footer{
+	background: $bg-white;
+	padding:20px 0;
+	float: left;
+	width: 100%;
+	.first-row{
+		border-bottom: 2px solid #2A2C30;
+	ul{
+		list-style: none;
+		padding:0;
+		li{
+			display: inline-block;
+			a{
+				color:$color-blue;
+				font-size: 16px;
+				text-transform: uppercase;
+				padding:0 10px;
+				font-family: 'freightsans_medium';
+				&:hover{
+					color:$color-white;
+					opacity: .7;
+				}
+			}
+		}
+	}
+}
+	
+	.copyright{
+		text-align: center;
+		padding: 13px 0;
+		color: #7E8085;
+		font-size: 16px;
+		padding-bottom: 0 !important;
+	}
+	}
+ 
+#myVideo, #marine-video {
+     position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    
+    object-position: center;
+    width: 100%;
+}
+	.video-overlay{
+	background: -moz-linear-gradient(top, rgba(0,43,82,0.42) 0%, rgba(0,48,87,0.42) 3%, rgba(0,58,100,0.42) 10%, rgba(0,61,102,0.42) 11%, rgba(0,63,104,0.42) 14%, rgba(0,66,108,0.42) 15%, rgba(0,78,123,0.42) 24%, rgba(0,82,126,0.42) 25%, rgba(0,87,134,0.42) 29%, rgba(0,92,139,0.42) 32%, rgba(0,92,139,0.42) 33%, rgba(0,95,145,0.42) 35%, rgba(0,98,145,0.42) 36%, rgba(0,98,148,0.42) 37%, rgba(0,108,158,0.42) 43%, rgba(0,109,162,0.42) 44%, rgba(0,116,169,0.42) 50%, rgba(0,119,172,0.42) 51%, rgba(0,125,179,0.42) 54%, rgba(0,133,189,0.41) 60%, rgba(0,135,191,0.41) 62%, rgba(0,135,191,0.41) 63%, rgba(0,139,196,0.41) 64%, rgba(0,144,203,0.41) 69%, rgba(0,147,203,0.41) 70%, rgba(0,147,206,0.41) 71%, rgba(0,149,209,0.41) 72%, rgba(0,149,209,0.41) 73%, rgba(0,154,213,0.41) 74%, rgba(0,161,224,0.4) 81%, rgba(0,164,226,0.4) 82%, rgba(0,168,231,0.4) 83%, rgba(0,171,234,0.4) 85%, rgba(0,181,247,0.39) 93%, rgba(0,183,250,0.39) 94%, rgba(0,186,252,0.39) 97%, rgba(0,189,255,0.39) 98%, rgba(0,189,255,0.38) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,43,82,0.42) 0%,rgba(0,48,87,0.42) 3%,rgba(0,58,100,0.42) 10%,rgba(0,61,102,0.42) 11%,rgba(0,63,104,0.42) 14%,rgba(0,66,108,0.42) 15%,rgba(0,78,123,0.42) 24%,rgba(0,82,126,0.42) 25%,rgba(0,87,134,0.42) 29%,rgba(0,92,139,0.42) 32%,rgba(0,92,139,0.42) 33%,rgba(0,95,145,0.42) 35%,rgba(0,98,145,0.42) 36%,rgba(0,98,148,0.42) 37%,rgba(0,108,158,0.42) 43%,rgba(0,109,162,0.42) 44%,rgba(0,116,169,0.42) 50%,rgba(0,119,172,0.42) 51%,rgba(0,125,179,0.42) 54%,rgba(0,133,189,0.41) 60%,rgba(0,135,191,0.41) 62%,rgba(0,135,191,0.41) 63%,rgba(0,139,196,0.41) 64%,rgba(0,144,203,0.41) 69%,rgba(0,147,203,0.41) 70%,rgba(0,147,206,0.41) 71%,rgba(0,149,209,0.41) 72%,rgba(0,149,209,0.41) 73%,rgba(0,154,213,0.41) 74%,rgba(0,161,224,0.4) 81%,rgba(0,164,226,0.4) 82%,rgba(0,168,231,0.4) 83%,rgba(0,171,234,0.4) 85%,rgba(0,181,247,0.39) 93%,rgba(0,183,250,0.39) 94%,rgba(0,186,252,0.39) 97%,rgba(0,189,255,0.39) 98%,rgba(0,189,255,0.38) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,43,82,0.42) 0%,rgba(0,48,87,0.42) 3%,rgba(0,58,100,0.42) 10%,rgba(0,61,102,0.42) 11%,rgba(0,63,104,0.42) 14%,rgba(0,66,108,0.42) 15%,rgba(0,78,123,0.42) 24%,rgba(0,82,126,0.42) 25%,rgba(0,87,134,0.42) 29%,rgba(0,92,139,0.42) 32%,rgba(0,92,139,0.42) 33%,rgba(0,95,145,0.42) 35%,rgba(0,98,145,0.42) 36%,rgba(0,98,148,0.42) 37%,rgba(0,108,158,0.42) 43%,rgba(0,109,162,0.42) 44%,rgba(0,116,169,0.42) 50%,rgba(0,119,172,0.42) 51%,rgba(0,125,179,0.42) 54%,rgba(0,133,189,0.41) 60%,rgba(0,135,191,0.41) 62%,rgba(0,135,191,0.41) 63%,rgba(0,139,196,0.41) 64%,rgba(0,144,203,0.41) 69%,rgba(0,147,203,0.41) 70%,rgba(0,147,206,0.41) 71%,rgba(0,149,209,0.41) 72%,rgba(0,149,209,0.41) 73%,rgba(0,154,213,0.41) 74%,rgba(0,161,224,0.4) 81%,rgba(0,164,226,0.4) 82%,rgba(0,168,231,0.4) 83%,rgba(0,171,234,0.4) 85%,rgba(0,181,247,0.39) 93%,rgba(0,183,250,0.39) 94%,rgba(0,186,252,0.39) 97%,rgba(0,189,255,0.39) 98%,rgba(0,189,255,0.38) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b002b52', endColorstr='#6100bdff',GradientType=0 ); /* IE6-9 */
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1000;
+		height: 100%;
+		width: 100%;
+	}
+
+
+	.mouse-pointer img{
+		width: 300px;
+		margin-left: -67px;
+	}
+	#boat_animation_container, canvas{
+		background:transparent !important;
+	}
+	.section-caption .sub-title .section-btn:last-child{
+		font-weight: bold !important;
+	}
+	
+	
+	
+ @media (min-width:80px) and (max-width:900px){
+		 
+		header {
+			.header-heading{
+				h4{
+					top:10rem;
+				}
+				br{
+					display: none
+				}
+				.mouse-pointer {
+					margin-top: 3rem;
+				}
+				h2{
+					font-size: 1.6rem;
+					top:3rem;
+    margin-top: 0 !important;
+				}
+			}
+			.shell{
+			 width: 96%;
+    left: 4%;
+    margin-left: 0;
+    background-position: top center;
+    background-size: 79%;
+    height: 100%;
+		 }	
+		} 
+ }
+ @media (min-width:80px) and (max-width:767px){ 
+	 video, .plane-path{
+		 display: none !important;
+		}
+		.marine-insurance{
+			&:after{
+			 background-size: cover	
+			}
+			.sub-title{
+				top: 150px;
+			}
+		}
+	}
+
+@media (min-width:80px) and (max-width:900px){
+	.motor-insurance{
+		padding:5rem 0;
+	} 
+	.section{
+		text-align:center;
+	}
+	.travel-insurance, .marine-insurance{
+		padding: 4rem 0 15rem 0
+	}
+	.marine-insurance {
+		.sub-title{
+			margin-top: 0 !important;
+		}
+	}
+}
+@media (min-width:80px) and (max-width:500px){
+	.section{
+		text-align:center;
+		.section-btn {
+			margin-bottom: 15px;
+			text-align: center;
+		}
+	}
+}
+		
+@media (min-width:901px) and (max-width:1199px){
+	.travel-insurance, .marine-insurance{
+		padding: 12rem 0 20rem 0
+	}
+}
+
+@media (min-width:80px) and (max-width:767px){
+	.col.individual{
+		width:100%;
+		padding:5rem 0;
+		text-align: center;
+		.section-btn{
+			display:-webkit-inline-box;
+		}
+	}
+}
+@media (min-width:1201px) and (max-width:1499px){
+	 
+	.travel-insurance{
+		padding: 22rem 0 26rem 0;
+	}
+	.marine-insurance{
+		padding: 12rem 0 20rem 0;
+	}
+	header nav.navbar ul:first-child{
+		margin-left: 27% !important;
+	}
+	header nav.navbar ul:last-child{
+		margin-left: 16% !important;
+	}
+}
+@media (min-width:80px) and (max-width:800px){
+	.marine-insurance{
+		.section-caption{
+			h2{
+				position: relative !important;
+			}
+			p{
+				position: relative !important;
+			}
+			.sub-title{
+				position: relative !important;
+			}
+		}
+	}
+
+	.marine-insurance.section .section-caption .sub-title{
+		margin-top: 50px !important; 
+		top: auto !important
+	}
+	.individual{
+		padding: 9em 0;
+	}
+}
+
+@media (min-width:80px) and (max-width:1024px){
+	footer{ 
+		position: relative;
+	}	
+	.travel-insurance{
+		padding-bottom: 5rem;
+	}
+	.section .section-caption .sub-title{
+		float: left;
+		width: 100%;
+		margin-top: 0 !important;
+	}
+}
+@media (min-width:80px) and (max-width:350px){
+	.section .section-btn:first-child{
+		margin-right: 5px !important
+	}
+}
+@media (min-width:80px) and (max-width:330px){
+	.section .section-btn{
+		width: 100% !important; 
+		float: left;}
+	.col.individual .section-btn{
+		display:inline;
+	}
+}
+
+@media (min-width:1180px) and (max-width:1280px){
+	.travel-insurance, .motor-insurance, .marine-insurance{
+		padding:20rem 0 !important;
+	}
+
+	.individual{
+		padding: 15rem 0;
+	 
+	}
+}
+
+@media (min-width:1500px) and (max-width:3500px){
+	.section{
+		padding: 20rem 0;
+		.section-caption{
+			h2{
+				font-size: 3rem;
+				font-weight: bold;
+			}
+			p{
+				font-size: 1.6rem; 
+				line-height:1.2em;
+			}
+			.sub-title{
+				font-size: 1.7rem;
+			}
+		}
+	}
+	.section.travel-insurance{
+		padding:30rem 0 37rem 0;
+	}
+	.motor-insurance{
+		padding:23.2rem 0 30rem
+	}
+	.section.travel-insurance.marine-insurance{
+		padding:25rem 0 25rem 0;
+	}
+}
+
+@media (min-width:1281px) and (max-width:1499px){
+	.motor-insurance {
+    	padding: 15.5rem 0 21rem;
+	}
+	
+}
+
+@media (min-width:100px) and (max-width:270px){
+
+}
+
+@media (min-width:271px) and (max-width:337px){
+	header .shell {
+        height: 1000px;
+        background: url(../images/VI_navy.png) left -150px no-repeat;
+        background-size: contain;
+        width: 300px;
+        margin-left: -150px;
+        top: 0;
+		left: 50%;
+		display: none;
+    }
+    header .header-heading br{
+        display: block;
+    }
+	header .header-heading br:nth-child(n+17), 
+	header .header-heading br:nth-child(n+16), 
+	header .header-heading br:nth-child(n+15),
+	header .header-heading br:nth-child(n+13),
+	header .header-heading br:nth-child(n+12),
+	header .header-heading br:nth-child(n+11),
+	header .header-heading br:nth-child(n+10),
+	{
+        display:none;
+    }
+    header nav.navbar ul li a {
+        font-size: 11px;
+        padding:5px .8rem !important
+    }
+    header nav.navbar ul:last-child {
+        margin-left: 0% !important;
+    }
+    header nav.navbar ul:first-child {
+        margin-left: 16% !important;
+      }
+      header .header-heading {
+        padding-top: 0;
+      }
+      header .header-heading h2 {
+        top: -70px;
+		font-size: 2rem;
+		color:$color-blue !important; 
+      }
+      header .header-heading h4 {
+        top: 33px;
+		font-size: 1rem;
+		color:$color-blue !important;
+      }
+      header .header-heading .mouse-pointer {
+        margin-top: -40px;
+      }
+      .motor-insurance {
+		padding:2rem 0 !important;
+		&:after{
+			background-size: cover
+		}
+	}
+      .section.travel-insurance {
+		padding: 4rem 0 8rem 0 !important;
+		&:after{
+			background-size: cover
+		}
+      }
+      .individual {
+        background-size: cover !important;
+        padding: 5rem 0 !important;
+      }
+      .section.travel-insurance.marine-insurance {
+        padding: 3rem 0 6rem 0 !important;
+      }
+      .mouse-pointer img {
+        width: 160px;
+        margin-left: -27px;
+      }
+}
+
+@media (min-width:338px) and (max-width:450px){
+	header .shell {
+        height: 1000px;
+        background: url(../images/VI_navy.png) left -150px no-repeat;
+        background-size: contain;
+        width: 300px;
+        margin-left: -150px;
+        top: 0;
+		left: 50%;
+		display: none;
+    }
+    header .header-heading br{
+        display: block;
+    }
+	header .header-heading br:nth-child(n+17), 
+	header .header-heading br:nth-child(n+16), 
+	header .header-heading br:nth-child(n+15),
+	header .header-heading br:nth-child(n+13),
+	header .header-heading br:nth-child(n+12),
+	header .header-heading br:nth-child(n+11),
+	header .header-heading br:nth-child(n+10),
+	{
+        display:none;
+    }
+    header nav.navbar ul li a {
+        font-size: 11px;
+        padding:5px .8rem !important
+    }
+    header nav.navbar ul:last-child {
+        margin-left: 0% !important;
+    }
+    header nav.navbar ul:first-child {
+        margin-left: 16% !important;
+      }
+      header .header-heading {
+        padding-top: 0;
+      }
+      header .header-heading h2 {
+        top: -70px;
+        font-size: 3rem;
+      }
+      header .header-heading h4 {
+        top: 33px;
+        font-size: 1rem;
+      }
+      header .header-heading .mouse-pointer {
+        margin-top: -40px;
+      }
+      .motor-insurance {
+		padding:2rem 0 !important;
+		&:after{
+			background-size: cover
+		}
+	}
+      .section.travel-insurance {
+		padding: 4rem 0 8rem 0 !important;
+		&:after{
+			background-size: cover
+		}
+      }
+      .individual {
+        background-size: cover !important;
+        padding: 5rem 0 !important;
+      }
+      .section.travel-insurance.marine-insurance {
+        padding: 3rem 0 6rem 0 !important;
+      }
+      .mouse-pointer img {
+        width: 160px;
+        margin-left: -27px;
+      }
+}
+
+@media (min-width:451px) and (max-width:540px){
+	header .shell {
+        height: 1000px;
+        background: url(../images/VI_navy.png) left -150px no-repeat;
+        background-size: contain;
+        width: 480px;
+        margin-left: -240px;
+        top: 0;
+        left: 50%;
+    }
+    header .header-heading br{
+        display: block;
+    }
+    header .header-heading br:nth-child(n+17), header .header-heading br:nth-child(n+16), header .header-heading br:nth-child(n+15){
+        display:none;
+    }
+    header nav.navbar ul li a {
+        font-size: 11px;
+        padding:5px .8rem !important
+    }
+    header nav.navbar ul:last-child {
+        margin-left: 0% !important;
+    }
+    header nav.navbar ul:first-child {
+        margin-left: 16% !important;
+      }
+      header .header-heading {
+        padding-top: 0;
+      }
+      header .header-heading h2 {
+        top: -70px;
+        font-size: 3rem;
+      }
+      header .header-heading h4 {
+        top: 33px;
+        font-size: 1rem;
+      }
+      header .header-heading .mouse-pointer {
+        margin-top: -40px;
+      }
+      .motor-insurance {
+        padding:2rem 0 !important;
+      }
+      .section.travel-insurance {
+        padding: 4rem 0 8rem 0 !important;
+      }
+      .individual {
+        background-size: cover !important;
+        padding: 5rem 0 !important;
+      }
+      .section.travel-insurance.marine-insurance {
+        padding: 3rem 0 6rem 0 !important;
+      }
+      .mouse-pointer img {
+        width: 160px;
+        margin-left: -27px;
+      }
+}
+
+@media (min-width:541px) and (max-width:675px){
+	header .shell {
+        height: 1000px;
+        background: url(../images/VI_navy.png) left -150px no-repeat;
+        background-size: contain;
+        width: 500px;
+        margin-left: -260px;
+        top: 0;
+        left: 50%;
+    }
+    header .header-heading br{
+        display: block;
+    }
+    header .header-heading br:nth-child(n+17), header .header-heading br:nth-child(n+16), header .header-heading br:nth-child(n+15){
+        display:none;
+    }
+    header nav.navbar ul li a {
+        font-size: 11px;
+        padding:5px .8rem !important
+    }
+    header nav.navbar ul:last-child {
+        margin-left: 0% !important;
+    }
+    header nav.navbar ul:first-child {
+        margin-left: 16% !important;
+      }
+      header .header-heading {
+        padding-top: 0;
+      }
+      header .header-heading h2 {
+        top: -70px;
+        font-size: 3rem;
+      }
+      header .header-heading h4 {
+        top: 33px;
+        font-size: 1rem;
+      }
+      header .header-heading .mouse-pointer {
+        margin-top: -40px;
+      }
+      .motor-insurance {
+        padding:3rem 0 9rem 0 !important;
+      }
+      .section.travel-insurance {
+        padding: 10rem 0 8rem 0 !important;
+      }
+      .individual {
+        background-size: cover !important;
+        padding: 5rem 0 !important;
+      }
+      .section.travel-insurance.marine-insurance {
+        padding: 3rem 0 6rem 0 !important;
+      }
+      .mouse-pointer img {
+        width: 160px;
+        margin-left: -27px;
+      }
+}
+
+@media (min-width:676px) and (max-width:771px){
+	header .shell {
+        height: 1000px;
+        background: url(../images/VI_navy.png) left -150px no-repeat;
+        background-size: contain;
+        width: 500px;
+        margin-left: -260px;
+        top: 0;
+        left: 50%;
+    }
+    header .header-heading br{
+        display: block;
+    }
+    header .header-heading br:nth-child(n+17), header .header-heading br:nth-child(n+16), header .header-heading br:nth-child(n+15){
+        display:none;
+    }
+    header nav.navbar ul li a {
+        font-size: 11px;
+        padding:5px .8rem !important
+    }
+    header nav.navbar ul:last-child {
+        margin-left: 0% !important;
+    }
+    header nav.navbar ul:first-child {
+        margin-left: 16% !important;
+      }
+      header .header-heading {
+        padding-top: 0;
+      }
+      header .header-heading h2 {
+        top: -70px;
+        font-size: 3rem;
+      }
+      header .header-heading h4 {
+        top: 33px;
+        font-size: 1rem;
+      }
+      header .header-heading .mouse-pointer {
+        margin-top: -40px;
+      }
+      .motor-insurance {
+        padding: 7rem 0 9rem 0 !important;
+      }
+      .section.travel-insurance {
+        padding: 13rem 0 11rem 0 !important;
+      }
+      .individual {
+        background-size: cover !important;
+        padding: 5rem 0 !important;
+      }
+      .section.travel-insurance.marine-insurance {
+        padding: 3rem 0 6rem 0 !important;
+      }
+      .mouse-pointer img {
+        width: 160px;
+        margin-left: -27px;
+      }
+}
+
+@media (min-width:772px) and (max-width:899px){
+	header .shell {
+        height: 1000px;
+        background: url(../images/VI_navy.png) left -150px no-repeat;
+        background-size: contain;
+        width: 500px;
+        margin-left: -260px;
+        top: 0;
+        left: 50%;
+    }
+    header .header-heading br{
+        display: block;
+    }
+    header .header-heading br:nth-child(n+17), header .header-heading br:nth-child(n+16), header .header-heading br:nth-child(n+15){
+        display:none;
+    }
+    header nav.navbar ul li a {
+        font-size: 11px;
+        padding:5px .8rem !important
+    }
+    header nav.navbar ul:last-child {
+        margin-left: 0% !important;
+    }
+    header nav.navbar ul:first-child {
+        margin-left: 16% !important;
+      }
+      header .header-heading {
+        padding-top: 0;
+      }
+      header .header-heading h2 {
+        top: -70px;
+        font-size: 3rem;
+      }
+      header .header-heading h4 {
+        top: 33px;
+        font-size: 1rem;
+      }
+      header .header-heading .mouse-pointer {
+        margin-top: -40px;
+      }
+      .motor-insurance {
+        padding: 7rem 0 9rem 0 !important;
+      }
+      .section.travel-insurance {
+        padding: 13rem 0 15rem 0 !important;
+      }
+      .individual {
+        background-size: cover !important;
+        padding: 5rem 0 !important;
+      }
+      .section.travel-insurance.marine-insurance {
+        padding: 3rem 0 6rem 0 !important;
+      }
+      .mouse-pointer img {
+        width: 160px;
+        margin-left: -27px;
+      }
+}
+
+@media (min-width:900px) and (max-width:1079px){
+	background: #101257;
+	header{
+		.shell{
+			height: 1000px;
+			background: url(../images/VI_navy.png) left -150px no-repeat;
+			background-size: contain;
+			width: 570px;
+			margin-left: -285px;
+			top: 0;
+		}
+		nav.navbar{
+			ul{
+				li{
+					a{
+						font-size: 11px;
+					}
+				}
+				&:last-child{
+					margin-left: 3% !important;
+				}
+				&:first-child{
+					margin-left: 25% !important;
+				}
+			}
+		}
+		.header-heading {
+			padding-top: 0;
+			h2{
+				top: -70px;
+				font-size: 3rem;
+			}
+			h4{
+				top: 33px;
+				font-size: 1rem;
+			}
+			.mouse-pointer {
+				margin-top: -40px;
+			}
+		}
+	}
+	.motor-insurance{
+		padding:10rem 0 15rem 0 !important;
+	}
+	.section.travel-insurance{
+		padding:17rem 0 19rem 0 !important;
+	}
+	.individual{
+		background-size: cover !important;
+		padding: 8rem 0 !important;
+	}
+	.section.travel-insurance.marine-insurance{
+		padding:10rem 0 13rem 0 !important;
+	}
+	.mouse-pointer {
+		img {
+			width: 160px;
+			margin-left: -27px;
+		}
+	}
+}
+@media (min-width:1080px) and (max-width:1226px){
+	header{
+		.shell{
+			height: 1000px;
+			background: url(../images/VI_navy.png) left -150px no-repeat;
+			background-size: contain;
+			width: 830px;
+			margin-left: -425px;
+			top: -74px;
+		}
+		nav.navbar{
+			ul{
+				&:last-child{
+					margin-left: 10% !important;
+				}
+			}
+		}
+		.header-heading {
+			h2{
+				top: -0px;
+			}
+			h4{
+				top: 118px;
+			}
+			.mouse-pointer {
+				margin-top: -40px;
+			}
+		}
+	}
+	.motor-insurance{
+		padding:10rem 0 15rem 0 !important;
+	}
+	.section.travel-insurance{
+		padding:17rem 0 19rem 0 !important;
+	}
+	.individual{
+		background-size: cover !important;
+		padding: 8rem 0 !important;
+	}
+	.section.travel-insurance.marine-insurance{
+		padding:10rem 0 13rem 0 !important;
+	}
+	.mouse-pointer {
+		img {
+			width: 189px;
+			margin-left: -37px;
+		}
+	}
+}
+
+@media (min-width:1227px) and (max-width:1349px){
+	header{
+		.shell{
+			height: 1000px;
+			background: url(../images/VI_navy.png) left -150px no-repeat;
+			background-size: contain;
+			width: 830px;
+			margin-left: -425px;
+			top: -74px;
+		}
+		nav.navbar{
+			ul{
+				&:last-child{
+					margin-left: 10% !important;
+				}
+			}
+		}
+		.header-heading {
+			h2{
+				top: -0px;
+			}
+			h4{
+				top: 118px;
+			}
+			.mouse-pointer {
+				margin-top: -40px;
+			}
+		}
+	}
+	.motor-insurance{
+		padding:16rem 0 !important
+	}
+	.section.travel-insurance{
+		padding:20rem 1px 23rem 0 !important;
+	}
+	.individual{
+		background-size: cover !important;
+		padding: 8rem 0 !important;
+	}
+	.section.travel-insurance.marine-insurance{
+		padding:15rem 0 14rem 0 !important
+	}
+}
+
+@media (min-width:1350px) and (max-width:1370px){
+	.shell{
+		height: 1000px;
+		background: url(../images/VI_navy.png) left -150px no-repeat;
+		background-size: contain;
+		width: 830px;
+		margin-left: -425px;
+		top: -74px;
+	}
+	.individual{
+		padding:4em 0;
+	}
+	.travel-insurance{
+		padding: 20rem 0 28rem 0;
+	}
+	.marine-insurance.travel-insurance{
+		padding: 15rem 0;
+	}
+}
