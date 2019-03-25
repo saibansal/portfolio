@@ -206,6 +206,15 @@ nav ul li:hover ul {
 .left-nav ul li:hover .sub1cont {
 	display: block;
 }
+.slider {
+	float: right;
+	width: 660px;
+	height: 339px;
+	background: red;
+	padding: 20px;
+	position: relative;
+	background: #f3f8fb
+}
 .slider .left-arrow {
 	width: 21px;
 	position: absolute;
@@ -221,6 +230,10 @@ nav ul li:hover ul {
 	background: url(images/right-arrow.jpg) left top no-repeat;
 	height: 121px;
 	top: 114px;
+}
+.slider .slider-content {
+	float: left;
+	width: 100%;
 }
 .slider .slider-content .content {
 	float: left;
@@ -702,94 +715,3 @@ footer.blue-footer .social a{
 	line-height: 0px;
 	height: 0px;
 }
-
-/* css changes on 31/03/2015 */
-.slider{float:right; width:700px;}
-.slider-content{float:left; width:100%; max-width:660px; height:400px; padding:20px; position:relative; background:#f3f8fb}
-.number-pagination{position:absolute; right:13px; bottom:13px;}
-.number-pagination ul{float:left; width:100%;}
-.number-pagination li{float:left; margin-left:3px;}
-.number-pagination li a{padding:5px 8px; float:left; font-size:12px; color:#fff; font-family: 'Open Sans', sans-serif; background:#18aae1}
-.number-pagination li:hover a{background:#ff6600;}
-.latest-prod{float:left; width:100%; background:#f5f5f5; border:solid 1px #d1d1d1; max-width:698px; height:175px;}
-.latest-prod ul{float:left; width:100%;}
-.latest-prod ul li{float:left; width:28.85%; border-right:1px solid #d1d1d1; padding:15px; text-align:center;}
-.latest-prod ul li:last-child{border-right:0px;}
-.latest-prod li h2{color:#18aae1; float:left; font-family:"Signika",sans-serif; font-size:19px; line-height:25px; margin-bottom: 10px; width:100%;}
-.products li .price, .latest-prod li .price{color:#7fc04c; float:left; font-family:"Signika",sans-serif; font-size:19px; font-style:normal; font-weight:400; text-transform:uppercase; width:100%; font-style:normal; margin-bottom:6px;}
-.prod-cont .heading, .top-brand .heading{float:left; width:220px; height:240px; background:#c6cccc;}
-.top-brand .heading h3{float:left; width:87%; text-align:center; font-family:'Signika', sans-serif; font-size:34px; font-weight:300; line-height:45px; color:#003f77; margin:50px 0; padding:0 15px;}
-.top-brand a{float:right; margin-right:15px; font-family:'Signika', sans-serif; font-size:14px; font-weight:400; color:#003f77;}
-.top-brand .logo-container{float:left; width:100%; max-width:718px; border-top:solid 1px #d1d1d1; border-left:solid 1px #d1d1d1;}
-.top-brand .logo-container ul{float:left; width:100%;}
-.top-brand .logo-container li{background:#fff; border-bottom:1px solid #d1d1d1; border-right:1px solid #d1d1d1; float:left; padding:7px 8px; width:30.96%;}
-.top-brand .logo-container li .image{float:left; margin-right:10px;}
-.top-brand .logo-container li h3{font-family:'Signika', sans-serif;font-size:14px; font-weight:400; color:#002358; margin-top:5px; text-align:left;}
-.top-brand .logo-container li p{font-family:'Signika', sans-serif; font-size:11px; font-weight:400; color:#b0b0b0; text-align:left;}
-.prod-cont {float:left; margin-top:30px; width:100%;}
-.prod-cont.gold .heading, .prod-cont.silver .heading, .prod-cont.orange .heading{
-	background:#e6e6e6; 
-	padding:15px; 
-	width:191px; 
-	float:left; 
-	height:auto;
-}
-.prod-cont.gold .heading em, .prod-cont.silver .heading em, .prod-cont.orange .heading em{
-	display:inline-block;
-	padding:20px 15px;
-	background:#965251;
-	color:#e6e6e6;
-	border-radius:100%;
-	font-family:'Signika', sans-serif;
-	font-size:24px;
-	font-weight:400;
-	font-style:normal;
-}
-.prod-cont.gold .heading h3, .prod-cont.silver .heading h3, .prod-cont.orange .heading h3{
-	font-family:'Oswald', sans-serif;
-	font-size:27px;
-	font-weight:300;
-	color:#002358;
-	margin:20px 0;
-	line-height:35px;
-	text-align:center;
-	color:#965251;
-}
-.prod-cont .heading ul{float:left; width:100%;}
-.prod-cont .heading ul li{float:left; width:100%;}
-.prod-cont .heading ul li a{display:block; background:url(images/images/arrow-list.png) left center no-repeat; color:#002358; padding:6px 0 6px 20px; font-family:'Signika', sans-serif; font-size:13px; font-weight:400; color:#585757; margin-left:5px;}
-.prod-cont .heading ul li:hover a{background:url(images/images/arrow-list-hover.png) left center no-repeat; color:#965251;}
-.products{float:left; width:100%; max-width:718px; border-top:solid 1px #d1d1d1; border-left:solid 1px #d1d1d1;}
-.products ul{float:left; width:100%;}
-.products ul li a{float:left;}
-.products ul li{background:#fff; border-bottom:1px solid #d1d1d1; border-right:1px solid #d1d1d1; float:left; padding:13px 11px; text-align:center; width:30.1%;}
-.products li h3{color:#18aae1; float:left; font-family:"Signika",sans-serif; font-size:16px; line-height:25px; margin-bottom:6px;width:100%; font-weight:300;}
-.products li .price{font-weight:300; font-size:16px;}
-.products li .image{float:left; width:100%; margin-top:7px;}
-.prod-cont.gold .heading {background:#e4d396;}
-.prod-cont.gold .heading em{color:#e4d396;}
-
-.prod-cont.orange .heading {background:#f69256;}
-.prod-cont.orange .heading em{color:#f69256; background:#fff;}
-.prod-cont.orange .heading h3{color:#fff;}
-.prod-cont.orange .heading li a{color:#fff; background:url(images/images/arrow-list-white.png) left center no-repeat;}
-.prod-cont.orange .heading li:hover a{color:#333; background:url(images/images/arrow-list.png) left center no-repeat;}
-
-
-/*--------- top brand slider starts ---------*/
-.ca-container{position:relative; margin:0px auto 0px auto; width:718px; height:240px;}
-.ca-wrapper{width:100%; height:100%; position:relative;}
-.ca-item{position:relative; float:left; width:100%; height:100%; text-align:center;}
-.ca-nav span{width:9px; height:13px; background:transparent url(images/arrows.png) no-repeat top left; position:absolute; top:0; margin-top:-25px; left:18px; text-indent:-9000px; opacity:0.7; cursor:pointer; z-index:100;}
-.ca-nav span.ca-nav-next{background-position:top right; left:auto; right:-40px;}
-.ca-nav span:hover{opacity:1.0;}
-.ca-nav{float:left; position:absolute; right:40px; top:0;}
-.top-brand{padding-top:20px;}
-.h240{height:240px;}
-
-/* ---- top slider starts --------*/
-.wrap{float:left; width:660px;}
-.rslides_tabs{position:absolute; right:13px; bottom:13px; }
-.rslides_tabs li{float:left; margin-left:3px;}
-.rslides_tabs li a{padding:5px 8px; float:left; font-size:12px; color:#fff; font-family: 'Open Sans', sans-serif; background:#18aae1}
-.rslides_tabs li:hover a, .rslides_tabs li.rslides_here a{background:#ff6600;}
