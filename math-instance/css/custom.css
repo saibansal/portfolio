@@ -1185,15 +1185,43 @@ button:hover{
 .top-search input{
 	float: left;
 	width:100%;
-	padding:8px 15px 8px 40px;
+	padding:10px 15px 10px 40px;
 	border:0;
 	border-radius: 5px;
 	font-style: italic;
 	font-size: 15px;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
 	background-image: url(../images/images/search-icon.png);
 	background-repeat: no-repeat;
 	background-position: 10px center;
+	height:auto;
+}
+.top-search .input-group{
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+	border-radius: 7px;
+}
+.top-search .dropdown-toggle {
+	border-left: solid 1px #f4f4f4 !important;
+	padding-left:15px;
+	 padding-right: 15px;
+	 color:#bdb9b9;
+	 vertical-align: 0.150em;
+}
+.top-search .dropdown-toggle:after{
+	 margin-left: 15px;
+}
+.top-search .search-button{
+	background-color: #EF3900 !important;
+	color:#fff;
+	padding-left:15px;
+	padding-right: 15px;
+	border-radius: 0 5px 5px 0 !important 
+}
+.top-search .search-button:hover{
+	background-color: #546CA0 !important;
+}
+.form-control:focus{
+	outline: 0;
+	box-shadow: 0 0 0!important; 
 }
 .inner-header .become-teacher {
 	padding:5px 15px;
@@ -1203,6 +1231,69 @@ button:hover{
 }
 .profile-icon a .fa{
 	margin-left: 10px;
+}
+.profile-icon ul{
+	float: left;
+	list-style: none;
+	margin-top:1rem;
+	padding:0
+}
+.profile-icon ul li{
+	float:left;
+	margin-left:5px;
+	position: relative;
+}
+.profile-icon ul li .dropdown{
+	position: absolute;
+	top:20px;
+	width:250px;
+	right:0;
+	background:#fff;
+	border-radius: 7px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	display: none;
+	right:-20px;
+}
+.profile-icon ul li:hover .dropdown{
+	display: block;
+}
+.profile-icon ul li .dropdown:after{
+	position: absolute; 
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0;
+    border-right: .6em solid transparent;
+    border-bottom: .6em solid #fff;
+    border-left: .6em solid transparent;
+    top: -8px;
+    right: 10%;
+}
+.profile-icon ul li.notification .dropdown {
+	width:330px;
+	
+}
+.profile-icon ul li .dropdown li{
+	float: left;
+	width:100%;
+	margin-left:0
+}
+.profile-icon ul li .dropdown li:first-child a{
+	border-top:0
+}
+
+.profile-icon ul li .dropdown li:last-child a{
+	border-bottom:0
+}
+.profile-icon ul li .dropdown li a{
+	float: left;
+	width:100%;
+	padding:7px 15px;
+	border-top:dashed 1px #e5e5e5;
+	border-bottom:dashed 1px #e5e5e5;
+}
+.profile-icon ul li .dropdown li:hover a{
+	text-decoration: none;
 }
 .profile-icon .profile-pic{
 	width:23px;
@@ -1286,8 +1377,25 @@ button:hover{
 	width: 100%;
 	font-size: 14px;
 }
-@media screen and (max-width: 1400px) and (min-width: 1200px) {
+#teacher-invitation .card-header{
+	background-color:transparent;
+	border:0
+}
+#teacher-invitation .card{
+	border:0
+}
+#teacher-invitation .card button{
+	color:#EF3900;
+	text-align:left;
+	background:transparent;
+	padding:0
+}
+#teacher-invitation .card ul li a{
+	color:#333
+}
+#teacher-invitation .card button
+@media screen and (max-width: 1400px) and (min-width: 768px) {
 	.content-container .container:first-child{
-		max-width:90%;
+		max-width:95%;
 	}
 }

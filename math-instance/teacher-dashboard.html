@@ -32,31 +32,61 @@
 			<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">Menu<i class="fa fa-bars ml-2"></i></button>
 				<!-- search -->
 				 <div class="col-md-6 top-search">
-					 <input type="search" placeholder="Find teachers / search by subject">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Find Student / Question" aria-label="Text input with dropdown button">
+						<div class="input-group-prepend position-relative">
+							<button class="btn dropdown-toggle bg-white border-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Level</button>
+							<button class="btn search-button bg-white border-0" type="button">Search</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+								<div role="separator" class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Separated link</a>
+							</div>
+						</div>
+						
+					</div>
 				 </div>
 				<!-- /search -->
 			  <div id="navbarSupportedContent" class="collapse navbar-collapse float-right align-content-end">
 					<a href="#"  class="become-teacher btn btn-primary navbar-btn ml-0 mr-3">Become Techer </a>
 					<div class="float-right profile-icon">
-						<!-- balance section starts -->
-						  <a href="#"><img src="images/dollar-icon.png" alt=""></a>
-						<!-- balance section finish -->
-
-						<!-- chat section starts -->
-						<a href="#"><img src="images/sms-icon.png" alt=""></a>
-						<!-- chat section finish -->
-
-						<!-- help section starts -->
-						<a href="#"><img src="images/query.png" alt=""></a>
-						<!-- help section finish -->
-
-						<!-- notification section starts -->
-						<a href="#"><img src="images/notification.png" alt=""></a>
-						<!-- notification section finish -->
-
-						<!-- profile dropdown-starts -->
-							<a href='#' class="profile-dropdown"><img src="images/profile-pic.png" class="profile-pic" alt=""> Vishal Bansal <i class="fa fa-angle-right"></i></a>
-						<!-- profile dropdown finish -->
+						<ul>
+							<li>
+								<a href="#"><img src="images/dollar-icon.png" alt=""></a>
+								<ul class="dropdown">
+										<li><a href="#">Wallet Balance : <strong>100$</strong> </a></li>
+										<li><a href="#">Pending Escrow : <strong>100$</strong> </a></li>
+										<li><a href="#">Reports </a></li>
+									</ul>
+							</li>
+							<li>
+								<a href="#"><img src="images/sms-icon.png" alt=""></a>
+								<ul class="dropdown">
+										<li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
+										<li><a href="#"><strong>Androind Developer </strong>  sent a message to you.</a></li>
+										<li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
+									</ul>
+							</li>
+							<li class="notification">
+								<a href="#"><img src="images/notification.png" alt=""></a>
+								<ul class="dropdown p-3">
+									<li><div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div></li>
+									<li><div class="alert alert-primary" role="alert">A simple primary alert—check it out! </div></li>
+									<li><div class="alert alert-primary" role="alert"> A simple primary alert—check it out! </div></li>
+									<li><div class="alert alert-primary" role="alert">A simple primary alert—check it out! </div></li> 
+								</ul>
+							</li>
+							<li>
+								<a href='#' class="profile-dropdown"><img src="images/profile-pic.png" class="profile-pic" alt=""> Vishal Bansal <i class="fa fa-angle-right"></i></a>
+								<ul class="dropdown">
+										<li><a href="#">Vishal Bansal ( Teacher )</a></li>
+										<li><a href="#">Edit Profile</a></li>
+										<li><a href="#">Logout</a></li>
+									</ul>
+							</li>
+						</ul>  
 					</div>
 			  </div>
         </div>
@@ -69,48 +99,58 @@
 					<div class="row">
 						<!-- left section starts -->
 						 <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 student-left pl-0">
-								<div calendar class="calendar" id="calendar"></div>
-							 <ul>
-								<li class="active"> 
-								 <a href="#"><span><img src="images/icon-1.png" alt=""></span> All Subjects</a>
-								</li>
-								<li>
-									<a href="#"><span><img src="images/icon-2.png" alt=""></span> Hindi</a>
-								</li>
-
-								<li>
-									<a href="#"><span><img src="images/icon-3.png" alt=""></span> Maths</a>
-								</li>
-								<li>
-									<a href="#"><span><img src="images/icon-4.png" alt=""></span>History</a>
-								</li>
-								<li>
-									<a href="#"><span><img src="images/icon-5.png" alt=""></span> English</a>
-								</li>
-								<li>
-									<a href="#"><span><img src="images/icon-6.png" alt=""></span>Geography</a>
-								</li>
-								<li>
-									<a href="#"><span><img src="images/icon-7.png" alt=""></span>Biology</a>
-								</li>
-								<li>
-									<a href="#"><span><img src="images/icon-8.png" alt=""></span>Chemistry</a>
-								</li>
-								<li>
-									<a href="#"><span><img src="images/icon-9.png" alt=""></span>Social Science</a>
-								</li>
-								<li>
-									<a href="#"><span><img src="images/icon-10.png" alt=""></span>Environmental</a>
-								</li>
-								<li>
-									<a href="#"><span><img src="images/icon-11.png" alt=""></span>Computer Science</a>
-								</li>
-								<li>
-									<a href="#"><span><img src="images/icon-12.png" alt=""></span>India Languages</a>
-								</li>
+							<!-- calender section starst -->
+							<div calendar class="calendar" id="calendar"></div>
+							<!-- calender section finish -->
+							<!-- collapsible pannel starts -->
+							<div class="accordion" id="teacher-invitation">
+									<div class="card">
+										<div class="card-header" id="headingOne">
+											<h2 class="mb-0">
+													<button class="collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+															<img src="images/invitation-list.png" class="mr-2" alt=""> My Question
+													</button>
+											 
+											</h2>
+										</div>
 								
-
-							 </ul>
+										<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#teacher-invitation">
+											<div class="card-body">
+													<ul class="ml-4">
+															<li class="active"> 
+															 <a href="#"><span><i class="fa fa-check"></i></span> Sent</a>
+															</li>
+															<li>
+																	<a href="#"><span><i class="fa fa-check"></i></span> Recievies</a>
+															</li> 
+													</ul>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-header" id="headingTwo">
+											<h2 class="mb-0">
+													<button class="text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
+															<img src="images/my-question.png" class="mr-2" alt=""> Invitation List
+													</button>
+											</h2>
+										</div>
+										<div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#teacher-invitation">
+											<div class="card-body">
+													<ul class="ml-4">
+															<li class="active"> 
+															 <a href="#"><span><i class="fa fa-check"></i></span> Answered</a>
+															</li>
+															<li>
+																	<a href="#"><span><i class="fa fa-check"></i></span> Answering</a>
+															</li> 
+													</ul>
+											</div>
+										</div>
+									</div>
+						 
+								</div>
+							<!-- collapsible pannel finish --> 
 						 </div>
 						<!-- left section fisnih -->
 
