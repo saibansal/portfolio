@@ -26,41 +26,71 @@
   <body>
     <!-- navbar-->
     <header class="header inner-header">
+			<div class="row">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid"><a href="./" class="navbar-brand">
 			<img src="images/logo.svg" alt="" class="img-fluid"></a>
-			<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">Menu<i class="fa fa-bars ml-2"></i></button>
+		
 				<!-- search -->
-				 <div class="col-md-6 top-search">
+				 <div class="col-md-5 top-search">
 					 <input type="search" placeholder="Find teachers / search by subject">
 				 </div>
 				<!-- /search -->
-			  <div id="navbarSupportedContent" class="collapse navbar-collapse float-right align-content-end">
-					<a href="#"  class="become-teacher btn btn-primary navbar-btn ml-0 mr-3">Become Techer </a>
-					<div class="float-right profile-icon">
-						<!-- balance section starts -->
-						  <a href="#"><img src="images/dollar-icon.png" alt=""></a>
-						<!-- balance section finish -->
-
-						<!-- chat section starts -->
-						<a href="#"><img src="images/sms-icon.png" alt=""></a>
-						<!-- chat section finish -->
-
-						<!-- help section starts -->
-						<a href="#"><img src="images/query.png" alt=""></a>
-						<!-- help section finish -->
-
-						<!-- notification section starts -->
-						<a href="#"><img src="images/notification.png" alt=""></a>
-						<!-- notification section finish -->
-
-						<!-- profile dropdown-starts -->
-							<a href='#' class="profile-dropdown"><img src="images/profile-pic.png" class="profile-pic" alt=""> Vishal Bansal <i class="fa fa-angle-right"></i></a>
-						<!-- profile dropdown finish -->
+			  <div id="navbarSupportedContent" class="collapse navbar-collapse float-right align-content-end col-md-6">
+					<a href="#"  class="become-teacher btn btn-primary navbar-btn ml-0 mr-3">Become a Teacher </a>
+					<div class="float-right profile-icon col-md-8">
+						<ul>
+							<li>
+								<a href="#"><i class="fa fa-dollar"></i></a>
+								<ul class="dropdown">
+										<li><a href="#">Wallet Balance : <strong>100$</strong> </a></li>
+										<li><a href="#">Pending Escrow : <strong>100$</strong> </a></li>
+										<li><a href="#">Reports </a></li>
+									</ul>
+							</li>
+							<li class="messages">
+								<a href="#"><img src="images/message-icon.png"> <span class="message-count">5</span></a>
+								<ul class="dropdown">
+										<li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
+										<li><a href="#"><strong>Androind Developer </strong>  sent a message to you.</a></li>
+										<li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
+										<li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
+										<li><a href="#"><strong>Androind Developer </strong>  sent a message to you.</a></li>
+										<li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
+									</ul>
+							</li>
+							<li class="notification">
+								<a href="#"><i class="fa fa-bell-o"></i> <span class="message-count">5</span></a>
+								<ul class="dropdown p-3">
+									<li><a href="#">A simple primary alert—check it out!</a></li>
+									<li><a href="#">A simple primary alert—check it out!</a></li>
+									<li><a href="#">A simple primary alert—check it out!</a></li>
+									<li><a href="#">A simple primary alert—check it out!</a></li>
+									<li><a href="#">A simple primary alert—check it out!</a></li>
+									<li><a href="#">A simple primary alert—check it out!</a></li>
+									<li><a href="#">A simple primary alert—check it out!</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href='#' class="profile-dropdown">
+									<i class="fa fa-user-circle mr-2"></i> Vishal <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									 <li class="active online-support text-center"><a href="#">Online</a></li>
+									 <li class="online-support text-center"><a href="#">Offline</a></li>
+										<li><a href="#">Vishal Bansal ( Teacher )</a></li>
+										<li><a href="student-profile-edit.html">Edit Profile</a></li>
+										<li><a href="#">Logout</a></li>
+									</ul>
+							</li>
+						</ul>  
 					</div>
-			  </div>
+				</div>
+				
+				<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">Menu<i class="fa fa-bars ml-2"></i></button>
+				
         </div>
-      </nav>
+			</nav>
+			</div>
     </header>
     
 		<!-- content container starts -->
@@ -71,7 +101,7 @@
 						 <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2 student-left pl-0">
 							 <ul>
 								<li class="active"> 
-								 <a href="#"><span><img src="images/icon-1.png" alt=""></span> All Subjects</a>
+								 <a href="#"><span><img src="images/icon-1.png" alt=""></span> All Topics</a>
 								</li>
 								<li>
 									<a href="#"><span><img src="images/icon-2.png" alt=""></span> Hindi</a>
@@ -162,7 +192,7 @@
 												<input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
 												<label class="custom-control-label" for="customRadioInline3">Unanswered</label>
 											</div>
-											<button class="float-right text-uppercase"><i class="fa fa-sliders"></i> Filters</button>
+											<!-- <button class="float-right text-uppercase"><i class="fa fa-sliders"></i> Filters</button>-->
 									</div>
 								<!-- filters and radio utton section finsih -->
 
@@ -171,69 +201,73 @@
 										<!-- listing first starts -->
 										 <div class="w-100 question-listing p-3 mb-3">
 											<div class="media">
-												<img src="images/teacher.png"  class="mr-3 question-image" alt="...">
 												<div class="media-body">
-													<h5 class="mt-0">Maths . 5 pts . 17 minutes ago</h5>
+													<a href="#">
+													<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
 													When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-													<div class="w-100 mt-1 float-left align-content-end">
-														<button class="float-right">Click to Answer</button>
-													</div>
+												</a>
+												<!--	<div class="w-100 mt-1 float-left align-content-end">
+														 <button class="float-right">Click to Answer</button> 
+													</div>-->
 												</div>
 											</div>
 										 </div>
 
 										 <div class="w-100 question-listing p-3 mb-3">
-											<div class="media">
-												<img src="images/teacher.png"  class="mr-3 question-image" alt="...">
-												<div class="media-body">
-													<h5 class="mt-0">Maths . 5 pts . 17 minutes ago</h5>
-													When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-													<div class="w-100 mt-1 float-left align-content-end">
-														<button class="float-right">Click to Answer</button>
+												<div class="media">
+													<div class="media-body">
+														<a href="#">
+														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
+														When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+													</a>
+													<!--	<div class="w-100 mt-1 float-left align-content-end">
+															 <button class="float-right">Click to Answer</button> 
+														</div>-->
 													</div>
 												</div>
-											</div>
-										 </div>
+											 </div>
 
-										 <div class="w-100 question-listing p-3 mb-3">
-											<div class="media">
-												<img src="images/teacher.png"  class="mr-3 question-image" alt="...">
-												<div class="media-body">
-													<h5 class="mt-0">Maths . 5 pts . 17 minutes ago</h5>
-													When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-													<div class="w-100 mt-1 float-left align-content-end">
-														<button class="float-right">Click to Answer</button>
+											 <div class="w-100 question-listing p-3 mb-3">
+													<div class="media">
+														<div class="media-body">
+															<a href="#">
+															<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
+															When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+														</a>
+														<!--	<div class="w-100 mt-1 float-left align-content-end">
+																 <button class="float-right">Click to Answer</button> 
+															</div>-->
+														</div>
 													</div>
-												</div>
-											</div>
-										 </div>
+												 </div>
 
-										 <div class="w-100 question-listing p-3 mb-3">
-											<div class="media">
-												<img src="images/teacher.png"  class="mr-3 question-image" alt="...">
-												<div class="media-body">
-													<h5 class="mt-0">Maths . 5 pts . 17 minutes ago</h5>
-													When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-													<div class="w-100 mt-1 float-left align-content-end">
-														<button class="float-right">Click to Answer</button>
-													</div>
-												</div>
-											</div>
-										 </div>
+												 <div class="w-100 question-listing p-3 mb-3">
+														<div class="media">
+															<div class="media-body">
+																<a href="#">
+																<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
+																When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+															</a>
+															<!--	<div class="w-100 mt-1 float-left align-content-end">
+																	 <button class="float-right">Click to Answer</button> 
+																</div>-->
+															</div>
+														</div>
+													 </div>
 
-										 <div class="w-100 question-listing p-3 mb-3">
-											<div class="media">
-												<img src="images/teacher.png"  class="mr-3 question-image" alt="...">
-												<div class="media-body">
-													<h5 class="mt-0">Maths . 5 pts . 17 minutes ago</h5>
-													When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-													<div class="w-100 mt-1 float-left align-content-end">
-														<button class="float-right">Click to Answer</button>
-													</div>
-												</div>
-											</div>
-										 </div>
-										  
+													 <div class="w-100 question-listing p-3 mb-3">
+															<div class="media">
+																<div class="media-body">
+																	<a href="#">
+																	<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
+																	When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+																</a>
+																<!--	<div class="w-100 mt-1 float-left align-content-end">
+																		 <button class="float-right">Click to Answer</button> 
+																	</div>-->
+																</div>
+															</div>
+														 </div> 
 										<!-- listing first finish -->
 									</div>
 								<!-- question listing finish-->

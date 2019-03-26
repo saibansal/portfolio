@@ -1,3 +1,6 @@
+a:hover{
+	text-decoration: none;
+}
 .search-top-hide{display: none;}
 .scrollUp.active .search-top-hide{
 	display: inline-block;
@@ -23,9 +26,13 @@
 	text-align: center;
 	color: #fff;
 }
-.math-symbol-area ul li{max-width: 120px !important;text-align: center;}
-.math-symbol-area .flex-direction-nav, .math-symbol-area .flex-control-nav{display: none !important;}
-
+.math-symbol-area ul li{
+	max-width: 120px !important;
+	text-align: center;
+}
+.math-symbol-area .flex-direction-nav, .math-symbol-area .flex-control-nav{
+	display: none !important;
+}
 /** how it wotk **/
 .howItWork{
 	padding: 4.0625rem 0px;
@@ -1233,7 +1240,7 @@ button:hover{
 	margin-left: 10px;
 }
 .profile-icon ul{
-	float: left;
+	float:right;
 	list-style: none;
 	margin-top:1rem;
 	padding:0
@@ -1245,14 +1252,23 @@ button:hover{
 }
 .profile-icon ul li .dropdown{
 	position: absolute;
-	top:20px;
-	width:250px;
+	top:9px;
+	width:280px;
 	right:0;
 	background:#fff;
 	border-radius: 7px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.25);
 	display: none;
 	right:-20px;
+	max-height: 500px;
+	/* overflow-y: scroll; */
+}
+.profile-icon ul li .fa{
+	color:rgba(0,0,0,0.5);
+	font-weight: 600;
+	margin-left:0;
+	/* margin-top:8px; */
+	font-size: 1.2rem
 }
 .profile-icon ul li:hover .dropdown{
 	display: block;
@@ -1393,9 +1409,334 @@ button:hover{
 #teacher-invitation .card ul li a{
 	color:#333
 }
-#teacher-invitation .card button
-@media screen and (max-width: 1400px) and (min-width: 768px) {
+.profile-section{
+	background: #e3f2fd;
+	border-radius: 7px;
+}
+.profile-section h3{
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #484848
+}
+.profile-section .profile-image{
+	object-fit: cover;
+	object-position: top;
+	height:245px;
+}
+.profile-section h5{
+	font-weight: 600;
+	color:#ef3900;
+	font-size:18px;
+}
+.profile-section h5 .fa{
+	color:rgba(0,0,0,0.5);
+	margin-left: 5px;
+}
+.profile-section h5 em{
+	color:#707171;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+}
+.profile-section h6{
+	font-size: 16px;
+	font-weight: 600;
+	color:#747474;
+	margin: 5px 0 0;
+}
+.profile-section h6 em{
+	font-style: normal;
+	color:#38579b;
+}
+.profile-section .badge{
+	color:#747474;
+	font-size: 14px;
+	background: #e3f2fd;
+	padding:7px 15px;
+	font-weight: 600;
+	border-radius: 20px;
+	margin-right:10px;
+}
+.ranking .fa-star{
+	color:#fbc900;
+	font-size: 1.2rem
+}
+.profileuser-options{
+	padding: 0;
+	list-style-type: none;
+}
+.profileuser-options li{
+	float: left;
+}
+.profileuser-options li a{
+	float: left;
+	padding:0 25px;
+	border-right: solid 1px #333;
+	color:#02416f;
+	font-weight: 600;
+}
+.profileuser-options li:first-child a{
+	padding-left:0;
+}
+.profileuser-options li:last-child a{
+	padding-right:0;
+	border-right: 0
+}
+
+/*----- tabbed pannel css for user profile ---------*/
+
+.profile-container nav > .nav.nav-tabs{
+	border: none;
+	  color:#fff;
+	  border-radius:0;
+  
+  }
+  .profile-container   nav > div a.nav-item.nav-link,
+  .profile-container nav > div a.nav-item.nav-link.active
+  {
+	border: none;
+	  padding:10px 20px;
+	  color:#fff;
+	  background:#272e38;
+	  border-radius:0;
+  }
+  .profile-container nav > div a.nav-item.nav-link.active:after
+   {
+	content: "";
+	position: relative;
+	bottom: -60px;
+	left: -10%;
+	border: 15px solid transparent;
+	border:0;
+	border-top-color: #e74c3c ;
+  }
+  .profile-container .tab-content{
+	background: #f8f8f8;
+	  line-height: 25px;
+	  
+	  padding:30px 25px;
+	  float: left;
+	  width:100%;
+	  box-shadow: 0 0 30px rgba(0,0,0,0.2)
+  }
+  .profile-container nav > div a.nav-item.nav-link{
+   background:#808080;
+   font-weight: normal;
+   font-size: 16px;
+   font-weight: 400;
+   font-family: "Source Sans Pro", sans-serif;
+  }
+  .profile-container nav > div a.nav-item.nav-link:hover,
+  /*.profile-container nav > div a.nav-item.nav-link:focus,*/
+  .profile-container nav > div a.nav-item.nav-link.active{
+	border: none;
+	  background: #EF3900;
+	  color:#fff;
+	  border-radius:0;
+	  transition:background 0.20s linear;
+  }
+  .profile-container ul{
+	  float: left;
+	  padding: 0%;
+	  list-style: none;
+	  margin-bottom: 0
+  }
+  .profile-container ul li{
+	  float: left;
+  }
+   
+  .profile-container ul li:first-child a{
+	  margin-right:1px;
+  }
+
+  .profile-container ul li .fa{ 
+	  margin-right: 5px;
+  }
+   .profile-container .tab-content .name-details{
+     font-size: 18px;
+	 color: #4a4949;
+	 font-family: "Source Sans Pro", sans-serif;
+	 padding: 9px 15px;
+   } 
+   .profile-container .tab-content .name-details strong{
+   	   color:#ef3900;
+	   margin-right: 10px;
+	   font-size: 18px;
+   }
+   
+   .profile-container p{
+	   color: #4a4949;
+	   font-size: 16px;
+	   font-weight: 500;
+	   line-height:2rem;
+   }
+   .edit-profile{
+	   font-size: 14px;
+	   color:#333;
+	   background: #EF3900;
+	   padding:7px 20px;
+	   border-radius: 20px;
+	   color:#fff;
+   }
+   .profile-container .tab-content{
+	   border-radius: 0 7px 7px 7px;
+	 }
+	 .topic{
+		 color:#ef3900;
+		 font-weight:400
+	 }
+	 .profile-icon ul li .dropdown li.online-support{
+		 float: left;
+		 width:50%;	 }
+
+	 .profile-icon ul li .dropdown li.online-support a{
+		 border:0; 
+		 padding:5px 10px;
+		 
+		 color: #EF3900;
+		 background:#fff;
+
+		 border-radius: 0
+		}
+		.profile-icon ul li .dropdown li.online-support.active a{
+			background:#EF3900;
+			color:#fff;
+		}
+		.profile-icon ul li.notification .dropdown{
+			max-height: 270px;
+			overflow-y:scroll;
+		}
+		.profile-icon ul li.messages .dropdown{
+			max-height:250px;
+			overflow-y:scroll;
+		}
+		.message-count{
+			position: absolute;
+			top: -7px;
+			right: -7px;
+			background: #e74c3c;
+			padding: 3px 5px;
+			line-height: 10px;
+			text-align: center;
+			border-radius: 5px;
+			color: #fff;
+			font-size: 11px;
+			font-weight: 600;
+		}
+
+		.input-file-container {
+			position: relative;
+			width: 200px;
+			margin-top:15px;
+		} 
+		.js .input-file-trigger {
+			display: block;
+			padding: 4px 15px;
+			background: #ef3900;
+			color: #fff;
+			font-size: 1em;
+			transition: all .4s;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+		.js .input-file {
+			position: absolute;
+			top: 0; 
+			margin-bottom: 0;
+			left: 0;
+			width: 225px;
+			opacity: 0;
+			padding: 14px 0;
+			cursor: pointer;
+		}
+		.js .input-file:hover + .input-file-trigger,
+		.js .input-file:focus + .input-file-trigger,
+		.js .input-file-trigger:hover,
+		.js .input-file-trigger:focus {
+			background: #38579b;
+			color: #fff;
+		}
+		
+		.file-return {
+			margin: 0;
+		}
+		.file-return:not(:empty) {
+			margin: 1em 0;
+		}
+		.js .file-return {
+			font-style: italic;
+			font-size: .9em;
+			font-weight: bold;
+		}
+		.js .file-return:not(:empty):before {
+			content: "Selected file: ";
+			font-style: normal;
+			font-weight: normal;
+		}
+		
+		
+		
+		
+		
+		
+		/* Useless styles, just for demo styles */
+		
+		body {
+			font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
+			color: #7F8C9A;
+			background: #FCFDFD;
+		}
+		h1, h2 {
+			margin-bottom: 5px;
+			font-weight: normal;
+			text-align: center;
+			color:#aaa;
+		}
+		h2 {
+			margin: 5px 0 2em;
+			color: #1ABC9C;
+		}
+		form {
+			width: 225px;
+			margin: 0 auto;
+			text-align:center;
+		}
+		h2 + P {
+			text-align: center;
+		}
+		.txtcenter {
+			margin-top: 4em;
+			font-size: .9em;
+			text-align: center;
+			color: #aaa;
+		}
+		.copy {
+			margin-top: 2em;
+		}
+		.copy a {
+			text-decoration: none;
+			color: #1ABC9C;
+		}
+.profile-info .nav-pills .nav-link {
+	font-weight: normal
+}
+.tab-pane .form-control{
+	border-radius: 5px; 
+	padding:7px 15px;
+	height:auto
+}
+.tab-pane .form-group label{
+	line-height: 2.1rem
+}
+/*#teacher-invitation .card button*/
+@media screen and (max-width: 1600px) and (min-width: 768px) {
 	.content-container .container:first-child{
-		max-width:95%;
+		max-width:97%;
+	}
+}
+
+@media screen and (max-width: 991.98px){
+	header nav.navbar{
+		background-color:#f4f4f4
 	}
 }

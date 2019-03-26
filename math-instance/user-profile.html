@@ -32,25 +32,11 @@
 			<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">Menu<i class="fa fa-bars ml-2"></i></button>
 				<!-- search -->
 				 <div class="col-md-6 top-search">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Find Student / Question" aria-label="Text input with dropdown button">
-						<div class="input-group-prepend position-relative">
-							<button class="btn dropdown-toggle bg-white border-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Level</button>
-							<button class="btn search-button bg-white border-0" type="button">Search</button>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<a class="dropdown-item" href="#">Something else here</a>
-								<div role="separator" class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Separated link</a>
-							</div>
-						</div>
-						
-					</div>
+					 <input type="search" placeholder="Find teachers / search by subject">
 				 </div>
 				<!-- /search -->
 			  <div id="navbarSupportedContent" class="collapse navbar-collapse float-right align-content-end">
-					<a href="#"  class="become-teacher btn btn-primary navbar-btn ml-0 mr-3">Become Techer </a>
+					<a href="#"  class="become-teacher btn btn-primary navbar-btn ml-0 mr-3">Become Teacher </a>
 					<div class="float-right profile-icon">
 						<ul>
 							<li>
@@ -93,290 +79,360 @@
       </nav>
     </header>
     
-		<!-- content container starts -->
-			<div class="content-container w-100 mt-5 pt-5 mb-5 pb-5">
-				<div class="container pt-4">
-					<div class="row">
-						<!-- left section starts -->
-						 <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 student-left pl-0">
-							<!-- calender section starst -->
-							<div calendar class="calendar" id="calendar"></div>
-							<!-- calender section finish -->
-							<!-- collapsible pannel starts -->
-							<div class="accordion" id="teacher-invitation">
-									<div class="card">
-										<div class="card-header" id="headingOne">
-											<h2 class="mb-0">
-													<button class="collapsed text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-															<img src="images/invitation-list.png" class="mr-2" alt=""> My Question
-													</button>
-											 
-											</h2>
-										</div>
-								
-										<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#teacher-invitation">
-											<div class="card-body">
-													<ul class="ml-4">
-															<li class="active"> 
-															 <a href="#"><span><i class="fa fa-check"></i></span> Sent</a>
-															</li>
-															<li>
-																	<a href="#"><span><i class="fa fa-check"></i></span> Recievies</a>
-															</li> 
-													</ul>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="headingTwo">
-											<h2 class="mb-0">
-													<button class="text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
-															<img src="images/my-question.png" class="mr-2" alt=""> Invitation List
-													</button>
-											</h2>
-										</div>
-										<div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#teacher-invitation">
-											<div class="card-body">
-													<ul class="ml-4">
-															<li class="active"> 
-															 <a href="#"><span><i class="fa fa-check"></i></span> Answered</a>
-															</li>
-															<li>
-																	<a href="#"><span><i class="fa fa-check"></i></span> Answering</a>
-															</li> 
-													</ul>
-											</div>
-										</div>
-									</div>
-						 
-								</div>
-							<!-- collapsible pannel finish --> 
-						 </div>
-						<!-- left section fisnih -->
-
-						<!-- center section starts -->
-						  <div class="col-md-6 col-lg-6 col-xl-6 student-section">
-								<!-- Heading section starts -->
-								  <div class="section heading-section p-4 mb-3">
-										<h4>The Math Instance Answerer</h4>
-										<h1 class="mt-3">What do you need to know?</h1>
-										<div class="w-100 mt-4 float-left"><button class="text-uppercase">Ask your question</button></div>
-									</div>
-								<!-- heading section finsih -->
-								 
-
-								<!-- Question listing starts -->
-									<div class="w-100 float-left mt-2 teacher-listing">
-										<!-- listing first starts -->
-										 <div class="w-100 question-listing p-3 mb-3">
-											<div class="media">
-												<img src="images/teacher.png"  class="mr-3 question-image" alt="...">
-												<div class="media-body">
-													<h5 class="mt-0 mb-1">Mr. Kath maths teacher of helen  
-														<span class="rating float-right"> 
-															<i class="fa fa-star"></i> 
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</span>
-													</h5>
-													<h6>The Math Instance Answerer</h6>
-													<div class="col-md-12 teacher-detail mt-2 mb-2">
-														<div class="row">
-															<div class="col-12 col-sm-6 col-md-4 pl-0">
-																<em>$6.00 - $10.00</em> / hr
-															</div>
-
-															<div class="col-12 col-sm-6 col-md-4 pl-0">
-																	<em>Subjects - </em> Maths
-																</div>
-
-																<div class="col-12 col-sm-6 col-md-4 pl-0">
-																		<em>Level - </em> Fluent
-																	</div>
-														</div>
-													</div>
-													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...
-													
-												</div>
-											</div>
-										 </div>
-
-										 <div class="w-100 question-listing p-3 mb-3">
-											<div class="media">
-												<img src="images/teacher.png"  class="mr-3 question-image" alt="...">
-												<div class="media-body">
-													<h5 class="mt-0 mb-1">Mr. Kath maths teacher of helen  
-														<span class="rating float-right"> 
-															<i class="fa fa-star"></i> 
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</span>
-													</h5>
-													<h6>The Math Instance Answerer</h6>
-													<div class="col-md-12 teacher-detail mt-2 mb-2">
-														<div class="row">
-															<div class="col-12 col-sm-6 col-md-4 pl-0">
-																<em>$6.00 - $10.00</em> / hr
-															</div>
-
-															<div class="col-12 col-sm-6 col-md-4 pl-0">
-																	<em>Subjects - </em> Maths
-																</div>
-
-																<div class="col-12 col-sm-6 col-md-4 pl-0">
-																		<em>Level - </em> Fluent
-																	</div>
-														</div>
-													</div>
-													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...
-													
-												</div>
-											</div>
-										 </div>
-
-										 <div class="w-100 question-listing p-3 mb-3">
-											<div class="media">
-												<img src="images/teacher.png"  class="mr-3 question-image" alt="...">
-												<div class="media-body">
-													<h5 class="mt-0 mb-1">Mr. Kath maths teacher of helen  
-														<span class="rating float-right"> 
-															<i class="fa fa-star"></i> 
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</span>
-													</h5>
-													<h6>The Math Instance Answerer</h6>
-													<div class="col-md-12 teacher-detail mt-2 mb-2">
-														<div class="row">
-															<div class="col-12 col-sm-6 col-md-4 pl-0">
-																<em>$6.00 - $10.00</em> / hr
-															</div>
-
-															<div class="col-12 col-sm-6 col-md-4 pl-0">
-																	<em>Subjects - </em> Maths
-																</div>
-
-																<div class="col-12 col-sm-6 col-md-4 pl-0">
-																		<em>Level - </em> Fluent
-																	</div>
-														</div>
-													</div>
-													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...
-													
-												</div>
-											</div>
-										 </div>
-
-										 <div class="w-100 question-listing p-3 mb-3">
-											<div class="media">
-												<img src="images/teacher.png"  class="mr-3 question-image" alt="...">
-												<div class="media-body">
-													<h5 class="mt-0 mb-1">Mr. Kath maths teacher of helen  
-														<span class="rating float-right"> 
-															<i class="fa fa-star"></i> 
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</span>
-													</h5>
-													<h6>The Math Instance Answerer</h6>
-													<div class="col-md-12 teacher-detail mt-2 mb-2">
-														<div class="row">
-															<div class="col-12 col-sm-6 col-md-4 pl-0">
-																<em>$6.00 - $10.00</em> / hr
-															</div>
-
-															<div class="col-12 col-sm-6 col-md-4 pl-0">
-																	<em>Subjects - </em> Maths
-																</div>
-
-																<div class="col-12 col-sm-6 col-md-4 pl-0">
-																		<em>Level - </em> Fluent
-																	</div>
-														</div>
-													</div>
-													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...
-													
-												</div>
-											</div>
-										 </div>
-
-										 <div class="w-100 question-listing p-3 mb-3">
-											<div class="media">
-												<img src="images/teacher.png"  class="mr-3 question-image" alt="...">
-												<div class="media-body">
-													<h5 class="mt-0 mb-1">Mr. Kath maths teacher of helen  
-														<span class="rating float-right"> 
-															<i class="fa fa-star"></i> 
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</span>
-													</h5>
-													<h6>The Math Instance Answerer</h6>
-													<div class="col-md-12 teacher-detail mt-2 mb-2">
-														<div class="row">
-															<div class="col-12 col-sm-6 col-md-4 pl-0">
-																<em>$6.00 - $10.00</em> / hr
-															</div>
-
-															<div class="col-12 col-sm-6 col-md-4 pl-0">
-																	<em>Subjects - </em> Maths
-																</div>
-
-																<div class="col-12 col-sm-6 col-md-4 pl-0">
-																		<em>Level - </em> Fluent
-																	</div>
-														</div>
-													</div>
-													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever...
-													
-												</div>
-											</div>
-										 </div>
-										  
-										<!-- listing first finish -->
-									</div>
-								<!-- question listing finish-->
-							</div>
-						<!-- center section finsih -->
-						
-						<!-- right section starts -->
-						  <div class="col-md-3 col-lg-3 col-xl-3 pr-0 student-right">
-								<!-- user profile section starts -->
-								  <div class="user-profile section float-left w-100 bg-light p-3 rounded-lg">
-										<div class="media">
-											<img src="images/default-user.png" class="mr-3 user-profile-image" alt="...">
+		<!-- Profile content container starts -->
+		 <div class="col-md-12 profile-container mt-5 pt-5 mb-5 pb-5">
+			 <div class="container">
+				 <div class="profile-section p-5">
+					 <h3> User Profile</h3>
+					 <!-- personal info section starts -->
+						<div class="col-md-12 p-4 bg-white profile-info rounded-lg mt-3">
+							<div class="row">
+									<div class="media p-4">
+											<img src="images/profile-image.png" class="mr-3 profile-image" alt="Username">
 											<div class="media-body">
-												<h5 class="mt-3 profile-heading">Media heading</h5>
+												<h5 class="mt-0">Jonie Caly Cathie <i class="fa fa-map-marker"></i> <em> Professor Colony, Sirhind</em>
+												<a href="" class="float-right edit-profile"><i class="fa fa-pencil text-white"> </i> Edit Profile</a>
+												</h5>
+												<h6>Mphil Mathematics <em>( $30 / Hr )</em></h6>
+
+												<!-- categories section starts -->
+													<div class="w-100 mt-4 float-left">
+														<h5 class="mb-2">Categories</h5>
+														<div class="w-100 float-left">
+																<span class="badge badge-primary">Trigonometry</span>
+																<span class="badge badge-primary">Algebra</span>
+																<span class="badge badge-primary">Intermediate analysis</span>
+																<span class="badge badge-primary">Geometry</span>
+														</div>
+													</div>
+												<!-- categories section finish -->
+
+												<!-- categories section starts -->
+												<div class="w-100 mt-4 float-left ranking">
+														<h5 class="mb-1">Rankings</h5>
+														<div class="w-100 float-left">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+														</div>
+													</div>
+												<!-- categories section finish -->
+
+												<ul class="profileuser-options mt-3 float-left w-100">
+													<li><a href="#"><img src="images/sms-icon.png" class="mr-2" alt=""> Send Message </a></li>
+													<li><a href="#">Report User</a></li>
+												</ul>
 											</div>
 										</div>
-										<ul class="clearfix pl-0 mt-4 w-100 float-left">
-											<li><a href="#"><i class="fa fa-check-circle"></i> You're part of the family 
-												<span>welcome. </span></a></li>
-											<li><a href="#"><i class="fa fa-check-circle"></i> Looking good 
-													<span>A picture is worth a thousand words.</span></a></li>
-											<li><a href="#"><i class="fa fa-check-circle"></i> Show us what you know 
-														<span>Get in there and answer something</span></a></li>
-										</ul>
-									</div>
-								<!-- user profile section finsih -->
-							</div>
-						<!-- right section finish -->
-					</div>
-				</div>
+										<!-- About user info and time line sectin starts -->
+										<div class="w-100 float-left  pt-0 p-4">
+										<nav class="float-left w-100 ">
+												<div class="nav nav-tabs  nav-fill" id="nav-tab" role="tablist">
+													<ul>
+														<li>
+																<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+																		<i class="fa fa-user"> </i> About us 
+																	</a>
+														</li>
+														<li>
+																<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+																		<i class="fa fa-sliders"></i>Timeline</a>
+														</li>
+													</ul>
+													
+													
+												</div>
+											</nav>
+											<div class="tab-content p-4" id="nav-tabContent">
+												<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-12 col-sm-6 col-md-4 name-details">
+																<strong> Name : </strong> *******
+															</div>
 
-				
-			</div>
-		<!-- content container finish -->
+															<div class="col-12 col-sm-6 col-md-4 name-details">
+																<strong> Email : </strong> *******
+															</div>
+
+															<div class="col-12 col-sm-6 col-md-4 name-details">
+																<strong> Username : </strong> Jonycathy
+															</div>
+
+															<div class="col-12 col-sm-6 col-md-4 name-details">
+																<strong> English Proficiency : </strong> Native
+															</div>
+
+															<div class="col-12 col-sm-12 col-md-8 name-details">
+																<strong> Country : </strong> Sirhind, Punjab, India
+															</div>
+															<div class="col-12 col-sm-12 col-md-12 name-details">
+																<strong>Language Spoken : </strong> English, Hindi, Punjabi
+															</div>
+
+
+															<h4 class="mt-3 float-left col-md-12 name-details"><strong> About Us</strong> </h4>
+															<p class="col-md-12">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+																</p>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+													Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+												</div>
+											  
+											</div>
+										</div>
+										<!-- about user info and time line section finish -->
+							</div>
+						</div>
+
+						<!-- edit fields starts -->
+						<div class="col-md-12 p-4 bg-white edit-info rounded-lg mt-3" style="display:none;">
+								<form class="needs-validation" novalidate>
+										<div class="form-row">
+											<div class="col-md-4 mb-3">
+												<label for="validationTooltip01">Full Name</label>
+												<input type="text" class="form-control" id="validationTooltip01" placeholder="Full name" required>
+												<div class="valid-tooltip">
+													Looks good!
+												</div>
+											</div>
+											
+											<div class="col-md-4 mb-3">
+												<label for="validationTooltip02">Email Id</label>
+												<input type="email" class="form-control" id="validationTooltip02" placeholder="some@some.come" required>
+												<div class="valid-tooltip">
+													Looks good!
+												</div>
+											</div>
+											
+											<div class="col-md-4 mb-3">
+													<label for="validationTooltip02">Email Id</label>
+													<input type="password" class="form-control" id="validationTooltip02" placeholder="some@some.come" required>
+													<div class="valid-tooltip">
+														Looks good!
+													</div>
+												</div>
+
+											<div class="col-md-4 mb-3">
+												<label for="validationTooltipUsername">Username</label>
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+													</div>
+													<input type="text" class="form-control" id="validationTooltipUsername" placeholder="Username" aria-describedby="validationTooltipUsernamePrepend" required>
+													<div class="invalid-tooltip">
+														Please choose a unique and valid username.
+													</div>
+												</div>
+											</div>
+
+
+											<div class="col-md-4 mb-3">
+													<label for="validationTooltip02">English Proficiency Level</label>
+													<select class="custom-select">
+															<option selected>Select Level</option>
+															<option value="1">Basic</option>
+															<option value="2">Conversational</option>
+															<option value="3">Fluent</option>
+															<option value="4">Native or Bilingual</option>
+														</select>
+													<div class="valid-tooltip">
+														Looks good!
+													</div>
+												</div>
+
+												
+											<div class="col-md-4 mb-3">
+													<label for="validationTooltip02">Language Spoked</label>
+													<input type="text" class="form-control" id="validationTooltip02" placeholder="eg. : English" required>
+													<div class="valid-tooltip">
+														Looks good!
+													</div>
+												</div>
+
+												<div class="col-md-4 mb-3">
+														<label for="validationTooltip03">City</label>
+														<input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+														<div class="invalid-tooltip">
+															Please provide a valid city.
+														</div>
+													</div>
+
+													<div class="col-md-4 mb-3">
+															<label for="validationTooltip04">State</label>
+															<input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+															<div class="invalid-tooltip">
+																Please provide a valid state.
+															</div>
+														</div>
+														<div class="col-md-4 mb-3">
+																<label for="validationTooltip05">Zip</label>
+																<input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+																<div class="invalid-tooltip">
+																	Please provide a valid zip.
+																</div>
+															</div>
+
+															<div class="col-md-4 mb-3">
+																	<label for="validationTooltip05">Upload Profile Pic</label>
+																	<div class="custom-file">
+																			<input type="file" class="custom-file-input" id="customFile">
+																			<label class="custom-file-label" for="customFile">Choose file</label>
+																		</div>
+																	<div class="invalid-tooltip">
+																		Please provide a valid zip.
+																	</div>
+																</div>
+
+																<div class="col-md-4 mb-3">
+																		<label for="validationTooltip02">I can offer help in</label>
+																		<select class="custom-select">
+																				<option selected>Select Level</option>
+																				<option value="1">Highschool Math</option>
+																				<option value="2">College Math </option>
+																				<option value="3">Test prep</option>
+																			</select>
+																		<div class="valid-tooltip">
+																			Looks good!
+																		</div>
+																	</div>
+
+
+																<div class="col-md-12 mb-3">
+																		<label for="validationTooltip05">About us</label> 
+																				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+																				
+																		<div class="invalid-tooltip">
+																			Please provide a valid.
+																		</div>
+																	</div>
+
+
+																	<div class="col-md-8 mb-3">
+																			<label for="validationTooltip02">I can offer help in</label>
+																		<div class="row">
+																				<div class="col-md-6">
+																						<select class="custom-select">
+																								<option selected>Select Categories</option>
+																								<option value="1">Intermediate Analysis</option>
+																								<option value="2">Trigonometry </option>
+																								<option value="3">Analysis</option>
+																								<option value="4">Algebra</option>
+																								<option value="5">Pre-calculus</option>
+																								<option value="6">Calculus</option>
+																								<option value="7">Integral calculus</option>
+																								<option value="8">Differential calculus</option>
+																								<option value="9">Discrete math</option>
+																								<option value="10">Geometry</option>
+																								<option value="11">Computer science Statistics</option>
+																								<option value="12">Probability</option>
+																								<option value="13">Differential equations</option>
+																								<option value="12">Test prep</option>
+																								<option value="12">Extra words (no category)</option>
+																							</select>
+																						</div>
+																						<div class="col-md-6">
+																								<select class="custom-select">
+																										<option selected>Select Subcategories</option>
+																										<option value="1">Convergence</option>
+																										<option value="2">Limits of functions </option>
+																										<option value="3">limits</option>
+
+																										<option value="1">Continuity</option>
+																										<option value="2">Differentiability</option>
+																										<option value="3">Integrability</option>
+
+																										<option value="1">Proofs</option>
+																										<option value="2">Real analysis</option> 
+
+																									</select>
+																								</div>
+
+																		</div>
+																			
+																			
+
+																			
+
+
+																			<div class="valid-tooltip">
+																				Looks good!
+																			</div>
+																		</div>
+
+																		
+																		<div class="col-md-4 mb-3">
+																				<label for="validationTooltip05">Hourly rate</label>
+																				<input type="text" class="form-control" id="validationTooltipUsername" placeholder="in Dollars" aria-describedby="validationTooltipUsernamePrepend" required="">
+																				<div class="invalid-tooltip">
+																					Please provide a valid zip.
+																				</div>
+																			</div> 
+
+																			<div class="col-md-6 mb-3">
+																					<label for="validationTooltip05" class="w-100">Payment Option</label>
+																					<div class="custom-control custom-radio custom-control-inline">
+																							<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+																							<label class="custom-control-label" for="customRadioInline1">Credit Card</label>
+																						</div>
+																						<div class="custom-control custom-radio custom-control-inline">
+																							<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+																							<label class="custom-control-label" for="customRadioInline2">Net Banking</label>
+																						</div>
+																						<div class="custom-control custom-radio custom-control-inline">
+																								<input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+																								<label class="custom-control-label" for="customRadioInline3">Paypal</label>
+																							</div>
+
+																			</div>
+
+																			<div class="col-md-12 mb-3">
+																					<label for="validationTooltip02">Educational background</label>
+																					<div class="row">
+																							<div class="col-md-4">
+																									<input type="text" class="form-control" id="validationTooltipUsername" placeholder="Name of Institution" aria-describedby="validationTooltipUsernamePrepend" required="">
+																									</div>
+																									<div class="col-md-4">
+																											<input type="text" class="form-control" id="validationTooltipUsername" placeholder="Name of Degree" aria-describedby="validationTooltipUsernamePrepend" required="">
+																											</div>
+
+																											<div class="col-md-4">
+																													<input type="text" class="form-control" id="validationTooltipUsername" placeholder="Course of Study" aria-describedby="validationTooltipUsernamePrepend" required="">
+																													</div>
+			
+																					</div>
+																					<div class="valid-tooltip">
+																						Looks good!
+																					</div>
+																				</div>
+
+
+
+										</div>
+								 <div class="col-md-12 text-right mt-4 pr-0">
+
+										<button class="btn btn-primary" type="submit">Submit </button>
+										<button class="btn btn-primary cancel-edit" type="submit" >Cancel</button>
+								 </div>
+									
+									</form>
+
+						</div>
+
+						<!-- edit fields finsih -->
+					 <!-- personal info section finish -->
+
+					 
+				 </div>
+
+			 </div>
+		 </div>
+		<!-- Profile content container finish -->
 	<!-- Ask your question -->
 	<div class="askYourQuestion">
 		<div class="container">
@@ -679,6 +735,11 @@
 
 			$('#textarea_counter-modal').html(text_length + '/1000');
 		});
+
+	
+ 
+
+
 	});
 
 	function readURL(input) {
@@ -718,5 +779,19 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js'></script>
 	<script src="js/calender.js"></script>
+	<script type="text/javascript">
+		 // for show hide on click edit profile
+		 $(".edit-profile").click(function(){
+    $(".edit-info").show();
+		$('.profile-info').hide()
+  });
+  $(".cancel-edit").click(function(){
+    $(".edit-info").hide();
+		$('.profile-info').show()
+  });
+	</script>
+	
   </body>
 </html>
+
+
