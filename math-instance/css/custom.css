@@ -452,7 +452,6 @@ a:hover{
 }
 .askquestion-modal-main .modal-body{padding-left:0px; padding-right: 0px; }
 
-
 /*---------- css added by vishal fro student dashboar after login ------*/
 .student-left ul{
 	list-style: none;
@@ -1679,37 +1678,7 @@ button:hover{
 		
 		
 		
-		/* Useless styles, just for demo styles */
 		
-		body {
-			font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
-			color: #7F8C9A;
-			background: #FCFDFD;
-		}
-		h1, h2 {
-			margin-bottom: 5px;
-			font-weight: normal;
-			text-align: center;
-			color:#aaa;
-		}
-		h2 {
-			margin: 5px 0 2em;
-			color: #1ABC9C;
-		}
-		form {
-			width: 225px;
-			margin: 0 auto;
-			text-align:center;
-		}
-		h2 + P {
-			text-align: center;
-		}
-		.txtcenter {
-			margin-top: 4em;
-			font-size: .9em;
-			text-align: center;
-			color: #aaa;
-		}
 		.copy {
 			margin-top: 2em;
 		}
@@ -1727,6 +1696,64 @@ button:hover{
 }
 .tab-pane .form-group label{
 	line-height: 2.1rem
+}
+.box{  display: none;
+        
+} 
+.institution .custom-control-label::before, .institution .custom-control-label::after{
+	top:.5rem
+}
+.see-more{
+	box-shadow: 0 0 7px rgba(0,0,0,0.25);
+	border-radius: 3px !important;
+	border:0 !important;
+	padding:3px 10px !important;
+	background: #e74c3c;
+	color:#fff !important;
+}
+.see-more:hover{
+	background: #38579b;
+	color:#fff !important;
+}
+.teacher-list .card-title{
+	font-size: 17px;
+	color:#ef3900;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.teacher-list .fa-star{
+	color:#f7a700
+}
+.teacher-list .hourly-rate{
+	font-weight: 600;
+	font-size: 16px;
+	color:#38579b
+}
+.social-icon a{
+	font-size: 1.5rem;
+	margin: 0 5px;
+	display: inline-block;
+}
+
+.question-listing  .media-body h5 .find-teacher{
+	z-index: 10000;
+	position: absolute;
+	top:0;
+	right:0;
+	padding: 3px 10px;
+	font-weight: normal;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-top:0;
+}
+.inner-link{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+
+
 }
 /*#teacher-invitation .card button*/
 @media screen and (max-width: 1600px) and (min-width: 768px) {

@@ -29,22 +29,21 @@
 			<div class="row">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid"><a href="./" class="navbar-brand">
-			<img src="images/logo.svg" alt="" class="img-fluid"></a>
+			<img src="images/logo.svg" alt="" class=""></a>
 		
 				<!-- search -->
-				 <div class="col-md-5 top-search">
-					 <input type="search" placeholder="Find teachers / search by subject">
+				 <div class="col-md-8 top-search">
+					 <input type="search" placeholder="Search by subject">
 				 </div>
 				<!-- /search -->
-			  <div id="navbarSupportedContent" class="collapse navbar-collapse float-right align-content-end col-md-6">
-					<a href="#"  class="become-teacher btn btn-primary navbar-btn ml-0 mr-3">Become a Teacher </a>
-					<div class="float-right profile-icon col-md-8">
+			  <div id="navbarSupportedContent" class="collapse navbar-collapse float-right align-content-end col-md-3">
+					<div class="float-right profile-icon col-md-12 pr-0">
 						<ul>
 							<li>
 								<a href="#"><i class="fa fa-dollar"></i></a>
 								<ul class="dropdown">
 										<li><a href="#">Wallet Balance : <strong>100$</strong> </a></li>
-										<li><a href="#">Pending Escrow : <strong>100$</strong> </a></li>
+										
 										<li><a href="#">Reports </a></li>
 									</ul>
 							</li>
@@ -57,6 +56,7 @@
 										<li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
 										<li><a href="#"><strong>Androind Developer </strong>  sent a message to you.</a></li>
 										<li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
+										<li class="mt-3 mb-3 text-center"><a href="#" class="see-more d-inline-block float-none" style="width:auto; ">See all messages</a></li>
 									</ul>
 							</li>
 							<li class="notification">
@@ -69,6 +69,7 @@
 									<li><a href="#">A simple primary alert—check it out!</a></li>
 									<li><a href="#">A simple primary alert—check it out!</a></li>
 									<li><a href="#">A simple primary alert—check it out!</a></li>
+									<li class="mt-3 mb-1 text-center"><a href="#" class="see-more d-inline-block float-none" style="width:auto; ">See all Notfications</a></li>
 								</ul>
 							</li>
 							<li>
@@ -77,7 +78,8 @@
 								<ul class="dropdown">
 									 <li class="active online-support text-center"><a href="#">Online</a></li>
 									 <li class="online-support text-center"><a href="#">Offline</a></li>
-										<li><a href="#">Vishal Bansal ( Teacher )</a></li>
+										<li><a href="#">Vishal Bansal ( Student )</a></li>
+										<li><a href="#">Become a Teacher</a></li>
 										<li><a href="student-profile-edit.html">Edit Profile</a></li>
 										<li><a href="#">Logout</a></li>
 									</ul>
@@ -106,7 +108,6 @@
 								<li>
 									<a href="#"><span><img src="images/icon-2.png" alt=""></span> Hindi</a>
 								</li>
-
 								<li>
 									<a href="#"><span><img src="images/icon-3.png" alt=""></span> Mathematics</a>
 								</li>
@@ -159,10 +160,10 @@
 								<li>
 									<a href="#"><span><img src="images/icon-6.png" alt=""></span>Geography</a>
 								</li>
-								<li>
-									<a href="#"><span><img src="images/icon-7.png" alt=""></span>Biology</a>
+								
+								<li class="mt-3 mb-1 text-center"><a href="#" class="see-more d-inline-block float-none" style="width:auto; ">
+									<i class="fa mr-1 d-inline-block fa-spinner"></i> See more</a>
 								</li>
-
 							 </ul>
 						 </div>
 						<!-- left section fisnih -->
@@ -172,14 +173,14 @@
 								<!-- Heading section starts -->
 								  <div class="section heading-section p-4 mb-3">
 										<h4>The Math Instance Answerer</h4>
-										<h1 class="mt-3">What do you need to know?</h1>
+										<h1 class="mt-3 text-left">What do you need to know?</h1>
 										<div class="w-100 mt-4 float-left"><button class="text-uppercase">Ask your question</button></div>
 									</div>
 								<!-- heading section finsih -->
 								<!-- filters and radio button section starts -->
 									<div class="col-md-12 section p-3">
 										<div class="custom-control custom-radio mt-2 custom-control-inline">
-												<input type="radio" id="customRadioInline1" checked name="customRadioInline1" class="custom-control-input">
+												<input type="radio" id="customRadioInline1"  name="customRadioInline1" class="custom-control-input">
 												<label class="custom-control-label" for="customRadioInline1">Answered</label>
 											</div>
 											
@@ -189,7 +190,7 @@
 											</div>
 
 											<div class="custom-control custom-radio mt-2 custom-control-inline">
-												<input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+												<input type="radio" id="customRadioInline3" checked name="customRadioInline1" class="custom-control-input">
 												<label class="custom-control-label" for="customRadioInline3">Unanswered</label>
 											</div>
 											<!-- <button class="float-right text-uppercase"><i class="fa fa-sliders"></i> Filters</button>-->
@@ -198,59 +199,132 @@
 
 								<!-- Question listing starts -->
 									<div class="w-100 float-left mt-4">
-										<!-- listing first starts -->
-										 <div class="w-100 question-listing p-3 mb-3">
-											<div class="media">
-												<div class="media-body">
-													<a href="#">
-													<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
-													When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-												</a>
-												<!--	<div class="w-100 mt-1 float-left align-content-end">
-														 <button class="float-right">Click to Answer</button> 
-													</div>-->
-												</div>
-											</div>
-										 </div>
-
-										 <div class="w-100 question-listing p-3 mb-3">
+										
+										<!-- Answered listing first starts -->
+										<div class="w-100 float-left answer-listing" style="display: none">
+										 
+											 <div class="w-100 question-listing position-relative p-3 mb-3">
 												<div class="media">
-													<div class="media-body">
-														<a href="#">
-														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
+													<div class="media-body position-relative">
+														<a href="http://www.google.com" class="inner-link"></a>
+														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert  <span class="float-right"> 17 minutes</span> </h5>
 														When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-													</a>
-													<!--	<div class="w-100 mt-1 float-left align-content-end">
-															 <button class="float-right">Click to Answer</button> 
-														</div>-->
+														<div class="w-100 mt-2">
+															<span class="float-left">
+																<i class="fa fa-paperclip fa"></i> file name
+															</span>
+															<span class="float-right">
+																	<button class="float-right btn-info ml-1"><i class="fa fa-user"></i> Assigned to</button> 	
+																<button class="float-right btn-success"><i class="fa fa-address-card"> </i> Session History</button>
+															</span>
+														</div>
+													
 													</div>
 												</div>
 											 </div>
 
-											 <div class="w-100 question-listing p-3 mb-3">
-													<div class="media">
-														<div class="media-body">
-															<a href="#">
-															<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
-															When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-														</a>
-														<!--	<div class="w-100 mt-1 float-left align-content-end">
-																 <button class="float-right">Click to Answer</button> 
-															</div>-->
+											 <div class="w-100 question-listing position-relative p-3 mb-3">
+												<div class="media">
+													<div class="media-body position-relative">
+														<a href="http://www.google.com" class="inner-link"></a>
+														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert  <span class="float-right"> 17 minutes</span> </h5>
+														When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+														<div class="w-100 mt-2">
+															<span class="float-left">
+																<i class="fa fa-paperclip fa"></i> file name
+															</span>
+															<span class="float-right">
+																	<button class="float-right btn-info ml-1"><i class="fa fa-user"></i> Assigned to</button> 	
+																<button class="float-right btn-success"><i class="fa fa-address-card"> </i> Session History</button>
+															</span>
 														</div>
+													
 													</div>
-												 </div>
+												</div>
+											 </div>
 
-												 <div class="w-100 question-listing p-3 mb-3">
+											 <div class="w-100 question-listing position-relative p-3 mb-3">
+												<div class="media">
+													<div class="media-body position-relative">
+														<a href="http://www.google.com" class="inner-link"></a>
+														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert  <span class="float-right"> 17 minutes</span> </h5>
+														When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+														<div class="w-100 mt-2">
+															<span class="float-left">
+																<i class="fa fa-paperclip fa"></i> file name
+															</span>
+															<span class="float-right">
+																	<button class="float-right btn-info ml-1"><i class="fa fa-user"></i> Assigned to</button> 	
+																<button class="float-right btn-success"><i class="fa fa-address-card"> </i> Session History</button>
+															</span>
+														</div>
+													
+													</div>
+												</div>
+											 </div>
+
+											 <div class="w-100 question-listing position-relative p-3 mb-3">
+												<div class="media">
+													<div class="media-body position-relative">
+														<a href="http://www.google.com" class="inner-link"></a>
+														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert  <span class="float-right"> 17 minutes</span> </h5>
+														When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+														<div class="w-100 mt-2">
+															<span class="float-left">
+																<i class="fa fa-paperclip fa"></i> file name
+															</span>
+															<span class="float-right">
+																	<button class="float-right btn-info ml-1"><i class="fa fa-user"></i> Assigned to</button> 	
+																<button class="float-right btn-success"><i class="fa fa-address-card"> </i> Session History</button>
+															</span>
+														</div>
+													
+													</div>
+												</div>
+											 </div>
+
+											 <div class="w-100 question-listing position-relative p-3 mb-3">
+												<div class="media">
+													<div class="media-body position-relative">
+														<a href="http://www.google.com" class="inner-link"></a>
+														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert  <span class="float-right"> 17 minutes</span> </h5>
+														When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+														<div class="w-100 mt-2">
+															<span class="float-left">
+																<i class="fa fa-paperclip fa"></i> file name
+															</span>
+															<span class="float-right">
+																	<button class="float-right btn-info ml-1"><i class="fa fa-user"></i> Assigned to</button> 	
+																<button class="float-right btn-success"><i class="fa fa-address-card"> </i> Session History</button>
+															</span>
+														</div>
+													
+													</div>
+												</div>
+											 </div>
+
+										</div>
+										<!-- answered listing first finish -->
+
+										<!--being  Answered listing first starts -->
+										<div class="w-100 float-left being-answer-listing" style="display: none">
+												
+												<div class="w-100 question-listing p-3 mb-3">
 														<div class="media">
 															<div class="media-body">
 																<a href="#">
 																<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
 																When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+																<div class="w-100 mt-2">
+																	<span class="float-left">
+																		<i class="fa fa-paperclip fa"></i> file name
+																	</span>
+																	<span class="float-right">
+																			<button class="float-right btn-info ml-1"><i class="fa fa-calendar"></i> Schedule</button>
+																			<button class="float-right btn-success"><i class="fa fa-file"> </i> Session History</button> 
+																	</span>
+																</div>
 															</a>
-															<!--	<div class="w-100 mt-1 float-left align-content-end">
-																	 <button class="float-right">Click to Answer</button> 
-																</div>-->
 															</div>
 														</div>
 													 </div>
@@ -261,14 +335,329 @@
 																	<a href="#">
 																	<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
 																	When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+																	<div class="w-100 mt-2">
+																		<span class="float-left">
+																			<i class="fa fa-paperclip fa"></i> file name
+																		</span>
+																		<span class="float-right">
+																				<button class="float-right btn-info ml-1"><i class="fa fa-calendar"></i> Schedule</button>
+																				<button class="float-right btn-success"><i class="fa fa-file"> </i> Session History</button> 
+																		</span>
+																	</div>
 																</a>
-																<!--	<div class="w-100 mt-1 float-left align-content-end">
-																		 <button class="float-right">Click to Answer</button> 
-																	</div>-->
 																</div>
 															</div>
-														 </div> 
-										<!-- listing first finish -->
+														 </div>
+
+														 <div class="w-100 question-listing p-3 mb-3">
+																<div class="media">
+																	<div class="media-body">
+																		<a href="#">
+																		<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
+																		When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+																		<div class="w-100 mt-2">
+																			<span class="float-left">
+																				<i class="fa fa-paperclip fa"></i> file name
+																			</span>
+																			<span class="float-right">
+																					<button class="float-right btn-info ml-1"><i class="fa fa-calendar"></i> Schedule</button>
+																					<button class="float-right btn-success"><i class="fa fa-file"> </i> Session History</button> 
+																			</span>
+																		</div>
+																	</a>
+																	</div>
+																</div>
+															 </div>
+
+															 <div class="w-100 question-listing p-3 mb-3">
+																	<div class="media">
+																		<div class="media-body">
+																			<a href="#">
+																			<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
+																			When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+																			<div class="w-100 mt-2">
+																				<span class="float-left">
+																					<i class="fa fa-paperclip fa"></i> file name
+																				</span>
+																				<span class="float-right">
+																						<button class="float-right btn-info ml-1"><i class="fa fa-calendar"></i> Schedule</button>
+																						<button class="float-right btn-success"><i class="fa fa-file"> </i> Session History</button> 
+																				</span>
+																			</div>
+																		</a>
+																		</div>
+																	</div>
+																 </div>
+
+																 <div class="w-100 question-listing p-3 mb-3">
+																		<div class="media">
+																			<div class="media-body">
+																				<a href="#">
+																				<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert <span class="float-right">17 minutes ago</span> </h5>
+																				When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+																				<div class="w-100 mt-2">
+																					<span class="float-left">
+																						<i class="fa fa-paperclip fa"></i> file name
+																					</span>
+																					<span class="float-right">
+																							<button class="float-right btn-info ml-1"><i class="fa fa-calendar"></i> Schedule</button>
+																							<button class="float-right btn-success"><i class="fa fa-file"> </i> Session History</button> 
+																					</span>
+																				</div>
+																			</a>
+																			</div>
+																		</div>
+																	 </div>
+		
+						
+											 </div>
+											 <!-- being listing first finish -->
+
+											 <!-- Unanswer listing first starts -->
+										<div class="w-100 float-left unanswer-listing">
+												
+											<div class="w-100 question-listing p-3 mb-3 position-relative">
+												<div class="media">
+													<div class="media-body position-relative">
+														<a href="#" class="inner-link"></a>
+														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago <span class="float-right"><a href="http://www.yahoomail.com" class="btn find-teacher float-right btn-danger">Find Teacher</a> </span> </h5>
+														When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+														<div class="w-100 mt-2">
+															<span class="float-left">
+																<i class="fa fa-paperclip fa"></i> file name
+															</span>
+															<span class="float-right">
+																	<button class="float-right ml-1"><i class="fa fa-pencil"> </i> Edit Question</button> 	
+																	<button class="float-right btn-info ml-1"><i class="fa fa-file"></i> Proposals</button> 
+																<button class="float-right btn-success"><i class="fa fa-address-card"> </i> Invited Teachers</button> 
+															</span>
+														</div>
+													</div>
+												</div>
+											 </div>
+											 
+											 <div class="w-100 question-listing p-3 mb-3 position-relative">
+												<div class="media">
+													<div class="media-body position-relative">
+														<a href="#" class="inner-link"></a>
+														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago <span class="float-right"><a href="http://www.yahoomail.com" class="btn find-teacher float-right btn-danger">Find Teacher</a> </span> </h5>
+														When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+														<div class="w-100 mt-2">
+															<span class="float-left">
+																<i class="fa fa-paperclip fa"></i> file name
+															</span>
+															<span class="float-right">
+																	<button class="float-right ml-1"><i class="fa fa-pencil"> </i> Edit Question</button> 	
+																	<button class="float-right btn-info ml-1"><i class="fa fa-file"></i> Proposals</button> 
+																<button class="float-right btn-success"><i class="fa fa-address-card"> </i> Invited Teachers</button> 
+															</span>
+														</div>
+													</div>
+												</div>
+											 </div>
+											 
+											 <div class="w-100 question-listing p-3 mb-3 position-relative">
+												<div class="media">
+													<div class="media-body position-relative">
+														<a href="#" class="inner-link"></a>
+														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago <span class="float-right"><a href="http://www.yahoomail.com" class="btn find-teacher float-right btn-danger">Find Teacher</a> </span> </h5>
+														When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+														<div class="w-100 mt-2">
+															<span class="float-left">
+																<i class="fa fa-paperclip fa"></i> file name
+															</span>
+															<span class="float-right">
+																	<button class="float-right ml-1"><i class="fa fa-pencil"> </i> Edit Question</button> 	
+																	<button class="float-right btn-info ml-1"><i class="fa fa-file"></i> Proposals</button> 
+																<button class="float-right btn-success"><i class="fa fa-address-card"> </i> Invited Teachers</button> 
+															</span>
+														</div>
+													</div>
+												</div>
+											 </div>
+											 
+											 <div class="w-100 question-listing p-3 mb-3 position-relative">
+												<div class="media">
+													<div class="media-body position-relative">
+														<a href="#" class="inner-link"></a>
+														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago <span class="float-right"><a href="http://www.yahoomail.com" class="btn find-teacher float-right btn-danger">Find Teacher</a> </span> </h5>
+														When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+														<div class="w-100 mt-2">
+															<span class="float-left">
+																<i class="fa fa-paperclip fa"></i> file name
+															</span>
+															<span class="float-right">
+																	<button class="float-right ml-1"><i class="fa fa-pencil"> </i> Edit Question</button> 	
+																	<button class="float-right btn-info ml-1"><i class="fa fa-file"></i> Proposals</button> 
+																<button class="float-right btn-success"><i class="fa fa-address-card"> </i> Invited Teachers</button> 
+															</span>
+														</div>
+													</div>
+												</div>
+											 </div>
+											 
+											 <div class="w-100 question-listing p-3 mb-3 position-relative">
+												<div class="media">
+													<div class="media-body position-relative">
+														<a href="#" class="inner-link"></a>
+														<h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago <span class="float-right"><a href="http://www.yahoomail.com" class="btn find-teacher float-right btn-danger">Find Teacher</a> </span> </h5>
+														When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+														<div class="w-100 mt-2">
+															<span class="float-left">
+																<i class="fa fa-paperclip fa"></i> file name
+															</span>
+															<span class="float-right">
+																	<button class="float-right ml-1"><i class="fa fa-pencil"> </i> Edit Question</button> 	
+																	<button class="float-right btn-info ml-1"><i class="fa fa-file"></i> Proposals</button> 
+																<button class="float-right btn-success"><i class="fa fa-address-card"> </i> Invited Teachers</button> 
+															</span>
+														</div>
+													</div>
+												</div>
+											 </div>
+											 
+
+													</div>
+											 <!-- Unanswer listing first finish -->
+
+
+										<!-- load more question starts -->
+										 <ul class="float-left w-100 list-unstyled pt-3 pb-3">
+											 <li class="text-center pt-2 p-2"><a href="#" class="badge-info shadow-sm rounded border-info pt-1 pb-1 pl-3 pr-3 text-white load-more"><i class="fa fa-spinner"></i> Load more</a>
+										 </ul>
+										<!-- load more question finsih -->
+
+										<!-- teacher list starts -->
+										<div class="col-md-12 text-center teacher-list float-left">
+											<div class="row">
+												<!-- first teacer section starts -->
+												<div class="col-12 col-sm-6 col-md-6">
+														<div class="card mb-3 bg-light rounded-lg card p-3">
+																<div class="row no-gutters">
+																	<div class="col-md-4">
+																			<img src="images/teacher.png" class="card-img-top rounded-pill" alt="...">
+																	</div>
+																	<div class="col-md-8 text-left">
+																		<div class="card-body pt-0 pr-0 pb-0">
+																			<h5 class="card-title pt-0">Proff. Atya Chala Cathy</h5>
+																				
+																			<p class="card-text mb-0">
+																				<i class="fa fa-star"></i>
+																				<i class="fa fa-star"></i>
+																				<i class="fa fa-star"></i>
+																				<i class="fa fa-star"></i>
+																				<i class="fa fa-star"></i>
+																			</p>
+																			<p class="card-text hourly-rate mb-0">	$ 7 /hr </p>
+																			<p class="card-text">
+																				<span class="badge badge-info"> Algebra</span>
+																				<span class="badge badge-info"> Trigonometry</span>
+																				<span class="badge badge-info"> Maths</span>
+																			</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+													</div>
+
+													<div class="col-12 col-sm-6 col-md-6">
+															<div class="card mb-3 bg-light rounded-lg card p-3">
+																	<div class="row no-gutters">
+																		<div class="col-md-4">
+																				<img src="images/teacher.png" class="card-img-top rounded-pill" alt="...">
+																		</div>
+																		<div class="col-md-8 text-left">
+																			<div class="card-body pt-0 pr-0 pb-0">
+																				<h5 class="card-title pt-0">Proff. Atya Chala Cathy</h5>
+																					
+																				<p class="card-text mb-0">
+																					<i class="fa fa-star"></i>
+																					<i class="fa fa-star"></i>
+																					<i class="fa fa-star"></i>
+																					<i class="fa fa-star"></i>
+																					<i class="fa fa-star"></i>
+																				</p>
+																				<p class="card-text hourly-rate mb-0">	$ 7 /hr </p>
+																				<p class="card-text">
+																					<span class="badge badge-info"> Algebra</span>
+																					<span class="badge badge-info"> Trigonometry</span>
+																					<span class="badge badge-info"> Maths</span>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+														</div>
+	
+
+														<div class="col-12 col-sm-6 col-md-6">
+																<div class="card mb-3 bg-light rounded-lg card p-3">
+																		<div class="row no-gutters">
+																			<div class="col-md-4">
+																					<img src="images/teacher.png" class="card-img-top rounded-pill" alt="...">
+																			</div>
+																			<div class="col-md-8 text-left">
+																				<div class="card-body pt-0 pr-0 pb-0">
+																					<h5 class="card-title pt-0">Proff. Atya Chala Cathy</h5>
+																						
+																					<p class="card-text mb-0">
+																						<i class="fa fa-star"></i>
+																						<i class="fa fa-star"></i>
+																						<i class="fa fa-star"></i>
+																						<i class="fa fa-star"></i>
+																						<i class="fa fa-star"></i>
+																					</p>
+																					<p class="card-text hourly-rate mb-0">	$ 7 /hr </p>
+																					<p class="card-text">
+																						<span class="badge badge-info"> Algebra</span>
+																						<span class="badge badge-info"> Trigonometry</span>
+																						<span class="badge badge-info"> Maths</span>
+																					</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+															</div>
+
+															<div class="col-12 col-sm-6 col-md-6">
+																	<div class="card mb-3 bg-light rounded-lg card p-3">
+																			<div class="row no-gutters">
+																				<div class="col-md-4">
+																						<img src="images/teacher.png" class="card-img-top rounded-pill" alt="...">
+																				</div>
+																				<div class="col-md-8 text-left">
+																					<div class="card-body pt-0 pr-0 pb-0">
+																						<h5 class="card-title pt-0">Proff. Atya Chala Cathy</h5>
+																							
+																						<p class="card-text mb-0">
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																						</p>
+																						<p class="card-text hourly-rate mb-0">	$ 7 /hr </p>
+																						<p class="card-text">
+																							<span class="badge badge-info"> Algebra</span>
+																							<span class="badge badge-info"> Trigonometry</span>
+																							<span class="badge badge-info"> Maths</span>
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																</div>
+			
+
+												<!-- first teacher section finish -->
+											</div>
+										</div>
+										<!-- teacher list finish -->
+										<!-- load more question starts -->
+										<ul class="float-left col-md-12 list-unstyled pt-3 pb-3">
+												<li class="text-center pt-2 p-2"><a href="#" class="badge-success shadow-sm rounded border-info pt-1 pb-1 pl-3 pr-3 text-white load-more"><i class="fa fa-spinner"></i> Load more</a>
+											</ul>
+										 <!-- load more question finsih -->
 									</div>
 								<!-- question listing finish-->
 							</div>
@@ -276,6 +665,27 @@
 						
 						<!-- right section starts -->
 						  <div class="col-md-3 col-lg-3 pr-0 student-right">
+								<!-- profile section starts -->
+								<div class="user-profile section float-left w-100 bg-light mb-3 p-3 rounded-lg">
+										<div class="media">
+											<img src="images/default-user.png" class="mr-3 user-profile-image" alt="...">
+											<div class="media-body">
+												<h5 class="mt-2 profile-heading">Media heading</h5>
+												<p clas="w-100 float-left">
+													<strong>Wallet : </strong> $ 100.00
+												</p>
+											</div>
+										</div>
+										<!-- <ul class="clearfix pl-0 mt-4 w-100 float-left">
+											<li><a href="#"><i class="fa fa-check-circle"></i> You're part of the family 
+												<span>welcome. </span></a></li>
+											<li><a href="#"><i class="fa fa-check-circle"></i> Looking good 
+													<span>A picture is worth a thousand words.</span></a></li>
+											<li><a href="#"><i class="fa fa-check-circle"></i> Show us what you know 
+														<span>Get in there and answer something</span></a></li>
+										</ul> -->
+									</div>
+								<!-- profile section fisnih -->
 								<!-- calender section starts -->
 								 <div calendar class="calendar" id="calendar"></div>
 								<!-- calender section finish -->
@@ -295,16 +705,16 @@
 			</div>
 		<!-- content container finish -->
 	<!-- Ask your question -->
-	<div class="askYourQuestion">
+	<!-- <div class="askYourQuestion">
 		<div class="container">
 			<h2>What question do you need help with?</h2>
 			<a href="" class="btn btn-primary" data-toggle="modal" data-target="#askquestion-modal">ASK Your QUESTION</a>
 		</div>
-	</div>
+	</div> -->
 	<!-- /Ask your question -->
 
 	<!-- footer -->
-	<footer class="main-footer">
+	<footer class="main-footer bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-sm-3 mb-5 mb-lg-0">
@@ -325,22 +735,25 @@
           </div>
           <div class="col-lg-3 col-sm-3 text-center footer-right-link">
 			<a href="" class="btn btn-outline btn-outline-primary">Become a teacher</a>
-			<div class="login-sign-btn">
-				<a href="">Log in</a>&nbsp;&nbsp;&nbsp;
-				<a href="">Sign up</a>
-			</div>
+			
           </div>
         </div>
       </div>
       <div class="copyrights">
         <div class="container">
           <div class="row">
+							<p class="text-center col-md-12 social-icon">
+									<a href="#"><i class="fa fa-facebook-official"></i></a>
+									<a href="#"><i class="fa fa-linkedin-square"></i></a>
+									<a href="#"><i class="fa fa-twitter-square"></i></a>
+									<a href="#"><i class="fa fa-pinterest-square"></i></a>
+								</p>
             <div class="col-lg-6 col-sm-6 text-left">
-              <p class="copyrights-text mb-3 mb-lg-0">&copy; Mathinctant 2019</p>              
+              <p class="copyrights-text mb-3 mb-lg-0">&copy; Math instant 2019</p>              
             </div>
             <div class="col-lg-6 col-sm-6 text-right">
               <ul class="list-inline social mb-0">
-                <li class="list-inline-item"><a href="#">Terms&Conditions</a></li>
+                <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
               </ul>
             </div>
           </div>
@@ -574,14 +987,14 @@
 
       <!-- jQuery -->
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
+	 <!-- <script src="js/front.js"></script> -->
 	<script src="js/jquery.easing.js"></script>
 	<script src="js/jquery.mousewheel.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
     <script src="vendor/lightbox2/js/lightbox.js"></script>
     <script src="js/jquery.flexslider.js"></script>
-    <script src="js/front.js"></script>
+    
 
 
  
@@ -630,8 +1043,35 @@
 		$('.image-upload-wrap').bind('dragleave', function () {
 		$('.image-upload-wrap').removeClass('image-dropping');
 	});
+
 	</script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+
+jQuery(document).ready(function() {
+	// alert();
+	jQuery('input[type="radio"]').on("click", function(){
+		if(jQuery(this).attr('id') == 'customRadioInline1') {
+						$('.answer-listing').show();
+						$('.being-answer-listing').hide();
+						$('.unanswer-listing').hide();
+       }
+			 else if(jQuery(this).attr('id') == 'customRadioInline2') {
+						$('.answer-listing').hide();
+						$('.being-answer-listing').show();
+						$('.unanswer-listing').hide();
+       }
+			 else if(jQuery(this).attr('id') == 'customRadioInline3') {
+					  $('.answer-listing').hide();
+						$('.being-answer-listing').hide();
+						$('.unanswer-listing').show();
+       }
+
+       
+});
+
+});
+</script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js'></script>
 	<script src="js/calender.js"></script>
