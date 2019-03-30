@@ -105,28 +105,15 @@
     <!-- Profile content container starts -->
     <div class="col-md-12 profile-container mt-5 pt-5 mb-5 pb-5">
       <div class="container">
-        <div class="profile-section mt-5 pl-5 pr-5 pb-5 pt-4">
-          <h3 class="pt-2">Edit Profile</h3>
+        <div class="profile-section mt-5 pb-5 pt-4">
+          <h3 class="pt-2 col-md-12">Edit Profile</h3>
           <!-- personal info section starts -->
-          <div class="col-md-12  pt-4 pb-4  pl-0 bg-white profile-info rounded-lg">
+          <div class="col-md-12 pt-4 pl-4 pb-4 bg-white profile-info rounded-lg">
             <div class="row">
-              <div class="col-3">
-                <div
-                  class="nav flex-column nav-pills"
-                  id="v-pills-tab"
-                  role="tablist"
-                  aria-orientation="vertical"
-                >
-                  <a
-                    class="nav-link active"
-                    id="v-pills-home-tab"
-                    data-toggle="pill"
-                    href="#v-pills-home"
-                    role="tab"
-                    aria-controls="v-pills-home"
-                    aria-selected="true"
-                    >Edit Profile</a
-                  >
+              <!-- <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> Edit Profile</a>
+                <a class="nav-link" id="v-pills-cat-tab" data-toggle="pill" href="#v-pills-cat" role="tab" aria-controls="v-pills-home" aria-selected="true"> Change Categories</a>
                   <a
                     class="nav-link"
                     id="v-pills-profile-tab"
@@ -148,58 +135,39 @@
                     >Billing Method</a
                   >
                 </div>
-              </div>
-              <div class="col-9">
+              </div> -->
+              <div class="w-100 float-left">
                 <div class="tab-content" id="v-pills-tabContent">
                   <!-- edit profile section starts -->
-                  <div
-                    class="tab-pane fade show active"
-                    id="v-pills-home"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-home-tab"
-                  >
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                     <form action="#" method="post" class="w-100 float-left">
                       <div class="row">
                         <!-- left column -->
-                        <h5 class="w-100 float-left pl-3 text-left mb-4">
-                          Personal info
-                        </h5>
-                        <div class="col-md-4">
+                       
+                        <div class="col-md-3">
                           <div class="text-center">
-                            <img
-                              src="//placehold.it/100"
-                              class="avatar img-circle"
-                              alt="avatar"
-                            />
+                            <img src="images/profile-image.png" class="avatar img-fluid rounded-circle" alt="avatar" />
                             <!-- <h6 class="mt-2 mb-2">
                               Upload a different photo...
                             </h6> -->
 
-                            <div class="input-file-container">
-                              <input
-                                class="input-file"
-                                id="my-file"
-                                type="file"
-                              />
-                              <label
-                                tabindex="0"
-                                for="my-file"
-                                class="input-file-trigger"
-                                >Upload new pic ...</label
+                            <div class="input-file-container w-100">
+                              <input class="input-file" id="my-file" type="file" />
+                              <label tabindex="0" for="my-file" class="input-file-trigger w-100">Upload pic ...</label
                               >
                             </div>
                             <p class="file-return"></p>
                           </div>
                         </div>
                         <!-- edit form column -->
-                        <div class="col-md-8 personal-info">
+                        <div class="col-12 col-sm-12 col-md-8 offset-0 offset-sm-0 offset-md-1 personal-info">
                           <form class="form-horizontal" role="form">
                             <div class="form-group">
                               <div class="row">
                                 <label class="col-lg-3 text-left control-label"
                                   >Name:</label
                                 >
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                   <input
                                     class="form-control"
                                     type="text"
@@ -214,7 +182,7 @@
                                 <label class="col-lg-3 text-left control-label"
                                   >Email :</label
                                 >
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                   <input
                                     class="form-control"
                                     type="email"
@@ -224,18 +192,45 @@
                                 </div>
                               </div>
                             </div>
+                            
                             <div class="form-group">
                               <div class="row">
                                 <label class="col-lg-3 text-left control-label"
                                   >Username:</label
                                 >
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                   <input
                                     class="form-control"
                                     readonly
                                     type="text"
                                     value="cathyjone"
                                   />
+                                </div>
+                              </div>
+                            </div> 
+
+                            <div class="form-group">
+                              <div class="row">
+                                <label class="col-lg-3 text-left control-label">English Proficiency :</label
+                                >
+                                <div class="col-lg-7">
+                                  <select class="custom-select">
+                                    <option>Select Level</option>
+                                    <option value="AFG">Basic</option>
+                                    <option value="ALA">Conversational</option>
+                                    <option value="ALB">Fluent</option>
+                                    <option value="ALB">Native or Bilingual</option>
+                                     
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <div class="row">
+                                <label class="col-lg-3 text-left control-label">Language Spoken:</label>
+                                <div class="col-lg-7">
+                                  <input class="form-control" type="text" value="English" />
                                 </div>
                               </div>
                             </div>
@@ -245,7 +240,7 @@
                                 <label class="col-lg-3 text-left control-label"
                                   >Country :</label
                                 >
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                   <select class="custom-select">
                                     <option>Select Country</option>
                                     <option value="AFG">Afghanistan</option>
@@ -257,9 +252,7 @@
                                     <option value="AGO">Angola</option>
                                     <option value="AIA">Anguilla</option>
                                     <option value="ATA">Antarctica</option>
-                                    <option value="ATG"
-                                      >Antigua and Barbuda</option
-                                    >
+                                    <option value="ATG">Antigua and Barbuda</option>
                                     <option value="ARG">Argentina</option>
                                     <option value="ARM">Armenia</option>
                                     <option value="ABW">Aruba</option>
@@ -607,704 +600,15 @@
                                 </div>
                               </div>
                             </div>
-
-                            <div class="form-group">
-                              <div class="row">
-                                <label class="col-lg-3 text-left control-label"
-                                  >Timezone :</label
-                                >
-                                <div class="col-lg-8">
-                                  <select class="custom-select">
-                                    <option>Select Timezone</option>
-                                    <option
-                                      timeZoneId="1"
-                                      gmtAdjustment="GMT-12:00"
-                                      useDaylightTime="0"
-                                      value="-12"
-                                      >(GMT-12:00) International Date Line
-                                      West</option
-                                    >
-                                    <option
-                                      timeZoneId="2"
-                                      gmtAdjustment="GMT-11:00"
-                                      useDaylightTime="0"
-                                      value="-11"
-                                      >(GMT-11:00) Midway Island, Samoa</option
-                                    >
-                                    <option
-                                      timeZoneId="3"
-                                      gmtAdjustment="GMT-10:00"
-                                      useDaylightTime="0"
-                                      value="-10"
-                                      >(GMT-10:00) Hawaii</option
-                                    >
-                                    <option
-                                      timeZoneId="4"
-                                      gmtAdjustment="GMT-09:00"
-                                      useDaylightTime="1"
-                                      value="-9"
-                                      >(GMT-09:00) Alaska</option
-                                    >
-                                    <option
-                                      timeZoneId="5"
-                                      gmtAdjustment="GMT-08:00"
-                                      useDaylightTime="1"
-                                      value="-8"
-                                      >(GMT-08:00) Pacific Time (US &
-                                      Canada)</option
-                                    >
-                                    <option
-                                      timeZoneId="6"
-                                      gmtAdjustment="GMT-08:00"
-                                      useDaylightTime="1"
-                                      value="-8"
-                                      >(GMT-08:00) Tijuana, Baja
-                                      California</option
-                                    >
-                                    <option
-                                      timeZoneId="7"
-                                      gmtAdjustment="GMT-07:00"
-                                      useDaylightTime="0"
-                                      value="-7"
-                                      >(GMT-07:00) Arizona</option
-                                    >
-                                    <option
-                                      timeZoneId="8"
-                                      gmtAdjustment="GMT-07:00"
-                                      useDaylightTime="1"
-                                      value="-7"
-                                      >(GMT-07:00) Chihuahua, La Paz,
-                                      Mazatlan</option
-                                    >
-                                    <option
-                                      timeZoneId="9"
-                                      gmtAdjustment="GMT-07:00"
-                                      useDaylightTime="1"
-                                      value="-7"
-                                      >(GMT-07:00) Mountain Time (US &
-                                      Canada)</option
-                                    >
-                                    <option
-                                      timeZoneId="10"
-                                      gmtAdjustment="GMT-06:00"
-                                      useDaylightTime="0"
-                                      value="-6"
-                                      >(GMT-06:00) Central America</option
-                                    >
-                                    <option
-                                      timeZoneId="11"
-                                      gmtAdjustment="GMT-06:00"
-                                      useDaylightTime="1"
-                                      value="-6"
-                                      >(GMT-06:00) Central Time (US &
-                                      Canada)</option
-                                    >
-                                    <option
-                                      timeZoneId="12"
-                                      gmtAdjustment="GMT-06:00"
-                                      useDaylightTime="1"
-                                      value="-6"
-                                      >(GMT-06:00) Guadalajara, Mexico City,
-                                      Monterrey</option
-                                    >
-                                    <option
-                                      timeZoneId="13"
-                                      gmtAdjustment="GMT-06:00"
-                                      useDaylightTime="0"
-                                      value="-6"
-                                      >(GMT-06:00) Saskatchewan</option
-                                    >
-                                    <option
-                                      timeZoneId="14"
-                                      gmtAdjustment="GMT-05:00"
-                                      useDaylightTime="0"
-                                      value="-5"
-                                      >(GMT-05:00) Bogota, Lima, Quito, Rio
-                                      Branco</option
-                                    >
-                                    <option
-                                      timeZoneId="15"
-                                      gmtAdjustment="GMT-05:00"
-                                      useDaylightTime="1"
-                                      value="-5"
-                                      >(GMT-05:00) Eastern Time (US &
-                                      Canada)</option
-                                    >
-                                    <option
-                                      timeZoneId="16"
-                                      gmtAdjustment="GMT-05:00"
-                                      useDaylightTime="1"
-                                      value="-5"
-                                      >(GMT-05:00) Indiana (East)</option
-                                    >
-                                    <option
-                                      timeZoneId="17"
-                                      gmtAdjustment="GMT-04:00"
-                                      useDaylightTime="1"
-                                      value="-4"
-                                      >(GMT-04:00) Atlantic Time
-                                      (Canada)</option
-                                    >
-                                    <option
-                                      timeZoneId="18"
-                                      gmtAdjustment="GMT-04:00"
-                                      useDaylightTime="0"
-                                      value="-4"
-                                      >(GMT-04:00) Caracas, La Paz</option
-                                    >
-                                    <option
-                                      timeZoneId="19"
-                                      gmtAdjustment="GMT-04:00"
-                                      useDaylightTime="0"
-                                      value="-4"
-                                      >(GMT-04:00) Manaus</option
-                                    >
-                                    <option
-                                      timeZoneId="20"
-                                      gmtAdjustment="GMT-04:00"
-                                      useDaylightTime="1"
-                                      value="-4"
-                                      >(GMT-04:00) Santiago</option
-                                    >
-                                    <option
-                                      timeZoneId="21"
-                                      gmtAdjustment="GMT-03:30"
-                                      useDaylightTime="1"
-                                      value="-3.5"
-                                      >(GMT-03:30) Newfoundland</option
-                                    >
-                                    <option
-                                      timeZoneId="22"
-                                      gmtAdjustment="GMT-03:00"
-                                      useDaylightTime="1"
-                                      value="-3"
-                                      >(GMT-03:00) Brasilia</option
-                                    >
-                                    <option
-                                      timeZoneId="23"
-                                      gmtAdjustment="GMT-03:00"
-                                      useDaylightTime="0"
-                                      value="-3"
-                                      >(GMT-03:00) Buenos Aires,
-                                      Georgetown</option
-                                    >
-                                    <option
-                                      timeZoneId="24"
-                                      gmtAdjustment="GMT-03:00"
-                                      useDaylightTime="1"
-                                      value="-3"
-                                      >(GMT-03:00) Greenland</option
-                                    >
-                                    <option
-                                      timeZoneId="25"
-                                      gmtAdjustment="GMT-03:00"
-                                      useDaylightTime="1"
-                                      value="-3"
-                                      >(GMT-03:00) Montevideo</option
-                                    >
-                                    <option
-                                      timeZoneId="26"
-                                      gmtAdjustment="GMT-02:00"
-                                      useDaylightTime="1"
-                                      value="-2"
-                                      >(GMT-02:00) Mid-Atlantic</option
-                                    >
-                                    <option
-                                      timeZoneId="27"
-                                      gmtAdjustment="GMT-01:00"
-                                      useDaylightTime="0"
-                                      value="-1"
-                                      >(GMT-01:00) Cape Verde Is.</option
-                                    >
-                                    <option
-                                      timeZoneId="28"
-                                      gmtAdjustment="GMT-01:00"
-                                      useDaylightTime="1"
-                                      value="-1"
-                                      >(GMT-01:00) Azores</option
-                                    >
-                                    <option
-                                      timeZoneId="29"
-                                      gmtAdjustment="GMT+00:00"
-                                      useDaylightTime="0"
-                                      value="0"
-                                      >(GMT+00:00) Casablanca, Monrovia,
-                                      Reykjavik</option
-                                    >
-                                    <option
-                                      timeZoneId="30"
-                                      gmtAdjustment="GMT+00:00"
-                                      useDaylightTime="1"
-                                      value="0"
-                                      >(GMT+00:00) Greenwich Mean Time : Dublin,
-                                      Edinburgh, Lisbon, London</option
-                                    >
-                                    <option
-                                      timeZoneId="31"
-                                      gmtAdjustment="GMT+01:00"
-                                      useDaylightTime="1"
-                                      value="1"
-                                      >(GMT+01:00) Amsterdam, Berlin, Bern,
-                                      Rome, Stockholm, Vienna</option
-                                    >
-                                    <option
-                                      timeZoneId="32"
-                                      gmtAdjustment="GMT+01:00"
-                                      useDaylightTime="1"
-                                      value="1"
-                                      >(GMT+01:00) Belgrade, Bratislava,
-                                      Budapest, Ljubljana, Prague</option
-                                    >
-                                    <option
-                                      timeZoneId="33"
-                                      gmtAdjustment="GMT+01:00"
-                                      useDaylightTime="1"
-                                      value="1"
-                                      >(GMT+01:00) Brussels, Copenhagen, Madrid,
-                                      Paris</option
-                                    >
-                                    <option
-                                      timeZoneId="34"
-                                      gmtAdjustment="GMT+01:00"
-                                      useDaylightTime="1"
-                                      value="1"
-                                      >(GMT+01:00) Sarajevo, Skopje, Warsaw,
-                                      Zagreb</option
-                                    >
-                                    <option
-                                      timeZoneId="35"
-                                      gmtAdjustment="GMT+01:00"
-                                      useDaylightTime="1"
-                                      value="1"
-                                      >(GMT+01:00) West Central Africa</option
-                                    >
-                                    <option
-                                      timeZoneId="36"
-                                      gmtAdjustment="GMT+02:00"
-                                      useDaylightTime="1"
-                                      value="2"
-                                      >(GMT+02:00) Amman</option
-                                    >
-                                    <option
-                                      timeZoneId="37"
-                                      gmtAdjustment="GMT+02:00"
-                                      useDaylightTime="1"
-                                      value="2"
-                                      >(GMT+02:00) Athens, Bucharest,
-                                      Istanbul</option
-                                    >
-                                    <option
-                                      timeZoneId="38"
-                                      gmtAdjustment="GMT+02:00"
-                                      useDaylightTime="1"
-                                      value="2"
-                                      >(GMT+02:00) Beirut</option
-                                    >
-                                    <option
-                                      timeZoneId="39"
-                                      gmtAdjustment="GMT+02:00"
-                                      useDaylightTime="1"
-                                      value="2"
-                                      >(GMT+02:00) Cairo</option
-                                    >
-                                    <option
-                                      timeZoneId="40"
-                                      gmtAdjustment="GMT+02:00"
-                                      useDaylightTime="0"
-                                      value="2"
-                                      >(GMT+02:00) Harare, Pretoria</option
-                                    >
-                                    <option
-                                      timeZoneId="41"
-                                      gmtAdjustment="GMT+02:00"
-                                      useDaylightTime="1"
-                                      value="2"
-                                      >(GMT+02:00) Helsinki, Kyiv, Riga, Sofia,
-                                      Tallinn, Vilnius</option
-                                    >
-                                    <option
-                                      timeZoneId="42"
-                                      gmtAdjustment="GMT+02:00"
-                                      useDaylightTime="1"
-                                      value="2"
-                                      >(GMT+02:00) Jerusalem</option
-                                    >
-                                    <option
-                                      timeZoneId="43"
-                                      gmtAdjustment="GMT+02:00"
-                                      useDaylightTime="1"
-                                      value="2"
-                                      >(GMT+02:00) Minsk</option
-                                    >
-                                    <option
-                                      timeZoneId="44"
-                                      gmtAdjustment="GMT+02:00"
-                                      useDaylightTime="1"
-                                      value="2"
-                                      >(GMT+02:00) Windhoek</option
-                                    >
-                                    <option
-                                      timeZoneId="45"
-                                      gmtAdjustment="GMT+03:00"
-                                      useDaylightTime="0"
-                                      value="3"
-                                      >(GMT+03:00) Kuwait, Riyadh,
-                                      Baghdad</option
-                                    >
-                                    <option
-                                      timeZoneId="46"
-                                      gmtAdjustment="GMT+03:00"
-                                      useDaylightTime="1"
-                                      value="3"
-                                      >(GMT+03:00) Moscow, St. Petersburg,
-                                      Volgograd</option
-                                    >
-                                    <option
-                                      timeZoneId="47"
-                                      gmtAdjustment="GMT+03:00"
-                                      useDaylightTime="0"
-                                      value="3"
-                                      >(GMT+03:00) Nairobi</option
-                                    >
-                                    <option
-                                      timeZoneId="48"
-                                      gmtAdjustment="GMT+03:00"
-                                      useDaylightTime="0"
-                                      value="3"
-                                      >(GMT+03:00) Tbilisi</option
-                                    >
-                                    <option
-                                      timeZoneId="49"
-                                      gmtAdjustment="GMT+03:30"
-                                      useDaylightTime="1"
-                                      value="3.5"
-                                      >(GMT+03:30) Tehran</option
-                                    >
-                                    <option
-                                      timeZoneId="50"
-                                      gmtAdjustment="GMT+04:00"
-                                      useDaylightTime="0"
-                                      value="4"
-                                      >(GMT+04:00) Abu Dhabi, Muscat</option
-                                    >
-                                    <option
-                                      timeZoneId="51"
-                                      gmtAdjustment="GMT+04:00"
-                                      useDaylightTime="1"
-                                      value="4"
-                                      >(GMT+04:00) Baku</option
-                                    >
-                                    <option
-                                      timeZoneId="52"
-                                      gmtAdjustment="GMT+04:00"
-                                      useDaylightTime="1"
-                                      value="4"
-                                      >(GMT+04:00) Yerevan</option
-                                    >
-                                    <option
-                                      timeZoneId="53"
-                                      gmtAdjustment="GMT+04:30"
-                                      useDaylightTime="0"
-                                      value="4.5"
-                                      >(GMT+04:30) Kabul</option
-                                    >
-                                    <option
-                                      timeZoneId="54"
-                                      gmtAdjustment="GMT+05:00"
-                                      useDaylightTime="1"
-                                      value="5"
-                                      >(GMT+05:00) Yekaterinburg</option
-                                    >
-                                    <option
-                                      timeZoneId="55"
-                                      gmtAdjustment="GMT+05:00"
-                                      useDaylightTime="0"
-                                      value="5"
-                                      >(GMT+05:00) Islamabad, Karachi,
-                                      Tashkent</option
-                                    >
-                                    <option
-                                      timeZoneId="56"
-                                      gmtAdjustment="GMT+05:30"
-                                      useDaylightTime="0"
-                                      value="5.5"
-                                      >(GMT+05:30) Sri Jayawardenapura</option
-                                    >
-                                    <option
-                                      timeZoneId="57"
-                                      gmtAdjustment="GMT+05:30"
-                                      useDaylightTime="0"
-                                      value="5.5"
-                                      >(GMT+05:30) Chennai, Kolkata, Mumbai, New
-                                      Delhi</option
-                                    >
-                                    <option
-                                      timeZoneId="58"
-                                      gmtAdjustment="GMT+05:45"
-                                      useDaylightTime="0"
-                                      value="5.75"
-                                      >(GMT+05:45) Kathmandu</option
-                                    >
-                                    <option
-                                      timeZoneId="59"
-                                      gmtAdjustment="GMT+06:00"
-                                      useDaylightTime="1"
-                                      value="6"
-                                      >(GMT+06:00) Almaty, Novosibirsk</option
-                                    >
-                                    <option
-                                      timeZoneId="60"
-                                      gmtAdjustment="GMT+06:00"
-                                      useDaylightTime="0"
-                                      value="6"
-                                      >(GMT+06:00) Astana, Dhaka</option
-                                    >
-                                    <option
-                                      timeZoneId="61"
-                                      gmtAdjustment="GMT+06:30"
-                                      useDaylightTime="0"
-                                      value="6.5"
-                                      >(GMT+06:30) Yangon (Rangoon)</option
-                                    >
-                                    <option
-                                      timeZoneId="62"
-                                      gmtAdjustment="GMT+07:00"
-                                      useDaylightTime="0"
-                                      value="7"
-                                      >(GMT+07:00) Bangkok, Hanoi,
-                                      Jakarta</option
-                                    >
-                                    <option
-                                      timeZoneId="63"
-                                      gmtAdjustment="GMT+07:00"
-                                      useDaylightTime="1"
-                                      value="7"
-                                      >(GMT+07:00) Krasnoyarsk</option
-                                    >
-                                    <option
-                                      timeZoneId="64"
-                                      gmtAdjustment="GMT+08:00"
-                                      useDaylightTime="0"
-                                      value="8"
-                                      >(GMT+08:00) Beijing, Chongqing, Hong
-                                      Kong, Urumqi</option
-                                    >
-                                    <option
-                                      timeZoneId="65"
-                                      gmtAdjustment="GMT+08:00"
-                                      useDaylightTime="0"
-                                      value="8"
-                                      >(GMT+08:00) Kuala Lumpur,
-                                      Singapore</option
-                                    >
-                                    <option
-                                      timeZoneId="66"
-                                      gmtAdjustment="GMT+08:00"
-                                      useDaylightTime="0"
-                                      value="8"
-                                      >(GMT+08:00) Irkutsk, Ulaan Bataar</option
-                                    >
-                                    <option
-                                      timeZoneId="67"
-                                      gmtAdjustment="GMT+08:00"
-                                      useDaylightTime="0"
-                                      value="8"
-                                      >(GMT+08:00) Perth</option
-                                    >
-                                    <option
-                                      timeZoneId="68"
-                                      gmtAdjustment="GMT+08:00"
-                                      useDaylightTime="0"
-                                      value="8"
-                                      >(GMT+08:00) Taipei</option
-                                    >
-                                    <option
-                                      timeZoneId="69"
-                                      gmtAdjustment="GMT+09:00"
-                                      useDaylightTime="0"
-                                      value="9"
-                                      >(GMT+09:00) Osaka, Sapporo, Tokyo</option
-                                    >
-                                    <option
-                                      timeZoneId="70"
-                                      gmtAdjustment="GMT+09:00"
-                                      useDaylightTime="0"
-                                      value="9"
-                                      >(GMT+09:00) Seoul</option
-                                    >
-                                    <option
-                                      timeZoneId="71"
-                                      gmtAdjustment="GMT+09:00"
-                                      useDaylightTime="1"
-                                      value="9"
-                                      >(GMT+09:00) Yakutsk</option
-                                    >
-                                    <option
-                                      timeZoneId="72"
-                                      gmtAdjustment="GMT+09:30"
-                                      useDaylightTime="0"
-                                      value="9.5"
-                                      >(GMT+09:30) Adelaide</option
-                                    >
-                                    <option
-                                      timeZoneId="73"
-                                      gmtAdjustment="GMT+09:30"
-                                      useDaylightTime="0"
-                                      value="9.5"
-                                      >(GMT+09:30) Darwin</option
-                                    >
-                                    <option
-                                      timeZoneId="74"
-                                      gmtAdjustment="GMT+10:00"
-                                      useDaylightTime="0"
-                                      value="10"
-                                      >(GMT+10:00) Brisbane</option
-                                    >
-                                    <option
-                                      timeZoneId="75"
-                                      gmtAdjustment="GMT+10:00"
-                                      useDaylightTime="1"
-                                      value="10"
-                                      >(GMT+10:00) Canberra, Melbourne,
-                                      Sydney</option
-                                    >
-                                    <option
-                                      timeZoneId="76"
-                                      gmtAdjustment="GMT+10:00"
-                                      useDaylightTime="1"
-                                      value="10"
-                                      >(GMT+10:00) Hobart</option
-                                    >
-                                    <option
-                                      timeZoneId="77"
-                                      gmtAdjustment="GMT+10:00"
-                                      useDaylightTime="0"
-                                      value="10"
-                                      >(GMT+10:00) Guam, Port Moresby</option
-                                    >
-                                    <option
-                                      timeZoneId="78"
-                                      gmtAdjustment="GMT+10:00"
-                                      useDaylightTime="1"
-                                      value="10"
-                                      >(GMT+10:00) Vladivostok</option
-                                    >
-                                    <option
-                                      timeZoneId="79"
-                                      gmtAdjustment="GMT+11:00"
-                                      useDaylightTime="1"
-                                      value="11"
-                                      >(GMT+11:00) Magadan, Solomon Is., New
-                                      Caledonia</option
-                                    >
-                                    <option
-                                      timeZoneId="80"
-                                      gmtAdjustment="GMT+12:00"
-                                      useDaylightTime="1"
-                                      value="12"
-                                      >(GMT+12:00) Auckland, Wellington</option
-                                    >
-                                    <option
-                                      timeZoneId="81"
-                                      gmtAdjustment="GMT+12:00"
-                                      useDaylightTime="0"
-                                      value="12"
-                                      >(GMT+12:00) Fiji, Kamchatka, Marshall
-                                      Is.</option
-                                    >
-                                    <option
-                                      timeZoneId="82"
-                                      gmtAdjustment="GMT+13:00"
-                                      useDaylightTime="0"
-                                      value="13"
-                                      >(GMT+13:00) Nuku'alofa</option
-                                    >
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="form-group">
-                              <div class="row">
-                                <label class="col-lg-3 text-left control-label"
-                                  >Studying In:</label
-                                >
-                                <div class="col-lg-8">
-                                  <input
-                                    class="form-control"
-                                    type="text"
-                                    value="10 + 2 (Non Med)"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="form-group institution">
-                              <div class="row">
-                                <label class="col-lg-3 text-left control-label"
-                                  >Institution :</label
-                                >
-                                <div class="col-lg-8"><div class="col-md-12">
-                                  <div class="row mb-2">
-                                    <div
-                                      class="custom-control custom-radio col-md-6"
-                                    >
-                                      <input
-                                        type="radio"
-                                        id="red"
-                                        name="colorRadio"
-                                        value="red"
-                                        class="custom-control-input"
-                                      />
-                                      <label
-                                        class="custom-control-label"
-                                        for="red"
-                                        >High School</label
-                                      >
-                                    </div>
-
-                                    <div
-                                      class="custom-control custom-radio col-md-6"
-                                    >
-                                      <input
-                                        type="radio"
-                                        id="green"
-                                        name="colorRadio"
-                                        value="green"
-                                        class="custom-control-input"
-                                      />
-                                      <label
-                                        class="custom-control-label"
-                                        for="green"
-                                        >College Name</label
-                                      >
-                                    </div></div>
-                                  </div>
-                                  <div class="green bg-transparent box p-0">
-                                    <input
-                                      class="form-control"
-                                      type="text"
-                                      value="College Name"
-                                    />
-                                  </div>
-                                  <div class=" red bg-transparent box p-0">
-                                    <input
-                                      class="form-control"
-                                      type="text"
-                                      value="High School"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
+                      
                             <div class="form-group">
                               <div class="row">
                                 <label
                                   class="col-lg-3 text-left control-label"
                                   for="exampleFormControlTextarea1"
-                                  >About me</label
+                                  >About You</label
                                 >
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                   <textarea
                                     class="form-control"
                                     id="exampleFormControlTextarea1"
@@ -1313,15 +617,121 @@
                                 </div>
                               </div>
                             </div>
+
+                            <div class="form-group">
+                              <div class="row">
+                                <label class="col-lg-3 text-left control-label">I can offer help in :</label
+                                >
+                                <div class="col-lg-7">
+                                  <select class="custom-select">
+                                    <option>Select</option>
+                                    <option value="AFG">Highschool Math</option>
+                                    <option value="ALA">College Math</option>
+                                    <option value="ALB">Test prep</option> 
+                                     
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <div class="row">
+                                <label class="col-lg-3 text-left control-label">Hourly Rate:</label>
+                                <div class="col-lg-7">
+                                  <input class="form-control" type="text" value="" />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <div class="row">
+                                <label class="col-lg-3 text-left control-label">Payment Option:</label>
+                                <div class="col-lg-7">
+                                  <div class="col-md-12 payment-option">
+                                    <div class="row">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="paypal" name="payment" class="custom-control-input">
+                                            <label class="custom-control-label" for="paypal">Paypal</label>
+                                          </div>
+                                          <div class="custom-control custom-radio">
+                                            <input type="radio" id="payoneer" name="payment" class="custom-control-input">
+                                            <label class="custom-control-label" for="payoneer">Payoneer</label>
+                                          </div>
+                                          <div class="custom-control custom-radio">
+                                              <input type="radio" id="skrill" name="payment" class="custom-control-input">
+                                              <label class="custom-control-label" for="skrill">Skrill</label>
+                                            </div> 
+                                          <div class="mt-2 w-100 float-left payment-box" style="display: none;">
+                                              <input class="form-control" type="text" placeholder="Enter Payment Detail" value="">
+                                          </div>
+                                    </div>
+                                  </div> 
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                  <label class="col-lg-3 text-left control-label">Educational Background:</label>
+                                  <div class="col-lg-7">
+                                    <input class="form-control mb-3" type="text" value="Name of Institution" />
+                                    <input class="form-control mb-3" type="text" value="Degree" />
+                                    <input class="form-control mb-3" type="text" value="Study" />
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group topics-list">
+                                  <div class="row">
+                                    <label class="col-lg-3 text-left control-label">Topics :</label>
+                                    <div class="col-lg-7">
+                                      <div class="col-md-12 mb-3">
+                                        <div class="row">
+                                          <h5 class="heading mb-3 w-100 float-left text-primary" > Intermediate analysis 
+                                          <a class="float-right" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                            <i class="fa fa-pencil"></i>
+                                          </a>
+                                         
+                                          </h5>
+                                          <div class="w-100 float-left">
+                                            <span class="badge badge-primary">Convergence</span>
+                                            <span class="badge badge-success">Differentiability</span>
+                                            <span class="badge badge-success">Limits of functions</span>
+                                          </div>
+
+                                        </div>
+                                      </div>
+
+                                     
+                                      <div class="col-md-12 mb-3">
+                                          <div class="row">
+                                            <h5 class="heading mb-3 w-100 float-left text-primary" >Trigonometry</h5>
+                                            <div class="w-100 float-left">
+                                              <span class="badge badge-primary">Trigonometry with right triangles</span>
+                                              <span class="badge badge-success">Identities </span>
+                                              <span class="badge badge-success">Cosine</span>
+                                              <span class="badge badge-success">Tangent</span>
+                                            </div>
+  
+                                          </div>
+                                        </div>
+
+                                    </div>
+                                  </div>
+                                </div>
                           </form>
                         </div>
                       </div>
 
+
+                      
                       <div class="w-100 float-left mt-5 mb-4 text-center">
                         <button class="btn btn-primary">Submit</button>
                         <button class="btn btn-success">Cancel</button>
                       </div>
                     </form>
+
+                   
                   </div>
                   <!-- edit profile section finsih -->
                   <!-- change password section starts -->
@@ -1380,9 +790,24 @@
                     </div>
                   </div>
                   <!-- change password section finsih -->
+
+                  <!-- Edit Catefories section starts -->
+                  <div class="tab-pane fade" id="v-pills-cat" role="tabpanel" aria-labelledby="v-pills-cat-tab">
+                    <h5 class="w-100 float-left mb-3">Categories</h5>
+                    
+
+                     
+                    <div class="w-100 float-left mt-5 mb-4 text-center">
+                      <button class="btn btn-primary">Submit</button>
+                      <button class="btn btn-success">Cancel</button>
+                    </div>
+                  </div>
+                  <!-- cedit categories section finsih -->
+
+
                   <!-- payment gateway section starts -->
                   <div
-                    class="tab-pane fade select-payment"
+                    class="tab-pane fade"
                     id="v-pills-messages"
                     role="tabpanel"
                     aria-labelledby="v-pills-messages-tab"
@@ -1583,7 +1008,221 @@
         </div>
       </div>
     </div>
+ <!-- categories Modal starts -->
+ <div class="modal fade  bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Topics</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
 
+          <h4>What are the main services you offer to clients?</h4>
+          <div class="w-100 float-left mb-4 mt-3">
+              <span href="#" class="badge mb-2 badge-light p-2">Continuity <a href="#" class="float-right ml-4"><i class="fa fa-remove"></i></a></span>
+              <span href="#" class="badge mb-2 badge-light p-2">Integrability <a href="#" class="float-right ml-4"><i class="fa fa-remove"></i></a></span>
+
+              <span href="#" class="badge mb-2 badge-light p-2">Basic algebra<a href="#" class="float-right ml-4"><i class="fa fa-remove"></i></a></span>
+              <span href="#" class="badge mb-2 badge-light p-2">Linear transformations <a href="#" class="float-right ml-4"><i class="fa fa-remove"></i></a></span>
+
+              <span href="#" class="badge mb-2 badge-light p-2">Systems of equations <a href="#" class="float-right ml-4"><i class="fa fa-remove"></i></a></span>
+              <span href="#" class="badge mb-2 badge-light p-2">Multivariable functions <a href="#" class="float-right ml-4"><i class="fa fa-remove"></i></a></span>
+
+              <span href="#" class="badge mb-2 badge-light p-2">Harmonic division <a href="#" class="float-right ml-4"><i class="fa fa-remove"></i></a></span>
+              <span href="#" class="badge mb-2 badge-light p-2">Probability theory<a href="#" class="float-right ml-4"><i class="fa fa-remove"></i></a></span>
+          </div>
+
+
+          <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header bg-white" id="headingOne">
+                  <h2 class="mb-0 float-left w-100">
+                      <div class="custom-control custom-checkbox d-inline-block float-left mb-0" style="height: 15px;" >
+                          <input type="checkbox" class="custom-control-input" id="Convergence">
+                          <label class="custom-control-label" for="Convergence"></label>
+                        </div>
+                        <button class="bg-white text-dark float-left header-custom-check  text-left p-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Intermediate analysis   <i class="fa fa-angle-up float-right"></i>
+                        </button>
+                    
+                  </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <div class="col-md-12"> 
+                        <div class="row">
+                          <div class="custom-control col-12 mb-2 col-sm-12 col-md-6 custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="Convergence">
+                              <label class="custom-control-label" for="Convergence">Convergence</label>
+                            </div>
+  
+                            <div class="custom-control col-12  mb-2 col-sm-12 col-md-6 custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="Limitsfunctions">
+                                <label class="custom-control-label" for="Limitsfunctions">Limits of functions                                        </label>
+                              </div>
+  
+                              <div class="custom-control col-12 mb-2  col-sm-12 col-md-6 custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="Limits">
+                                  <label class="custom-control-label" for="Limits">Limits</label>
+                                </div>
+  
+                                <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="Continuity">
+                                    <label class="custom-control-label" for="Continuity">Continuity</label>
+                                  </div>
+  
+                                  <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="Differentiability">
+                                      <label class="custom-control-label" for="Differentiability">Differentiability</label>
+                                    </div>
+  
+                                    <div class="custom-control mb-2  col-12 col-sm-12 col-md-6 custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="Integrability">
+                                        <label class="custom-control-label" for="Integrability">Integrability</label>
+                                      </div>
+  
+                                      <div class="custom-control mb-2  col-12 col-sm-12 col-md-6 custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="Proofs">
+                                          <label class="custom-control-label" for="Proofs">Proofs</label>
+                                        </div>
+  
+                                        <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="Realanalysis">
+                                            <label class="custom-control-label" for="Realanalysis">Real analysis</label>
+                
+                                          </div></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-white" id="headingTwo">
+                    <h2 class="mb-0 float-left w-100">
+                        <div class="custom-control custom-checkbox d-inline-block float-left mb-0" style="height: 15px;" >
+                            <input type="checkbox" class="custom-control-input" id="Analysis">
+                            <label class="custom-control-label" for="Analysis"></label>
+                          </div>
+                    <button class="bg-white text-dark float-left header-custom-check text-left p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Analysis<i class="fa fa-angle-up float-right"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <div class="col-md-12"> <div class="row">
+                          <div class="custom-control col-12 mb-2 col-sm-12 col-md-6 custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="Realanalysis">
+                              <label class="custom-control-label" for="Realanalysis">Real analysis</label>
+                            </div>
+
+                            <div class="custom-control col-12  mb-2 col-sm-12 col-md-6 custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="Complexanalysis">
+                                <label class="custom-control-label" for="Complexanalysis">Complex Analysis                                        </label>
+                              </div>
+
+                              <div class="custom-control col-12 mb-2  col-sm-12 col-md-6 custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="Topology">
+                                  <label class="custom-control-label" for="Topology">Topology</label>
+                                </div>
+
+                                <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="Measuretheory">
+                                    <label class="custom-control-label" for="Measuretheory">Measure Theory</label>
+                                  </div>
+
+                                  <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="Probabilitytheory">
+                                      <label class="custom-control-label" for="Probabilitytheory">Probability theory</label>
+                                    </div>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header bg-white" id="headingThree">
+                   <h2 class="mb-0 float-left w-100">
+                      <div class="custom-control custom-checkbox d-inline-block float-left mb-0" style="height: 15px;" >
+                          <input type="checkbox" class="custom-control-input" id="Calculus">
+                          <label class="custom-control-label" for="Calculus"></label>
+                        </div>
+                    <button class="bg-white text-dark float-left header-custom-check  text-left p-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Calculus <i class="fa fa-angle-up float-right"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <div class="col-md-12"> <div class="row">
+                          <div class="custom-control col-12 mb-2 col-sm-12 col-md-6 custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="Derivatives">
+                              <label class="custom-control-label" for="Derivatives">Derivatives</label>
+                            </div>
+
+                            <div class="custom-control col-12  mb-2 col-sm-12 col-md-6 custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="Tangentlines">
+                                <label class="custom-control-label" for="Tangentlines">Tangent lines</label>
+                              </div>
+
+                              <div class="custom-control col-12 mb-2  col-sm-12 col-md-6 custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="tangents">
+                                  <label class="custom-control-label" for="tangents">Tangents</label>
+                                </div>
+
+                                <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="Ratesofchange">
+                                    <label class="custom-control-label" for="Ratesofchange">Rates of change</div>
+
+                                  
+
+                                    <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="Integral">
+                                        <label class="custom-control-label" for="Integral">Integral</label>
+                                      </div>
+
+                                      <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="Integrals">
+                                          <label class="custom-control-label" for="Integrals">Integrals</label>
+                                        </div>
+
+                                        <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="Sequences">
+                                            <label class="custom-control-label" for="Sequences">Sequences and series of real numbers</label>
+                                          </div>
+                                          <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="Realnumbers">
+                                              <label class="custom-control-label" for="Realnumbers">Real numbers</label>
+                                            </div>
+                                            <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="Multivariablecalculus">
+                                                <label class="custom-control-label" for="Multivariablecalculus">Multivariable calculus</label>
+                                              </div>
+                                              <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="Integralcalculus">
+                                                  <label class="custom-control-label" for="Integralcalculus">Integral calculus</label>
+                                                </div>
+                                                <div class="custom-control  mb-2 col-12 col-sm-12 col-md-6 custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="Differentialcalculus">
+                                                    <label class="custom-control-label" for="Differentialcalculus">Differential calculus</label>
+                                                  </div>
+                              </div>
+                            </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+        </div>
+        <div class="modal-footer text-center d-block">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- categories modal finish -->
     <!-- Sign up Modal-->
     <div
       id="signUp"
@@ -2083,7 +1722,21 @@
             .hide();
           $(targetBox).show();
         });
-      });
+
+        $(".payment-option input[type='radio']").click(function(){
+            var radioValue = $("input[name='payment']:checked").val();
+            if(radioValue){
+                $('.payment-box').show();
+            }
+        });
+
+
+     });
+
+     
+
+
+      
     </script>
   </body>
 </html>
