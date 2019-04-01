@@ -1787,6 +1787,16 @@ button:hover{
 .form-group label{
 	color:#353535
 }
+.search-filters .form-inline input.form-control, .search-filters button {
+	padding:15px !important;
+	height: auto;
+}
+
+.filter-options{
+	border:solid 1px rgba(0,0,0,.2);
+	border-radius: 5px;
+}
+#catlist, #subcatlist{width:100% !important}
 /*#teacher-invitation .card button*/
 @media screen and (max-width: 1600px) and (min-width: 768px) {
 	.content-container .container:first-child{

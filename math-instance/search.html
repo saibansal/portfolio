@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="AppCtrl" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Math Instant</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all,follow" />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome CSS-->
+    <link
+      rel="stylesheet"
+      href="vendor/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/custom.css" id="theme-stylesheet" />
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/style.default.css" />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <body>
+    <!-- navbar-->
+	  <header class="header inner-header">
+        <div class="row">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid"><a href="./" class="navbar-brand">
+        <img src="images/logo.svg" alt="" class=""></a>
+      
+          <!-- search -->
+           <div class="col-md-8 top-search">
+             <input type="search" placeholder="Search by subject">
+           </div>
+          <!-- /search -->
+          <div id="navbarSupportedContent" class="collapse navbar-collapse float-right align-content-end col-md-3">
+            <div class="float-right profile-icon col-md-12 pr-0">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-dollar"></i></a>
+                  <ul class="dropdown">
+                      <li><a href="#">Wallet Balance : <strong>100$</strong> </a></li>
+                      <li><a href="#">Pending Escrow : <strong>100$</strong> </a></li>
+                      <li><a href="#">Reports </a></li>
+                    </ul>
+                </li>
+                <li class="messages">
+                  <a href="#"><img src="images/message-icon.png"> <span class="message-count">5</span></a>
+                  <ul class="dropdown">
+                      <li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
+                      <li><a href="#"><strong>Androind Developer </strong>  sent a message to you.</a></li>
+                      <li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
+                      <li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
+                      <li><a href="#"><strong>Androind Developer </strong>  sent a message to you.</a></li>
+                      <li><a href="#"><strong>Mamta </strong>  sent a message to you.</a></li>
+                      <li class="mt-3 mb-3 text-center"><a href="#" class="see-more d-inline-block float-none" style="width:auto; ">See all messages</a></li>
+                    </ul>
+                </li>
+                <li class="notification">
+                  <a href="#"><i class="fa fa-bell-o"></i> <span class="message-count">5</span></a>
+                  <ul class="dropdown p-3">
+                    <li><a href="#">A simple primary alert—check it out!</a></li>
+                    <li><a href="#">A simple primary alert—check it out!</a></li>
+                    <li><a href="#">A simple primary alert—check it out!</a></li>
+                    <li><a href="#">A simple primary alert—check it out!</a></li>
+                    <li><a href="#">A simple primary alert—check it out!</a></li>
+                    <li><a href="#">A simple primary alert—check it out!</a></li>
+                    <li><a href="#">A simple primary alert—check it out!</a></li>
+                    <li class="mt-3 mb-1 text-center"><a href="#" class="see-more d-inline-block float-none" style="width:auto; ">See all Notifications</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href='#' class="profile-dropdown">
+                    <i class="fa fa-user-circle mr-2"></i> Vishal <i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown">
+                     <li class="active online-support text-center"><a href="#">Online</a></li>
+                     <li class="online-support text-center"><a href="#">Offline</a></li>
+                      <li><a href="#">Vishal Bansal ( Student )</a></li>
+                      <li><a href="#">Become a Teacher</a></li>
+                      <li><a href="student-profile-edit.html">Edit Profile</a></li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+              </ul>  
+            </div>
+          </div>
+          
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">Menu<i class="fa fa-bars ml-2"></i></button>
+          
+          </div>
+        </nav>
+        </div>
+      </header>
+			
+    <!-- Profile content container starts -->
+    <div class="col-md-12 dasdsa mt-5 pt-5 mb-3 pb-5">
+      <div class="container">
+         <div class="search-container mt-3 p-4 col-md-12">
+            <h3 class="page-item"> Question Search </h3> 
+            <!-- search box section starts -->
+              <div class="col-md-12 mt-3 float-left search-filters">
+                <div class="row">
+                  <div class="col-12 col-md-10 pl-0">
+                    <form class="form-inline">
+                      <div class="form-group col-11 col-md-11 pl-0 pr-0">
+                        <input type="password" class="form-control col-md-12" id="inputPassword2" placeholder="Password">
+                      </div>
+                      <button type="submit" class="btn-primary  rounded-0 col-md-1"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+
+                  <button class="rounded-0 btn-success float-right pl-4 pr-4 filter-_btn"><i class="fa fa-sliders"></i> Filters</button>
+                </div>
+              </div>
+            <!-- search box section finsih --> 
+
+            <!-- filter drop down section starst -->
+              <div class="filter-_options bg-light col-md-12 mt-3 p-3 pl-5 pr-4 float-left" style="display: none;">
+                <div class="col-md-12 float-left mt-3">
+                  <div class="row pb-3">
+                    <label class="w-100 float-left">Select Level</label>
+                    <div class="col-md-12"><div class="row">
+                      <div class="custom-control custom-checkbox mr-4">
+                        <input type="checkbox" class="custom-control-input" id="HighSchool">
+                        <label class="custom-control-label" for="HighSchool">High School</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox mr-4">
+                        <input type="checkbox" class="custom-control-input" id="College">
+                        <label class="custom-control-label" for="College">College</label>
+                      </div>
+                      
+                      <div class="custom-control custom-checkbox mr-4">
+                        <input type="checkbox" class="custom-control-input" id="TestPrep">
+                        <label class="custom-control-label" for="TestPrep">Test Prep</label>
+                      </div> 
+                    </div>     
+                  </div>
+                </div>
+              </div>
+               
+              <div class="col-md-12 mb-2 mt-3 float-left">
+                <div class="row"> 
+                  <div class="col-md-4 pl-0">
+                      <label class="w-100 float-left">Select Category</label>
+                        <select id="catlist" class="js-example-basic-multiple float-left" name="states[]" multiple="multiple">
+                          <option value="">Intermediate Analysis</option>
+                          <option value="">Trigonometry</option>
+                          <option value="">Analysis</option>
+                          <option value="">Algebra</option>
+                          <option value="">Pre-calculus</option>
+                          <option value="">Calculus</option>
+                          <option value="">Integral Calculus</option>
+                          <option value="">Differential Calculus</option>
+                          <option value="">Discrete Math/option>
+                          <option value="">Geometry</option>
+                          <option value="">Computer Science Statistics</option>
+                          <option value="">Probability</option>
+                          <option value="">Differential Equations</option>
+                          <option value="">Test prep</option>
+                          <option>Extra words (no category)</option>     
+                          </select>
+                    </div> 
+
+                    <div class="col-md-4 pl-0 offset-1">
+                      <label class="w-100 float-left">Select Subcategory</label>
+                      <select id="subcatlist" class="js-example-basic-multiple w-100 float-left" name="states[]" multiple="multiple">
+                        <option value="">Convergence</option>
+                        <option value="">Limits of functions</option>
+                        <option value="">limits</option>
+                        <option value="">Continuity</option>
+                        <option value="">Differentiability</option>
+                        <option value="">Integrability</option>
+                        <option value="">Proofs</option>
+                        <option value="">Real Analysis</option>
+                      </select>
+                      </div>  
+
+                      <div class="col-md-12 float-left text-center mt-5">
+                        <button class="btn btn-primary">Search</button>
+                        <button class="btn btn-dark">Cancel</button>
+
+                      </div>
+                </div>
+              </div>
+            </div>
+            <!-- filters drop down section finish -->
+            
+            <nav aria-label="breadcrumb mt-3 pl-0 float-left w-100">
+                <ol class="breadcrumb pl-0 mb-0">
+                  <li class="breadcrumb-item active" aria-current="page"> <i class="fa fa-rss"></i> 110 Question Found</li>
+                </ol>
+              </nav>
+            <!-- search list container starts -->
+
+            <!-- Question listing starts -->
+						<div class="w-100 float-left">
+             <!-- defauly listing first starts -->
+             <div class="w-100 float-left teacher-default-listing">
+                <div class="w-100 question-listing p-3 mb-3 position-relative">
+                    <div class="media">
+                        <div class="media-body position-relative">
+                            <a href="#" class="inner-link"></a>
+                            <h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago </h5>
+                             When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+                            <div class="w-100 mt-2">
+                                <span class="float-left"> <i class="fa fa-paperclip fa"></i> file name </span>
+                                <span class="float-right">
+                                    <button class="float-right btn-danger ml-1"><i class="fa fa-address-card"> </i> Answer</button> 
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100 question-listing p-3 mb-3 position-relative">
+                        <div class="media">
+                            <div class="media-body position-relative">
+                                <a href="#" class="inner-link"></a>
+                                <h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago </h5> When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+                                <div class="w-100 mt-2">
+                                    <span class="float-left"> <i class="fa fa-paperclip fa"></i> file name </span>
+                                    <span class="float-right">
+                                        <button class="float-right btn-danger ml-1"><i class="fa fa-address-card"> </i> Answer</button> 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="w-100 question-listing p-3 mb-3 position-relative">
+                            <div class="media">
+                                <div class="media-body position-relative">
+                                    <a href="#" class="inner-link"></a>
+                                    <h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago </h5> When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+                                    <div class="w-100 mt-2">
+                                        <span class="float-left"> <i class="fa fa-paperclip fa"></i> file name </span>
+                                        <span class="float-right">
+                                            <button class="float-right btn-danger ml-1"><i class="fa fa-address-card"> </i> Answer</button> 
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+
+                <div class="w-100 question-listing p-3 mb-3 position-relative">
+                                <div class="media">
+                                    <div class="media-body position-relative">
+                                        <a href="#" class="inner-link"></a>
+                                        <h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago </h5> When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+                                        <div class="w-100 mt-2">
+                                            <span class="float-left"> <i class="fa fa-paperclip fa"></i> file name </span>
+                                            <span class="float-right">
+                                                <button class="float-right btn-danger ml-1"><i class="fa fa-address-card"> </i> Answer</button> 
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                </div>
+
+                <div class="w-100 question-listing p-3 mb-3 position-relative">
+                                    <div class="media">
+                                        <div class="media-body position-relative">
+                                            <a href="#" class="inner-link"></a>
+                                            <h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago </h5> When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
+                                            <div class="w-100 mt-2">
+                                                <span class="float-left"> <i class="fa fa-paperclip fa"></i> file name </span>
+                                                <span class="float-right">
+                                                    <button class="float-right btn-danger ml-1"><i class="fa fa-address-card"> </i> Answer</button> 
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                </div>
+             </div>
+             <!-- defauly listing first finish -->
+              <!-- load more question starts -->
+                      <ul class="float-left col-md-12 list-unstyled pt-3 pb-3">
+                          <li class="text-center pt-2 p-2"><a href="#" class="badge-success shadow-sm rounded border-info pt-1 pb-1 pl-3 pr-3 text-white load-more"><i class="fa fa-spinner"></i> Load more</a>
+                        </ul>
+                       <!-- load more question finsih -->
+            </div>
+            <!-- question listing finish-->
+              
+            <!-- search list contianer finsih -->
+          </div>
+      </div>
+    </div>
+    <!-- Profile content container finish -->
+    <!-- Ask your question -->
+    <!-- <div class="askYourQuestion">
+      <div class="container">
+        <h2>What question do you need help with?</h2>
+        <a
+          href=""
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#askquestion-modal"
+          >ASK Your QUESTION</a
+        >
+      </div>
+    </div> -->
+    <!-- /Ask your question -->
+
+    <!-- footer -->
+	<footer class="main-footer bg-light w-100 float-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3 mb-5 mb-lg-0">
+            <div class="footer-logo"><img src="images/logo.svg" alt="" class="img-fluid"></div>
+          </div>
+          <div class="col-lg-3 col-sm-3 mb-5 mb-lg-0">
+            <ul class="list-unstyled">
+              <li> <a href="" class="footer-link">About Us</a></li>
+              <li> <a href="" class="footer-link">How it work?</a></li>
+              <li> <a href="" class="footer-link">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-3 mb-5 mb-lg-0">
+            <ul class="list-unstyled">
+              <li> <a href="#" class="footer-link">Support</a></li>
+              <li> <a href="#" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-3 text-center footer-right-link">
+			<a href="" class="btn btn-outline btn-outline-primary">Become a teacher</a>
+			
+          </div>
+        </div>
+      </div>
+      <div class="copyrights">
+        <div class="container">
+          <div class="row">
+							<p class="text-center col-md-12 social-icon">
+									<a href="#"><i class="fa fa-facebook-official"></i></a>
+									<a href="#"><i class="fa fa-linkedin-square"></i></a>
+									<a href="#"><i class="fa fa-twitter-square"></i></a>
+									<a href="#"><i class="fa fa-pinterest-square"></i></a>
+								</p>
+            <div class="col-lg-6 col-sm-6 text-left">
+              <p class="copyrights-text mb-3 mb-lg-0">&copy; Math instant 2019</p>              
+            </div>
+            <div class="col-lg-6 col-sm-6 text-right">
+              <ul class="list-inline social mb-0">
+                <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+	<!-- footer -->
+
+    <!-- Login Modal-->
+    <div
+      id="login"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+      class="modal fade bd-example-modal-md"
+    >
+      <div role="document" class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content modal-tabs-outer">
+          <div class="modal-header border-bottom-0">
+            <button
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+              class="close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body p-4 p-lg-5">
+            <form action="#" class="login-form text-left">
+              <div class="form-group mb-4">
+                <label>Email address</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="name@company.com"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group mb-4">
+                <label>Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Min 8 characters"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Login"
+                  class="btn btn-orange btn-block"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign up Modal-->
+    <div
+      id="signUp"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+      class="modal fade bd-example-modal-md"
+    >
+      <div role="document" class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content modal-tabs-outer">
+          <div class="modal-header">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="student-tab"
+                  data-toggle="tab"
+                  href="#student"
+                  role="tab"
+                  aria-controls="student"
+                  aria-selected="true"
+                  >I’m a student</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="teacher-tab"
+                  data-toggle="tab"
+                  href="#teacher"
+                  role="tab"
+                  aria-controls="teacher"
+                  aria-selected="false"
+                  >I’m a teacher</a
+                >
+              </li>
+            </ul>
+            <button
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+              class="close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body p-4 p-lg-4">
+            <!-- tabs -->
+            <div class="tab-content" id="myTabContent">
+              <!-- student -->
+              <div
+                class="tab-pane fade show active"
+                id="student"
+                role="tabpanel"
+                aria-labelledby="student-tab"
+              >
+                <form>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value=""
+                    placeholder="Name"
+                  />
+                  <input
+                    type="text"
+                    class="form-control"
+                    value=""
+                    placeholder="Surname"
+                  />
+                  <input
+                    type="email"
+                    class="form-control"
+                    value=""
+                    placeholder="Email"
+                  />
+                  <input
+                    type="text"
+                    class="form-control"
+                    value=""
+                    placeholder="Username"
+                  />
+                  <input
+                    type="text"
+                    class="form-control"
+                    value=""
+                    placeholder="Languages spoken"
+                  />
+                  <select class="form-control">
+                    <option>India</option
+                    ><option> </option
+                    ><option>India</option
+                    ><option> </option
+                  ></select>
+
+                  <select class="form-control">
+                    <option>English proficiency level</option
+                    ><option> </option
+                    ><option>Basic</option
+                    ><option> </option
+                    ><option>Conversational</option
+                    ><option> </option
+                    ><option>Fluent</option
+                    ><option> </option
+                    ><option>Native </option
+                    ><option> </option
+                    ><option>Bilingual</option
+                    ><option> </option
+                  ></select>
+
+                  <input
+                    type="password"
+                    class="form-control"
+                    value=""
+                    placeholder="Password"
+                  />
+                  <select class="form-control">
+                    <option>Studying in</option
+                    ><option> </option
+                    ><option>Highschool</option
+                    ><option> </option
+                    ><option>Collage</option
+                    ><option> </option
+                  ></select>
+
+                  <div class="text-center">
+                    <input type="file" />
+                  </div>
+                  <br />
+                  <div class="text-center">
+                    <input
+                      type="submit"
+                      class="btn btn-orange btn-block"
+                      value="Sign Up"
+                    />
+                  </div>
+                  <div class="already-account">
+                    <p>Already have an account? <a href="">Log in</a></p>
+                    <div class="form-check accept-terms">
+                      <input type="checkbox" class="form-check-input" id="" />
+                      <label class="form-check-label" for=""
+                        >I accept the</label
+                      >
+                      <a href="">Terms & Conditions</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- student -->
+              <div
+                class="tab-pane fade"
+                id="teacher"
+                role="tabpanel"
+                aria-labelledby="teacher-tab"
+              >
+                <!-- teacher -->
+                <div
+                  class="tab-pane fade show active"
+                  id="student"
+                  role="tabpanel"
+                  aria-labelledby="student-tab"
+                >
+                  <form>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value=""
+                      placeholder="Name"
+                    />
+                    <input
+                      type="text"
+                      class="form-control"
+                      value=""
+                      placeholder="Surname"
+                    />
+                    <input
+                      type="email"
+                      class="form-control"
+                      value=""
+                      placeholder="Email"
+                    />
+                    <input
+                      type="text"
+                      class="form-control"
+                      value=""
+                      placeholder="Languages spoken"
+                    />
+                    <select class="form-control">
+                      <option>India</option
+                      ><option> </option
+                      ><option>India</option
+                      ><option> </option
+                    ></select>
+
+                    <select class="form-control">
+                      <option>English proficiency level</option
+                      ><option> </option
+                      ><option>Basic</option
+                      ><option> </option
+                      ><option>Conversational</option
+                      ><option> </option
+                      ><option>Fluent</option
+                      ><option> </option
+                      ><option>Native </option
+                      ><option> </option
+                      ><option>Bilingual</option
+                      ><option> </option
+                    ></select>
+
+                    <input
+                      type="password"
+                      class="form-control"
+                      value=""
+                      placeholder="Password"
+                    />
+                    <div class="text-center">
+                      <input
+                        type="submit"
+                        class="btn btn-orange btn-block"
+                        value="Sign Up"
+                      />
+                    </div>
+                    <div class="already-account">
+                      <p>Already have an account? <a href="">Log in</a></p>
+                      <div class="form-check accept-terms">
+                        <input type="checkbox" class="form-check-input" id="" />
+                        <label class="form-check-label" for=""
+                          >I accept the</label
+                        >
+                        <a href="">Terms & Conditions</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- teacher -->
+              </div>
+            </div>
+            <!-- tabs -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ask question modal -->
+    <div
+      id="askquestion-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+      class="modal fade bd-example-modal-md"
+    >
+      <div
+        role="document"
+        class="modal-dialog modal-dialog-centered modal-md askquestion-modal-main"
+      >
+        <div class="modal-content modal-tabs-outer">
+          <div class="modal-header border-bottom-0">
+            <button
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+              class="close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="attachment-modal-inner">
+              <h6>Add your attachment</h6>
+              <div class="question-enter-outer">
+                <textarea
+                  id="question-enter"
+                  class="question-enter"
+                  maxlength="1000"
+                ></textarea>
+                <div
+                  class="textarea-counter-modal"
+                  id="textarea_counter-modal"
+                ></div>
+              </div>
+
+              <div class="image-upload-wrap">
+                <input
+                  class="file-upload-input"
+                  type="file"
+                  onchange="readURL(this);"
+                  accept="image/*"
+                />
+                <div class="drag-text">
+                  <h3>
+                    <i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload
+                    or drop your files here
+                  </h3>
+                </div>
+              </div>
+              <div class="file-upload-content">
+                <img class="file-upload-image" src="#" alt="your image" />
+                <div class="image-title-wrap">
+                  <button
+                    type="button"
+                    onclick="removeUpload()"
+                    class="remove-image"
+                  >
+                    Remove
+                    <!-- <span class="image-title">Uploaded Image</span> -->
+                  </button>
+                </div>
+              </div>
+
+              <!-- Topic -->
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Topic</label>
+                <div class="col-sm-9">
+                  <select class="form-control">
+                    <option value="Algebra">Algebra</option>
+                  </select>
+                </div>
+              </div>
+              <!-- /Topic -->
+            </div>
+
+            <!-- bottom tabs modal -->
+            <div class="modal-ask-question-outer">
+              <div class="modal-ask-question">
+                <div class="attachment-modal-inner">
+                  <!--Fixed tab example -->
+                  <div class="card pmd-card">
+                    <div class="pmd-tabs">
+                      <ul role="tablist" class="nav nav-tabs nav-fill">
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link active"
+                            data-toggle="tab"
+                            role="tab"
+                            aria-controls="highSchool"
+                            href="#highSchool"
+                            >Highschool</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            data-toggle="tab"
+                            role="tab"
+                            aria-controls="collage-link"
+                            href="#collage-link"
+                            >Collage</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            data-toggle="tab"
+                            role="tab"
+                            aria-controls="test-prep"
+                            href="#test-prep"
+                            >Test prep</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="attachment-modal-inner">
+                <div class="card-body">
+                  <div class="tab-content">
+                    <div
+                      role="tabpanel"
+                      class="tab-pane active"
+                      id="highSchool"
+                    >
+                      <div class="text-center">
+                        <input
+                          type="submit"
+                          class="btn btn-orange btn-block"
+                          value="Ask the question"
+                        />
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="collage-link">
+                      <div class="text-center">
+                        <input
+                          type="submit"
+                          class="btn btn-orange btn-block"
+                          value="Ask the question"
+                        />
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="test-prep">
+                      <div class="text-center">
+                        <input
+                          type="submit"
+                          class="btn btn-orange btn-block"
+                          value="Ask the question"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Fixed tab example end-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Ask question modal -->
+
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"></script>
+    <script src="vendor/lightbox2/js/lightbox.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/front.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var text_max = 1000;
+        $("#textarea_counter-modal").html("0" + "/1000");
+
+        $("#question-enter").keyup(function() {
+          var text_length = $("#question-enter").val().length;
+          var text_remaining = text_max - text_length;
+
+          $("#textarea_counter-modal").html(text_length + "/1000");
+        });
+      });
+
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+            //$('.image-upload-wrap').hide();
+
+            $(".file-upload-image").attr("src", e.target.result);
+            $(".file-upload-content").show();
+
+            $(".image-title").html(input.files[0].name);
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        } else {
+          removeUpload();
+        }
+      }
+
+      function removeUpload() {
+        $(".file-upload-input").replaceWith($(".file-upload-input").clone());
+        $(".file-upload-content").hide();
+        $(".image-upload-wrap").show();
+      }
+      $(".image-upload-wrap").bind("dragover", function() {
+        $(".image-upload-wrap").addClass("image-dropping");
+      });
+      $(".image-upload-wrap").bind("dragleave", function() {
+        $(".image-upload-wrap").removeClass("image-dropping");
+      });
+    </script>
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script src="js/calender.js"></script>
+    <script type="text/javascript">
+      // for show hide on click edit profile
+
+      document.querySelector("html").classList.add("js");
+
+      var fileInput = document.querySelector(".input-file"),
+        button = document.querySelector(".input-file-trigger"),
+        the_return = document.querySelector(".file-return");
+
+      button.addEventListener("keydown", function(event) {
+        if (event.keyCode == 13 || event.keyCode == 32) {
+          fileInput.focus();
+        }
+      });
+      button.addEventListener("click", function(event) {
+        fileInput.focus();
+        return false;
+      });
+      fileInput.addEventListener("change", function(event) {
+        the_return.innerHTML = this.value;
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $('input[type="radio"]').click(function() {
+          var inputValue = $(this).attr("value");
+          var targetBox = $("." + inputValue);
+          $(".box")
+            .not(targetBox)
+            .hide();
+          $(targetBox).show();
+        });
+
+      $(".filter-_btn").click(function(){
+         $(".filter-_options").slideToggle();
+      }); 
+
+    });
+
+    </script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script>
+  $(document).ready(function() { 
+      $("#catlist, #subcatlist").select2({
+          width: '100%' // need to override the changed default
+      });
+
+  });
+</script>
+  </body>
+</html>
