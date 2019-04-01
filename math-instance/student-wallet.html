@@ -102,201 +102,47 @@
         </div>
       </header>
 			
-    <!-- search listing content container starts -->
-    <div class="col-md-12 mt-5 pt-5 mb-3 pb-5">
+    <!-- student wallet content container starts -->
+    <div class="col-md-12  mt-5 pt-5 mb-3 pb-5">
       <div class="container">
          <div class="search-container mt-3 p-4 col-md-12">
-            <h3 class="page-item"> Question Search </h3> 
-            <!-- search box section starts -->
-              <div class="col-md-12 mt-3 float-left search-filters">
-                <div class="row">
-                  <div class="col-12 col-md-10 pl-0">
-                    <form class="form-inline">
-                      <div class="form-group col-11 col-md-11 pl-0 pr-0">
-                        <input type="password" class="form-control col-md-12" id="inputPassword2" placeholder="Password">
-                      </div>
-                      <button type="submit" class="btn-primary  rounded-0 col-md-1"><i class="fa fa-search"></i></button>
-                    </form>
-                  </div>
-
-                  <button class="rounded-0 btn-success float-right pl-4 pr-4 filter-_btn"><i class="fa fa-sliders"></i> Filters</button>
+            <h3 class="page-item mb-4"> Money to Wallet </h3> 
+            <!-- Load MOney Section starts -->
+            <div class="card">
+                <h5 class="card-header bg-secondary text-white  text-white">Balance Due</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Your balance due is <strong class="badge badge-info">$0.00</strong>
+                  
+                  <a href="#" class="btn btn-success float-right">Load money</a></h5>
                 </div>
               </div>
-            <!-- search box section finsih --> 
+            <!-- load money section finsih -->
 
-            <!-- filter drop down section starst -->
-              <div class="filter-_options bg-light col-md-12 mt-3 p-3 pl-5 pr-4 float-left" style="display: none;">
-                <div class="col-md-12 float-left mt-3">
-                  <div class="row pb-3">
-                    <label class="w-100 float-left">Select Level</label>
-                    <div class="col-md-12"><div class="row">
-                      <div class="custom-control custom-checkbox mr-4">
-                        <input type="checkbox" class="custom-control-input" id="HighSchool">
-                        <label class="custom-control-label" for="HighSchool">High School</label>
-                      </div>
+               <!-- Load MOney Section starts -->
+               <div class="card mt-5">
+                  <h5 class="card-header bg-primary text-white">Billing Method 
+                    <a href="#" data-toggle="modal" data-target="#billingmodal" class="pl-2 pr-2 pt-1 pb-1 btn-light float-right rounded" style="font-size: 16px;">Add Billing Method</a>
+                  </h5>
+                  <div class="card-body">
+                    <h5 class="card-title billing-title text-uppercase text-primary font-weight-bold">Primary</h5>
 
-                      <div class="custom-control custom-checkbox mr-4">
-                        <input type="checkbox" class="custom-control-input" id="College">
-                        <label class="custom-control-label" for="College">College</label>
-                      </div>
-                      
-                      <div class="custom-control custom-checkbox mr-4">
-                        <input type="checkbox" class="custom-control-input" id="TestPrep">
-                        <label class="custom-control-label" for="TestPrep">Test Prep</label>
-                      </div> 
-                    </div>     
+                    <ul class="billing-method pl-0">
+                      <li>
+                        <span class="float-left"><i class='fa fa-cc-mastercard'></i> Mastero Card</span>
+                        <a href="" class="float-right  text-center billing-list-option rounded-circle bg-primary text-white"><i class="fa fa-ellipsis-h"></i></a>
+
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </div>
-               
-              <div class="col-md-12 mb-2 mt-3 float-left">
-                <div class="row"> 
-                  <div class="col-md-4 pl-0">
-                      <label class="w-100 float-left">Select Category</label>
-                        <select id="catlist" class="js-example-basic-multiple float-left" name="states[]" multiple="multiple">
-                          <option value="">Intermediate Analysis</option>
-                          <option value="">Trigonometry</option>
-                          <option value="">Analysis</option>
-                          <option value="">Algebra</option>
-                          <option value="">Pre-calculus</option>
-                          <option value="">Calculus</option>
-                          <option value="">Integral Calculus</option>
-                          <option value="">Differential Calculus</option>
-                          <option value="">Discrete Math/option>
-                          <option value="">Geometry</option>
-                          <option value="">Computer Science Statistics</option>
-                          <option value="">Probability</option>
-                          <option value="">Differential Equations</option>
-                          <option value="">Test prep</option>
-                          <option>Extra words (no category)</option>     
-                          </select>
-                    </div> 
+              <!-- load money section finsih -->
 
-                    <div class="col-md-4 pl-0 offset-1">
-                      <label class="w-100 float-left">Select Subcategory</label>
-                      <select id="subcatlist" class="js-example-basic-multiple w-100 float-left" name="states[]" multiple="multiple">
-                        <option value="">Convergence</option>
-                        <option value="">Limits of functions</option>
-                        <option value="">limits</option>
-                        <option value="">Continuity</option>
-                        <option value="">Differentiability</option>
-                        <option value="">Integrability</option>
-                        <option value="">Proofs</option>
-                        <option value="">Real Analysis</option>
-                      </select>
-                      </div>  
-
-                      <div class="col-md-12 float-left text-center mt-5">
-                        <button class="btn btn-primary">Search</button>
-                        <button class="btn btn-dark">Cancel</button>
-
-                      </div>
-                </div>
-              </div>
-            </div>
-            <!-- filters drop down section finish -->
-            
-            <nav aria-label="breadcrumb mt-3 pl-0 float-left w-100">
-                <ol class="breadcrumb pl-0 mb-0">
-                  <li class="breadcrumb-item active" aria-current="page"> <i class="fa fa-rss"></i> 110 Question Found</li>
-                </ol>
-              </nav>
-            <!-- search list container starts -->
-
-            <!-- Question listing starts -->
-						<div class="w-100 float-left">
-             <!-- defauly listing first starts -->
-             <div class="w-100 float-left teacher-default-listing">
-                <div class="w-100 question-listing p-3 mb-3 position-relative">
-                    <div class="media">
-                        <div class="media-body position-relative">
-                            <a href="#" class="inner-link"></a>
-                            <h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago </h5>
-                             When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-                            <div class="w-100 mt-2">
-                                <span class="float-left"> <i class="fa fa-paperclip fa"></i> file name </span>
-                                <span class="float-right">
-                                    <button class="float-right btn-danger ml-1"><i class="fa fa-address-card"> </i> Answer</button> 
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w-100 question-listing p-3 mb-3 position-relative">
-                        <div class="media">
-                            <div class="media-body position-relative">
-                                <a href="#" class="inner-link"></a>
-                                <h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago </h5> When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-                                <div class="w-100 mt-2">
-                                    <span class="float-left"> <i class="fa fa-paperclip fa"></i> file name </span>
-                                    <span class="float-right">
-                                        <button class="float-right btn-danger ml-1"><i class="fa fa-address-card"> </i> Answer</button> 
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="w-100 question-listing p-3 mb-3 position-relative">
-                            <div class="media">
-                                <div class="media-body position-relative">
-                                    <a href="#" class="inner-link"></a>
-                                    <h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago </h5> When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-                                    <div class="w-100 mt-2">
-                                        <span class="float-left"> <i class="fa fa-paperclip fa"></i> file name </span>
-                                        <span class="float-right">
-                                            <button class="float-right btn-danger ml-1"><i class="fa fa-address-card"> </i> Answer</button> 
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                </div>
-
-                <div class="w-100 question-listing p-3 mb-3 position-relative">
-                                <div class="media">
-                                    <div class="media-body position-relative">
-                                        <a href="#" class="inner-link"></a>
-                                        <h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago </h5> When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-                                        <div class="w-100 mt-2">
-                                            <span class="float-left"> <i class="fa fa-paperclip fa"></i> file name </span>
-                                            <span class="float-right">
-                                                <button class="float-right btn-danger ml-1"><i class="fa fa-address-card"> </i> Answer</button> 
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                </div>
-
-                <div class="w-100 question-listing p-3 mb-3 position-relative">
-                                    <div class="media">
-                                        <div class="media-body position-relative">
-                                            <a href="#" class="inner-link"></a>
-                                            <h5 class="mt-0 mb-2 topic"> Topic : Algebra | Level - Expert | 17 minutes ago </h5> When a polynomial 3xcube +2xsquare +ax+b is divided by ( x+2) leaves remainder 4 and ( x-3).
-                                            <div class="w-100 mt-2">
-                                                <span class="float-left"> <i class="fa fa-paperclip fa"></i> file name </span>
-                                                <span class="float-right">
-                                                    <button class="float-right btn-danger ml-1"><i class="fa fa-address-card"> </i> Answer</button> 
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                </div>
-             </div>
-             <!-- defauly listing first finish -->
-              <!-- load more question starts -->
-                      <ul class="float-left col-md-12 list-unstyled pt-3 pb-3">
-                          <li class="text-center pt-2 p-2"><a href="#" class="badge-success shadow-sm rounded border-info pt-1 pb-1 pl-3 pr-3 text-white load-more"><i class="fa fa-spinner"></i> Load more</a>
-                        </ul>
-                       <!-- load more question finsih -->
-            </div>
-            <!-- question listing finish-->
-              
+         
             <!-- search list contianer finsih -->
           </div>
       </div>
     </div>
-    <!-- search listing content container finish -->
+    <!-- student wallet content container finish -->
     <!-- Ask your question -->
     <!-- <div class="askYourQuestion">
       <div class="container">
@@ -822,6 +668,114 @@
     </div>
     <!-- /Ask question modal -->
 
+    <!-- billing method modal starts --> 
+      <div class="modal fade" id="billingmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Add a billing method</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <aside class="w-100 float-left"> 
+                    <article class="card p-0 border-0">
+                    <div class="card-body">
+                    
+                    <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link font-weight-normal active" data-toggle="pill" href="#nav-tab-card">
+                        <i class="fa fa-credit-card"></i> Credit Card</a></li>
+                      <li class="nav-item">
+                        <a class="nav-link font-weight-normal" data-toggle="pill" href="#nav-tab-paypal">
+                        <i class="fa fa-paypal"></i>  Paypal</a></li>
+                      <li class="nav-item">
+                        <a class="nav-link font-weight-normal" data-toggle="pill" href="#nav-tab-bank">
+                        <i class="fa fa-university"></i>  Bank Transfer</a></li>
+                    </ul>
+                    
+                    <div class="tab-content">
+                    <div class="tab-pane fade show active" id="nav-tab-card">
+                      <p class="alert alert-success">Some text success or error</p>
+                      <form role="form">
+                      <div class="form-group">
+                        <label for="username">Full name (on the card)</label>
+                        <input type="text" class="form-control" name="username" placeholder="" required="">
+                      </div> <!-- form-group.// -->
+                    
+                      <div class="form-group">
+                        <label for="cardNumber">Card number</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="cardNumber" placeholder="">
+                          <div class="input-group-append">
+                            <span class="input-group-text text-muted">
+                              <i class="fa fa-cc-visa"></i>   <i class="fa fa-cc-amex"></i>   
+                              <i class="fa fa-cc-mastercard"></i> 
+                            </span>
+                          </div>
+                        </div>
+                      </div> <!-- form-group.// -->
+                    
+                      <div class="row">
+                          <div class="col-sm-8">
+                              <div class="form-group">
+                                  <label><span class="hidden-xs">Expiration</span> </label>
+                                <div class="input-group">
+                                  <input type="number" class="form-control" placeholder="MM" name="">
+                                    <input type="number" class="form-control" placeholder="YY" name="">
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                              <div class="form-group">
+                                  <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+                                  <input type="number" class="form-control" required="">
+                              </div> <!-- form-group.// -->
+                          </div>
+                      </div> <!-- row.// -->
+                      <button class="subscribe btn btn-primary btn-block" type="button"> Confirm  </button>
+                      </form>
+                    </div> <!-- tab-pane.// -->
+                    <div class="tab-pane fade" id="nav-tab-paypal">
+                    <p>Paypal is easiest way to pay online</p>
+                    <p>
+                    <button type="button" class="btn btn-primary"> <i class="fa fa-paypal"></i> Log in my Paypal </button>
+                    </p>
+                    <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-tab-bank">
+                    <p>Bank accaunt details</p>
+                    <dl class="param">
+                      <dt>BANK: </dt>
+                      <dd> THE WORLD BANK</dd>
+                    </dl>
+                    <dl class="param">
+                      <dt>Accaunt number: </dt>
+                      <dd> 12345678912345</dd>
+                    </dl>
+                    <dl class="param">
+                      <dt>IBAN: </dt>
+                      <dd> 123456789</dd>
+                    </dl>
+                    <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div> <!-- tab-pane.// -->
+                    </div> <!-- tab-content .// -->
+                    
+                    </div> <!-- card-body.// -->
+                    </article> <!-- card.// -->
+                    
+                    
+                      </aside> <!-- col.// -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+        </div>
+    <!-- billing method modal finsih -->
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
