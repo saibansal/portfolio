@@ -107,18 +107,11 @@
     <div class="col-md-12 profile-container mt-5 pt-5 mb-5 pb-5">
       <div class="container">
         <div class="profile-section mt-5 pb-5 pt-4">
-          <h3 class="pt-2 col-md-12">Edit Profile</h3>
+          <h3 class="pt-2 col-md-12">Become a Teacher</h3>
           <!-- personal info section starts -->
           <div class="col-md-12 pt-4 pl-4 pb-4 bg-white profile-info rounded-lg">
             <div class="row">
-              <div class="col-3">
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> Edit Profile</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"> Change Password </a>
-                  
-                </div>
-              </div>
-              <div class="col-md-9 float-left">
+              <div class="col-md-12 float-left">
                 <div class="tab-content" id="v-pills-tabContent">
                   <!-- edit profile section starts -->
                   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
@@ -219,16 +212,14 @@
 
                             <div class="form-group">
                               <div class="row">
-                                <label class="col-lg-4 text-left control-label">English Proficiency :</label
-                                >
+                                <label class="col-lg-4 text-left control-label">English Proficiency :</label>
                                 <div class="col-lg-7">
                                   <select class="custom-select">
-                                    <option>Select Level</option>
-                                    <option value="AFG">Basic</option>
-                                    <option value="ALA">Conversational</option>
-                                    <option value="ALB">Fluent</option>
-                                    <option value="ALB">Native or Bilingual</option>
-                                     
+                                    <option selected>Select Level</option>
+                                    <option value="Basic">Basic</option>
+                                    <option value="Conversational">Conversational</option>
+                                    <option value="Fluent">Fluent</option>
+                                    <option value="Native">Native or Bilingual</option>
                                   </select>
                                 </div>
                               </div>
@@ -238,18 +229,16 @@
                               <div class="row">
                                 <label class="col-lg-4 text-left control-label">Language Spoken:</label>
                                 <div class="col-lg-7">
-                                  <input class="form-control" type="text" value="English" />
+                                  <input class="form-control"  type="text" value="" />
                                 </div>
                               </div>
                             </div>
 
                             <div class="form-group">
                               <div class="row">
-                                <label class="col-lg-4 text-left control-label"
-                                  >Country :</label
-                                >
+                                <label class="col-lg-4 text-left control-label">Country :</label>
                                 <div class="col-lg-7">
-                                  <select class="custom-select">
+                                  <select class="custom-select" disabled>
                                     <option>Select Country</option>
                                     <option value="AFG">Afghanistan</option>
                                     <option value="ALA">Åland Islands</option>
@@ -386,7 +375,7 @@
                                     <option value="HKG">Hong Kong</option>
                                     <option value="HUN">Hungary</option>
                                     <option value="ISL">Iceland</option>
-                                    <option value="IND">India</option>
+                                    <option value="IND" selected>India</option>
                                     <option value="IDN">Indonesia</option>
                                     <option value="IRN"
                                       >Iran, Islamic Republic of</option
@@ -611,11 +600,9 @@
                       
                             <div class="form-group">
                                 <div class="row">
-                                  <label class="col-lg-4 text-left control-label"
-                                    >Timezone :</label
-                                  >
+                                  <label class="col-lg-4 text-left control-label">Timezone :</label>
                                   <div class="col-lg-7">
-                                    <select class="custom-select">
+                                    <select class="custom-select" disabled>
                                       <option>Select Timezone</option>
                                       <option
                                         timeZoneId="1"
@@ -649,7 +636,7 @@
                                       <option
                                         timeZoneId="5"
                                         gmtAdjustment="GMT-08:00"
-                                        useDaylightTime="1"
+                                        useDaylightTime="1" selected
                                         value="-8"
                                         >(GMT-08:00) Pacific Time (US &
                                         Canada)</option
@@ -1227,32 +1214,24 @@
 
                             <div class="form-group">
                               <div class="row">
-                                <label
-                                  class="col-lg-4 text-left control-label"
-                                  for="exampleFormControlTextarea1"
-                                  >About You</label
-                                >
+                                <label class="col-lg-4 text-left control-label" for="exampleFormControlTextarea1">About me</label>
                                 <div class="col-lg-7">
-                                  <textarea
-                                    class="form-control"
-                                    id="exampleFormControlTextarea1"
-                                    rows="2"
-                                  ></textarea>
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="2">
+                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                                  </textarea>
                                 </div>
                               </div>
                             </div>
 
                             <div class="form-group">
                               <div class="row">
-                                <label class="col-lg-4 text-left control-label">I can offer help in :</label
-                                >
+                                <label class="col-lg-4 text-left control-label">I can offer help in :</label>
                                 <div class="col-lg-7"> 
                                   <select class="custom-select" multiple>
                                     <option selected>Select Offer</option>
                                     <option value="AFG">Highschool Math</option>
                                     <option value="ALA">College Math</option>
                                     <option value="ALB">Test prep</option> 
-                                     
                                   </select>
                                 </div>
                               </div>
@@ -1286,7 +1265,7 @@
                                               <label class="custom-control-label" for="skrill">Skrill</label>
                                             </div> 
                                           <div class="mt-2 w-100 float-left payment-box" style="display: none;">
-                                              <input class="form-control" type="text" placeholder="Enter Payment Detail" value="">
+                                              <input class="form-control" type="text" placeholder="Enter payment details" value="">
                                           </div>
                                     </div>
                                   </div> 
@@ -1298,9 +1277,9 @@
                                 <div class="row">
                                   <label class="col-lg-4 text-left control-label">Educational Background:</label>
                                   <div class="col-lg-7">
-                                    <input class="form-control mb-3" type="text" value="Name of Institution" />
-                                    <input class="form-control mb-3" type="text" value="Degree" />
-                                    <input class="form-control mb-3" type="text" value="Study" />
+                                    <input class="form-control mb-3" type="text" value="" />
+                                    <input class="form-control mb-3" type="text" value="" />
+                                    <input class="form-control mb-3" type="text" value="" />
                                   </div>
                                 </div>
                               </div>
@@ -1311,35 +1290,13 @@
                                     <div class="col-lg-7">
                                       <div class="col-md-12 mb-3">
                                         <div class="row">
-                                          <h5 class="heading mb-3 w-100 float-left text-primary" > Intermediate analysis 
-                                          <a class="float-right" data-toggle="modal" data-target=".bd-example-modal-lg">
-                                            <i class="fa fa-pencil"></i>
+                                          <h5 class="heading mb-3 w-100 float-left text-primary">  
+                                          <a class="float-left mt-1" style="font-size: 16px; cursor: pointer;" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                            <i class="fa fa-pencil"></i>  Click to add Topics
                                           </a>
-                                         
                                           </h5>
-                                          <div class="w-100 float-left">
-                                            <span class="badge badge-primary">Convergence</span>
-                                            <span class="badge badge-success">Differentiability</span>
-                                            <span class="badge badge-success">Limits of functions</span>
-                                          </div>
-
                                         </div>
                                       </div>
-
-                                     
-                                      <div class="col-md-12 mb-3">
-                                          <div class="row">
-                                            <h5 class="heading mb-3 w-100 float-left text-primary" >Trigonometry</h5>
-                                            <div class="w-100 float-left">
-                                              <span class="badge badge-primary">Trigonometry with right triangles</span>
-                                              <span class="badge badge-success">Identities </span>
-                                              <span class="badge badge-success">Cosine</span>
-                                              <span class="badge badge-success">Tangent</span>
-                                            </div>
-  
-                                          </div>
-                                        </div>
-
                                     </div>
                                   </div>
                                 </div>

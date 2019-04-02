@@ -49,8 +49,7 @@
                 <li>
                   <a href="#"><i class="fa fa-dollar"></i></a>
                   <ul class="dropdown">
-                      <li><a href="#">Wallet Balance : <strong>100$</strong> </a></li>
-                      <li><a href="#">Pending Escrow : <strong>100$</strong> </a></li>
+                      <li><a href="student-wallet.html">Wallet Balance : <strong>100$</strong> </a></li> 
                       <li><a href="#">Reports </a></li>
                     </ul>
                 </li>
@@ -86,7 +85,7 @@
                      <li class="active online-support text-center"><a href="#">Online</a></li>
                      <li class="online-support text-center"><a href="#">Offline</a></li>
                       <li><a href="#">Vishal Bansal ( Student )</a></li>
-                      <li><a href="#">Become a Teacher</a></li>
+                      <li><a href="become-teacher.html">Become a Teacher</a></li>
                       <li><a href="student-profile-edit.html">Edit Profile</a></li>
                       <li><a href="#">Logout</a></li>
                     </ul>
@@ -109,17 +108,16 @@
             <h3 class="page-item mb-4"> Money to Wallet </h3> 
             <!-- Load MOney Section starts -->
             <div class="card">
-                <h5 class="card-header bg-secondary text-white  text-white">Balance Due</h5>
+                <h5 class="card-header bg-secondary text-white  text-white">Current Balance</h5>
                 <div class="card-body">
-                  <h5 class="card-title">Your balance due is <strong class="badge badge-info">$0.00</strong>
-                  
-                  <a href="#" class="btn btn-success float-right">Load money</a></h5>
+                  <h5 class="card-title">Current Balance is <strong class="badge badge-info">$0.00</strong>
+                   <a href="#" data-toggle="modal" data-target="#billingmodal"  class="btn btn-success float-right">Load money</a></h5>
                 </div>
               </div>
             <!-- load money section finsih -->
 
                <!-- Load MOney Section starts -->
-               <div class="card mt-5">
+               <!-- <div class="card mt-5">
                   <h5 class="card-header bg-primary text-white">Billing Method 
                     <a href="#" data-toggle="modal" data-target="#billingmodal" class="pl-2 pr-2 pt-1 pb-1 btn-light float-right rounded" style="font-size: 16px;">Add Billing Method</a>
                   </h5>
@@ -134,7 +132,7 @@
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> -->
               <!-- load money section finsih -->
 
          
@@ -179,7 +177,7 @@
             </ul>
           </div>
           <div class="col-lg-3 col-sm-3 text-center footer-right-link">
-			<a href="" class="btn btn-outline btn-outline-primary">Become a teacher</a>
+			<a href="become-teacher.html" class="btn btn-outline btn-outline-primary">Become a teacher</a>
 			
           </div>
         </div>
@@ -673,7 +671,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">Add a billing method</h5>
+              <h5 class="modal-title" id="exampleModalCenterTitle">Load Money</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
@@ -682,19 +680,19 @@
                     <div class="card-body">
                     
                     <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link font-weight-normal active" data-toggle="pill" href="#nav-tab-card">
+                      <!-- <li class="nav-item">
+                        <a class="nav-link font-weight-normal " data-toggle="pill" href="#nav-tab-card">
                         <i class="fa fa-credit-card"></i> Credit Card</a></li>
-                      <li class="nav-item">
-                        <a class="nav-link font-weight-normal" data-toggle="pill" href="#nav-tab-paypal">
-                        <i class="fa fa-paypal"></i>  Paypal</a></li>
-                      <li class="nav-item">
+                      <li class="nav-item">-->
+                        <a class="nav-link active font-weight-normal" data-toggle="pill" href="#nav-tab-paypal">
+                        <i class="fa fa-paypal"></i>  Paypal</a></li> 
+                      <!-- <li class="nav-item">
                         <a class="nav-link font-weight-normal" data-toggle="pill" href="#nav-tab-bank">
-                        <i class="fa fa-university"></i>  Bank Transfer</a></li>
+                        <i class="fa fa-university"></i>  Bank Transfer</a></li> -->
                     </ul>
                     
                     <div class="tab-content">
-                    <div class="tab-pane fade show active" id="nav-tab-card">
+                    <div class="tab-pane fade show " id="nav-tab-card">
                       <p class="alert alert-success">Some text success or error</p>
                       <form role="form">
                       <div class="form-group">
@@ -735,10 +733,10 @@
                       <button class="subscribe btn btn-primary btn-block" type="button"> Confirm  </button>
                       </form>
                     </div> <!-- tab-pane.// -->
-                    <div class="tab-pane fade" id="nav-tab-paypal">
+                    <div class="tab-pane fade active show" id="nav-tab-paypal">
                     <p>Paypal is easiest way to pay online</p>
                     <p>
-                    <button type="button" class="btn btn-primary"> <i class="fa fa-paypal"></i> Log in my Paypal </button>
+                    <button type="button" class="btn btn-success"> <i class="fa fa-paypal"></i> Log in my Paypal </button>
                     </p>
                     <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -768,10 +766,10 @@
                     
                       </aside> <!-- col.// -->
             </div>
-            <div class="modal-footer">
+            <!-- <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            </div> -->
           </div>
         </div>
         </div>
