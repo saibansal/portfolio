@@ -871,100 +871,9 @@
         </div>
     </div>
 
-    <!-- Ask question modal -->
-    <div id="askquestion-modal" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-md">
-        <div role="document" class="modal-dialog modal-dialog-centered modal-md askquestion-modal-main">
-            <div class="modal-content modal-tabs-outer">
-                <div class="modal-header border-bottom-0">
-                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="attachment-modal-inner">
-                        <h6>Add your attachment</h6>
-                        <div class="question-enter-outer">
-                            <textarea id="question-enter" class="question-enter" maxlength="1000"></textarea>
-                            <div class="textarea-counter-modal" id="textarea_counter-modal"></div>
-                        </div>
+ 
 
-                        <div class="image-upload-wrap">
-                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-                            <div class="drag-text">
-                                <h3><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload or drop your files here</h3>
-                            </div>
-                        </div>
-                        <div class="file-upload-content">
-                            <img class="file-upload-image" src="#" alt="your image" />
-                            <div class="image-title-wrap">
-                                <button type="button" onclick="removeUpload()" class="remove-image">Remove
-                                    <!-- <span class="image-title">Uploaded Image</span> --></button>
-                            </div>
-                        </div>
-
-                        <!-- Topic -->
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Topic</label>
-                            <div class="col-sm-9">
-                                <select class="form-control">
-                                    <option value="Algebra">Algebra</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- /Topic -->
-                    </div>
-
-                    <!-- bottom tabs modal -->
-                    <div class="modal-ask-question-outer">
-                        <div class="modal-ask-question">
-                            <div class="attachment-modal-inner">
-                                <!--Fixed tab example -->
-                                <div class="card pmd-card">
-                                    <div class="pmd-tabs">
-                                        <ul role="tablist" class="nav nav-tabs nav-fill">
-                                            <li class="nav-item" role="presentation">
-                                                <a class="nav-link active" data-toggle="tab" role="tab" aria-controls="highSchool" href="#highSchool">Highschool</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" role="tab" aria-controls="collage-link" href="#collage-link">Collage</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" role="tab" aria-controls="test-prep" href="#test-prep">Test prep</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="attachment-modal-inner">
-                            <div class="card-body">
-                                <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane active" id="highSchool">
-                                        <div class="text-center">
-                                            <input type="submit" class="btn btn-orange btn-block" value="Ask the question">
-                                        </div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane" id="collage-link">
-                                        <div class="text-center">
-                                            <input type="submit" class="btn btn-orange btn-block" value="Ask the question">
-                                        </div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane" id="test-prep">
-                                        <div class="text-center">
-                                            <input type="submit" class="btn btn-orange btn-block" value="Ask the question">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fixed tab example end-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Ask question modal -->
-
-    <!-- answer modal popup starts -->
-    <!-- Modal -->
+    <!-- answer modal popup starts --> 
     <div class="modal fade" id="answermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -1004,7 +913,7 @@
             </div>
         </div>
     </div>
-    <!-- ansert modal popup finsih -->
+    <!-- answer modal popup finsih -->
 
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

@@ -2059,6 +2059,14 @@ button:hover{
 	transform: translate3d(0, -100%, 0);
 }
 
+/*----- white board css starts --------*/
+.white-board-navigation ul{
+	list-style: none;
+}
+.white-board-navigation ul li{
+	float:left
+}
+
 /*#teacher-invitation .card button*/
 @media screen and (max-width: 1600px) and (min-width: 768px) {
 	.content-container .container:first-child{
