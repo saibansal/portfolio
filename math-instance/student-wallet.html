@@ -675,96 +675,72 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-                <aside class="w-100 float-left"> 
+                <div class="w-100 float-left"> 
                     <article class="card p-0 border-0">
                     <div class="card-body">
-                    
-                    <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
-                      <!-- <li class="nav-item">
-                        <a class="nav-link font-weight-normal " data-toggle="pill" href="#nav-tab-card">
-                        <i class="fa fa-credit-card"></i> Credit Card</a></li>
-                      <li class="nav-item">-->
-                        <a class="nav-link active font-weight-normal" data-toggle="pill" href="#nav-tab-paypal">
-                        <i class="fa fa-paypal"></i>  Paypal</a></li> 
-                      <!-- <li class="nav-item">
-                        <a class="nav-link font-weight-normal" data-toggle="pill" href="#nav-tab-bank">
-                        <i class="fa fa-university"></i>  Bank Transfer</a></li> -->
-                    </ul>
-                    
-                    <div class="tab-content">
-                    <div class="tab-pane fade show " id="nav-tab-card">
-                      <p class="alert alert-success">Some text success or error</p>
-                      <form role="form">
-                      <div class="form-group">
-                        <label for="username">Full name (on the card)</label>
-                        <input type="text" class="form-control" name="username" placeholder="" required="">
-                      </div> <!-- form-group.// -->
-                    
-                      <div class="form-group">
-                        <label for="cardNumber">Card number</label>
-                        <div class="input-group">
-                          <input type="text" class="form-control" name="cardNumber" placeholder="">
-                          <div class="input-group-append">
-                            <span class="input-group-text text-muted">
-                              <i class="fa fa-cc-visa"></i>   <i class="fa fa-cc-amex"></i>   
-                              <i class="fa fa-cc-mastercard"></i> 
-                            </span>
-                          </div>
-                        </div>
-                      </div> <!-- form-group.// -->
-                    
-                      <div class="row">
-                          <div class="col-sm-8">
-                              <div class="form-group">
-                                  <label><span class="hidden-xs">Expiration</span> </label>
-                                <div class="input-group">
-                                  <input type="number" class="form-control" placeholder="MM" name="">
-                                    <input type="number" class="form-control" placeholder="YY" name="">
+                      <div class="col-xs-12 col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="checkbox pull-right">
+                                    <label>
+                                        <input type="checkbox" />
+                                        Remember
+                                    </label>
                                 </div>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                <div class="form-group">
+                                    <label for="cardNumber">
+                                        Card Holder's Name</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control rounded p-3" id="" placeholder="Valid Card Holder Mame"
+                                            required autofocus />
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="cardNumber">
+                                      CARD NUMBER</label>
+                                  <div class="input-group">
+                                      <input type="text" class="form-control rounded  p-3" id="cardNumber" placeholder="Valid Card Number"
+                                          required autofocus />
+                                      <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                  </div>
                               </div>
-                          </div>
-                          <div class="col-sm-4">
-                              <div class="form-group">
-                                  <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
-                                  <input type="number" class="form-control" required="">
-                              </div> <!-- form-group.// -->
-                          </div>
-                      </div> <!-- row.// -->
-                      <button class="subscribe btn btn-primary btn-block" type="button"> Confirm  </button>
-                      </form>
-                    </div> <!-- tab-pane.// -->
-                    <div class="tab-pane fade active show" id="nav-tab-paypal">
-                    <p>Paypal is easiest way to pay online</p>
-                    <p>
-                    <button type="button" class="btn btn-success"> <i class="fa fa-paypal"></i> Log in my Paypal </button>
-                    </p>
-                    <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </div>
-                    <div class="tab-pane fade" id="nav-tab-bank">
-                    <p>Bank accaunt details</p>
-                    <dl class="param">
-                      <dt>BANK: </dt>
-                      <dd> THE WORLD BANK</dd>
-                    </dl>
-                    <dl class="param">
-                      <dt>Accaunt number: </dt>
-                      <dd> 12345678912345</dd>
-                    </dl>
-                    <dl class="param">
-                      <dt>IBAN: </dt>
-                      <dd> 123456789</dd>
-                    </dl>
-                    <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </div> <!-- tab-pane.// -->
-                    </div> <!-- tab-content .// -->
+
+                                <div class="row">
+                                    <div class="col-xs-7 col-md-12">
+                                        <div class="form-group">
+                                            <label for="expityMonth">
+                                                EXPIRY DATE</label>
+                                              <div class="row">
+                                            <div class="col-xs-6 col-lg-3 pl-ziro" style="margin-left:15px;" >
+                                                <input type="text" class="form-control rounded p-3" id="expityMonth" placeholder="MM" required />
+                                            </div>
+                                            <div class="col-xs-6 col-lg-3 pl-ziro">
+                                                <input type="text" class="form-control rounded p-3" id="expityYear" placeholder="YY" required /></div>
+                                                <div class="col-xs-5 col-md-3 pull-right">
+                                                  <div class="form-group">
+                                                      <input type="password" class="form-control rounded p-3" id="cvCode" placeholder="CVC2" required />
+                                                  </div>
+                                              </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-success mt-2 w-100 float-left btn-lg" role="button">Pay</a>
                     
                     </div> <!-- card-body.// -->
                     </article> <!-- card.// -->
                     
                     
-                      </aside> <!-- col.// -->
+                  </div> <!-- col.// -->
             </div>
             <!-- <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

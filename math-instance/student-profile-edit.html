@@ -1397,10 +1397,10 @@
                     aria-labelledby="v-pills-messages-tab"
                   >
                     <h5 class="w-100 float-left mb-3">Billing Method</h5>
-                    <label for="exampleInputPassword1" class="w-100 float-left"
+                    <!-- <label for="exampleInputPassword1" class="w-100 float-left"
                       >Select Payment Option</label
-                    >
-                    <div
+                    > -->
+                    <!-- <div
                       class="custom-control custom-radio custom-control-inline"
                     >
                       <input
@@ -1414,8 +1414,9 @@
                         for="customRadioInline1"
                         >Net Banking</label
                       >
-                    </div>
-                    <div
+                    </div> -->
+
+                    <!-- <div
                       class="custom-control custom-radio custom-control-inline"
                     >
                       <input
@@ -1429,17 +1430,17 @@
                         for="customRadioInline2"
                         >Credit Card</label
                       >
-                    </div>
+                    </div> -->
 
                     <div
                       class="custom-control custom-radio custom-control-inline"
                     >
                       <input
                         type="radio"
-                        checked
+                        
                         id="customRadioInline2"
                         name="customRadioInline1"
-                        class="custom-control-input"
+                        class="ccbtn custom-control-input"
                       />
                       <label
                         class="custom-control-label"
@@ -1448,10 +1449,81 @@
                       >
                     </div>
 
-                    <div class="w-100 float-left mt-5 mb-4 text-center">
-                      <button class="btn btn-primary">Submit</button>
-                      <button class="btn btn-success">Cancel</button>
-                    </div>
+                    <!-- <form   class="form-horizontal cc-form" role="form"> -->
+                      <fieldset class="w-100 mt-3 float-left cc-form" style="display:none">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="form-group col-sm-6">
+                              <div class="w-100">
+                                <input type="text" class="form-control col-md-12 rounded" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
+                              </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                              <div class="w-100">
+                                <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                          <div class="col-sm-12">
+                            <div class="row">
+                              <div class="col-12 col-sm-6 col-md-3">
+                                <select class="form-control col-sm-12" name="expiry-month" id="expiry-month">
+                                  <option>Month</option>
+                                  <option value="01">Jan (01)</option>
+                                  <option value="02">Feb (02)</option>
+                                  <option value="03">Mar (03)</option>
+                                  <option value="04">Apr (04)</option>
+                                  <option value="05">May (05)</option>
+                                  <option value="06">June (06)</option>
+                                  <option value="07">July (07)</option>
+                                  <option value="08">Aug (08)</option>
+                                  <option value="09">Sep (09)</option>
+                                  <option value="10">Oct (10)</option>
+                                  <option value="11">Nov (11)</option>
+                                  <option value="12">Dec (12)</option>
+                                </select>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-3 ml-1 pr-0">
+                                <select class="form-control w-100" name="expiry-year">
+                                  <option value="13">2013</option>
+                                  <option value="14">2014</option>
+                                  <option value="15">2015</option>
+                                  <option value="16">2016</option>
+                                  <option value="17">2017</option>
+                                  <option value="18">2018</option>
+                                  <option value="19">2019</option>
+                                  <option value="20">2020</option>
+                                  <option value="21">2021</option>
+                                  <option value="22">2022</option>
+                                  <option value="23">2023</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group float-right offset-0 offset-sm-0 offset-md-1 col-sm-3">
+                                <div class="w-100">
+                                  <input type="text" class="form-control" name="cvv" id="cvv" placeholder="CVV2">
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </div>
+                        </div>
+                        
+                        
+                      </fieldset>
+
+                      <div class="w-100 float-left mt-5 mb-4 text-center">
+                        <button class="btn btn-primary mr-1">Submit</button>
+                        <button class="btn btn-success">Cancel</button>
+                      </div>
+                    <!-- </form>  -->
+
+                    
                     <img
                       src="images/payment-cards.png"
                       alt=""
@@ -2092,7 +2164,19 @@
             .hide();
           $(targetBox).show();
         });
+
+        $('input[type="radio"].ccbtn').click(function() {
+          // alert();
+          $(".cc-form").show();
+        });
+
+
       });
+
+
+      
+
+
     </script>
   </body>
 </html>
