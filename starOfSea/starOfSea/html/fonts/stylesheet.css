@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Adobe Caslon Pro';
+    src: url('ACaslonPro-Italic.eot');
+    src: local('Adobe Caslon Pro Italic'), local('ACaslonPro-Italic'),
+        url('ACaslonPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('ACaslonPro-Italic.woff2') format('woff2'),
+        url('ACaslonPro-Italic.woff') format('woff'),
+        url('ACaslonPro-Italic.ttf') format('truetype'),
+        url('ACaslonPro-Italic.svg#ACaslonPro-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+

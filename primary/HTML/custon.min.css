@@ -1,0 +1,145 @@
+@charset "utf-8";
+.top-links{float:left;width:100%;margin:10px 0}
+.top-links ul{padding:0;margin:0;float:right;list-style:none;margin-right:6%}
+.top-links ul li{float:left}
+.top-links ul li a{padding:5px 10px;display:inline-block;color:#6d6e71;text-decoration:none;border:solid 1px transparent;background-color:transparent;font:400 16px "Helvetica Neue",Helvetica,Arial,sans-serif!important;text-transform:capitalize}
+.top-links ul li a:hover{background:#8DC63F;color:#fff;border-radius:6px;border:solid 1px #8DC63F}
+header{padding:1px 0}
+.logo a{text-indent:-9999}
+.navbar ul li a{color:#939598;font-size:17px;padding:10px;background:0 0}
+.home-header .navbar ul li:nth-child(3) a{color:#ec008c}
+.home-header .navbar ul li:nth-child(4) a{color:#8dc63f}
+.navbar ul li a:focus,.navbar ul li a:hover{color:#000;background:0 0}
+.navbar-right{margin-top:100px}
+.content-container{float:left;width:100%;margin:1.5% 0 0}
+.left-social{margin-top:7%}
+.left-social ul{float:left;width:100%;list-style:none}
+.left-social ul li{float:left;width:100%;margin:10px 0}
+.left-social ul li a{opacity:.7}
+.left-social ul li a:hover{opacity:1}
+p{font-size:18px;color:#231F20;margin-bottom:5%;line-height:35px}
+footer{background:#d1d3d4;padding:.5% 0;float:left;width:100%;margin-top:3%}
+footer h3{font-size:18px;margin-bottom:8%}
+footer ul{list-style:none;padding:0;width:100%}
+footer ul li{float:left;width:100%}
+footer ul li a{float:left;width:100%;font-size:14px;color:#231f20}
+footer .social ul li{width:auto;margin:0 5px}
+footer .social ul li a{opacity:.7}
+footer .social ul li a:hover{opacity:1}
+h1,h2,h3,h4,h5,h6{color:#231f20}
+.nav .open>a,.nav .open>a:focus,.nav .open>a:hover{background:0 0}
+.navbar ul li .fa{font-size:12px}
+.navbar ul li.dropdown:hover a{background:#8DC63F;color:#fff}
+.navbar ul li.dropdown:hover .dropdown-menu{display:block;padding:0}
+.navbar ul li.dropdown span:after{content:'\f067';display:inline-block;position:relative;top:0;right:-.3em}
+.navbar ul li.dropdown li:hover a{background:#58b6de}
+.navbar ul li.dropdown:hover span:after{content:'\f068'}
+@media (max-width:800px){.navbar-toggle{float:left}
+.top-links ul{margin-right:0}
+header{background:0 0}
+.navbar-nav{margin-top:0}
+.left-social{margin-top:0;margin-bottom:1%}
+.left-social h2{font-size:20px;display:inline-block;float:left;margin-right:20px;margin-top:3px}
+.left-social ul{padding:0;float:left;width:auto}
+.left-social ul li{width:auto;margin:0 5px}
+footer h3{margin-bottom:3%}
+footer .social{margin-left:15px}
+.navbar-header{width:100%;text-align:center}
+.navbar-header a{float:left;width:100%}
+.navbar-header a img{display:inline-block}}
+@media (min-width:768px) and (max-width:800px){.top-links{text-align:center}
+.top-links ul{display:inline-block;float:none!important}
+.navbar-header img{width:40%;margin:3% 0}}
+@media (min-width:801px) and (max-width:1199px){.top-links{text-align:center}
+.top-links ul{display:inline-block;float:none!important}
+.navbar-header{width:100%;text-align:center}
+.navbar-header a{float:left;width:100%;text-align:center}
+.navbar-header img{width:40%;margin:3% 0 0;display:inline-block}
+.navbar-right{margin-top:15px;padding-bottom:15px}}
+@media (min-width:100px) and (max-width:520px){p{text-align:justify}}
+@media (min-width:1200px){.content-container{min-height:350px}}
+#ui-datepicker-div.ui-datepicker{font-size:11px}
+#ui-datepicker-div.ui-widget-content{border:1px solid #CD138B;background:#fff}
+.ui-datepicker .ui-datepicker-header{padding:.2em 0;position:relative}
+#ui-datepicker-div .ui-widget-header{background:#CD138B;border:1px solid #ddd;color:#fff;font-weight:700;font-size:12px}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-header{padding:.2em 0;position:relative}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-prev{left:3px;background:url(../images/icon-prev-datepicker.png) left top no-repeat}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-next,#ui-datepicker-div.ui-datepicker .ui-datepicker-prev{height:16px;position:absolute;top:4px;width:16px}
+#ui-datepicker-div.ui-datepicker .ui-widget-header a{color:#222}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-next span,#ui-datepicker-div.ui-datepicker .ui-datepicker-prev span{display:none;left:50%;margin-left:-8px;margin-top:-8px;position:absolute;top:50%}
+#ui-datepicker-div .ui-icon{height:16px;width:16px;background-repeat:no-repeat;overflow:hidden;text-indent:-99999px}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-next{right:3px;background:url(../images/icon-next-datepicker.png) left top no-repeat}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-title{margin:0 2.3em;line-height:1.8em;text-align:center}
+#ui-datepicker-div.ui-datepicker table{border-collapse:collapse;font-size:11px;margin:0 0 .4em;width:100%;color:#fff}
+#ui-datepicker-div.ui-datepicker th{border:0 none;font-weight:700;padding:.7em .3em;text-align:center;background:#14B2CD}
+#ui-datepicker-div .ui-widget-content .ui-state-disabled,#ui-datepicker-div .ui-widget-header .ui-state-disabled,#ui-datepicker-div. ui-state-disabled{background-image:none;opacity:.35}
+#ui-datepicker-div .ui-datepicker td{border:0 none;padding:1px}
+#ui-datepicker-div .ui-state-disabled{cursor:default!important}
+#ui-datepicker-div.ui-datepicker td{border:0;padding:1px}
+#ui-datepicker-div .ui-state-default,#ui-datepicker-div .ui-widget-content .ui-state-default,#ui-datepicker-div .ui-widget-header .ui-state-default{background:#f1f1f1;border:1px solid #ddd;color:#555}
+#ui-datepicker-div.ui-datepicker td a,#ui-datepicker-div.ui-datepicker td span{display:block;padding:2px 5px;text-align:right;text-decoration:none}
+#ui-datepicker-div .ui-state-default,#ui-datepicker-div .ui-widget-content .ui-state-default,#ui-datepicker-div .ui-widget-header .ui-state-default{font-weight:400}
+#ui-datepicker-div .ui-state-highlight,#ui-datepicker-div .ui-widget-content .ui-state-highlight,#ui-datepicker-div .ui-widget-header .ui-state-highlight{background:#CD138B;border:1px solid #FCEFA1;color:#fff;font-weight:700}
+.navbar-brand{padding:0;height:auto}
+header{float:left;width:100%;background:url(../images/header-bottom-bg.png) repeat-x left 99%;padding-bottom:1px}
+h1{color:#777!important;font:25px "Helvetica Neue",Helvetica,Arial,sans-serif!important;padding:29px 0 3px;margin:0 0 35px;background:0 0;border-bottom:1px dashed #dbdbdb}
+.check-box-style{margin-right:15px;font-size:13px;font-style:normal}
+.check-box-style input[type=checkbox]{margin-right:8px}
+.personal-profile p{float:left;margin-bottom:0;width:100%}
+.personal-profile p label{font-size:15px}
+.back-button{background:#58b6de;padding:2px 10px;color:#fff;border-radius:3px;font-size:14px;border:solid 1px #58b6de}
+.back-button:hover{background:#8ED8F8;border:solid 1px #8ED8F8;text-decoration:none;color:#fff}
+.personal-profile .form-control,.personal-profile input[type=date],.personal-profile input[type=email],.personal-profile input[type=password],.personal-profile input[type=text],.personal-profile p span,.personal-profile textarea,select{background:#fff;border:0}
+.personal-profile span{font-size:14px;color:#231F20}
+.sub-heading{font-size:18px;float:left;width:100%;margin-bottom:20px;color:#BE1E2D;margin-top:0}
+table th{font-weight:600;font-size:14px}
+table td button.btn-primary{font-size:12px;padding:3px 20px;text-transform:capitalize}
+table td,table th{text-align:center}
+table.table{margin-bottom:3%}
+.btn-primary{background:#818285;color:#fff;font-size:15px!important;text-transform:uppercase;padding:10px 15px;border:solid #818285 1px;border-radius:2px}
+.btn-primary:hover{background:#58b6de;border:solid 1px #58b6de}
+.form-control,input[type=date],input[type=email],input[type=password],input[type=text],select,textarea{padding:10px;border:1px solid #ccc;font-size:14px;height:auto;background:#f1f1f1;margin-bottom:20px}
+.mbt20{margin-bottom:20px}
+input[type=checkbox]{margin-right:5px}
+.sub-navigation{float:left;width:100%;margin:0 0 20px;background:#f1f1f1}
+.panel-group{float:left;width:100%}
+.sub-navigation ul{float:left;width:100%;padding:0;list-style:none;margin-bottom:0}
+.sub-navigation ul li{float:left}
+.sub-navigation ul li a{padding:7px 15px;float:left}
+.sub-navigation ul li:hover a{background:#8DC63F;color:#fff}
+.sub-navigation ul li.active a{background:#58b6de;color:#fff}
+.long-list-section{float:left;width:100%;margin:15px 0 30px}
+.long-list{border:solid 1px #ccc;float:left;width:100%;margin-bottom:20px;padding:30px 0 15px;position:relative;border-radius:3px}
+.long-list-section .left-section label{line-height:normal;font-size:15px}
+.long-list-section .left-section p{line-height:normal}
+.long-list .check{position:absolute;left:0;top:-4px}
+.long-list-section .right-sec{padding-right:0}
+.long-list .btn-primary{padding:5px 10px}
+.long-list p{float:left;width:100%}
+.long-list p select{padding:5px;border:1px solid #ccc;font-size:14px;height:auto;background:#f1f1f1}
+.long-list .panel-group .panel-heading{padding:0 15px;position:relative}
+.long-list .panel-group .panel-heading+.panel-collapse>.list-group,.long-list .panel-group .panel-heading+.panel-collapse>.panel-body{border:0}
+.long-list .panel-group{margin-bottom:0}
+.long-list .arrow-link{position:absolute;right:15px;top:-35px;padding:7px;border:solid 2px #777;border-radius:100%}
+.long-list table td{padding:2%}
+.mt15{margin-top:15px}
+.long-list .sub-heading{margin-top:30px}
+.long-list p{font-size:15px;line-height:26px;margin-bottom:15px}
+.long-list .center-sec .btn{padding:8px 16px;width:100%}
+.long-list .last-sec .btn{margin-bottom:15px}
+.contact-us p{float:left;width:100%;margin-bottom:15px}
+.contact-us p input{margin-bottom:0;padding:0 10px}
+.contact-us p label{font-size:15px}
+.contact-us p .btn-primary{padding:0 15px}
+.long-list p input{padding:0 10px;margin-bottom:0}
+.pl0{padding-left:0!important}
+div.checkbox label{margin-bottom:15px}
+.selected-box{background:url(../images/select.png) 5px 5px no-repeat}
+.search-table tr:last-child td{text-align:center;border:solid 1px #fff}
+.search-table nav{display:inline-block}
+ul.pagination li a{background:#8DC63F;color:#fff}
+ul.pagination li a:hover,ul.pagination li.active a{background:#58b6de;color:#fff}
+.short-desc-box{width:100%;border:solid 1px #ddd;padding:15px;min-height:80px}
+.bdr_1{border:solid 1px #ddd!important}
+.p0{padding:0}
+.home-listing{list-style-position:inside;font-size:18px;color:#231F20;line-height:35px;margin-bottom:20px}
