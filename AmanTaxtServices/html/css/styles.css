@@ -2243,3 +2243,12 @@ footer .footer-nav li a {
     display: block !important;
   }
 }
+.top-bar{
+	background:#333;
+	color:#fff;
+	padding:10px 0;
+	font-size:13px;
+}
+.table.vehicle-features tr td{
+	padding:20px 10px !important;
+}
