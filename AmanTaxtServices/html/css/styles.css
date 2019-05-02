@@ -226,7 +226,7 @@ header .navbar-default .navbar-nav .dropdown-menu li a {
   border-color: #ffffff;
 }
 header.small {
-  height: 95px;
+  height: 75px;
   box-shadow: 0 0px 14px -2px gray;
 }
 header.small .header-info {
@@ -237,16 +237,32 @@ header.small .brand {
   width: 50%;
 }
 header.large {
-  height: 147px;
+  height: 95px;
   box-shadow: none;
 }
 header.large .header-info {
   display: block;
 }
 header.large .brand {
-  margin: 45px 0 0 0;
+  margin: 20px 0 0 0;
   width: 100%;
 }
+
+header.large .brand img{
+	height:50px
+}
+header.affix .brand {
+	margin-top:13px;
+	}
+header.affix .brand img{
+	height:45px
+}
+header.affix  .navbar-default{
+	margin-top:15px;
+	margin-bottom:10px;
+	min-height:inherit
+}
+	
 /* Teaser
 -------------------------------------*/
 #teaser {

@@ -3,7 +3,7 @@
 // Config 
 //-------------------------------------------------------------
 
-var companyName = "Car Rental Station"; // Enter your event title
+var companyName = "Aman Taxi Service"; // Enter your event title
 
 
 // Initialize Tooltip  
@@ -143,7 +143,7 @@ var checkout = $('#drop-off-date').datepicker({
 
 // Toggle Drop-Off Location
 //-------------------------------------------------------------------------------
-$(".input-group.drop-off").hide();
+<!---->$(".input-group.drop-off").hide();
 $(".different-drop-off").on("click", function(){
 	$(".input-group.drop-off").toggle();
   $(".autocomplete-suggestions").css("width", $('.pick-up .autocomplete-location').outerWidth());
