@@ -1390,87 +1390,43 @@
                   </div>
                   <!-- change password section finsih -->
                   <!-- payment gateway section starts -->
-                  <div
-                    class="tab-pane fade select-payment"
-                    id="v-pills-messages"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-messages-tab"
-                  >
+                  <div class="tab-pane fade select-payment" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"                  >
                     <h5 class="w-100 float-left mb-3">Billing Method</h5>
-                    <!-- <label for="exampleInputPassword1" class="w-100 float-left"
-                      >Select Payment Option</label
-                    > -->
-                    <!-- <div
-                      class="custom-control custom-radio custom-control-inline"
-                    >
-                      <input
-                        type="radio"
-                        id="customRadioInline1"
-                        name="customRadioInline1"
-                        class="custom-control-input"
-                      />
-                      <label
-                        class="custom-control-label"
-                        for="customRadioInline1"
-                        >Net Banking</label
-                      >
-                    </div> -->
+                   
+                     
+                      <fieldset class="w-100  float-left cc-form">
+                        <div class="col-md-12">
+                          <div class="form-group"> 
+                              <label> Enter your Credit Card </label>
+                              <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Credit Card Number">
+                          </div>
+                        </div>
 
-                    <!-- <div
-                      class="custom-control custom-radio custom-control-inline"
-                    >
-                      <input
-                        type="radio"
-                        id="customRadioInline2"
-                        name="customRadioInline1"
-                        class="custom-control-input"
-                      />
-                      <label
-                        class="custom-control-label"
-                        for="customRadioInline2"
-                        >Credit Card</label
-                      >
-                    </div> -->
-
-                    <div
-                      class="custom-control custom-radio custom-control-inline"
-                    >
-                      <input
-                        type="radio"
-                        
-                        id="customRadioInline2"
-                        name="customRadioInline1"
-                        class="ccbtn custom-control-input"
-                      />
-                      <label
-                        class="custom-control-label"
-                        for="customRadioInline2"
-                        >Credit Card</label
-                      >
-                    </div>
-
-                    <!-- <form   class="form-horizontal cc-form" role="form"> -->
-                      <fieldset class="w-100 mt-3 float-left cc-form" style="display:none">
                         <div class="col-md-12">
                           <div class="row">
                             <div class="form-group col-sm-6">
                               <div class="w-100">
-                                <input type="text" class="form-control col-md-12 rounded" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
+                                <label>First Name</label>
+                                <input type="text" class="form-control col-md-12 rounded" name="card-holder-name" id="card-holder-first-name" placeholder="First Name">
                               </div>
                             </div>
+
                             <div class="form-group col-sm-6">
-                              <div class="w-100">
-                                <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+                                <div class="w-100">
+                                  <label>Last Name</label>
+                                  <input type="text" class="form-control col-md-12 rounded" name="card-holder-last-name" id="card-holder-last-name" placeholder="Last Name">
+                                </div>
                               </div>
-                            </div>
+                            
                           </div>
                         </div>
                         
                         
                         <div class="form-group">
-                          <div class="col-sm-12">
+                          <div class="col-sm-6 float-left">
                             <div class="row">
-                              <div class="col-12 col-sm-6 col-md-3">
+                              <div class="col-12 col-sm-6">
+                                <label>Select Month</label>
                                 <select class="form-control col-sm-12" name="expiry-month" id="expiry-month">
                                   <option>Month</option>
                                   <option value="01">Jan (01)</option>
@@ -1487,7 +1443,8 @@
                                   <option value="12">Dec (12)</option>
                                 </select>
                               </div>
-                              <div class="col-12 col-sm-6 col-md-3 ml-1 pr-0">
+                              <div class="col-12 col-sm-6 col-md-6">
+                                <label>Select Year</label>
                                 <select class="form-control w-100" name="expiry-year">
                                   <option value="13">2013</option>
                                   <option value="14">2014</option>
@@ -1501,27 +1458,23 @@
                                   <option value="22">2022</option>
                                   <option value="23">2023</option>
                                 </select>
-                              </div>
-
-                              <div class="form-group float-right offset-0 offset-sm-0 offset-md-1 col-sm-3">
-                                <div class="w-100">
-                                  <input type="text" class="form-control" name="cvv" id="cvv" placeholder="CVV2">
-                                </div>
-                              </div>
-
-
+                              </div> 
                             </div>
                           </div>
+
+                              
+                          <div class="form-group float-right col-sm-6">
+                            <label>Security Code</label>
+                            <input type="text" class="form-control" name="cvv" id="cvv" placeholder="CVV2">
+                          </div>
                         </div>
-                        
-                        
                       </fieldset>
 
                       <div class="w-100 float-left mt-5 mb-4 text-center">
                         <button class="btn btn-primary mr-1">Submit</button>
                         <button class="btn btn-success">Cancel</button>
                       </div>
-                    <!-- </form>  -->
+                    
 
                     
                     <img
@@ -1549,18 +1502,7 @@
     </div>
     <!-- Profile content container finish -->
     <!-- Ask your question -->
-    <!-- <div class="askYourQuestion">
-      <div class="container">
-        <h2>What question do you need help with?</h2>
-        <a
-          href=""
-          class="btn btn-primary"
-          data-toggle="modal"
-          data-target="#askquestion-modal"
-          >ASK Your QUESTION</a
-        >
-      </div>
-    </div> -->
+    
     <!-- /Ask your question -->
 
     <!-- footer -->
@@ -1826,7 +1768,7 @@
                   role="tabpanel"
                   aria-labelledby="student-tab"
                 >
-                  <form>
+                  <!-- <form> -->
                     <input
                       type="text"
                       class="form-control"
@@ -2075,7 +2017,6 @@
 
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
     <script src="js/jquery.easing.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -2083,16 +2024,13 @@
     <script src="vendor/lightbox2/js/lightbox.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/front.js"></script>
-
     <script type="text/javascript">
       $(document).ready(function() {
         var text_max = 1000;
         $("#textarea_counter-modal").html("0" + "/1000");
-
         $("#question-enter").keyup(function() {
           var text_length = $("#question-enter").val().length;
           var text_remaining = text_max - text_length;
-
           $("#textarea_counter-modal").html(text_length + "/1000");
         });
       });
@@ -2100,16 +2038,12 @@
       function readURL(input) {
         if (input.files && input.files[0]) {
           var reader = new FileReader();
-
           reader.onload = function(e) {
             //$('.image-upload-wrap').hide();
-
             $(".file-upload-image").attr("src", e.target.result);
             $(".file-upload-content").show();
-
             $(".image-title").html(input.files[0].name);
           };
-
           reader.readAsDataURL(input.files[0]);
         } else {
           removeUpload();
@@ -2134,13 +2068,10 @@
     <script src="js/calender.js"></script>
     <script type="text/javascript">
       // for show hide on click edit profile
-
       document.querySelector("html").classList.add("js");
-
       var fileInput = document.querySelector(".input-file"),
         button = document.querySelector(".input-file-trigger"),
         the_return = document.querySelector(".file-return");
-
       button.addEventListener("keydown", function(event) {
         if (event.keyCode == 13 || event.keyCode == 32) {
           fileInput.focus();
@@ -2169,13 +2100,7 @@
           // alert();
           $(".cc-form").show();
         });
-
-
       });
-
-
-      
-
 
     </script>
   </body>

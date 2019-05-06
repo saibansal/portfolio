@@ -23,10 +23,11 @@ body{
   max-width: 340px;
   width: 40%;
   height: 100%;
-  background: #2c3e50;
-  color: #f5f5f5;
+  background: #fff;
+  color: #2c3e50;
   overflow: hidden;
   position: relative;
+  border:1px solid #E0E0E0
 }
 @media screen and (max-width: 735px) {
   #frame #sidepanel {
@@ -43,7 +44,7 @@ body{
     width: 100%;
     margin: 0 auto;
     padding: 5px 0 0 0;
-    background: #32465a;
+    /* background: #32465a; */
   }
 }
 #frame #sidepanel #profile.expanded .wrap {
@@ -273,11 +274,11 @@ body{
 }
 #frame #sidepanel #profile .wrap #expanded input:focus {
   outline: none;
-  background: #435f7a;
+  /* background: #435f7a; */
 }
 #frame #sidepanel #search {
-  border-top: 1px solid #32465a;
-  border-bottom: 1px solid #32465a;
+  /* border-top: 1px solid #ededed; */
+  border-bottom: 1px solid #ededed;
   font-weight: 300;
 }
 @media screen and (max-width: 735px) {
@@ -287,20 +288,21 @@ body{
 }
 #frame #sidepanel #search label {
   position: absolute;
-  margin: 10px 0 0 20px;
+  margin: 15px 0 0 20px;
+
 }
 #frame #sidepanel #search input {
-  padding: 10px 0 10px 46px;
+  padding: 20px 0 20px 46px;
   width: 100%;
   border: none;
-  background: #32465a;
-  color: #f5f5f5;
+  background: #f5f5f5;
+  color: #3d3d3d;
 }
 #frame #sidepanel #search input:focus {
   outline: none;
-  background: #435f7a;
+  /* background: #e74c3c; */
 }
-#frame #sidepanel #search input::-webkit-input-placeholder {
+/* #frame #sidepanel #search input::-webkit-input-placeholder {
   color: #f5f5f5;
 }
 #frame #sidepanel #search input::-moz-placeholder {
@@ -311,9 +313,9 @@ body{
 }
 #frame #sidepanel #search input:-moz-placeholder {
   color: #f5f5f5;
-}
+} */
 #frame #sidepanel #contacts {
-  height: calc(100% - 177px);
+  height: calc(100% - 80px);
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -342,6 +344,7 @@ body{
   padding: 10px 0 15px 0;
   font-size: 0.9em;
   cursor: pointer;
+  border-bottom:solid 1px #ddd;
 }
 @media screen and (max-width: 735px) {
   #frame #sidepanel #contacts ul li.contact {
@@ -349,14 +352,15 @@ body{
   }
 }
 #frame #sidepanel #contacts ul li.contact:hover {
-  background: #32465a;
+  background: #a0a0a0;
 }
 #frame #sidepanel #contacts ul li.contact.active {
-  background: #32465a;
-  border-right: 5px solid #435f7a;
+  background: #a0a0a0;
+  border-right: 5px solid #828282;
 }
-#frame #sidepanel #contacts ul li.contact.active span.contact-status {
-  border: 2px solid #32465a !important;
+#frame #sidepanel #contacts ul li.contact:hover h2, #frame #sidepanel #contacts ul li.contact:hover p, 
+  #frame #sidepanel #contacts ul li.contact.active h2, #frame #sidepanel #contacts ul li.contact.active p{
+  color:#fff;
 }
 #frame #sidepanel #contacts ul li.contact .wrap {
   width: 88%;
@@ -375,7 +379,6 @@ body{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 2px solid #2c3e50;
   background: #95a5a6;
 }
 #frame #sidepanel #contacts ul li.contact .wrap span.online {
@@ -488,6 +491,8 @@ body{
   height: 100%;
   overflow: hidden;
   position: relative;
+  background: #fff;
+  border:solid 1px #ddd
 }
 @media screen and (max-width: 735px) {
   #frame .content {
@@ -502,9 +507,12 @@ body{
 }
 #frame .content .contact-profile {
   width: 100%;
-  height: 60px;
-  line-height: 60px;
+  height: 70px;
+  /* line-height: 80px; */
   background: #f5f5f5;
+}
+#frame .content .contact-profile p{
+  margin-top: 7px;
 }
 #frame .content .contact-profile img {
   width: 40px;
@@ -551,44 +559,40 @@ body{
   display: inline-block;
   clear: both;
   float: left;
-  margin: 15px 15px 5px 15px;
+  margin: 10px 15px 0px 15px;
   width: calc(100% - 25px);
   font-size: 0.9em;
+  margin-bottom:15px;
+}
+#frame .content .messages ul li:last-child{
+  padding-bottom: 30px;
 }
 #frame .content .messages ul li:nth-last-child(1) {
   margin-bottom: 20px;
 }
 #frame .content .messages ul li.sent img {
-  margin: 6px 8px 0 0;
+  margin:0 8px 0 0;
 }
+/*
 #frame .content .messages ul li.sent p {
-  background: #435f7a;
-  color: #f5f5f5;
-}
+   background: #435f7a;
+  color: #f5f5f5; 
+}*/
 #frame .content .messages ul li.replies img {
   float: right;
-  margin: 6px 0 0 8px;
+  margin:0 0 0 8px;
 }
 #frame .content .messages ul li.replies p {
-  background: #f5f5f5;
   float: right;
 }
 #frame .content .messages ul li img {
-  width: 22px;
+  width: 40px;
   border-radius: 50%;
   float: left;
 }
 #frame .content .messages ul li p {
-  display: inline-block;
-  padding: 10px 15px;
-  border-radius: 20px;
-  max-width: 205px;
+  padding:0px 15px 10px 30px;
   line-height: 130%;
-}
-@media screen and (min-width: 735px) {
-  #frame .content .messages ul li p {
-    max-width: 300px;
-  }
 }
 #frame .content .message-input {
   position: absolute;
@@ -605,8 +609,8 @@ body{
   border: none;
   width: calc(100% - 120px);
   padding: 12px 32px 12px 15px;
-  font-size: 0.8em;
-  color: #32465a;
+  font-size: 1rem;
+  color: #000;
   margin-left: 15px;
 }
 @media screen and (max-width: 735px) {
@@ -618,15 +622,16 @@ body{
   outline: none;
 }
 #frame .content .message-input .wrap .attachment {
-  position: absolute;
-  right: 60px;
-  z-index: 4;
-  margin-top: 10px;
-  font-size: 1.1em;
-  color: #435f7a;
-  opacity: .5;
-  cursor: pointer;
-  margin-right: 17px;
+position: absolute;
+    right: 10px;
+    z-index: 4;
+    margin-top: -1px;
+    font-size: 1.1em;
+    color: #435f7a;
+    opacity: .5;
+    cursor: pointer;
+    margin-right: 0;
+		
 }
 @media screen and (max-width: 735px) {
   #frame .content .message-input .wrap .attachment {
@@ -643,10 +648,10 @@ body{
   width: 50px;
   padding: 12px 0;
   cursor: pointer;
-  background: #32465a;
+  background: #e74c3c;
   color: #f5f5f5;
   margin-right:15px;
-  border-radius: 0
+  border-radius: 0 5px 5px 0
 }
 @media screen and (max-width: 735px) {
   #frame .content .message-input .wrap button {
@@ -658,4 +663,42 @@ body{
 }
 #frame .content .message-input .wrap button:focus {
   outline: none;
+}
+.messages ul li h2{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0px 15px 5px 15px;
+  color:#e74c3c
+}
+.messages ul li h2 em{
+  font-weight:normal; 
+  color:rgba(0,0,0,.8);
+  font-size:13px;
+  font-weight: bold
+}
+.messages ul li p{
+  font-size: 15px;
+}
+
+#frame .content .messages ul li.replies p{
+  text-align: right;
+  padding-right: 0;
+}
+.social-medi a{
+  padding:7px 15px;
+  background: #e74c3c;
+  display: inline;
+  border-radius: 5px;
+  color:#fff;
+}
+.social-medi a:hover{
+  background:#3d3d3d
+}
+#frame #sidepanel #contacts ul li.contact:last-child{margin-bottom: 2rem}
+#frame #sidepanel .page-link{
+  border:0;
+  font-size:16px;
+}
+.message-input{
+  background:#d6d6d6;
 }

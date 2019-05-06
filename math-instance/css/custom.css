@@ -2403,6 +2403,158 @@ img {
 .checkbox.pull-right { margin: 0; }
 .pl-ziro { padding-left: 0px; }
 /*#teacher-invitation .card button*/
+.filter-list{
+	max-height: 200px;
+	overflow-y: scroll;
+	border:solid 1px #b7b7b7;
+}
+.filter-list ul{
+	list-style: none;
+	padding-left:0;
+	
+	border-radius:2px;
+	background:#fff;
+	padding:0;
+	margin-top:5px;
+}
+.filter-list ul .inner-list{
+	border:0; 
+	padding:0;
+	background:transparent;
+	padding-left:15px; 
+	margin-left:15px;
+}
+.filter-list ul .inner-list li{
+	margin-bottom: 10px;
+}
+.filter-list ul .main-head{
+	background:#e2e2e2;
+	padding:10px
+}
+.filter-list ul .main-head label{
+	margin-left:25px;
+}
+
+
+/* Shared */
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+.loginBtn:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.loginBtn:focus {
+  outline: none;
+}
+.loginBtn:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+ 
+/* Facebook */
+.loginBtn--facebook {
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354C8C;
+}
+
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+
+/* Google */
+.loginBtn--google {
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #DD4B39;
+}
+ 
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #E74B37;
+}
+
+
+
+.detail-tab-wizard a {
+	padding:20px 12px;
+	margin-right: 5px;
+	background: #efefef;
+	position: relative;
+	display: inline-block;
+}
+.detail-tab-wizard a:before {
+	width: 0;
+	height: 0;
+	border-top: 32px inset transparent;
+	border-bottom: 31px inset transparent;
+	border-left: 20px solid #fff;
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+}
+.detail-tab-wizard a:after {
+	width: 0;
+	height: 0;
+	border-top: 32px inset transparent;
+	border-bottom: 31px inset transparent;
+	border-left: 20px solid #efefef;
+	position: absolute;
+	content: "";
+	top: 0;
+	right: -20px;
+	z-index: 2;
+}
+.detail-tab-wizard a:first-child:before,
+.detail-tab-wizard a:last-child:after {
+	border: none;
+}
+.detail-tab-wizard a:first-child {
+	-webkit-border-radius: 4px 0 0 4px;
+		 -moz-border-radius: 4px 0 0 4px;
+					border-radius: 4px 0 0 4px;
+}
+.detail-tab-wizard a:last-child {
+	-webkit-border-radius: 0 4px 4px 0;
+		 -moz-border-radius: 0 4px 4px 0;
+					border-radius: 0 4px 4px 0;
+}
+.detail-tab-wizard .badge {
+	margin: 0 5px 0 18px;
+	position: relative;
+	top: -1px;
+}
+.detail-tab-wizard a:first-child .badge {
+	margin-left: 0;
+}
+.detail-tab-wizard .current {
+	background: #007ACC;
+	color: #fff !important;
+}
+.detail-tab-wizard .current:after {
+	border-left-color: #007ACC;
+}
+
 @media screen and (max-width: 1600px) and (min-width: 768px) {
 	.content-container .container:first-child{
 		max-width:97%;
@@ -2414,3 +2566,121 @@ img {
 		background-color:#f4f4f4
 	}
 }
+
+
+
+/*----------- custom input box ----------*/
+
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 6px;
+    width: 61px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+ 
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em; 
+    margin-right: 0.25em; 
+}
+ 
+.inputfile-3 + label {
+    color: #333;
+}
+
+.inputfile-3:focus + label,
+.inputfile-3.has-focus + label,
+.inputfile-3 + label:hover {
+    color: #722040;
+}
+
+
+/* style 4 */
+
+.inputfile-4 + label {
+    color: #d3394c;
+}
+
+.inputfile-4:focus + label,
+.inputfile-4.has-focus + label,
+.inputfile-4 + label:hover {
+    color: #722040;
+}
+
+.inputfile-4 + label figure {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d3394c;
+    display: block;
+    padding: 20px;
+    margin: 0 auto 10px;
+}
+
+.inputfile-4:focus + label figure,
+.inputfile-4.has-focus + label figure,
+.inputfile-4 + label:hover figure {
+    background-color: #722040;
+}
+
+.inputfile-4 + label svg {
+    width: 100%;
+    height: 100%;
+    fill: #f1e5e6;
+}
+  
+
+@media screen and (max-width: 50em) {
+	.inputfile-6 + label strong {
+		display: block;
+	}
+}
+
+
+.message-input .inputfile + label {
+    max-width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 6px;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+    
