@@ -2063,13 +2063,19 @@ button:hover{
 	transform: translate3d(0, -100%, 0);
 }
 .white-board-navigation ul li{
-	margin-right: 15px;
-	border-radius: 35px;
-	width:35px;
-	height:35px;
-	text-align: center;
-	line-height:35px;
-	font-size: 1.5rem
+	margin-right: 10px; 
+    width: 39px;
+    height: 35px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 1rem;
+    padding: 5px 7px;
+}
+.white-board-navigation ul li:hover, .white-board-navigation ul li.active{
+	background: rgba(0,0,0,.2)
+}
+.white-board-navigation ul li .whiteboard-dropdown li{
+	margin: 5px;
 }
 .white-board-navigation ul li:last-child{
 	font-size:16px;
@@ -2097,6 +2103,14 @@ button:hover{
 }
 .white-board-navigation ul li{
 	float:left
+}
+.white-board-navigation ul li:hover .whiteboard-dropdown{
+	display: block;
+}
+.white-board-navigation ul li:hover .whiteboard-dropdown li{
+	background: transparent;
+	width:25px;
+	padding: 0
 }
 .white-board{
 	min-height: 460px;
@@ -2696,7 +2710,7 @@ img {
 	width:200px;  
 	display: none;
 }
-.white-board-navigation ul li:hover .whiteboard-dropdown{
+.white-board-navigat.ion ul li:hover .whiteboard-dropdown{
 	display: block;
 }
 .whiteboard-dropdown li a{
@@ -2704,4 +2718,50 @@ img {
 }
 .whiteboard-dropdown li:hover a{
 	color:rgba(0,0,0,1) !important
+}
+textarea{
+	resize: none;
+}
+#dispute textarea{
+	min-height: 100px;
+}
+.tab-sect li{
+	list-style: none;
+	float: left;
+	margin-right:10px;
+	position: relative;
+}
+.tab-sect li .badge{
+	padding:5px 9px
+}
+.tab-sect li i.fa-remove{
+	     position: absolute;
+    top: -4px;
+    right: -5px;
+    z-index: 1;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 8px;
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+}
+.btnrating{
+	padding: 0;
+    background: transparent;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+}
+.btnrating i{
+	color:rgba(0,0,0,.5)
+}
+.btnrating:hover{
+	background: transparent;
+}
+.btnrating.btn-warning.btn-default i{
+	color:#fff;
 }

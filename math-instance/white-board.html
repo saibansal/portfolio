@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html ng-app="myApp" ng-controller="AppCtrl" lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
@@ -16,7 +16,7 @@
 <!-- Custom stylesheet - for your changes-->
 <link rel="stylesheet" href="css/style.default.css">
 <!-- Favicon-->
-<link rel="shortcut icon" href="img/favicon.png"> 
+<link rel="shortcut icon" href="img/favicon.png">
 <!-- Tweaks for older IEs-->
 <!--[if lt IE 9]>
  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -25,14 +25,22 @@
 
 <!-- custom input type file button -->
 <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
-	</head>
+</head>
 <body>
+
 <!-- navbar-->
 <header class="header inner-header">
   <div class="row">
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid"><a href="./" class="navbar-brand"> <img src="images/logo.svg" alt="" class=""></a> 
-        
+      <div class="container-fluid">
+		  <a href="./" class="navbar-brand"> <img src="images/logo.svg" alt="" class=""></a> 
+		  
+		  
+		  <a href="#" data-toggle="modal" data-target="#feebackRating" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Feedback </a> 
+		  
+		  <a href="#" data-toggle="modal" data-target="#feedback" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Rating </a> 
+		  
+		  
         <!-- search -->
         <div class="col-md-8 top-search">
           <input type="search" placeholder="Search by subject">
@@ -47,7 +55,7 @@
                   <li><a href="#">Reports </a></li>
                 </ul>
               </li>
-              <li class="messages"> <a href="#"><img src="images/message-icon.png"> <span class="message-count">5</span></a>
+              <li class="messages"> <a href="#"><img src="images/message-icon.png" alt=""> <span class="message-count">5</span></a>
                 <ul class="dropdown">
                   <li><a href="#"><strong>Mamta </strong> sent a message to you.</a></li>
                   <li><a href="#"><strong>Androind Developer </strong> sent a message to you.</a></li>
@@ -90,30 +98,30 @@
 </header>
 
 <!-- White board container starts -->
-<div class="content-container board-container w-100 mt-3 mb-5 pb-5">
-  <div class="container">
-    <div class="row"> 
+<div class="content-container board-container w-100 mt-0 mb-5 pb-5">
+  <div class="containider-fluid">
+    <div class=""> 
       <!-- top bar section starts -->
       <section class="white-board-navigation pb-0 col-md-12">
         <ul class="float-left p-0 w-100">
           <li class="active position-relative"><a href="#"><i class="fa fa-undo text-dark"></i></a></li>
-          <li class="position-relative"><a href="#"><i class="fa fa-pencil text-dark"></i></a></li>
+          <li class="position-relative"><a href="#"><i style="transform: rotateY(180deg);" class="fa fa-undo text-dark"></i></a></li>
+          <li class="position-relative"> <a href="#"><i class="fa fa-pencil text-dark"></i></a> </li>
           <li class="position-relative"><a href="#"><i class="fa fa-eraser text-dark"></i></a></li>
-          <li class="position-relative">
-			<a href="#"> <i class="fa fa-square-o text-dark"></i> </a>
-			<ul class="whiteboard-dropdown">
-				<li><a href="#"><img  height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDM4LjUzMyA0MzguNTMzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MzguNTMzIDQzOC41MzM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNNDA5LjEzMywxMDkuMjAzYy0xOS42MDgtMzMuNTkyLTQ2LjIwNS02MC4xODktNzkuNzk4LTc5Ljc5NkMyOTUuNzM2LDkuODAxLDI1OS4wNTgsMCwyMTkuMjczLDAgICBjLTM5Ljc4MSwwLTc2LjQ3LDkuODAxLTExMC4wNjMsMjkuNDA3Yy0zMy41OTUsMTkuNjA0LTYwLjE5Miw0Ni4yMDEtNzkuOCw3OS43OTZDOS44MDEsMTQyLjgsMCwxNzkuNDg5LDAsMjE5LjI2NyAgIGMwLDM5Ljc4LDkuODA0LDc2LjQ2MywyOS40MDcsMTEwLjA2MmMxOS42MDcsMzMuNTkyLDQ2LjIwNCw2MC4xODksNzkuNzk5LDc5Ljc5OGMzMy41OTcsMTkuNjA1LDcwLjI4MywyOS40MDcsMTEwLjA2MywyOS40MDcgICBzNzYuNDctOS44MDIsMTEwLjA2NS0yOS40MDdjMzMuNTkzLTE5LjYwMiw2MC4xODktNDYuMjA2LDc5Ljc5NS03OS43OThjMTkuNjAzLTMzLjU5NiwyOS40MDMtNzAuMjg0LDI5LjQwMy0xMTAuMDYyICAgQzQzOC41MzMsMTc5LjQ4NSw0MjguNzMyLDE0Mi43OTUsNDA5LjEzMywxMDkuMjAzeiBNMzUzLjc0MiwyOTcuMjA4Yy0xMy44OTQsMjMuNzkxLTMyLjczNiw0Mi42MzMtNTYuNTI3LDU2LjUzNCAgIGMtMjMuNzkxLDEzLjg5NC00OS43NzEsMjAuODM0LTc3Ljk0NSwyMC44MzRjLTI4LjE2NywwLTU0LjE0OS02Ljk0LTc3Ljk0My0yMC44MzRjLTIzLjc5MS0xMy45MDEtNDIuNjMzLTMyLjc0My01Ni41MjctNTYuNTM0ICAgYy0xMy44OTctMjMuNzkxLTIwLjg0My00OS43NzItMjAuODQzLTc3Ljk0MWMwLTI4LjE3MSw2Ljk0OS01NC4xNTIsMjAuODQzLTc3Ljk0M2MxMy44OTEtMjMuNzkxLDMyLjczOC00Mi42MzcsNTYuNTI3LTU2LjUzICAgYzIzLjc5MS0xMy44OTUsNDkuNzcyLTIwLjg0LDc3Ljk0My0yMC44NGMyOC4xNzMsMCw1NC4xNTQsNi45NDUsNzcuOTQ1LDIwLjg0YzIzLjc5MSwxMy44OTQsNDIuNjM0LDMyLjczOSw1Ni41MjcsNTYuNTMgICBjMTMuODk1LDIzLjc5MSwyMC44MzgsNDkuNzcyLDIwLjgzOCw3Ny45NDNDMzc0LjU4LDI0Ny40MzYsMzY3LjYzNywyNzMuNDE3LDM1My43NDIsMjk3LjIwOHoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></a></li>  
-				<li><a href="#"><img  height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDU5IDQ1OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDU5IDQ1OTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnIGlkPSJjaGVjay1ib3gtb3V0bGluZS1ibGFuayI+CgkJPHBhdGggZD0iTTQwOCw1MXYzNTdINTFWNTFINDA4IE00MDgsMEg1MUMyMi45NSwwLDAsMjIuOTUsMCw1MXYzNTdjMCwyOC4wNSwyMi45NSw1MSw1MSw1MWgzNTdjMjguMDUsMCw1MS0yMi45NSw1MS01MVY1MSAgICBDNDU5LDIyLjk1LDQzNi4wNSwwLDQwOCwwTDQwOCwweiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></a></li>
-				 
-				<li><a href="#"> <img height="20" width="20"  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzY4IDM2OCIgd2lkdGg9IjUxMnB4Ij48cGF0aCBkPSJtMTg0IDBjLTg5LjE5OTIxOSAwLTE4NCAyNS4yMzA0NjktMTg0IDcydjIyNGMwIDQ2Ljc2OTUzMSA5NC44MDA3ODEgNzIgMTg0IDcyczE4NC0yNS4yMzA0NjkgMTg0LTcydi0yMjRjMC00Ni43Njk1MzEtOTQuODAwNzgxLTcyLTE4NC03MnptMCAxNmM5OSAwIDE2OCAyOS41MTE3MTkgMTY4IDU2cy02OSA1Ni0xNjggNTYtMTY4LTI5LjUxMTcxOS0xNjgtNTYgNjktNTYgMTY4LTU2em0xNjggODYuNzg1MTU2djE2Mi40Mjk2ODhjLTMwLjcyNjU2Mi0yNi45NDkyMTktMTAwLjk0NTMxMi00MS4yMTQ4NDQtMTY4LTQxLjIxNDg0NHMtMTM3LjI3MzQzOCAxNC4yNjU2MjUtMTY4IDQxLjIxNDg0NHYtMTYyLjQyOTY4OGMzMC43MjY1NjIgMjYuOTQ5MjE5IDEwMC45NDUzMTIgNDEuMjE0ODQ0IDE2OCA0MS4yMTQ4NDRzMTM3LjI3MzQzOC0xNC4yNjU2MjUgMTY4LTQxLjIxNDg0NHptLTE2OCAyNDkuMjE0ODQ0Yy05OSAwLTE2OC0yOS41MTE3MTktMTY4LTU2czY5LTU2IDE2OC01NiAxNjggMjkuNTExNzE5IDE2OCA1Ni02OSA1Ni0xNjggNTZ6bTAgMCIgZmlsbD0iIzAwMDAwMCIvPjwvc3ZnPgo=" /></a></li> 
-				<li><a href="#"><img height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNzMuOTM1IDczLjkzNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNzMuOTM1IDczLjkzNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik01Mi4yNzksNzMuOTM1SDIxLjY1NkwwLDUyLjI3OVYyMS42NTVMMjEuNjU1LDBoMzAuNjI1bDIxLjY1NSwyMS42NTV2MzAuNjI1TDUyLjI3OSw3My45MzV6IE0yMi44OTgsNzAuOTM1aDI4LjEzOSAgICBsMTkuODk4LTE5Ljg5N3YtMjguMTRMNTEuMDM3LDIuOTk5SDIyLjg5OEwzLDIyLjg5N3YyOC4xNEwyMi44OTgsNzAuOTM1eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></a></li>
-				<li><a href=""><img  height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDg1LjI5MSwxMjkuNDA4bC0yMjQtMTI4Yy0zLjI4NS0xLjg3Ny03LjI5Ni0xLjg3Ny0xMC41ODEsMGwtMjI0LDEyOGMtMy4zMjgsMS44OTktNS4zNzYsNS40NC01LjM3Niw5LjI1OXYyMzQuNjY3ICAgIGMwLDMuODE5LDIuMDQ4LDcuMzYsNS4zNzYsOS4yNTlsMjI0LDEyOGMxLjY0MywwLjkzOSwzLjQ1NiwxLjQwOCw1LjI5MSwxLjQwOGMxLjgzNSwwLDMuNjQ4LTAuNDY5LDUuMjkxLTEuNDA4bDIyNC0xMjggICAgYzMuMzI4LTEuODk5LDUuMzc2LTUuNDQsNS4zNzYtOS4yNTlWMTM4LjY2N0M0OTAuNjY3LDEzNC44NDgsNDg4LjYxOSwxMzEuMzA3LDQ4NS4yOTEsMTI5LjQwOHogTTQ2OS4zMzMsMzY3LjE0N0wyNTYsNDg5LjA0NSAgICBMNDIuNjY3LDM2Ny4xNDdWMTQ0Ljg1M0wyNTYsMjIuOTU1bDIxMy4zMzMsMTIxLjg5OVYzNjcuMTQ3eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></a></li>
-				<li><a href=""><img  height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDgwLjU1NCA0ODAuNTUzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODAuNTU0IDQ4MC41NTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMjUxLjA5MywzNy4zOGMtMi4yMzUtMy44NTktNi4zNTctNi4yMzUtMTAuODE2LTYuMjM1cy04LjU4MiwyLjM3Ni0xMC44MTYsNi4yMzVMMS42ODQsNDMwLjY0NSAgIGMtMi4yNCwzLjg2Ny0yLjI0NSw4LjYzNi0wLjAxMywxMi41MDdzNi4zNjEsNi4yNTcsMTAuODMsNi4yNTdoNDU1LjU1M2M0LjQ2OSwwLDguNTk4LTIuMzg2LDEwLjgzLTYuMjU3ICAgYzIuMjMxLTMuODcxLDIuMjI3LTguNjQxLTAuMDE0LTEyLjUwN0wyNTEuMDkzLDM3LjM4eiBNMzQuMTg2LDQyNC40MDlMMjQwLjI3Niw2OC41ODVsMjA2LjA5MSwzNTUuODI0SDM0LjE4NkwzNC4xODYsNDI0LjQwOXoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></a></li>
-				<li><a href=""><img height="20" width="20"  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMi4wMDAyIiB3aWR0aD0iNTEycHgiPjxwYXRoIGQ9Im00OTEuOTYwOTM4IDBoLTMxNC42MzY3MTljLTUuMzA0Njg4IDAtMTAuMzkwNjI1IDIuMTA1NDY5LTE0LjE0NDUzMSA1Ljg1NTQ2OS01LjM3NSA1LjM3ODkwNi0xNTYuMTY0MDYzIDE1Ni4xNjAxNTYtMTU3LjQ0OTIxOSAxNTcuNDY0ODQzLTMuODA4NTk0IDMuODc4OTA3LTUuNzM0Mzc1MjUgOS4wMjM0MzgtNS43MzA0NjkgMTQuMDExNzE5djMxNC42NDA2MjVjMCAxMS4wNDI5NjkgOC45NTMxMjUgMjAgMjAgMjAgMzMwLjg3NS0uMTk1MzEyIDMxMy43NDYwOTQuMzA4NTk0IDMxNy40OTYwOTQtLjIyNjU2MiA0LjMyNDIxOC0uNjIxMDk0IDguMjUtMi41ODk4NDQgMTEuMjkyOTY4LTUuNjMyODEzbDE1Ny4zMjQyMTktMTU3LjMyNDIxOWMzLjc1LTMuNzUgNS44NTU0NjktOC44MzU5MzcgNS44NTU0NjktMTQuMTQwNjI0di0zMTQuNjQ4NDM4Yy4wMDM5MDYtMTEuMDI3MzQ0LTguOTcyNjU2LTIwLjAwNzgxMjUtMjAuMDA3ODEyLTIwem0tMzA2LjM1NTQ2OSAzOS45OTYwOTRoMjU4LjA4NTkzN2wtMTE3LjMyODEyNSAxMTcuMzI4MTI1aC0yNTguMDgyMDMxem0tMTQ1LjYwOTM3NSAxNTcuMzI0MjE4aDI3NC42NTIzNDR2Mjc0LjY1MjM0NGgtMjc0LjY1MjM0NHptMzE0LjY1MjM0NCAyNDYuMzcxMDk0di0yNTguMDgyMDMxbDExNy4zMjQyMTgtMTE3LjMyODEyNXYyNTguMDgyMDMxem0wIDAiIGZpbGw9IiMwMDAwMDAiLz48L3N2Zz4K" /></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-			</ul>
-		  </li>
+          <li class="position-relative"> <a href="#"> <img alt="" height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMi4wMDA1IiB3aWR0aD0iNTEycHgiPjxwYXRoIGQ9Im0yMjAgMGgtMjAwYy0xMS4wNDY4NzUgMC0yMCA4Ljk1MzEyNS0yMCAyMHYyMDBjMCAxMS4wNDY4NzUgOC45NTMxMjUgMjAgMjAgMjBoMjAwYzExLjA0Njg3NSAwIDIwLTguOTUzMTI1IDIwLTIwdi0yMDBjMC0xMS4wNDY4NzUtOC45NTMxMjUtMjAtMjAtMjB6bS0yMCAyMDBoLTE2MHYtMTYwaDE2MHptMjk5LjY1NjI1IDczLjUyMzQzOGMtNy40NzI2NTYtMy4wOTc2NTctMTYuMDc4MTI1LTEuMzg2NzE5LTIxLjc5Njg3NSA0LjMzMjAzMWwtMjAwIDIwMGMtNS43MjI2NTYgNS43MjI2NTYtNy40MzM1OTQgMTQuMzI0MjE5LTQuMzM1OTM3IDIxLjc5Njg3NSAzLjA5NzY1NiA3LjQ3NjU2MiAxMC4zODY3MTggMTIuMzQ3NjU2IDE4LjQ3NjU2MiAxMi4zNDc2NTZoMjAwYzExLjA0Njg3NSAwIDIwLTguOTUzMTI1IDIwLTIwdi0yMDBjMC04LjA4OTg0NC00Ljg3MTA5NC0xNS4zODI4MTItMTIuMzQzNzUtMTguNDc2NTYyem0tMjcuNjU2MjUgMTk4LjQ3NjU2MmgtMTMxLjcxNDg0NGwxMzEuNzE0ODQ0LTEzMS43MTQ4NDR6bS04MC0yMzJjNjYuMTY3OTY5IDAgMTIwLTUzLjgzMjAzMSAxMjAtMTIwcy01My44MzIwMzEtMTIwLTEyMC0xMjAtMTIwIDUzLjgzMjAzMS0xMjAgMTIwIDUzLjgzMjAzMSAxMjAgMTIwIDEyMHptMC0yMDBjNDQuMTEzMjgxIDAgODAgMzUuODg2NzE5IDgwIDgwcy0zNS44ODY3MTkgODAtODAgODAtODAtMzUuODg2NzE5LTgwLTgwIDM1Ljg4NjcxOS04MCA4MC04MHptLTE1Ny44NTkzNzUgMjY2LjE0NDUzMS04NS44NTU0NjkgODUuODU1NDY5IDg1Ljg1NTQ2OSA4NS44NTU0NjljNy44MTI1IDcuODEyNSA3LjgxMjUgMjAuNDc2NTYyIDAgMjguMjg1MTU2LTcuODA4NTk0IDcuODA4NTk0LTIwLjQ3MjY1NiA3LjgxMjUtMjguMjgxMjUgMGwtODUuODU5Mzc1LTg1Ljg1NTQ2OS04NS44NTkzNzUgODUuODU5Mzc1Yy03LjgwODU5NCA3LjgwODU5NC0yMC40NzI2NTYgNy44MDg1OTQtMjguMjgxMjUgMC03LjgxMjUtNy44MTI1LTcuODEyNS0yMC40NzY1NjIgMC0yOC4yODUxNTZsODUuODU1NDY5LTg1Ljg1OTM3NS04NS44NTU0NjktODUuODU1NDY5Yy03LjgxMjUtNy44MTI1LTcuODEyNS0yMC40NzY1NjIgMC0yOC4yODUxNTYgNy44MDg1OTQtNy44MTI1IDIwLjQ3MjY1Ni03LjgxMjUgMjguMjgxMjUgMGw4NS44NTkzNzUgODUuODU1NDY5IDg1Ljg1OTM3NS04NS44NTkzNzVjNy44MDg1OTQtNy44MDg1OTQgMjAuNDcyNjU2LTcuODA4NTk0IDI4LjI4MTI1IDAgNy44MTI1IDcuODEyNSA3LjgxMjUgMjAuNDc2NTYyIDAgMjguMjg5MDYyem0wIDAiIGZpbGw9IiMwMDAwMDAiLz48L3N2Zz4K" /> </a>
+            <ul class="whiteboard-dropdown">
+              <li><a href="#"><img alt="" height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00MzcuMDIsNzQuOTgxQzM4OC42NjcsMjYuNjI5LDMyNC4zOCwwLDI1NiwwQzE5My4zNzEsMCwxMzMuMDg0LDIyLjg3LDg2LjI0Niw2NC4zOTYgICAgYy0zLjA5OSwyLjc0OC0zLjM4NCw3LjQ4OC0wLjYzNiwxMC41ODhjMi43NDgsMy4wOTksNy40ODcsMy4zODQsMTAuNTg3LDAuNjM2QzE0MC4yODksMzYuNTI5LDE5Ny4wNDEsMTUsMjU2LDE1ICAgIGMxMzIuODg4LDAsMjQxLDEwOC4xMTIsMjQxLDI0MVMzODguODg4LDQ5NywyNTYsNDk3UzE1LDM4OC44ODgsMTUsMjU2YzAtNTguOTU5LDIxLjUyOS0xMTUuNzEyLDYwLjYyLTE1OS44MDMgICAgYzIuNzQ4LTMuMDk5LDIuNDYzLTcuODQtMC42MzYtMTAuNTg3Yy0zLjEtMi43NDktNy44NC0yLjQ2My0xMC41ODcsMC42MzZDMjIuODcsMTMzLjA4NCwwLDE5My4zNywwLDI1NiAgICBjMCw2OC4zOCwyNi42MjksMTMyLjY2Nyw3NC45OCwxODEuMDE5QzEyMy4zMzMsNDg1LjM3MSwxODcuNjIsNTEyLDI1Niw1MTJzMTMyLjY2Ny0yNi42MjksMTgxLjAyLTc0Ljk4MSAgICBDNDg1LjM3MSwzODguNjY3LDUxMiwzMjQuMzgsNTEyLDI1NlM0ODUuMzcxLDEyMy4zMzMsNDM3LjAyLDc0Ljk4MXoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></a></li>
+              <li><a href="#"><img alt="" height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNTguMTUyIDU4LjE1MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTguMTUyIDU4LjE1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik01OC4xNTIsNTguMTUySDBWMGg1OC4xNTJWNTguMTUyeiBNMyw1NS4xNTJoNTIuMTUyVjNIM1Y1NS4xNTJ6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></a></li>
+              <li><a href="#"> <img alt="" height="20" width="20"  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzY4IDM2OCIgd2lkdGg9IjUxMnB4Ij48cGF0aCBkPSJtMTg0IDBjLTg5LjE5OTIxOSAwLTE4NCAyNS4yMzA0NjktMTg0IDcydjIyNGMwIDQ2Ljc2OTUzMSA5NC44MDA3ODEgNzIgMTg0IDcyczE4NC0yNS4yMzA0NjkgMTg0LTcydi0yMjRjMC00Ni43Njk1MzEtOTQuODAwNzgxLTcyLTE4NC03MnptMCAxNmM5OSAwIDE2OCAyOS41MTE3MTkgMTY4IDU2cy02OSA1Ni0xNjggNTYtMTY4LTI5LjUxMTcxOS0xNjgtNTYgNjktNTYgMTY4LTU2em0xNjggODYuNzg1MTU2djE2Mi40Mjk2ODhjLTMwLjcyNjU2Mi0yNi45NDkyMTktMTAwLjk0NTMxMi00MS4yMTQ4NDQtMTY4LTQxLjIxNDg0NHMtMTM3LjI3MzQzOCAxNC4yNjU2MjUtMTY4IDQxLjIxNDg0NHYtMTYyLjQyOTY4OGMzMC43MjY1NjIgMjYuOTQ5MjE5IDEwMC45NDUzMTIgNDEuMjE0ODQ0IDE2OCA0MS4yMTQ4NDRzMTM3LjI3MzQzOC0xNC4yNjU2MjUgMTY4LTQxLjIxNDg0NHptLTE2OCAyNDkuMjE0ODQ0Yy05OSAwLTE2OC0yOS41MTE3MTktMTY4LTU2czY5LTU2IDE2OC01NiAxNjggMjkuNTExNzE5IDE2OCA1Ni02OSA1Ni0xNjggNTZ6bTAgMCIgZmlsbD0iIzAwMDAwMCIvPjwvc3ZnPgo=" /></a></li>
+              <li><a href=""><img alt="" height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDg1LjI5MSwxMjkuNDA4bC0yMjQtMTI4Yy0zLjI4NS0xLjg3Ny03LjI5Ni0xLjg3Ny0xMC41ODEsMGwtMjI0LDEyOGMtMy4zMjgsMS44OTktNS4zNzYsNS40NC01LjM3Niw5LjI1OXYyMzQuNjY3ICAgIGMwLDMuODE5LDIuMDQ4LDcuMzYsNS4zNzYsOS4yNTlsMjI0LDEyOGMxLjY0MywwLjkzOSwzLjQ1NiwxLjQwOCw1LjI5MSwxLjQwOGMxLjgzNSwwLDMuNjQ4LTAuNDY5LDUuMjkxLTEuNDA4bDIyNC0xMjggICAgYzMuMzI4LTEuODk5LDUuMzc2LTUuNDQsNS4zNzYtOS4yNTlWMTM4LjY2N0M0OTAuNjY3LDEzNC44NDgsNDg4LjYxOSwxMzEuMzA3LDQ4NS4yOTEsMTI5LjQwOHogTTQ2OS4zMzMsMzY3LjE0N0wyNTYsNDg5LjA0NSAgICBMNDIuNjY3LDM2Ny4xNDdWMTQ0Ljg1M0wyNTYsMjIuOTU1bDIxMy4zMzMsMTIxLjg5OVYzNjcuMTQ3eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></a></li>
+              <li><a href=""><img alt="" height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDgwLjU1NCA0ODAuNTUzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0ODAuNTU0IDQ4MC41NTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMjUxLjA5MywzNy4zOGMtMi4yMzUtMy44NTktNi4zNTctNi4yMzUtMTAuODE2LTYuMjM1cy04LjU4MiwyLjM3Ni0xMC44MTYsNi4yMzVMMS42ODQsNDMwLjY0NSAgIGMtMi4yNCwzLjg2Ny0yLjI0NSw4LjYzNi0wLjAxMywxMi41MDdzNi4zNjEsNi4yNTcsMTAuODMsNi4yNTdoNDU1LjU1M2M0LjQ2OSwwLDguNTk4LTIuMzg2LDEwLjgzLTYuMjU3ICAgYzIuMjMxLTMuODcxLDIuMjI3LTguNjQxLTAuMDE0LTEyLjUwN0wyNTEuMDkzLDM3LjM4eiBNMzQuMTg2LDQyNC40MDlMMjQwLjI3Niw2OC41ODVsMjA2LjA5MSwzNTUuODI0SDM0LjE4NkwzNC4xODYsNDI0LjQwOXoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></a></li>
+              <li><a href=""><img alt="" height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzY4IDM2OCIgd2lkdGg9IjUxMnB4Ij48cGF0aCBkPSJtNC45NDUzMTIgMzY3LjM4MjgxMmMuOTc2NTYzLjQwMjM0NCAyLjAxNTYyNi42MTcxODggMy4wNTQ2ODguNjE3MTg4aDI4OGMxLjAzOTA2MiAwIDIuMDc4MTI1LS4yMTQ4NDQgMy4wNTQ2ODgtLjYxNzE4OC45ODQzNzQtLjQwNjI1IDEuODY3MTg3LS45OTIxODcgMi42MDkzNzQtMS43MzQzNzRsNjMuOTkyMTg4LTYzLjk5MjE4OGMxLjUwMzkwNi0xLjQ5NjA5NCAyLjM0Mzc1LTMuNTM1MTU2IDIuMzQzNzUtNS42NTYyNXYtMjg4YzAtLjEwNTQ2OS0uMDU0Njg4LS4xODM1OTQtLjA1NDY4OC0uMjg5MDYyLS4wMzUxNTYtLjkzMzU5NC0uMTc1NzgxLTEuODcxMDk0LS41NTQ2ODctMi43NzM0MzggMC0uMDA3ODEyLS4wMDc4MTMtLjAxNTYyNS0uMDE1NjI1LS4wMjczNDQtLjAzMTI1LS4wNzAzMTItLjA4NTkzOC0uMTI1LS4xMTcxODgtLjE5OTIxOC0uMzYzMjgxLS44MDA3ODItLjg1MTU2Mi0xLjQ5NjA5NC0xLjQzMzU5My0yLjExNzE4OC0uMTkxNDA3LS4yMTA5MzgtLjM5ODQzOC0uMzcxMDk0LS42MDkzNzUtLjU1NDY4OC0uNTExNzE5LS40NDUzMTItMS4wNTQ2ODgtLjgxNjQwNi0xLjY2NDA2My0xLjExNzE4Ny0uMjQ2MDkzLS4xMjEwOTQtLjQ4ODI4MS0uMjU3ODEzLS43NTc4MTItLjM2MzI4MS0uODgyODEzLS4zMjgxMjUtMS44MDg1OTQtLjU1ODU5NC0yLjc5Mjk2OS0uNTU4NTk0aC0yODhjLTIuMTI4OTA2IDAtNC4xNjAxNTYuODM5ODQ0LTUuNjU2MjUgMi4zNDM3NWwtNjMuOTkyMTg4IDYzLjk5MjE4OGMtLjc0MjE4Ny43MzQzNzQtMS4zMjgxMjQgMS42MjUtMS43MzQzNzQgMi42MDkzNzQtLjQwMjM0NC45NzY1NjMtLjYxNzE4OCAyLjAxNTYyNi0uNjE3MTg4IDMuMDU0Njg4djI4OGMwIDEuMDM5MDYyLjIxNDg0NCAyLjA3ODEyNS42MTcxODggMy4wNTQ2ODguODA4NTkzIDEuOTYwOTM3IDIuMzY3MTg3IDMuNTE5NTMxIDQuMzI4MTI0IDQuMzI4MTI0em0xMS4wNTQ2ODgtMjg3LjM4MjgxMmg0OHYyMTIuNjg3NWwtNDggNDh6bTI3MiAwdjIwOGgtMjA4di0yMDh6bS0yMTIuNjg3NSAyMjRoMjEyLjY4NzV2NDhoLTI2MC42ODc1em0yMjguNjg3NSAzNi42ODc1di0yNjUuMzc1bDQ4LTQ4djI2NS4zNzV6bS0yMjguNjg3NS0zMjQuNjg3NWgyNjUuMzc1bC00OCA0OGgtMjY1LjM3NXptMCAwIiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+Cg==" /></a></li>
+              <li><a href=""><img height="30" alt="" width="30" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIC03NiA1MTEuOTk5OTIgNTExIiB3aWR0aD0iNTEycHgiPjxwYXRoIGQ9Im01MDcgMzQwLjIyMjY1Ni0xNjkuMzgyODEyLTk3Ljc5Mjk2OCAyMC4zNjcxODctMzUuMjgxMjUgODIuMjU3ODEzIDQ3LjQ5MjE4Ny0xNC42MDE1NjMgMy45MTQwNjNjLTUuMzM1OTM3IDEuNDI5Njg3LTguNSA2LjkxMDE1Ni03LjA3NDIxOSAxMi4yNDYwOTMgMS4xOTkyMTkgNC40Njg3NSA1LjIzODI4MiA3LjQxNDA2MyA5LjY1NjI1IDcuNDE0MDYzLjg1NTQ2OSAwIDEuNzI2NTYzLS4xMDkzNzUgMi41OTM3NS0uMzQzNzVsMzcuOTIxODc1LTEwLjE2MDE1NmM1LjMzNTkzOC0xLjQzMzU5NCA4LjUtNi45MTQwNjMgNy4wNzAzMTMtMTIuMjVsLTEwLjE2MDE1Ni0zNy45MjE4NzZjLTEuNDI5Njg4LTUuMzM1OTM3LTYuOTE0MDYzLTguNS0xMi4yNS03LjA3MDMxMi01LjMzMjAzMiAxLjQyOTY4OC04LjUgNi45MTQwNjItNy4wNzAzMTMgMTIuMjQ2MDk0bDMuOTE0MDYzIDE0LjYwNTQ2OC04Mi4yNTc4MTMtNDcuNDkyMTg3IDIzLjczNDM3NS00MS4xMDkzNzVjMi43NjE3MTktNC43ODEyNSAxLjEyNS0xMC44OTg0MzgtMy42NjAxNTYtMTMuNjYwMTU2bC0xNzcuMzA4NTk0LTEwMi4zNjcxODhjLTQuNzgxMjUtMi43NTc4MTItMTAuODk4NDM4LTEuMTIxMDk0LTEzLjY2MDE1NiAzLjY2MDE1NmwtMjIuMzA0Njg4IDM4LjYzNjcxOS04OC4xODM1OTQtNTAuOTE0MDYyIDE0LjYwNTQ2OS0zLjkxNDA2M2M1LjMzMjAzMS0xLjQyOTY4NyA4LjUtNi45MTAxNTYgNy4wNzAzMTMtMTIuMjQ2MDk0LTEuNDI5Njg4LTUuMzM1OTM3LTYuOTE0MDYzLTguNS0xMi4yNDYwOTQtNy4wNzAzMTJsLTM3LjkyNTc4MSAxMC4xNjAxNTZjLTIuNTYyNS42ODc1LTQuNzQ2MDk0IDIuMzYzMjgyLTYuMDcwMzEzIDQuNjYwMTU2LTEuMzI4MTI1IDIuMjk2ODc2LTEuNjg3NSA1LjAyNzM0NC0xIDcuNTg1OTM4bDEwLjE2NDA2MyAzNy45MjU3ODFjMS4xOTUzMTIgNC40Njg3NSA1LjIzNDM3NSA3LjQxNDA2MyA5LjY1MjM0MyA3LjQxNDA2My44NTU0NjkgMCAxLjcyNjU2My0uMTA5Mzc1IDIuNTkzNzUtLjM0Mzc1IDUuMzM1OTM4LTEuNDI5Njg4IDguNS02LjkxNDA2MyA3LjA3MDMxMy0xMi4yNDYwOTRsLTMuOTEwMTU2LTE0LjYwNTQ2OSA4OC4xNzk2ODcgNTAuOTEwMTU3LTIxLjc5Mjk2OCAzNy43NTM5MDYtMTI3Ljk5MjE4OC03My44OTQ1MzJjLTMuMDkzNzUtMS43ODUxNTYtNi45MDYyNS0xLjc4NTE1Ni0xMCAwLTMuMDkzNzUgMS43ODUxNTctNSA1LjA4OTg0NC01IDguNjYwMTU3djI4NC4wNTg1OTNjMCA1LjUxOTUzMiA0LjQ3NjU2MiAxMCAxMCAxMGgyNDkuNWM1LjUyMzQzOCAwIDEwLTQuNDgwNDY4IDEwLTEwIDAtNS41MjM0MzctNC40NzY1NjItMTAtMTAtMTBoLTIzOS41di0yNTYuNzM4MjgxbDEyMS42NDQ1MzEgNzAuMjM0Mzc1aC4wMDM5MDdsNDEuNzE0ODQzIDI0LjA4NTkzOC00OC43MDcwMzEgODQuMzY3MTg3LTMuOTE0MDYyLTE0LjYwMTU2MmMtMS40Mjk2ODgtNS4zMzU5MzgtNi45MTQwNjMtOC41MDM5MDctMTIuMjUtNy4wNzAzMTMtNS4zMzIwMzIgMS40Mjk2ODgtOC41IDYuOTEwMTU2LTcuMDcwMzEzIDEyLjI0NjA5NGwxMC4xNjQwNjMgMzcuOTIxODc1YzEuMTk1MzEyIDQuNDY4NzUgNS4yMzQzNzQgNy40MTQwNjMgOS42NTIzNDMgNy40MTQwNjMuODU1NDY5IDAgMS43MjY1NjMtLjEwOTM3NiAyLjU5Mzc1LS4zNDM3NWwzNy45MjE4NzUtMTAuMTYwMTU3YzUuMzM1OTM4LTEuNDI5Njg3IDguNS02LjkxMDE1NiA3LjA3MDMxMy0xMi4yNDYwOTMtMS40MjU3ODEtNS4zMzU5MzgtNi45MTAxNTctOC41MDM5MDctMTIuMjQ2MDk0LTcuMDcwMzEzbC0xNC42MDE1NjMgMy45MTAxNTYgNDguNzA3MDMyLTg0LjM2NzE4NyAxMTguMjczNDM3IDY4LjI4NTE1NnMuMDAzOTA3IDAgLjAwNzgxMy4wMDM5MDZsMTQ1LjcxNDg0NCA4NC4xMjg5MDZoLTEyMy40Mjk2ODhjLTUuNTIzNDM4IDAtMTAgNC40NzY1NjMtMTAgMTAgMCA1LjUxOTUzMiA0LjQ3NjU2MiAxMCAxMCAxMGgxNjAuNzVjNC41MjM0MzggMCA4LjQ4ODI4MS0zLjAzOTA2MiA5LjY1NjI1LTcuNDE0MDYyIDEuMTcxODc1LTQuMzcxMDk0LS43MzgyODEtOC45ODQzNzUtNC42NTYyNS0xMS4yNDYwOTR6bS0yOTcuNTg5ODQ0LTI4NS4yMTA5MzcgMTU5Ljk4ODI4MiA5Mi4zNjcxODctNDkuMTAxNTYzIDg1LjA0Njg3NS0xNTkuOTg4MjgxLTkyLjM2NzE4N3ptMCAwIiBmaWxsPSIjMDAwMDAwIi8+PHBhdGggZD0ibTMwMSAzMzguODgyODEyYy0yLjYyODkwNiAwLTUuMjEwOTM4IDEuMDY2NDA3LTcuMDcwMzEyIDIuOTI5Njg4LTEuODU5Mzc2IDEuODU5Mzc1LTIuOTI5Njg4IDQuNDM3NS0yLjkyOTY4OCA3LjA3MDMxMiAwIDIuNjI4OTA3IDEuMDcwMzEyIDUuMjA3MDMyIDIuOTI5Njg4IDcuMDY2NDA3IDEuODU5Mzc0IDEuODYzMjgxIDQuNDQxNDA2IDIuOTMzNTkzIDcuMDcwMzEyIDIuOTMzNTkzczUuMjEwOTM4LTEuMDcwMzEyIDcuMDcwMzEyLTIuOTMzNTkzYzEuODU5Mzc2LTEuODU5Mzc1IDIuOTI5Njg4LTQuNDM3NSAyLjkyOTY4OC03LjA2NjQwNyAwLTIuNjMyODEyLTEuMDcwMzEyLTUuMjEwOTM3LTIuOTI5Njg4LTcuMDcwMzEyLTEuODU5Mzc0LTEuODU5Mzc1LTQuNDQxNDA2LTIuOTI5Njg4LTcuMDcwMzEyLTIuOTI5Njg4em0wIDAiIGZpbGw9IiMwMDAwMDAiLz48L3N2Zz4K" /></a></li>
+              <li><a href=""><img src="images/precision-mark.png" alt="" height="20" width="20"></a></li>
+              <li><a href="#"><img height="20" alt="" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYwIDYwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2MCA2MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIGQ9Ik01OS42NjIsMjYuMDQyTDMwLjcwMSwwLjQ1OGMtMC4zNzctMC4zMzItMC45NC0wLjMzNC0xLjMxOS0wLjAwNEwwLjM0MywyNS43OWMtMC4zMDYsMC4yNjctMC40MiwwLjY5Mi0wLjI4OSwxLjA3NiAgbDExLDMyLjI0OWMwLjEzOCwwLjQwNSwwLjUxOSwwLjY3NywwLjk0NiwwLjY3N2gzNS45NTRjMC40MjcsMCwwLjgwNi0wLjI3MSwwLjk0NS0wLjY3NGwxMS4wNDYtMzIgIEM2MC4wNzcsMjYuNzM1LDU5Ljk2NiwyNi4zMTEsNTkuNjYyLDI2LjA0MnogTTQ3LjI0MSw1Ny43OTJIMTIuNzE2TDIuMTYzLDI2Ljg1NkwzMC4wMzUsMi41MzhsMjcuODAxLDI0LjU2TDQ3LjI0MSw1Ny43OTJ6IiBmaWxsPSIjMDAwMDAwIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></a></li>
+              <li><a href="#"><img height="20" alt="" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNjAuNDk5IDYwLjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYwLjQ5OSA2MC41OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTYwLjQ5OSw5LjA5OXYtOWgtOXY2LjU0OEw3LjE5OCw1MC45NDlMNi42ODcsNTEuNEgwdjloOXYtNi40MTNMNTMuODg3LDkuMDk5SDYwLjQ5OXogTTUyLjQ5OSwxLjA5OWg3djdoLTdWMS4wOTl6ICAgIE03Ljk5OSw1OS40aC03di03aDdWNTkuNHoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></a></li>
+            </ul>
+          </li>
           <li class="position-relative"><a href="#" class="text-dark">Aa</a></li>
           <li class="position-relative"><i class="fa fa-circle-o text-dark"></i></li>
           <li class="position-relative"><i class="fa fa-circle text-warning"></i></li>
@@ -122,23 +130,30 @@
           <li class="position-relative"><i class="fa fa-circle text-warning"></i></li>
           <li class="position-relative"><i class="fa fa-circle text-primary"></i></li>
           <li class="position-relative"><i class="fa fa-circle text-dark"></i></li>
+          <li class=" position-relative"><a href="#"> <img alt="" height="30" width="30" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4MCA0ODAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ4MCA0ODA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBkPSJNMzY1LjY1NiwyNzMuNjU2YzMuMTIzLTMuMTI0LDMuMTIzLTguMTg4LDAtMTEuMzEyTDMzNS4zMTIsMjMybDI4LTI4SDQ0OGM0LjQxOCwwLDgtMy41ODIsOC04VjUyYzAtNC40MTgtMy41ODItOC04LTggICAgIEgxNDRjLTQuNDE4LDAtOCwzLjU4Mi04LDh2MTYwYzAsNC40MTgsMy41ODIsOCw4LDhoMTIuNjg4bC0yNi4zNDQsMjYuMzQ0bC03Ni42ODgsNzYuNjhjLTkuMzczLDkuMzcyLTkuMzc1LDI0LjU2OC0wLjAwMywzMy45NDEgICAgIGMwLjAwMSwwLjAwMSwwLjAwMiwwLjAwMiwwLjAwMywwLjAwM2w3Ni42ODgsNzYuNjg4YzEuNSwxLjUsMy41MzQsMi4zNDQsNS42NTYsMi4zNDRoNjRjMi4xMjIsMCw0LjE1Ni0wLjg0NCw1LjY1Ni0yLjM0NGw1Ni01NiAgICAgTDM2NS42NTYsMjczLjY1NnogTTE1MiwyMDRWNjBoMjg4djEyOGgtODBjLTIuMTIyLDAtNC4xNTYsMC44NDQtNS42NTYsMi4zNDRMMjgwLDI2NC42ODhsLTguNDA4LTguNCAgICAgYy0xNS41OTEtMTUuNjM2LTE1LjU5MS00MC45NCwwLTU2LjU3NmwzMC4wNjQtMzAuMDU2YzEuNS0xLjUsMi4zNDQtMy41MzQsMi4zNDQtNS42NTZ2LTU2YzAtNC40MTgtMy41ODItOC04LThIMTkyICAgICBjLTQuNDE4LDAtOCwzLjU4Mi04LDh2NzJjMCwxMy4yNTUtMTAuNzQ1LDI0LTI0LDI0SDE1MnogTTI0NS42NTYsMTQyLjM0NGMtMy4xMjQtMy4xMjMtOC4xODgtMy4xMjMtMTEuMzEyLDBMMjAwLDE3Ni42ODhWMTE2aDg4ICAgICB2NDQuNjg4bC0xMiwxMkwyNDUuNjU2LDE0Mi4zNDR6IE0xOTYuNjg4LDQyMGgtNTcuMzc2bC03NC4zNDQtNzQuMzQ0Yy0zLjEyMy0zLjEyNC0zLjEyMy04LjE4OCwwLTExLjMxMkwxMzYsMjYzLjMxMiAgICAgTDI0NC42ODgsMzcyTDE5Ni42ODgsNDIweiBNMjI3LjMxMiwzMzJsNDIuMzQ0LTQyLjM0NGwtMTEuMzEyLTExLjMxMkwyMTYsMzIwLjY4OEwxNzkuMzEyLDI4NGw1OC4zNDQtNTguMzQ0bC0xMS4zMTItMTEuMzEyICAgICBMMTY4LDI3Mi42ODhMMTQ3LjMxMiwyNTJMMjQwLDE1OS4zMTJMMjY0LjY4OCwxODRsLTQuNDA4LDQuNGMtMjEuODI0LDIxLjg5LTIxLjgyNCw1Ny4zMSwwLDc5LjJsMTQuMDY0LDE0LjA1NiAgICAgYzMuMTI0LDMuMTIzLDguMTg4LDMuMTIzLDExLjMxMiwwTDMyNCwyNDMuMzEyTDM0OC42ODgsMjY4TDI1NiwzNjAuNjg4TDIyNy4zMTIsMzMyeiIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8cmVjdCB4PSIyMzIiIHk9IjQyMCIgd2lkdGg9IjI0OCIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8cmVjdCB5PSI0MjAiIHdpZHRoPSIxMDQiIGhlaWdodD0iMTYiIGZpbGw9IiMwMDAwMDAiLz4KCQkJPHJlY3QgeD0iMzIwIiB5PSIzNTYiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8cmVjdCB4PSIzNTIiIHk9IjMyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxyZWN0IHg9IjQxNiIgeT0iMzI0IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9IiMwMDAwMDAiLz4KCQkJPHJlY3QgeD0iMzUyIiB5PSIzODgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8cmVjdCB4PSI0MTYiIHk9IjM4OCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxyZWN0IHg9IjI4OCIgeT0iMzg4IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9IiMwMDAwMDAiLz4KCQkJPHJlY3QgeD0iMzg0IiB5PSIzNTYiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8cmVjdCB4PSI0MTYiIHk9IjI2MCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxyZWN0IHg9IjM4NCIgeT0iMjkyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9IiMwMDAwMDAiLz4KCQk8L2c+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /> </a></li>
           <li class="font-8"><a href="#"><i class="fa text-dark fa-circle"></i></a></li>
           <li class="font-12"><a href="#"><i class="fa text-dark fa-circle"></i></a></li>
           <li class="font-16"><a href="#"><i class="fa fa-circle text-dark"></i></a></li>
           <li class="font-18"><a href="#"><i class="fa fa-circle text-dark"></i></a></li>
           <li class="display-1"><a href="#"><i class="fa fa-circle text-dark"></i></a></li>
           <li class="w-auto font-16 "><a href="#" class="text-dark"><i class="fa mr-1 fa-file-pdf-o text-dark"></i> Save PDF</a></li>
-			<li>
-			<input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple />
-					<label for="file-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Upload</span></label>
-			</li>
-          <li class="float-right"><a href="#" class="text-dark"><i class="fa fa-paperclip text-dark"></i> Upload files</a></li>
+          <li  class="float-right">
+            <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple />
+            <label for="file-3" class="w-auto"> <i class="fa fa-paperclip"></i> <span class="font-16 font-weight-normal">Upload File</span> </label>
+          </li>
         </ul>
       </section>
-      <!-- top bar section finsih--> 
-      
+      <!-- top bar section finsih-->
+      <div class="col-md-12 float-left tab-sect">
+        <ul class="pl-0 float-left mb-3">
+          <li><a class="badge badge-info" href="">1</a> <i class="fa fa-remove"></i></li>
+          <li><a href="" class="badge badge-info">2</a> <i class="fa fa-remove"></i></li>
+          <li><a href="" class="badge badge-info">3</a> <i class="fa fa-remove"></i></li>
+          <li> <a href="#"><i class="fa fa-plus-circle mt-1"></i></a></li>
+        </ul>
+      </div>
       <!-- white board section starts -->
-      <div class="col-md-12 white-board float-left p-3"> asdlkkflk </div>
+      <div class="col-md-12 white-board float-left p-3" style="border:0"> </div>
       <!-- white board section finsih --> 
     </div>
   </div>
@@ -148,8 +163,7 @@
 <!-- video chat plugin starts -->
 <aside id="sidebar_secondary" class="tabbed_sidebar ng-scope chat_sidebar">
   <div class="popup-head">
-    <div class="popup-head-left pull-left">
-		<a title="Gurdeep Osahan (Web Designer)" target="_blank" href="https://web.facebook.com/iamgurdeeposahan"> <img class="md-user-image" alt="Gurdeep Osahan (Web Designer)"  src="http://bootsnipp.com/img/avatars/bcf1c0d13e5500875fdd5a7e8ad9752ee16e7462.jpg" >
+    <div class="popup-head-left pull-left"> <a title="Gurdeep Osahan (Web Designer)" target="_blank" href="https://web.facebook.com/iamgurdeeposahan"> <img class="md-user-image" alt="Gurdeep Osahan (Web Designer)"  src="http://bootsnipp.com/img/avatars/bcf1c0d13e5500875fdd5a7e8ad9752ee16e7462.jpg" >
       <h1>Gurdeep Osahan</h1>
       <small><br>
       <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Web Designer</small></a></div>
@@ -164,7 +178,7 @@
           <li><a href="#"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Video</a></li>
           <li><a href="#"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Audio</a></li>
           <li><a href="#"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Location</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Contact</a></li> 
+          <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Contact</a></li>
         </ul>
       </div>
       <button data-widget="remove" id="removeClass" class="chat-header-button pull-right" type="button"><i class="glyphicon glyphicon-remove"></i></button>
@@ -221,232 +235,200 @@
   </div>
 </aside>
 <!-- video chat plugin finsih --> 
-<!-- Login Modal-->
-<div id="login" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-md">
+
+<!-- dispute popup section starts -->
+<div id="dispute" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-md">
   <div role="document" class="modal-dialog modal-dialog-centered modal-md">
     <div class="modal-content modal-tabs-outer">
       <div class="modal-header border-bottom-0">
+        <h4 class="modal-header mt-0 w-100 float-left pt-0 border-0">Dispute</h4>
         <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
       </div>
       <div class="modal-body p-4 p-lg-5" >
         <form action="#" class="login-form text-left">
           <div class="form-group mb-4">
-            <label>Email address</label>
-            <input type="email" name="email" placeholder="name@company.com" class="form-control">
+            <label>Title</label>
+            <input type="text" placeholder="" class="form-control p-3">
           </div>
           <div class="form-group mb-4">
-            <label>Password</label>
-            <input type="password" name="password" placeholder="Min 8 characters" class="form-control">
+            <label>Detail</label>
+            <textarea name="" id="" cols="30" rows="1" class="form-control p-3" ></textarea>
+          </div>
+          <div class="form-group mb-4">
+            <input type="file" name="file-7[]" id="file-7" class="inputfile inputfile-6" data-multiple-caption="{count} files selected" multiple />
+            <label for="file-7" style="width:100%;"> <strong>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
+              </svg>
+              Choose a file&hellip;</strong> <br>
+              <span></span></label>
           </div>
           <div class="form-group">
-            <input type="submit" value="Login" class="btn btn-orange btn-block">
+            <input type="submit" value="Submit" class="btn btn-orange btn-block">
           </div>
         </form>
       </div>
     </div>
   </div>
 </div>
+<!-- dispute popup section finsih --> 
 
-<!-- Sign up Modal-->
-<div id="signUp" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-md">
+	<!-- dispute popup section starts -->
+<div id="feebackRating" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-md">
   <div role="document" class="modal-dialog modal-dialog-centered modal-md">
     <div class="modal-content modal-tabs-outer">
-      <div class="modal-header">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item"> <a class="nav-link active" id="student-tab" data-toggle="tab" href="#student" role="tab" aria-controls="student" aria-selected="true">I’m a student</a> </li>
-          <li class="nav-item"> <a class="nav-link" id="teacher-tab" data-toggle="tab" href="#teacher" role="tab" aria-controls="teacher" aria-selected="false">I’m a teacher</a> </li>
-        </ul>
+      <div class="modal-header border-bottom-0">
+        <h4 class="modal-header mt-0 w-100 float-left pt-0 border-0">Feedback</h4>
         <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
       </div>
-      <div class="modal-body p-4 p-lg-4"> 
-        <!-- tabs -->
-        <div class="tab-content" id="myTabContent"> 
-          <!-- student -->
-          <div class="tab-pane fade show active" id="student" role="tabpanel" aria-labelledby="student-tab">
-            <form>
-              <input type="text" class="form-control" value="" placeholder="Name">
-              <input type="text" class="form-control" value="" placeholder="Surname">
-              <input type="email" class="form-control" value="" placeholder="Email">
-              <input type="text" class="form-control" value="" placeholder="Username">
-              <input type="text" class="form-control" value="" placeholder="Languages spoken">
-              <select class="form-control">
-                <option>India
-                </option>
-                <option>India
-                </option>
-              </select>
-              <select class="form-control">
-                <option>English proficiency level
-                </option>
-                <option>Basic
-                </option>
-                <option>Conversational
-                </option>
-                <option>Fluent
-                </option>
-                <option>Native
-                </option>
-                <option>Bilingual
-                </option>
-              </select>
-              <input type="password" class="form-control" value="" placeholder="Password">
-              <select class="form-control">
-                <option>Studying in
-                </option>
-                <option>Highschool
-                </option>
-                <option>Collage
-                </option>
-              </select>
-              <div class="text-center">
-                <input type="file">
-              </div>
-              <br>
-              <div class="text-center">
-                <input type="submit" class="btn btn-orange btn-block" value="Sign Up">
-              </div>
-              <div class="already-account">
-                <p>Already have an account? <a href="">Log in</a></p>
-                <div class="form-check accept-terms">
-                  <input type="checkbox" class="form-check-input" id="">
-                  <label class="form-check-label" for="">I accept the</label>
-                  <a href="">Terms & Conditions</a> </div>
-              </div>
-            </form>
+      <div class="modal-body p-4 p-lg-5" >
+        <form action="#" class="login-form text-left">
+          <div class="form-group mb-4">
+            <div class="row">
+				<label class="col-md-6">Communication skills</label>
+             	<div class="col-md-6">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-half-o"></i>
+			  </div>
+			</div>
           </div>
-          <!-- student -->
-          <div class="tab-pane fade" id="teacher" role="tabpanel" aria-labelledby="teacher-tab"> 
-            <!-- teacher -->
-            <div class="tab-pane fade show active" id="student" role="tabpanel" aria-labelledby="student-tab">
-              <form>
-                <input type="text" class="form-control" value="" placeholder="Name">
-                <input type="text" class="form-control" value="" placeholder="Surname">
-                <input type="email" class="form-control" value="" placeholder="Email">
-                <input type="text" class="form-control" value="" placeholder="Languages spoken">
-                <select class="form-control">
-                  <option>India
-                  </option>
-                  <option>India
-                  </option>
-                </select>
-                <select class="form-control">
-                  <option>English proficiency level
-                  </option>
-                  <option>Basic
-                  </option>
-                  <option>Conversational
-                  </option>
-                  <option>Fluent
-                  </option>
-                  <option>Native
-                  </option>
-                  <option>Bilingual
-                  </option>
-                </select>
-                <input type="password" class="form-control" value="" placeholder="Password">
-                <div class="text-center">
-                  <input type="submit" class="btn btn-orange btn-block" value="Sign Up">
-                </div>
-                <div class="already-account">
-                  <p>Already have an account? <a href="">Log in</a></p>
-                  <div class="form-check accept-terms">
-                    <input type="checkbox" class="form-check-input" id="">
-                    <label class="form-check-label" for="">I accept the</label>
-                    <a href="">Terms & Conditions</a> </div>
-                </div>
-              </form>
-            </div>
-            <!-- teacher --> 
+			
+			<div class="form-group mb-4">
+            <div class="row">
+				<label class="col-md-6">Teaching ability</label>
+             	<div class="col-md-6">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-half-o"></i>
+			  </div>
+			</div>
           </div>
-        </div>
-        <!-- tabs --> 
+			
+			<div class="form-group mb-4">
+            <div class="row">
+				<label class="col-md-6">Knowledge of subject matter</label>
+             	<div class="col-md-6">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-half-o"></i>
+			  </div>
+			</div>
+          </div>
+
+			<div class="form-group mb-4">
+            <div class="row">
+				<label class="col-md-6">Level of professionalism</label>
+             	<div class="col-md-6">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-half-o"></i>
+			  </div>
+			</div>
+          </div>
+			
+			
+          
+          
+          <div class="form-group">
+            <input type="submit" value="Submit Rating" class="btn btn-orange btn-block">
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </div>
-
-<!-- Ask question modal -->
-<div id="askquestion-modal" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-md">
-  <div role="document" class="modal-dialog modal-dialog-centered modal-md askquestion-modal-main">
+<!-- dispute popup section finsih --> 
+	
+	
+<!--  Session end feedback pop up starts -->
+<div id="feedback" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-md">
+  <div role="document" class="modal-dialog modal-dialog-centered modal-md">
     <div class="modal-content modal-tabs-outer">
       <div class="modal-header border-bottom-0">
+        <h4 class="modal-header mt-0 w-100 float-left pt-0 border-0">Feedback</h4>
         <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
       </div>
-      <div class="modal-body">
-        <div class="attachment-modal-inner">
-          <h6>Add your attachment</h6>
-          <div class="question-enter-outer">
-            <textarea id="question-enter" class="question-enter" maxlength="1000" ></textarea>
-            <div class="textarea-counter-modal" id="textarea_counter-modal"></div>
-          </div>
-          <div class="image-upload-wrap">
-            <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
-            <div class="drag-text">
-              <h3><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload or drop your files here</h3>
+      <div class="modal-body p-4 p-lg-5" >
+        <form action="#" class="login-form text-left">
+          <div class="form-group mb-4">
+            <label class="w-100 float-left">Was your question solved ?</label>
+            <div class="custom-control custom-radio d-inline-block pr-3">
+              <input type="radio" id="solveyes" name="questionSolved" class="custom-control-input">
+              <label class="custom-control-label" for="solveyes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio d-inline-block">
+              <input type="radio" id="solveno" name="questionSolved" class="custom-control-input">
+              <label class="custom-control-label" for="solveno">No</label>
             </div>
           </div>
-          <div class="file-upload-content"> <img class="file-upload-image" src="#" alt="your image" />
-            <div class="image-title-wrap">
-              <button type="button" onclick="removeUpload()" class="remove-image">Remove <!-- <span class="image-title">Uploaded Image</span> --></button>
+          <div class="w-100 float-left feedbackSecondstep" style="display: none;">
+            <div class="form-group mb-4">
+              <div class="custom-control custom-radio pr-3 d-inline-block">
+                <input type="radio" id="anotherTeacher" name="selectMode" class="custom-control-input">
+                <label class="custom-control-label" for="anotherTeacher">Would you like to search for another teacher?</label>
+              </div>
+				<div class="col-md-10 offset-md-1 mt-3 anotherTeacherOption" style="display: none">
+					<div class="custom-control custom-radio pr-3 d-inline-block">
+                <input type="radio" id="anotherTeacherYes" name="anotherTeacheroption" class="custom-control-input">
+                <label class="custom-control-label" for="anotherTeacherYes">Yes</label>
+              </div>
+					<div class="custom-control custom-radio pr-3 d-inline-block">
+                <input type="radio" id="anotherTeacherNo" name="anotherTeacheroption" class="custom-control-input">
+                <label class="custom-control-label" for="anotherTeacherNo">No</label>
+              </div>
+				</div>
+            </div> 
+			  
+            <div class="form-group mb-4">
+              <div class="custom-control custom-radio pr-3 d-inline-block">
+                <input type="radio" id="continueTeacher" name="selectMode" class="custom-control-input">
+                <label class="custom-control-label" for="continueTeacher">Would you like to continue with this teacher?</label>
+              </div>
+				
+				<div class="col-md-10 offset-md-1 mt-3 continueTeacherOption" style="display: none">
+					<div class="custom-control custom-radio pr-3 d-inline-block">
+                <input type="radio" id="continueTeacherYes" name="continueTeacherOption" class="custom-control-input">
+                <label class="custom-control-label" for="continueTeacherYes">Yes</label>
+              </div>
+					<div class="custom-control custom-radio pr-3 d-inline-block">
+                <input type="radio" id="continueTeacherNo" name="continueTeacherOption" class="custom-control-input">
+                <label class="custom-control-label" for="continueTeacherNo">No</label>
+              </div>
+				</div> 
+            </div>
+			  
+            <div class="form-group mb-4">
+              <div class="custom-control custom-radio prcloseTicket3 d-inline-block">
+                <input type="radio" id="closeTicket" name="selectMode" class="custom-control-input">
+                <label class="custom-control-label" for="closeTicket">Would you like to close the ticket?</label>
+              </div>
+				
+				<div class="col-md-10 offset-md-1 mt-3 closeFeedbackOption" style="display: none">
+					<button class="btn btn-orange">Submit feedback</button>
+					
+				</div>
             </div>
           </div>
+          <!-- second step finish -->
           
-          <!-- Topic -->
-          <div class="form-group row">
-            <label class="col-sm-3 col-form-label">Topic</label>
-            <div class="col-sm-9">
-              <select class="form-control">
-                <option value="Algebra">Algebra</option>
-              </select>
-            </div>
+          <div class="form-group">
+            <input type="submit" style="display: none" value="Submit" class="btn btn-orange btn-block">
           </div>
-          <!-- /Topic --> 
-        </div>
-        
-        <!-- bottom tabs modal -->
-        <div class="modal-ask-question-outer">
-          <div class="modal-ask-question">
-            <div class="attachment-modal-inner"> 
-              <!--Fixed tab example -->
-              <div class="card pmd-card">
-                <div class="pmd-tabs">
-                  <ul role="tablist" class="nav nav-tabs nav-fill">
-                    <li class="nav-item" role="presentation"> <a class="nav-link active" data-toggle="tab" role="tab" aria-controls="highSchool" href="#highSchool">Highschool</a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" role="tab" aria-controls="collage-link" href="#collage-link">Collage</a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" role="tab" aria-controls="test-prep" href="#test-prep">Test prep</a> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="attachment-modal-inner">
-            <div class="card-body">
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="highSchool">
-                  <div class="text-center">
-                    <input type="submit" class="btn btn-orange btn-block" value="Ask the question">
-                  </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="collage-link">
-                  <div class="text-center">
-                    <input type="submit" class="btn btn-orange btn-block" value="Ask the question">
-                  </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="test-prep">
-                  <div class="text-center">
-                    <input type="submit" class="btn btn-orange btn-block" value="Ask the question">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Fixed tab example end--> 
-        </div>
+        </form>
       </div>
     </div>
   </div>
 </div>
-<!-- /Ask question modal --> 
+<!-- session end popup finish --> 
 
 <!-- jQuery --> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
@@ -469,11 +451,42 @@ $("#addClass").click(function () {
     });
 })
 </script> 
-<!-- vdieo chat plugin -->
-	
-<!-- custom input type file button -->
+<!-- vdieo chat plugin --> 
 
-	<script src="js/custom-file-input.js"></script> 
-	
+<script>
+	$(document).ready(function() {
+		$( "#solveyes" ).on( "click", function() {
+			$('.feedbackSecondstep').css('display','none');
+			alert(' please redirect to close ticket page');
+		});
+		
+		$( "#solveno" ).on( "click", function() {
+			$('.feedbackSecondstep').css('display','block');
+		});
+		
+		$( "#anotherTeacher" ).on( "click", function() {
+			$('.anotherTeacherOption').css('display','block');
+			$('.continueTeacherOption, .closeFeedbackOption').css('display','none');
+			
+		});
+		
+		$( "#continueTeacher" ).on( "click", function() {
+			$('.continueTeacherOption').css('display','block');
+			$('.anotherTeacherOption, .closeFeedbackOption').css('display','none');
+		});
+		
+		$( "#closeTicket" ).on( "click", function() {
+			$('.closeFeedbackOption').css('display','block');
+			$('.anotherTeacherOption, .continueTeacherOption').css('display','none');
+		});
+		
+	});
+</script> 
+<!-- custom input type file button --> 
+
+<script src="js/custom-file-input.js"></script> 
+
+<!-- start rating js starts --> 
+<script src="js/rating.js"></script>
 </body>
 </html>
