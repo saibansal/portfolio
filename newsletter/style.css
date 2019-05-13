@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document 
+ font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600,700,800');
+body{padding:0; margin:0; font-family: 'Open Sans', sans-serif;}
+header{float:left; width:100%; padding:20px 0;}
+p{font-size:14px;  color:#808080;  font-family: 'Open Sans', sans-serif; line-height:24px;}
+.w100per{float:left; width:100%;}
+.new-cont{max-width:1700px; margin:auto; width:100%;}
+.nav {float:right;}
+.nav li{display:inline-block;}
+.nav li a{color:#404040; font-size:13px; text-transform:uppercase; padding:10px 22px; float:left; text-decoration:none; border-left:solid 1px #ddd; font-family: 'montserratlight';}
+.nav li:first-child a{border-left:0;}
+.nav li.active a, .nav li:hover a{color:#14acbf; text-decoration:line-through; background:transparent}
+.banner-row{float:left; width:100%; padding:13% 0;}
+.banner{background: url(images/banner.jpg) center top no-repeat; background-size:cover;}
+.banner h1{font-size:48px; color:#293844; text-transform:uppercase; font-family: 'montserratbold'; text-align:center; width:100%; float:left;}
+.banner p{font-size:14px; color:#293844; font-weight:300; text-align:center; width:100%; margin-top:20px; font-family: 'montserratregular'; float:left}
+.banner p a{padding:25px; display:inline-block; padding:20px 30px; font-family: 'montserratlight';}
+.btn{background:#5dc83d; color:#fff; border:0; letter-spacing:1px; border-radius:0; font-size:12px; padding:20px; -moz-box-shadow: 0px 5px 56px #c7c7c7; -webkit-box-shadow: 0px 5px 56px #c7c7c7; box-shadow: 0px 5px 56px #c7c7c7; font-family: 'montserratlight';}
+.btn:hover{background:#14acbf; color:#fff;}
+.btn-invert{background:#14acbf; color:#fff; padding:20px 40px;}
+.btn-invert:hover{background:#5dc83d; color:#fff;}
+.row-section{float:left; width:100%; padding:5% 0;}
+h3{font-size:36px; font-weight:700; font-family: 'Montserrat', sans-serif; letter-spacing:2px;}
+.icon-container{float:left; width:100%; margin-top:4%;}
+.six-icons .thumbnail{border:0;}
+.six-icons .thumbnail span{display:inline-block; width:158px; height:158px; border-radius:100%; border:solid 4px #14acbf; line-height:150px;}
+.six-icons .thumbnail h3{font-size:16px; margin-top:10px;}
+.link{display:inline-block; margin-top:15px; font-size:12px; color:#14acbf; text-decoration:underline; font-weight:bold;}
+.link:hover{color:#484848;}
+.optin{background: url(images/bg-1.jpg) left top no-repeat; background-size:cover; padding:7% 0 12% 0;}
+.optin p:first-child{font-size:16px; color:#14acbf; font-weight:700; font-family: 'Montserrat', sans-serif;}
+.optin h3{color:#293844; font-size:3em; font-family: 'Montserrat', sans-serif; font-weight:400; margin-bottom:20px;}
+.brand-logos h3{font-weight:400;}
+.logos-container {margin-top:3%; margin-bottom:3%;}
+.logos-container .logos{border:solid 1px #d3d3d3; padding:20px 15px; width:20%; float:left;}
+.make-yours{background-color:#5dc83d; padding:6%  0; background-image:url(images/coupon-bg.png); background-position:7% bottom; background-repeat:no-repeat; background-size:53%}
+.make-yours .content{margin-top:5%; margin-bottom:5%;}
+.make-yours .content p{color:#fff; font-size:14px; font-weight:400; margin-bottom:15px;}
+.make-yours .content p:first-child{font-weight:bold; font-family: 'montserratbold';}
+.make-yours .content h3{font-size:36px; color:#fff; font-weight:400; font-family: 'Montserrat', sans-serif; margin-bottom:30px;}
+.newsletter{background-color:#293844; padding:6%  0 25% 0; background-image:url(images/newsletter-bg.png); background-position:left bottom; background-repeat:no-repeat;}
+.newsletter h3{color:#fff; font-family: 'Montserrat', sans-serif; font-weight:400; margin-bottom:20px;}
+.newsletter p{color:#fff; margin-bottom:20px;}
+.newsletter .btn{ -moz-box-shadow: 0px 0px 0px #c7c7c7; -webkit-box-shadow: 0px 0px 0px #c7c7c7; box-shadow: 0px 0px 0px #c7c7c7; font-weight:700;}
+.faq{background:#f4f4f4; padding:5% 0;}
+.faq .panel-group{margin:5% 0; display:block;}
+.faq h3{font-family: 'montserratregular';
+    font-size: 36px;
+    text-transform: uppercase;}
+.faq .panel{background:transparent; box-shadow:0 0 0; float:left; width:100%; border-bottom:solid 1px #ddd; font-family: 'Montserrat', sans-serif; font-weight:400;}
+.faq .panel a{text-decoration:none; }
+.faq .panel .panel-heading{padding:0;}
+.faq .panel .panel-heading h4 a{padding:2% 0; float:left; width:100%; max-width:100%; font-size:30px; color:#293844; font-family: 'montserratlight';}
+.faq .panel .panel-heading h4 a.collapsed{color:#14acbf; }
+.faq .panel .panel-body{float:left; width:100%; padding:25px 0; line-height:30px;  font-family: 'Open Sans', sans-serif;}
+.faq .panel .panel-heading h4 a i{width:20px; height:22px; float:left; margin-right:5px; font-size:24px; font-style:normal;}
+.faq .panel .panel-heading h4 a i:before{content:'+ ';}
+.faq .panel .panel-heading h4 a.collapsed i:before{content:'-';}
+.faq .panel .panel-heading h4 a i:before{content:'+';}
+.testimonials{background:#14acbf; padding:6% 0; font-family: 'Montserrat', sans-serif; }
+.testimonials .quote{font-size:48px; color:#fff; margin:5% 0; font-family: 'montserratregular';}
+.testimonials .name{color:#fff; font-size:18px;}
+.testimonials .post{font-size:14px; color:#fff;}
+.pop-up{padding:6% 0; background-image:url(images/pop-upbg.jpg); background-position:center center; background-repeat:no-repeat; background-size:cover; background-attachment:fixed}
+footer{float:left; width:100%; padding:4% 0; background:#293844;}
+footer h4{color:#fff; text-transform:uppercase; margin-bottom:20px;}
+footer  ul { padding:0 !important; list-style:none;}
+footer  ul li {float:left; width:100%;}
+footer  ul li a{text-transform:uppercase; color:#778692; text-transform:uppercase; float:left; width:100%; padding:4px 0;}
+footer  ul li a:hover{color:#fff; text-decoration:none;}
+footer .social ul li{width:auto;}
+footer .social ul li a{padding:10px 25px; width:inherit; font-size:12px; color:#fff; font-family: 'montserratlight';}
+footer .social ul li a:first-child{padding-left:0;}
+footer  p{color:#778692;}
+footer form{margin-top:20px;}
+footer form input{height:45px; line-height:45px; color:#778692; border:0; padding:0 15px; margin-bottom:10px;}
+footer form button{height:45px; line-height:45px; color:#778692; border:0; background:#14acbf; color:#fff; text-transform:uppercase; font-weight:bold}
+.footer-logo{padding:2% 0; background:#24333f;}
+.footer-logo a{display:inline-block;}
+.navbar{min-height:auto; margin-bottom:0}
+header .navbar-brand{height:auto; padding-top:0; padding-bottom:0}
+@media only screen and (max-width:1200px) {
+ .logos-container .logos{width:33%; text-align:center;}		
+}
+@media only screen and (max-width:1020px) {
+ .logos-container .logos{width:50%; text-align:center;}	
+ header .navbar-brand{width:260px;}
+}
+@media only screen and (max-width:640px) {
+ header{padding-top:0;}
+ .navbar-header p{float:left; width:100%; background:#293844}
+ .navbar-toggle{border:solid 1px #fff;}
+ .navbar-toggle .icon-bar{background:#fff;}
+ .nav li{width:100%;}
+ .banner h1{font-size:21px;}
+ .banner p{margin-top:10px;}
+ .testimonials .quote{font-size:20px;}
+ .newsletter h3, .make-yours .content h3, .optin h3, h3{font-size:22px;}
+ .logos-container .logos{width:100%; text-align:center;}
+ .make-yours{background-image:none;}
+ .make-yours .content h3{margin-bottom:10px;}
+ .newsletter {background-image:none;}
+ .faq .panel .panel-heading h4 a{font-size:14px;}
+ .faq .panel .panel-heading h4 a i{font-size:16px; width:10px;}
+ .pop-up{padding:6% 0; background-image:url(images/pop-upbg.jpg); background-position:center center; background-repeat:no-repeat; background-size:cover;}
+ footer h4{margin-top: 20px; margin-bottom:10px;}
+ footer .social{margin-top:15px;}
+ footer .social ul li a{font-size:21px;}
+ .footer-logo{padding:20px 0;}
+}

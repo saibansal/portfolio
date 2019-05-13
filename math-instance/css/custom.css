@@ -2108,8 +2108,6 @@ button:hover{
 	display: block;
 }
 .white-board-navigation ul li:hover .whiteboard-dropdown li{
-	background: transparent;
-	width:25px;
 	padding: 0
 }
 .white-board{
@@ -2764,4 +2762,92 @@ textarea{
 }
 .btnrating.btn-warning.btn-default i{
 	color:#fff;
+}
+.white-board-navigation ul li{
+	width:23px;
+	height:31px;
+	opacity: 1;
+	transition: opacity .2s ease-in-out;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.white-board-navigation ul li.active, .white-board-navigation ul li:hover{
+	opacity: .7;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color:transparent;
+}
+.white-board-navigation ul li a{
+	float: left;
+	width:24px;
+	height:32px;	
+	
+}
+.white-board-navigation ul li.undo{
+	background-image: url(../images/undo-icon.jpg);
+}
+
+.white-board-navigation ul li.redo{
+	background-image: url(../images/redo-icon.jpg);
+}
+
+.white-board-navigation ul li.pencil{
+	background-image: url(../images/pencil.jpg);
+	width:32px;
+}
+
+.white-board-navigation ul li.eraser{
+	background-image: url(../images/eraser.jpg);
+}
+
+.white-board-navigation ul li.multiple-shapes{
+	background-image: url(../images/shape-selectio.jpg);
+	width: 27px;
+}
+.white-board-navigation ul li .whiteboard-dropdown li{
+	width:24px;
+	height:24px;
+	background-size: 98%;
+}
+.white-board-navigation ul li.circle-shape{
+	background-image: url(../images/circle-shape.jpg) !important;
+	width:32px;
+}
+
+.white-board-navigation ul li.square-shape{
+	background-image: url(../images/square.jpg) !important;
+}
+
+.white-board-navigation ul li.hexagon-shape{
+	background-image: url(../images/square.jpg) !important;
+}
+
+.white-board-navigation ul li.triangle-shape{
+	background-image: url(../images/triangle.jpg) !important;
+}
+
+.white-board-navigation ul li.right-tirangle-shape{
+	background-image: url(../images/triangle-right.jpg) !important;
+}
+
+.white-board-navigation ul li.right-pentagon-shape{
+	background-image: url(../images/pentagon.jpg) !important;
+}
+
+.white-board-navigation ul li.line-shape{
+	background-image: url(../images/slash-line.jpg) !important;
+}
+
+.white-board-navigation ul li.text{
+	background-image: url(../images/text.jpg) !important;
+	width:32px;
+}
+
+.white-board-navigation ul li.full-eraser{
+	background-image: url(../images/full-eraser.jpg) !important;
+	width:32px;
+}
+.white-board-navigation ul li.save-pdf a, .white-board-navigation ul li.save-pdf{
+	width:auto !important;
 }

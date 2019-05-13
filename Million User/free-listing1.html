@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Million User</title>
+<meta name="description" content="Million User">
+<meta name="author" content="Million User">
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS Style -->
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/animate.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/bootstrap-select.min.css"/>
+
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/style.css" type="text/css">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/revslider.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/owl.carousel.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/owl.theme.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/font-awesome.css" type="text/css">
+
+<script type="text/javascript" src="http://www.millionuser.com/template/js/jquery.min.js"></script> 
+<script type="text/javascript">
+$(function() {
+   $(".more-social").click(function() {
+      $('.mobile-slide').animate({width: '100%'}, "fast");
+      $('.mobile-slide').animate({right: '0'}, "100");
+	  $('.mobile-slide').css("display", "block");
+	  $('.mobile-btn').css("display", "block");
+	  setTimeout(function(){
+		$('.mobile-slide .btn-group.bootstrap-select.xs-left, .mobile-slide .bkey').animate('1').css('display', 'block');
+	  },400);
+	  setTimeout(function(){
+	  	 $('.more-social').animate('1').css('display', 'none');
+		 
+	  },0);	  
+	  })
+ 	});
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="http://www.millionuser.com/template/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="http://www.millionuser.com/template/js/bootstrap3-typeahead.min.js"></script>
+<script type="text/javascript" src="http://www.millionuser.com/template/js/forms/select2.min.js"></script>
+<script type="text/javascript" src="http://www.millionuser.com/template/js/jquery.lazyload.min.js"></script>
+
+<script src="https://raw.githubusercontent.com/enyo/dropzone/master/dist/dropzone.js"></script>
+<script>
+$(function() {
+    $("img.lazy").lazyload({
+        event : "sporty",
+		effect : "fadeIn"
+    });
+});
+
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() {
+        $("img.lazy").trigger("sporty")
+    }, 5000);
+});
+</script>
+
+<style>
+.lazy{
+background-image:url(http://www.millionuser.com/template/images/loader10.gif);
+background-repeat:no-repeat; background-position:center center;
+}
+</style>
+
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,700,800,400,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Signika:400,600,700,300' rel='stylesheet' type='text/css'>
+<script>var exmodule="";</script>
+
+</head>
+
+<body>
+<div class="page"> 
+
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/theme2.css" type="text/css" media="screen" />  
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/flexslider.css" type="text/css" media="screen" />  
+<style>
+.flexslider { width: 90%; margin: 0 auto; }
+.flex-direction-nav a.flex-disabled {display:none;}
+.flexslider .slides > li img:hover {  background:#f9ff9e; }
+</style>
+  <script src="http://www.millionuser.com/template/js/jquery.flexslider-min.js"></script>
+			
+ <!-- Header -->
+  <header>
+  <!-- logo and top bar starts -->
+   <nav class="navbar navbar-default header-nav">
+   <div class="container">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Menu</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+     </button>
+     <a class="navbar-brand" href="#"><img src="imges/logo.png" alt=""></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+     <ul class="nav navbar-nav navbar-right right-navigation">
+      <li><a href="#">Free Listing</a></li>
+      <li><a href="/">Download App</a></li>
+      <li><a href="#">0172-4800012</a></li>      
+      <li class="dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+         <li><a href="#">MU Signin</a></li>
+         <li><a href="#">MU Signup</a></li>
+        </ul>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <!-- logo and top bar finish -->
+ </header>
+ <nav class="navbar navbar-inverse black-nav">
+    <div class="container">
+    <!-- <script type="text/javascript">
+	 $(document).ready(function(){
+	  $(".hot-deals").click(function(){
+	   $(".hot-deals a").addClass("active");  
+	   $(".classi-menu a").removeClass("active");
+       $(".hot-dropdown").css('display','block');
+       $(".classified-dropdown").css('display','none');
+	  });
+   	$(".classi-menu").click(function(){
+       $(".hot-deals a").removeClass("active");  
+	   $(".classi-menu a").addClass("active");
+	   $(".hot-dropdown").css('display','none');
+       $(".classified-dropdown").css('display','block');
+	  });
+
+	}); 
+	</script> -->
+     <div id="navbar1" class="collapse navbar-collapse" style="display:block; padding-left:0">
+      <ul class="nav navbar-nav">
+       <li class="dropdown classi-menu"><a href="#" class="clasi">Classified</a></li>
+       <li class="hot-deals"><a href="#about">Hot Deals</a></li>
+      </ul>
+      <!-- Classified drop down starts -->
+       <div class="col-xs-12 classified-dropdown" style="display:none;">
+       <div class="container">
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul> <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul> <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul> <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul>
+       </div>
+      </div>
+      <!-- Classified drop down finish -->
+      <!-- hot deal drop down starts -->
+       <div class="col-xs-12 hot-dropdown" style="display:none;">
+       <div class="container">
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>  
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>
+       </div>
+      </div>
+      <!-- hot deal drop down finish -->
+      
+     </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+   </nav>
+   
+   <div class="row-section">
+    <div class="container">
+	 <form classs="free-listing-form" action="#" method="post">
+	  
+	  <style type="text/css">
+	   .free-listing-form label{font-weight:normal; padding:15px 15px 15px 0; float:left; margin-top:15px; margin-bottom:15px;}
+	   .free-listing-form .class-box {margin-top:15px; margin-bottom:15px; width:65%; padding:7px 15px; height:auto; line-height:none;}
+	   .free-listing-form select.class-box{height:50px; width:65%;}
+	   .free-listing-form h2{margin:0;}
+	   .free-listing-form .new_title{border-bottom:2px solid #E5E5E5;  height:29px; margin-bottom:15px; float:left; width:100%}
+	   .free-listing-form p{float:left; width:100%;} .free-listing-form select{float:left;}
+	  </style>
+	  <div class="class-list-form free-listing-form col-xs-12 col-sm-10 col-md-8 col-lg-8 col-xs-offset-0 col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+	   <div class="new_title col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left:0"><h2>Start with your business profile</h2></div>
+	   <p>Please let us know about your business profile here</p>
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	    <label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">Business Name</label> 
+		<input type="text" class="class-box col-xs-12 col-sm-6 col-md-8 col-lg-8" placeholder="Business Name">
+	   </div>
+	   
+	   <div class="col-sm-12 col-md-12 col-lg-12"<label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+	    <label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">Mobile Number</label> 
+	    <input name="" type="text" class="class-box" value="+91" style="width:8%; padding:7px 12px;" readonly="readonly">
+		<input name="prmobile" id="prmobile" type="text" class="class-box" style="width:55.6%;  float:left; margin-left:10px;" pattern="[0-9]{10,10}" maxlength="11" placeholder="Mobile Number">
+	   </div>
+	   
+	   <div class="col-sm-12 col-md-12 col-lg-12"<label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+	    <label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">Email Id</label> 
+		<input type="email" class="class-box col-xs-8 col-sm-8 col-md-8 col-lg-8" placeholder="Email Id">
+	   </div>
+	        
+	  <div class="col-sm-12 col-md-12 col-lg-12">
+	   <label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">Select City</label> 
+	    <select class="form-control class-box col-xs-8 col-sm-8 col-md-8 col-lg-8" id="prcity">
+		  <option value="0" selected="selected">Select City</option>
+		  <option value="1030" selected="selected">Abohar</option>
+		  <option value="4146">Ambala</option>
+		  <option value="1026">Amritsar</option>
+		  <option value="4171">Assandh</option>
+		  <option value="1007">Bagha Purana</option>
+		  <option value="4166">Bahadurgarh</option>
+		  <option value="1022">Barnala</option>
+		  <option value="1036">Batala</option>
+		  <option value="1012">Bathinda</option>
+		  <option value="4148">Bhiwani</option>
+		 </select>
+	    </div>
+
+		
+		<div class="col-sm-12 col-md-12 col-lg-12">
+	     <label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">Area Locality</label> 
+	     <select class="form-control class-box" id="prcity">
+		  <option value="0" selected="selected">Select City</option>
+		  <option value="1030" selected="selected">Abohar</option>
+		  <option value="4146">Ambala</option>
+		  <option value="1026">Amritsar</option>
+		  <option value="4171">Assandh</option>
+		  <option value="1007">Bagha Purana</option>
+		  <option value="4166">Bahadurgarh</option>
+		  <option value="1022">Barnala</option>
+		  <option value="1036">Batala</option>
+		  <option value="1012">Bathinda</option>
+		  <option value="4148">Bhiwani</option>
+		 </select>
+	    </div>
+
+		<div class="col-sm-12 col-md-12 col-lg-12">
+	     <label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">Address</label> 
+	     <input class="form-control class-box" placeholder="Address" />
+	    </div>
+		
+		<div class="col-sm-12 col-md-12 col-lg-12">
+	     <label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">Landmark</label> 
+	     <input type="text" class="form-control class-box" placeholder="Landmark"></textarea>
+	    </div>
+		<div class="col-sm-12 col-md-12 col-lg-12">
+	     <label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">Pincode</label> 
+	     <input type="text" class="form-control class-box" placeholder="Pincode"></textarea>
+	    </div>
+		
+		 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6867.002313828458!2d76.3782105237177!3d30.619830709599146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39101ebced27eedb%3A0x2df031c82d67ab33!2sBaba+Pir+Colony%2C+Sirhind%2C+Punjab+140406!5e0!3m2!1sen!2sin!4v1460457100233" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+	   </div>
+		
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	     <label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">Select Main Category</label> 
+	     <select class="form-control class-box" id="prcity">
+		  <option value="0" selected="selected">Select Main Category</option>
+		  <option value="1030" selected="selected">Cat 1</option>
+		 </select>
+	    </div>
+		
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	     <label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">Select Sub Category</label> 
+	     <select class="form-control class-box" id="prcity">
+		  <option value="0" selected="selected">Select Sub Category</option>
+		  <option value="1030" selected="selected">Cat 1</option>
+		 </select>
+	    </div>
+		
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	     <label class="col-xs-12 col-sm-5 col-md-4 col-lg-4">Upload Image</label> 
+	     <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8" style="padding-left:0; margin-top:20px;"><img src="imges/uplaod-image.jpg"></div> 
+	    </div>
+	   
+	   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center"><button class="free-listing-button">Click to Submit</button></div>
+	  
+	   
+	  </div>
+	  
+	  
+	  
+	 </form>
+    </div>
+   </div>
+   
+<script type="text/javascript" src="http://www.millionuser.com/template/js/parallax.js"></script> 
+<script type="text/javascript" src="http://www.millionuser.com/template/js/common.js"></script> 
+<script type="text/javascript" src="http://www.millionuser.com/template/js/revslider.js"></script>
+<script type="text/javascript" src="http://www.millionuser.com/template/js/owl.carousel.min.js"></script> 
+ 
+</body>
+</html>

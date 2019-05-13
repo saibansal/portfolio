@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Million User</title>
+<meta name="description" content="Million User">
+<meta name="author" content="Million User">
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS Style -->
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/animate.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/bootstrap-select.min.css"/>
+
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/style.css" type="text/css">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/revslider.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/owl.carousel.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/owl.theme.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/font-awesome.css" type="text/css">
+
+<script type="text/javascript" src="http://www.millionuser.com/template/js/jquery.min.js"></script> 
+<script type="text/javascript">
+$(function() {
+   $(".more-social").click(function() {
+      $('.mobile-slide').animate({width: '100%'}, "fast");
+      $('.mobile-slide').animate({right: '0'}, "100");
+	  $('.mobile-slide').css("display", "block");
+	  $('.mobile-btn').css("display", "block");
+	  setTimeout(function(){
+		$('.mobile-slide .btn-group.bootstrap-select.xs-left, .mobile-slide .bkey').animate('1').css('display', 'block');
+	  },400);
+	  setTimeout(function(){
+	  	 $('.more-social').animate('1').css('display', 'none');
+		 
+	  },0);	  
+	  })
+ 	});
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="http://www.millionuser.com/template/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="http://www.millionuser.com/template/js/bootstrap3-typeahead.min.js"></script>
+<script type="text/javascript" src="http://www.millionuser.com/template/js/forms/select2.min.js"></script>
+<script type="text/javascript" src="http://www.millionuser.com/template/js/jquery.lazyload.min.js"></script>
+<script>
+$(function() {
+    $("img.lazy").lazyload({
+        event : "sporty",
+		effect : "fadeIn"
+    });
+});
+
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() {
+        $("img.lazy").trigger("sporty")
+    }, 5000);
+});
+</script>
+
+<style>
+.lazy{
+background-image:url(http://www.millionuser.com/template/images/loader10.gif);
+background-repeat:no-repeat; background-position:center center;
+}
+</style>
+
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,700,800,400,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Signika:400,600,700,300' rel='stylesheet' type='text/css'>
+<script>var exmodule="";</script>
+
+</head>
+
+<body>
+<div class="page"> 
+
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/theme2.css" type="text/css" media="screen" />  
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/flexslider.css" type="text/css" media="screen" />  
+<style>
+.flexslider { width: 90%; margin: 0 auto; }
+.flex-direction-nav a.flex-disabled {display:none;}
+.flexslider .slides > li img:hover {  background:#f9ff9e; }
+</style>
+  <script src="http://www.millionuser.com/template/js/jquery.flexslider-min.js"></script>
+			
+ <!-- Header -->
+  <header>
+  <!-- logo and top bar starts -->
+   <nav class="navbar navbar-default header-nav">
+   <div class="container">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Menu</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+     </button>
+     <a class="navbar-brand" href="#"><img src="imges/logo.png" alt=""></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+     <ul class="nav navbar-nav navbar-right right-navigation">
+      <li><a href="#">Free Listing</a></li>
+      <li><a href="/">Download App</a></li>
+      <li><a href="#">0172-4800012</a></li>      
+      <li class="dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+         <li><a href="#">MU Signin</a></li>
+         <li><a href="#">MU Signup</a></li>
+        </ul>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <!-- logo and top bar finish -->
+ </header>
+ <nav class="navbar navbar-inverse black-nav">
+    <div class="container">
+    <!-- <script type="text/javascript">
+	 $(document).ready(function(){
+	  $(".hot-deals").click(function(){
+	   $(".hot-deals a").addClass("active");  
+	   $(".classi-menu a").removeClass("active");
+       $(".hot-dropdown").css('display','block');
+       $(".classified-dropdown").css('display','none');
+	  });
+   	$(".classi-menu").click(function(){
+       $(".hot-deals a").removeClass("active");  
+	   $(".classi-menu a").addClass("active");
+	   $(".hot-dropdown").css('display','none');
+       $(".classified-dropdown").css('display','block');
+	  });
+
+	}); 
+	</script> -->
+     <div id="navbar1" class="collapse navbar-collapse" style="display:block; padding-left:0">
+      <ul class="nav navbar-nav">
+       <li class="dropdown classi-menu"><a href="#" class="clasi">Classified</a></li>
+       <li class="hot-deals"><a href="#about">Hot Deals</a></li>
+      </ul>
+      <!-- Classified drop down starts -->
+       <div class="col-xs-12 classified-dropdown" style="display:none;">
+       <div class="container">
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul> <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul> <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul> <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul>
+       </div>
+      </div>
+      <!-- Classified drop down finish -->
+      <!-- hot deal drop down starts -->
+       <div class="col-xs-12 hot-dropdown" style="display:none;">
+       <div class="container">
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>  
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>
+       </div>
+      </div>
+      <!-- hot deal drop down finish -->
+      
+     </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+   </nav>
+   
+   <div class="row-section">
+    <div class="container">
+	 <form classs="free-listing-form" action="#" method="post">
+	  
+	  <style type="text/css">
+	  .free-listing-form label{font-weight:normal; padding:15px 15px 15px 0; float:left; margin-top:15px; margin-bottom:15px;}
+	   .free-listing-form .class-box {margin-top:15px; margin-bottom:15px; width:65%; padding:7px 15px; height:auto; line-height:none;}
+	   .free-listing-form select.class-box{height:50px; width:65%;}
+	   .free-listing-form h2{margin:0;}
+	   .free-listing-form .new_title{border-bottom:2px solid #E5E5E5;  height:29px; margin-bottom:15px; float:left; width:100%}
+	   h2.sub-heading{color: #eb5c32; display: inline-block; font-family: 'Open Sans', sans-serif;  font-size: 16px;
+       font-weight: 600; letter-spacing: normal; margin-top: 0; padding: 5px 0px 5px 0; position: relative; text-transform: uppercase; letter-spacing: 0.5px;}
+	   .free-listing-form p{float:left; width:100%;} .free-listing-form select{float:left;}
+	   .three-steps{float:left; width:100%; margin-top:10px; margin-bottom:20px;}
+	   .three-steps .media-left{font-size:40px; font-family:verdana; line-height:34px; padding-right:5px;}
+	   .three-steps .media-body h4{font-size:15px; font-family:georgia; line-height:18px;}
+	   .three-steps .active .media-left{color:#eb5c32}
+	   .three-steps .media-left{color:#bfbfbf}
+	   .three-steps .active .media{border-bottom:solid 2px #ff7800;}
+	   .three-steps .media{border-bottom:solid 2px #bfbfbf; float:left; width:auto; padding-bottom:2px;}
+	   .three-steps .media-body{width:auto; padding-right:30px;}
+	   .plan-selection .class-box-input{margin-top: 15px; margin-bottom: 15px; width: 100%; padding: 7px 15px; height: auto;}
+	   .op-timing .class-box-input{padding:2px 15px; margin-bottom:0px; margin-top:5px;}
+	   .op-timing label{margin-bottom: 0px; padding-top: 5px; margin-top: 14px;}
+	   .w100-width{width:100%; float:left;}
+	  </style>
+	  <div class="class-list-form free-listing-form plan-selection col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	   <div class="new_title col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left:0"><h2>Post Classified</h2></div>
+	   <h2 class="sub-heading">Start with your business profile</h2>
+	   <p>Please let us know about your business profile here</p>
+	   
+	   <div class="w100 three-steps">
+	    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 active" style="padding-left:0">
+		 <div class="media">
+		  <div class="media-left">1</div>
+		  <div class="media-body">
+		   <h4 class="media-heading">Basic <br> Information</h4>
+		  </div>
+		</div>
+		</div>
+		
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		 <div class="media">
+		  <div class="media-left">2</div>
+		  <div class="media-body">
+		   <h4 class="media-heading">Basic <br> Information</h4>
+		  </div>
+		</div>
+		</div>
+		
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		 <div class="media">
+		  <div class="media-left">3</div>
+		  <div class="media-body">
+		   <h4 class="media-heading">Basic <br> Information</h4>
+		  </div>
+		</div>
+		</div>
+		
+		
+	   </div>
+	   
+       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding-left:0">
+		<input type="text" class="class-box class-box-input col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Business Name">
+	   </div>
+	   
+	   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		<input type="text" class="class-box class-box-input col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Tagline">
+	   </div>
+	   
+	   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="padding-left:0">
+		<input type="text" class="class-box class-box-input col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Contact Person">
+	   </div>
+	   
+	   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+		<input type="text" class="class-box class-box-input col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Mobile No.">
+	   </div>
+	   
+	   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+		<input type="text" class="class-box class-box-input col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Alternate No.">
+	   </div>
+	        
+	   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="padding-left:0">
+		<input type="text" class="class-box class-box-input col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Landline No.">
+	   </div>
+	   
+	   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+		<input type="text" class="class-box class-box-input col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Email address">
+	   </div>
+	   
+	   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+		<input type="text" class="class-box class-box-input col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Web Address">
+	   </div>
+			
+	   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="padding-left:0">
+	    <h2 class="sub-heading">Payment Mode</h2>
+		<div class="w100-width">
+		 <input type="checkbox"> Cash
+		</div>
+		
+		<div class="w100-width">
+		 <input type="checkbox"> Cheque / DD
+		</div>
+		
+		<div class="w100-width">
+		 <input type="checkbox"> Credit / Credit Card	
+		</div>
+		
+		<div class="w100-width">
+		 <input type="checkbox"> NEFT / RTGS
+		</div>
+	   </div>
+	   
+	   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 op-timing">
+	    <h2 class="sub-heading">Operational Timings</h2>
+		<div class="w100-width"> 
+		 <label class="col-xs-3 col-sm-6 col-md-3 col-lg-3">Mon to Fri</label>
+		 <div   class="col-xs-3 col-sm-3 col-md-4 col-lg-4" style="padding-left:0"><input type="text" class="class-box class-box-input" placeholder="9:00 AM"></div>
+		 <label class="col-xs-2 col-sm-1 col-md-1 col-lg-1" style="padding-right:0">to</label>
+		 <div   class="col-xs-3 col-sm-3 col-md-4 col-lg-4" style="padding-left:0"><input type="text" class="class-box class-box-input" placeholder="9:00 AM"></div>
+		</div>
+		<div class="w100-width"> 
+		 <label class="col-xs-3 col-sm-6 col-md-3 col-lg-3">Saturday</label>
+		 <div   class="col-xs-3 col-sm-3 col-md-4 col-lg-4" style="padding-left:0"><input type="text" class="class-box class-box-input" placeholder="9:00 AM"></div>
+		 <label class="col-xs-2 col-sm-1 col-md-1 col-lg-1" style="padding-right:0">to</label>
+		 <div   class="col-xs-3 col-sm-3 col-md-4 col-lg-4" style="padding-left:0"><input type="text" class="class-box class-box-input" placeholder="9:00 AM"></div>
+		</div>
+		<div class="w100-width"> 
+		 <label class="col-xs-3 col-sm-6 col-md-3 col-lg-3">Sunday</label>
+		 <div   class="col-xs-3 col-sm-3 col-md-4 col-lg-4" style="padding-left:0"><input type="text" class="class-box class-box-input" placeholder="9:00 AM"></div>
+		 <label class="col-xs-2 col-sm-1 col-md-1 col-lg-1" style="padding-right:0">to</label>
+		 <div   class="col-xs-3 col-sm-3 col-md-4 col-lg-4" style="padding-left:0"><input type="text" class="class-box class-box-input" placeholder="9:00 AM"></div>
+		</div>
+	   </div>
+	   
+		
+	   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center"><button class="free-listing-button">Proceed to Next</button></div>
+	  
+	   
+	  </div>
+	  
+	  
+	  
+	 </form>
+    </div>
+   </div>
+   
+<script type="text/javascript" src="http://www.millionuser.com/template/js/parallax.js"></script> 
+<script type="text/javascript" src="http://www.millionuser.com/template/js/common.js"></script> 
+<script type="text/javascript" src="http://www.millionuser.com/template/js/revslider.js"></script>
+<script type="text/javascript" src="http://www.millionuser.com/template/js/owl.carousel.min.js"></script> 
+ 
+</body>
+</html>

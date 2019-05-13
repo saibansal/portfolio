@@ -1,0 +1,345 @@
+@font-face {
+    font-family:'Myriad Pro';
+    src: url('../fonts/myriadpro-regular_0-webfont.eot');
+    src: url('../fonts/myriadpro-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-regular_0-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-regular_0-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-regular_0-webfont.svg#myriad_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+p {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a img {
+    border: 0px;
+}
+input[type=submit] {
+    border: none;
+    cursor: pointer;
+}
+body {
+    background: url(../images/body_bg.jpg) repeat left top;
+    font-family:'Myriad Pro';
+    font-size: 14px;
+    color: #000;
+    margin: 0px;
+    padding: 0px;
+}
+#outer {
+    width: 100%;
+    float: left;
+    background: url(../images/pattern_bg.jpg) repeat-x left 51px;
+}
+#wrapper {
+    width: 930px;
+    margin: auto;
+    min-height: 200px;
+}
+#wrapper #top_section {
+    width: 620px;
+    float: left;
+    height: 51px;
+}
+#top_section #left {
+    width: 260px;
+    height: 51px;
+    background: url(../images/fone.png) left top no-repeat;
+    font-size: 0px;
+    float: left;
+}
+#top_section #right {
+    float: right;
+    height: 33px;
+    width: 205px;
+    background: url(../images/clock.png) left top no-repeat;
+    margin-top: 18px;
+}
+header {
+    width: 930px;
+    float: left;
+    height: 75px;
+    position: relative;
+}
+header nav {
+    background: url("../images/nav_bg.jpg") repeat-x scroll left bottom transparent;
+    float: left;
+    height: 28px;
+    margin-top: 32px;
+    width: 646px;
+}
+nav ul {
+    float: left;
+    margin: 0px;
+    padding: 0px 0px 0px 12px;
+}
+nav ul li {
+    float: left;
+    list-style: none;
+    height: 26px;
+    margin-right: 4px;
+}
+nav ul li a{
+    float: left;
+    height: 20px;
+    padding: 3px 6px 3px 3px;
+    text-transform: capitalize;
+    line-height: 20px;
+    margin-left: 6px;
+    
+}
+nav ul li:hover, nav ul li.active {
+    background: url(../images/li_hover.png) left top no-repeat;
+}
+nav ul li:hover a, nav ul li.active a {
+    background: url(../images/li_hover.png) right -26px no-repeat;
+}
+header section#logo {
+    float: right;
+    margin-top: -35px;
+}
+article#slider_container {
+    width: 930px;
+    float: left;
+    height: 280px;
+}
+article#slider_container section#slider {
+    width: 652px;
+    float: left;
+}
+article#slider_container section#slider_right{
+    width: 260px;
+    float: right;
+    min-height: 100px;
+}
+section#slider_right h1 {
+    float: left;
+    width: 100%;
+    color: #757472;
+    font-size: 19px;
+    padding: 0px;
+    font-family: Arial;
+    margin: 0px;
+    text-transform: capitalize;
+}
+section#slider_right p {
+    float: left;
+    width: 100%;
+    text-align: justify;
+    color: #000;
+    font-size: 13px;
+    line-height: 20px;
+}
+article#container {
+    width: 930px;
+    float: left;
+    min-height: 200px;
+    margin-top: 20px;
+    height: 330px;
+}
+article#container section#left_section {
+    width: 238px;
+    float: left;
+    position: relative;
+}
+article#container section#left_section h3 {
+    float: left;    
+    background: url(../images/licencedoperator.png) left top no-repeat;
+    width: 238px;
+    height: 48px;
+    margin: 0px;
+    padding: 0px;
+}
+article#container section#left_section #content_box {
+    background:#EDEDED;
+    border-left: 1px solid #8e8e8e;
+    border-right: 1px solid #8e8e8e;
+    float: left;
+    left: 5px;
+    min-height: 100px;
+    position: absolute;
+    top: 43px;
+    width: 216px;
+    z-index: -10;
+    padding: 5px;
+}
+article#container section#left_section #content_box p {
+    text-align: justify;
+    float: left;
+    font-family: 'Myriad Pro';
+    font-size: 13px;
+    width: 215px;
+    padding: 5px 0px;
+    margin: 0px; line-height: 20px;
+}
+article#container section#left_section section#bottom_ {
+    width: 228px;
+    height: 13px;
+    float: left;
+    background: url(../images/bottompart.png) left top no-repeat;
+    position: absolute;
+    top: 272px;
+    left: 5px;
+}
+article#container section#search_box {
+    width: 687px;
+    float: right;
+    min-height: 300px;
+}
+section#search_box section#top {
+    background: url(../images/right_search_top.png) left top no-repeat;
+    width: 687px; float: left; height: 20px;
+}
+section#search_box section#mid {
+    background: url(../images/right_search_mid.png) left top repeat-y;
+    width: 647px;
+    padding: 0px 20px;
+    float: left;
+}
+section#search_box section#bottom {
+    background: url(../images/right_search_bottom.png) left top no-repeat;
+    width: 687px;
+    float: left;
+    height: 20px;
+}
+section#search_box #firstcolumn {
+    width: 325px;
+    float: left;
+    min-height: 100px;
+}
+section#search_box #firstcolumn label {
+    float: left;
+    width: 325px;
+    margin-top: 7px;
+    text-transform: capitalize;
+}
+section#search_box #firstcolumn input[type=text] {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D3D3D3;
+    color: #514E4E;
+    float: left;
+    font-size: 12px;
+    height: 18px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 280px;
+}
+section#search_box #firstcolumn input[type=submit].search {
+    float: left;
+    background: url(../images/search_button.jpg) left top no-repeat;
+    height: 30px;
+    width: 32px;
+}
+section#search_box #firstcolumn input[type=submit].calender {
+    background: url(../images/calender.jpg) left top no-repeat;
+    height: 30px;
+    width: 32px;
+    float: left;
+}
+section#search_box #firstcolumn p a {
+    color: #fe4606;
+    text-decoration: underline;
+}
+section#search_box #firstcolumn p a:hover {
+    text-decoration: none;
+}
+section#search_box section#second_column {
+    width: 300px;
+    float: left;
+    height: 200px;
+    margin-left: 15px;
+}
+
+section#search_box #second_column label {
+    float: left;
+    width: 300px;
+    text-transform: capitalize;
+    margin-top: 7px;
+}
+section#search_box #second_column select {
+    float: left;
+    width: 70px;
+    padding: 5px;
+    margin-right: 10px;
+}
+section#search_box #second_column p.passengers a {
+    float: left;
+    width: 19px;
+    height: 23px;
+    background: url(../images/passengers.png) left top no-repeat;
+    margin-right: 5px;
+}
+section#search_box #second_column p.passengers a:hover, section#search_box #second_column p.passengers a.selected {
+    background-position: 0px -23px;
+}
+section#search_box #second_column input[type=text]{float: left; width: 20px; padding: 3px 6px;}
+section#search_box #second_column p.Luggage a {
+    float: left;
+    width: 22px;
+    height: 17px;
+    background: url(../images/luggage.png) left top no-repeat;
+    margin-right: 4px;
+}
+section#search_box #second_column p.Luggage a:hover, section#search_box #second_column p.Luggage a.selected {
+    background-position: 0px -17px;
+}
+
+section#search_box #second_column p a.orange {
+    color: #FE4606;
+    text-decoration: underline;
+}
+section#search_box #second_column p button {
+    background: url(../images/search_fare.png) left top no-repeat;
+    width: 121px; height: 41.5px;
+    border: 0px; 
+    cursor: pointer;
+    float: right;
+    margin-top: 15px;
+}
+section#search_box #second_column p button:hover {
+    background-position: 0px -42px;
+}
+article#wrapper section#service_container {
+    width: 930px;
+    float: left;
+    height: 200px;
+}
+article#wrapper section#service_container aside.column {
+    width: 217px;
+    float: left;
+    height: 210px;
+    margin-left: 13px;
+}
+section#service_container aside.column h1{color: #757472;
+    float: left;
+    font-family:'Myriad Pro';
+    font-size: 19px;
+    margin: 0;
+    padding: 0px 0px 5px 0px;
+    text-transform: capitalize;
+    width: 100%;
+}
+aside.column p {
+    float: left;
+    width: 100%;
+    text-align: justify;
+    font-size: 12px;
+    color: #757472;
+    font-family: Arial, sans-serif, 'Microsoft Sans Serif';
+}
+aside.column p a {
+    float: right;
+    color: #e98723;
+    text-decoration: underline;
+}
+aside.column p a:hover {
+    text-decoration: none;
+}
+footer{width: 100%; height:300px; margin:auto; background:url(../images/footer.jpg) top center no-repeat; clear:both;}

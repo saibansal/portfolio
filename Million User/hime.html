@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Million User</title>
+<meta name="description" content="Million User">
+<meta name="author" content="Million User">
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS Style -->
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/animate.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/bootstrap-select.min.css"/>
+
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/style.css" type="text/css">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/revslider.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/owl.carousel.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/owl.theme.css" type="text/css">
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/font-awesome.css" type="text/css">
+
+<script type="text/javascript" src="http://www.millionuser.com/template/js/jquery.min.js"></script> 
+<script type="text/javascript">
+$(function() {
+   $(".more-social").click(function() {
+      $('.mobile-slide').animate({width: '100%'}, "fast");
+      $('.mobile-slide').animate({right: '0'}, "100");
+	  $('.mobile-slide').css("display", "block");
+	  $('.mobile-btn').css("display", "block");
+	  setTimeout(function(){
+		$('.mobile-slide .btn-group.bootstrap-select.xs-left, .mobile-slide .bkey').animate('1').css('display', 'block');
+	  },400);
+	  setTimeout(function(){
+	  	 $('.more-social').animate('1').css('display', 'none');
+		 
+	  },0);	  
+	  })
+ 	});
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="http://www.millionuser.com/template/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="http://www.millionuser.com/template/js/bootstrap3-typeahead.min.js"></script>
+<script type="text/javascript" src="http://www.millionuser.com/template/js/forms/select2.min.js"></script>
+<script type="text/javascript" src="http://www.millionuser.com/template/js/jquery.lazyload.min.js"></script>
+<script>
+$(function() {
+    $("img.lazy").lazyload({
+        event : "sporty",
+		effect : "fadeIn"
+    });
+});
+
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() {
+        $("img.lazy").trigger("sporty")
+    }, 5000);
+});
+</script>
+
+<style>
+.lazy{
+background-image:url(http://www.millionuser.com/template/images/loader10.gif);
+background-repeat:no-repeat; background-position:center center;
+}
+</style>
+
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,700,800,400,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Signika:400,600,700,300' rel='stylesheet' type='text/css'>
+<script>var exmodule="";</script>
+
+</head>
+
+<body>
+<div class="page"> 
+
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/theme2.css" type="text/css" media="screen" />  
+<link rel="stylesheet" href="http://www.millionuser.com/template/css/flexslider.css" type="text/css" media="screen" />  
+<style>
+.flexslider { width: 90%; margin: 0 auto; }
+.flex-direction-nav a.flex-disabled {display:none;}
+.flexslider .slides > li img:hover {  background:#f9ff9e; }
+</style>
+  <script src="http://www.millionuser.com/template/js/jquery.flexslider-min.js"></script>
+			
+ <!-- Header -->
+  <header>
+  <!-- logo and top bar starts -->
+   <nav class="navbar navbar-default header-nav">
+   <div class="container">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Menu</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+     </button>
+     <a class="navbar-brand" href="#"><img src="imges/logo.png" alt=""></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+     <ul class="nav navbar-nav navbar-right right-navigation">
+      <li><a href="#">Free Listing</a></li>
+      <li><a href="/">Download App</a></li>
+      <li><a href="#">0172-4800012</a></li>      
+      <li class="dropdown">
+       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+         <li><a href="#">MU Signin</a></li>
+         <li><a href="#">MU Signup</a></li>
+        </ul>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <!-- logo and top bar finish -->
+ </header>
+ <nav class="navbar navbar-inverse black-nav">
+    <div class="container">
+    <!-- <script type="text/javascript">
+	 $(document).ready(function(){
+	  $(".hot-deals").click(function(){
+	   $(".hot-deals a").addClass("active");  
+	   $(".classi-menu a").removeClass("active");
+       $(".hot-dropdown").css('display','block');
+       $(".classified-dropdown").css('display','none');
+	  });
+   	$(".classi-menu").click(function(){
+       $(".hot-deals a").removeClass("active");  
+	   $(".classi-menu a").addClass("active");
+	   $(".hot-dropdown").css('display','none');
+       $(".classified-dropdown").css('display','block');
+	  });
+
+	}); 
+	</script> -->
+     <div id="navbar1" class="collapse navbar-collapse" style="display:block; padding-left:0">
+      <ul class="nav navbar-nav">
+       <li class="dropdown classi-menu"><a href="#" class="clasi">Classified</a></li>
+       <li class="hot-deals"><a href="#about">Hot Deals</a></li>
+      </ul>
+      <!-- Classified drop down starts -->
+       <div class="col-xs-12 classified-dropdown" style="display:none;">
+       <div class="container">
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul> <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul> <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul> <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Classified 1</a></li>
+         <li><a href="#">Classified 2</a></li>
+         <li><a href="#">Classified 3</a></li>
+         <li><a href="#">Classified 4</a></li>
+         <li><a href="#">Classified 5</a></li>
+         <li><a href="#">Classified 6</a></li>
+         <li><a href="#">Classified 7</a></li>
+        </ul>
+       </div>
+      </div>
+      <!-- Classified drop down finish -->
+      <!-- hot deal drop down starts -->
+       <div class="col-xs-12 hot-dropdown" style="display:none;">
+       <div class="container">
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>  
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>
+        <ul class="col-xs-3 col-sm-6 col-md-3 col-lg-3">
+         <li><a href="#">Deal 1</a></li>
+         <li><a href="#">Deal 2</a></li>
+         <li><a href="#">Deal 3</a></li>
+         <li><a href="#">Deal 4</a></li>
+         <li><a href="#">Deal 5</a></li>
+         <li><a href="#">Deal 6</a></li>
+         <li><a href="#">Deal 7</a></li>
+        </ul>
+       </div>
+      </div>
+      <!-- hot deal drop down finish -->
+      
+     </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+   </nav>
+   
+   <div class="row-section">
+    <div class="container">
+     <div id="myCarousel" class="carousel slide deals-home-slider" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner text-center" role="listbox">
+        
+        <div class="item active">
+         <img class="first-slide" src="imges/deal-home.jpg" alt="First slide">
+         <div class="container">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 main-slider-right main-slider-left">
+          <h3 style="font-size:26px; text-transform:uppercase;">Special Thali Offer</h3>
+          <p class="bizaddress"> <i class="fa fa-lg fa-map-marker"></i> Laziz Rasoi, Sector 54, Mohali</p>
+      	  <p class="special-price">
+           <span class="price" style="color:#ffffff; line-height:25px;">Offer Price: <i class="fa fa-inr"></i>150 <span style="font-size:15px;">( 25% OFF )</span> </span>
+          </p>
+           
+          <div aign="center" class="slider-buy-button col-lg-12"><a href="http://www.millionuser.com/deal/special-thali-offer" class="btn btn-primary btn-lg btn-raised ripple-effect" style="padding:8px 25px;">Buy Now</a></div></div>
+          </div>
+        </div>
+        <!--
+        <div class="item">
+         <img class="first-slide" src="imges/deal-home1.jpg" alt="First slide">
+         <div class="container">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 main-slider-right">
+          <h3>Special Thali Offer</h3>
+          <p class="bizaddress"> <i class="fa fa-lg fa-map-marker"></i> Laziz Rasoi, Sector 54, Mohali</p>
+      	  <p class="special-price">
+           <span class="price" style="color:#ffffff; line-height:25px;">Offer Price: <i class="fa fa-inr"></i>150  </span>
+          </p>
+           
+          <div aign="center" class="slider-buy-button"><a href="http://www.millionuser.com/deal/special-thali-offer" class="btn btn-success btn-lg btn-raised ripple-effect btn-block">Buy Now <span>( 25% OFF )</span></a></div></div>
+          </div>
+        </div>
+         <div class="item">
+         <img class="first-slide" src="imges/deal-home.jpg" alt="First slide">
+         <div class="container">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 main-slider-right main-slider-left">
+          <h3>Special Thali Offer</h3>
+          <p class="bizaddress"> <i class="fa fa-lg fa-map-marker"></i> Laziz Rasoi, Sector 54, Mohali</p>
+      	  <p class="special-price">
+           <span class="price" style="color:#ffffff; line-height:25px;">Offer Price: <i class="fa fa-inr"></i>150  </span>
+          </p>
+           
+          <div aign="center" class="slider-buy-button"><a href="http://www.millionuser.com/deal/special-thali-offer" class="btn btn-success btn-lg btn-raised ripple-effect btn-block">Buy Now <span>( 25% OFF )</span></a></div></div>
+          </div>
+        </div>
+        
+        <div class="item">
+         <img class="first-slide" src="imges/deal-home1.jpg" alt="First slide">
+         <div class="container">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 main-slider-right">
+          <h3>Special Thali Offer</h3>
+          <p class="bizaddress"> <i class="fa fa-lg fa-map-marker"></i> Laziz Rasoi, Sector 54, Mohali</p>
+      	  <p class="special-price">
+           <span class="price" style="color:#ffffff; line-height:25px;">Offer Price: <i class="fa fa-inr"></i>150  </span>
+          </p>
+           
+          <div aign="center" class="slider-buy-button"><a href="http://www.millionuser.com/deal/special-thali-offer" class="btn btn-success btn-lg btn-raised ripple-effect btn-block">Buy Now <span>( 25% OFF )</span></a></div></div>
+          </div>
+        </div>
+         <div class="item">
+         <img class="first-slide" src="imges/deal-home.jpg" alt="First slide">
+         <div class="container">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 main-slider-right main-slider-left">
+          <h3>Special Thali Offer</h3>
+          <p class="bizaddress"> <i class="fa fa-lg fa-map-marker"></i> Laziz Rasoi, Sector 54, Mohali</p>
+      	  <p class="special-price">
+           <span class="price" style="color:#ffffff; line-height:25px;">Offer Price: <i class="fa fa-inr"></i>150  </span>
+          </p>
+           
+          <div aign="center" class="slider-buy-button"><a href="http://www.millionuser.com/deal/special-thali-offer" class="btn btn-success btn-lg btn-raised ripple-effect btn-block">Buy Now <span>( 25% OFF )</span></a></div></div>
+          </div>
+        </div>
+        
+        <div class="item">
+         <img class="first-slide" src="imges/deal-home1.jpg" alt="First slide">
+         <div class="container">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 main-slider-right">
+          <h3>Special Thali Offer</h3>
+          <p class="bizaddress"> <i class="fa fa-lg fa-map-marker"></i> Laziz Rasoi, Sector 54, Mohali</p>
+      	  <p class="special-price">
+           <span class="price" style="color:#ffffff; line-height:25px;">Offer Price: <i class="fa fa-inr"></i>150  </span>
+          </p>
+           
+          <div aign="center" class="slider-buy-button"><a href="http://www.millionuser.com/deal/special-thali-offer" class="btn btn-success btn-lg btn-raised ripple-effect btn-block">Buy Now <span>( 25% OFF )</span></a></div></div>
+          </div>
+        </div>
+       -->
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a></div>
+    </div>
+   </div>
+   
+<script type="text/javascript" src="http://www.millionuser.com/template/js/parallax.js"></script> 
+<script type="text/javascript" src="http://www.millionuser.com/template/js/common.js"></script> 
+<script type="text/javascript" src="http://www.millionuser.com/template/js/revslider.js"></script>
+<script type="text/javascript" src="http://www.millionuser.com/template/js/owl.carousel.min.js"></script> 
+ 
+</body>
+</html>
