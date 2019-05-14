@@ -34,11 +34,12 @@
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
 		  <a href="./" class="navbar-brand"> <img src="images/logo.svg" alt="" class=""></a> 
+      
+      <a href="#" data-toggle="modal" data-target="#dispute" class="btn btn-primary btn-sm navbar-btn ml-0 ml-lg-3">Dispute </a> 
 		  
+		  <a href="#" data-toggle="modal" data-target="#feebackRating" class="btn btn-primary btn-sm navbar-btn ml-0 ml-lg-3">Feedback </a> 
 		  
-		  <a href="#" data-toggle="modal" data-target="#feebackRating" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Feedback </a> 
-		  
-		  <a href="#" data-toggle="modal" data-target="#feedback" class="btn btn-primary navbar-btn ml-0 ml-lg-3">Rating </a> 
+		  <a href="#" data-toggle="modal" data-target="#feedback" class="btn btn-primary navbar-btn btn-sm ml-0 ml-lg-3">Rating </a> 
 		  
 		  
         <!-- search -->
@@ -237,20 +238,18 @@
 
 <!-- dispute popup section starts -->
 <div id="dispute" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-md">
-  <div role="document" class="modal-dialog modal-dialog-centered modal-md">
+  <div role="document" class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content modal-tabs-outer">
       <div class="modal-header border-bottom-0">
-        <h4 class="modal-header mt-0 w-100 float-left pt-0 border-0">Dispute</h4>
+        <h4 class="modal-header mt-0 w-100 float-left pt-0 border-0">Dispute <span class="font-16 float-left mt-1 badge badge-primary font-weight-light"> (Ticket : 125032) </span></h4>
         <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
       </div>
       <div class="modal-body p-4 p-lg-5" >
         <form action="#" class="login-form text-left">
+          <p class="text-black-50">While the vast majority of teaching on MathInstant goes smoothly for both parties, it's inevitable that an occasional dispute arises. Our escrow dispute system is structured to protect both our students and teacher in the case of wrongful behavior.</p>
+      
           <div class="form-group mb-4">
-            <label>Title</label>
-            <input type="text" placeholder="" class="form-control p-3">
-          </div>
-          <div class="form-group mb-4">
-            <label>Detail</label>
+            <label>Kindly elaborate on your dispute</label>
             <textarea name="" id="" cols="30" rows="1" class="form-control p-3" ></textarea>
           </div>
           <div class="form-group mb-4">
@@ -333,9 +332,6 @@
 			  </div>
 			</div>
           </div>
-			
-			
-          
           
           <div class="form-group">
             <input type="submit" value="Submit Rating" class="btn btn-orange btn-block">
