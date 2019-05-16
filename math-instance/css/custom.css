@@ -2851,3 +2851,16 @@ textarea{
 .white-board-navigation ul li.save-pdf a, .white-board-navigation ul li.save-pdf{
 	width:auto !important;
 }
+.animated {
+	-webkit-transition: height 0.2s;
+	-moz-transition: height 0.2s;
+	transition: height 0.2s;
+}
+.stars{
+	font-size: 22px;
+	color: rgba(0,0,0,.5);     
+}
+.stars span{
+	margin-right: 5px;
+	display: inline;
+ }
