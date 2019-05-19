@@ -515,21 +515,65 @@
 					<div class="attachment-modal-inner">
 						<h6>Add your attachment</h6>
 						<div class="question-enter-outer">
-							<textarea id="question-enter" class="question-enter" maxlength="1000" ></textarea>
+							<textarea id="question-enter" class="question-enter"  maxlength="1000" ></textarea>
 							<div class="textarea-counter-modal" id="textarea_counter-modal"></div>
 						</div>
 
 						<div class="image-upload-wrap">
-							<input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+							<input class="file-upload-input" type='file' multiple onchange="readURL(this);" accept="image/*" />
 							<div class="drag-text">
 								<h3><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload or drop your files here</h3>
 							</div>
 						</div>
+						<div class="col-md-12 float-left">
+							<div class="row">
+								<div class="col-md-4 mb-3">
+									<div class="w-100 float-left bg-light h-100 text-center">
+										<img class="file-upload-image img-fluid" src="images/student.png" alt="your image" />
+										<button type="button" onclick="removeUpload()" class="remove-image"><i class="fa fa-remove"></i> </button>
+									</div>
+								</div>
+								
+								<div class="col-md-4 mb-3">
+									<div class="w-100 bg-light text-center float-left bg-light h-100">
+										<i class="fa fa-file-pdf-o mt-3"></i>
+										<p>PDF File</p>
+										<button type="button" oncl*xick="removeUpload()" class="remove-image"><i class="fa fa-remove"></i> </button>
+									</div>
+								</div>
+
+								<div class="col-md-4 mb-3">
+									<div class="w-100 bg-light text-center float-left bg-light h-100">
+										<i class="fa fa-file-excel-o mt-3"></i>
+										<p>Excel File</p>
+										<button type="button" onclick="removeUpload()" class="remove-image"><i class="fa fa-remove"></i> </button>
+									</div>
+								</div>
+								<div class="col-md-4 mb-3">
+										<div class="w-100 bg-light p-2 text-center float-left bg-light h-100">
+											<i class="fa fa-file-word-o mt-3"></i>
+											<p>Word File</p>
+											<button type="button" onclick="removeUpload()" class="remove-image"><i class="fa fa-remove"></i> </button>
+										</div>
+									</div>
+
+									</div>
+						</div>
+
 						<div class="file-upload-content">
-							<img class="file-upload-image" src="#" alt="your image" />
-							<div class="image-title-wrap">
-								<button type="button" onclick="removeUpload()" class="remove-image">Remove <!-- <span class="image-title">Uploaded Image</span> --></button>
+							<div class="row">
+								<div class="col-md-3">
+											<img class="file-upload-image img-fluid" src="#" alt="your image" />
+												<button type="button" onclick="removeUpload()" class="remove-image"><i class="fa fa-remove"></i> <!-- <span class="image-title">Uploaded Image</span> --></button>
+									</div>
+
+									<div class="col-md-3">
+											<i class<img class="file-upload-image img-fluid" src="#" alt="your image" />
+												<button type="button" onclick="removeUpload()" class="remove-image"><i class="fa fa-remove"></i> <!-- <span class="image-title">Uploaded Image</span> --></button>
+									</div>
 							</div>
+							
+							
 						</div>
 
 						<!-- Topic -->

@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="css/custom.css" id="theme-stylesheet">
 <!-- Custom stylesheet - for your changes-->
 <link rel="stylesheet" href="css/style.default.css">
+<link rel="stylesheet" href="css/chat.css">
+
 <!-- Favicon-->
 <link rel="shortcut icon" href="img/favicon.png">
 <!-- Tweaks for older IEs-->
@@ -26,129 +28,99 @@
 <!-- custom input type file button -->
 <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
 </head>
-<body>
+<body class="white-board">
 
 <!-- navbar-->
-<header class="header inner-header">
+<header class="header">
   <div class="row">
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-		  <a href="./" class="navbar-brand"> <img src="images/logo.svg" alt="" class=""></a> 
+		  <a href="./" class="navbar-brand text-white"> Math Instance</a> 
       
-      <a href="#" data-toggle="modal" data-target="#dispute" class="btn btn-primary btn-sm navbar-btn ml-0 ml-lg-3">Dispute </a> 
+      <!-- <a href="#" data-toggle="modal" data-target="#dispute" class="btn btn-primary btn-sm navbar-btn ml-0 ml-lg-3">Dispute </a> 
 		  
 		  <a href="#" data-toggle="modal" data-target="#feebackRating" class="btn btn-primary btn-sm navbar-btn ml-0 ml-lg-3">Feedback </a> 
 		  
-		  <a href="#" data-toggle="modal" data-target="#feedback" class="btn btn-primary navbar-btn btn-sm ml-0 ml-lg-3">Rating </a> 
+		  <a href="#" data-toggle="modal" data-target="#feedback" class="btn btn-primary navbar-btn btn-sm ml-0 ml-lg-3">Rating </a>  -->
 		  
 		  
-        <!-- search -->
-        <div class="col-md-8 top-search">
-          <input type="search" placeholder="Search by subject">
-        </div>
-        <!-- /search -->
         <div id="navbarSupportedContent" class="collapse navbar-collapse float-right align-content-end col-md-3">
           <div class="float-right profile-icon col-md-12 pr-0">
-            <ul>
-              <li> <a href="#"><i class="fa fa-dollar"></i></a>
-                <ul class="dropdown">
-                  <li><a href="student-wallet.html">Wallet Balance : <strong>100$</strong> </a></li>
-                  <li><a href="#">Reports </a></li>
-                </ul>
-              </li>
-              <li class="messages"> <a href="#"><img src="images/message-icon.png" alt=""> <span class="message-count">5</span></a>
-                <ul class="dropdown">
-                  <li><a href="#"><strong>Mamta </strong> sent a message to you.</a></li>
-                  <li><a href="#"><strong>Androind Developer </strong> sent a message to you.</a></li>
-                  <li><a href="#"><strong>Mamta </strong> sent a message to you.</a></li>
-                  <li><a href="#"><strong>Mamta </strong> sent a message to you.</a></li>
-                  <li><a href="#"><strong>Androind Developer </strong> sent a message to you.</a></li>
-                  <li><a href="#"><strong>Mamta </strong> sent a message to you.</a></li>
-                  <li class="mt-3 mb-3 text-center"><a href="#" class="see-more d-inline-block float-none" style="width:auto; ">See all messages</a></li>
-                </ul>
-              </li>
-              <li class="notification"> <a href="#"><i class="fa fa-bell-o"></i> <span class="message-count">5</span></a>
-                <ul class="dropdown p-3">
-                  <li><a href="#">A simple primary alert—check it out!</a></li>
-                  <li><a href="#">A simple primary alert—check it out!</a></li>
-                  <li><a href="#">A simple primary alert—check it out!</a></li>
-                  <li><a href="#">A simple primary alert—check it out!</a></li>
-                  <li><a href="#">A simple primary alert—check it out!</a></li>
-                  <li><a href="#">A simple primary alert—check it out!</a></li>
-                  <li><a href="#">A simple primary alert—check it out!</a></li>
-                  <li class="mt-3 mb-1 text-center"><a href="#" class="see-more d-inline-block float-none" style="width:auto; ">See all Notifications</a></li>
-                </ul>
-              </li>
-              <li> <a href="#" class="profile-dropdown"> <i class="fa fa-user-circle mr-2"></i> Vishal <i class="fa fa-angle-down"></i></a>
-                <ul class="dropdown">
-                  <li class="active online-support text-center"><a href="#">Online</a></li>
-                  <li class="online-support text-center"><a href="#">Offline</a></li>
-                  <li><a href="#">Vishal Bansal ( Student )</a></li>
-                  <li><a href="become-teacher.html">Become a Teacher</a></li>
-                  <li><a href="student-profile-edit.html">Edit Profile</a></li>
-                  <li><a href="#">Logout</a></li>
-                </ul>
-              </li>
-            </ul>
+            <a href="#" class="float-right text-white"> <i class="fa fa-angle-double-left"> </i> Back to Dashboard</a> 
           </div>
         </div>
         <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">Menu<i class="fa fa-bars ml-2"></i></button>
       </div>
     </nav>
   </div>
-</header>
+</header> 
 
 <!-- White board container starts -->
-<div class="content-container board-container w-100 mt-0 mb-5 pb-5">
-  <div class="containider-fluid">
-    <div class=""> 
+<div class="content-container board-container w-100 float-left mt-0 mb-5 pb-5">
+  <div class="container-fluid pl-0 pr-0">
+    <div class="w-100 float-left"> 
       <!-- top bar section starts -->
-      <section class="white-board-navigation pb-0 col-md-12">
-        <ul class="float-left p-0 w-100">
-          <li class="position-relative undo"><a href="#"></a></li>
-          <li class="position-relative redo"><a href="#"></a></li>
-          <li class="position-relative pencil"> <a href="#"></a> </li>
-          <li class="position-relative eraser"><a href="#"></a></li>
-          <li class="position-relative multiple-shapes"> <a href="#"> </a>
+      <div class="white-board-navigation pb-0 pt-4 w-100 mt-5 pl-0 float-left">
+        <ul class="float-left bg-light p-0 w-100 mb-0 pt-2 pb-2">
+          <li class="position-relative mr-0 p-0 pl-1 undo"></li>
+          <li class="position-relative mr-0 p-0 pl-1 redo disabled"></li>
+          <li class="position-relative pencil ml-2 active"> </li>
+          <li class="position-relative eraser"></li>
+          <li class="position-relative multiple-shapes">
             <ul class="whiteboard-dropdown">
-              <li class="circle-shape"><a href="#"></a></li>
-              <li class="square-shape"><a href="#"></a></li>
-              <li><a href="#"> <img alt="" height="20" width="20"  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzY4IDM2OCIgd2lkdGg9IjUxMnB4Ij48cGF0aCBkPSJtMTg0IDBjLTg5LjE5OTIxOSAwLTE4NCAyNS4yMzA0NjktMTg0IDcydjIyNGMwIDQ2Ljc2OTUzMSA5NC44MDA3ODEgNzIgMTg0IDcyczE4NC0yNS4yMzA0NjkgMTg0LTcydi0yMjRjMC00Ni43Njk1MzEtOTQuODAwNzgxLTcyLTE4NC03MnptMCAxNmM5OSAwIDE2OCAyOS41MTE3MTkgMTY4IDU2cy02OSA1Ni0xNjggNTYtMTY4LTI5LjUxMTcxOS0xNjgtNTYgNjktNTYgMTY4LTU2em0xNjggODYuNzg1MTU2djE2Mi40Mjk2ODhjLTMwLjcyNjU2Mi0yNi45NDkyMTktMTAwLjk0NTMxMi00MS4yMTQ4NDQtMTY4LTQxLjIxNDg0NHMtMTM3LjI3MzQzOCAxNC4yNjU2MjUtMTY4IDQxLjIxNDg0NHYtMTYyLjQyOTY4OGMzMC43MjY1NjIgMjYuOTQ5MjE5IDEwMC45NDUzMTIgNDEuMjE0ODQ0IDE2OCA0MS4yMTQ4NDRzMTM3LjI3MzQzOC0xNC4yNjU2MjUgMTY4LTQxLjIxNDg0NHptLTE2OCAyNDkuMjE0ODQ0Yy05OSAwLTE2OC0yOS41MTE3MTktMTY4LTU2czY5LTU2IDE2OC01NiAxNjggMjkuNTExNzE5IDE2OCA1Ni02OSA1Ni0xNjggNTZ6bTAgMCIgZmlsbD0iIzAwMDAwMCIvPjwvc3ZnPgo=" /></a></li>
-              <li class="hexagon-shape"><a href=""></a></li>
-              <li class="triangle-shape"><a href=""></a></li>
-              <li><a href=""><img alt="" height="20" width="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzY4IDM2OCIgd2lkdGg9IjUxMnB4Ij48cGF0aCBkPSJtNC45NDUzMTIgMzY3LjM4MjgxMmMuOTc2NTYzLjQwMjM0NCAyLjAxNTYyNi42MTcxODggMy4wNTQ2ODguNjE3MTg4aDI4OGMxLjAzOTA2MiAwIDIuMDc4MTI1LS4yMTQ4NDQgMy4wNTQ2ODgtLjYxNzE4OC45ODQzNzQtLjQwNjI1IDEuODY3MTg3LS45OTIxODcgMi42MDkzNzQtMS43MzQzNzRsNjMuOTkyMTg4LTYzLjk5MjE4OGMxLjUwMzkwNi0xLjQ5NjA5NCAyLjM0Mzc1LTMuNTM1MTU2IDIuMzQzNzUtNS42NTYyNXYtMjg4YzAtLjEwNTQ2OS0uMDU0Njg4LS4xODM1OTQtLjA1NDY4OC0uMjg5MDYyLS4wMzUxNTYtLjkzMzU5NC0uMTc1NzgxLTEuODcxMDk0LS41NTQ2ODctMi43NzM0MzggMC0uMDA3ODEyLS4wMDc4MTMtLjAxNTYyNS0uMDE1NjI1LS4wMjczNDQtLjAzMTI1LS4wNzAzMTItLjA4NTkzOC0uMTI1LS4xMTcxODgtLjE5OTIxOC0uMzYzMjgxLS44MDA3ODItLjg1MTU2Mi0xLjQ5NjA5NC0xLjQzMzU5My0yLjExNzE4OC0uMTkxNDA3LS4yMTA5MzgtLjM5ODQzOC0uMzcxMDk0LS42MDkzNzUtLjU1NDY4OC0uNTExNzE5LS40NDUzMTItMS4wNTQ2ODgtLjgxNjQwNi0xLjY2NDA2My0xLjExNzE4Ny0uMjQ2MDkzLS4xMjEwOTQtLjQ4ODI4MS0uMjU3ODEzLS43NTc4MTItLjM2MzI4MS0uODgyODEzLS4zMjgxMjUtMS44MDg1OTQtLjU1ODU5NC0yLjc5Mjk2OS0uNTU4NTk0aC0yODhjLTIuMTI4OTA2IDAtNC4xNjAxNTYuODM5ODQ0LTUuNjU2MjUgMi4zNDM3NWwtNjMuOTkyMTg4IDYzLjk5MjE4OGMtLjc0MjE4Ny43MzQzNzQtMS4zMjgxMjQgMS42MjUtMS43MzQzNzQgMi42MDkzNzQtLjQwMjM0NC45NzY1NjMtLjYxNzE4OCAyLjAxNTYyNi0uNjE3MTg4IDMuMDU0Njg4djI4OGMwIDEuMDM5MDYyLjIxNDg0NCAyLjA3ODEyNS42MTcxODggMy4wNTQ2ODguODA4NTkzIDEuOTYwOTM3IDIuMzY3MTg3IDMuNTE5NTMxIDQuMzI4MTI0IDQuMzI4MTI0em0xMS4wNTQ2ODgtMjg3LjM4MjgxMmg0OHYyMTIuNjg3NWwtNDggNDh6bTI3MiAwdjIwOGgtMjA4di0yMDh6bS0yMTIuNjg3NSAyMjRoMjEyLjY4NzV2NDhoLTI2MC42ODc1em0yMjguNjg3NSAzNi42ODc1di0yNjUuMzc1bDQ4LTQ4djI2NS4zNzV6bS0yMjguNjg3NS0zMjQuNjg3NWgyNjUuMzc1bC00OCA0OGgtMjY1LjM3NXptMCAwIiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+Cg==" /></a></li>
-              <li class="right-tirangle-shape"><a href=""></a></li>
-              <li><a href=""><img src="images/precision-mark.png" alt="" height="20" width="20"></a></li>
-              <li class="right-pentagon-shape"><a href="#"></a></li>
-              <li class="line-shape"><a href="#"></a></li>
+              <li class="circle-shape"></li>
+              <li class="square-shape"></li>
+              <li class="triangle-shape"></li>
+              <li class="right-tirangle-shape"></li>
+              <li class="pentagon"></li>
+              <li class="hexagon"></li>
+              <li class="line-shape"></li>
+              <li class="bothline"></li>
+              <li class="cube"></li>
+              <li class="percision"></li>
+              <li class="cylinder"></li>
             </ul>
           </li>
-          <li class="position-relative text"><a href="#"></a></li>
-          <li class="position-relative"><i class="fa fa-circle text-warning"></i></li>
-          <li class="position-relative"><i class="fa fa-circle text-danger"></i></li>
-          <li class="position-relative"><i class="fa fa-circle text-success"></i></li>
-          <li class="position-relative"><i class="fa fa-circle text-warning"></i></li>
-          <li class="position-relative"><i class="fa fa-circle text-primary"></i></li>
-          <li class="position-relative"><i class="fa fa-circle text-dark"></i></li>
+          <li class="position-relative text"></li>
+          
+          <li class="swatches active ml-4"><i class="fa fa-circle text-dark font-12"></i></li>
+          <li class="swatches"><i class="fa fa-circle font-12" style="color:#009be7"></i></li>
+          <li class="swatches"><i class="fa fa-circle font-12" style="color:#ed1c24"></i></li>
+          <li class="swatches"><i class="fa fa-circle font-12" style="color:#4daf3e"></i></li>
+          <li class="swatches"><i class="fa fa-circle font-12" style="color:#ff9300"></i></li>
+          <li class="swatches"><i class="fa fa-circle font-12" style="color:#767676"></i></li>
+          <li class="swatches pl-1 pr-1"><i class="fa fa-circle font-12" style="color:#662d91"></i></li>
+          
+          <li class="font-8 pencil-weight ml-4 active"><a href="#"><i class="fa text-dark fa-circle"></i></a></li>
+          <li class="font-12 pencil-weight"><a href="#"><i class="fa text-dark fa-circle"></i></a></li>
+          <li class="font-16 pencil-weight"><a href="#"><i class="fa fa-circle text-dark"></i></a></li>
+          <li class="font-18 pencil-weight"><a href="#"><i class="fa fa-circle text-dark"></i></a></li>
+
           <li class=" position-relative full-eraser"><a href="#"> </a></li>
-          <li class="font-8"><a href="#"><i class="fa text-dark fa-circle"></i></a></li>
-          <li class="font-12"><a href="#"><i class="fa text-dark fa-circle"></i></a></li>
-          <li class="font-16"><a href="#"><i class="fa fa-circle text-dark"></i></a></li>
-          <li class="font-18"><a href="#"><i class="fa fa-circle text-dark"></i></a></li>
-          <li class="display-1"><a href="#"><i class="fa fa-circle text-dark"></i></a></li>
-          <li class="w-auto font-16 save-pdf"><a href="#" class="text-dark"><i class="fa mr-1 fa-file-pdf-o text-dark"></i> Save PDF</a></li>
-          <li  class="float-right">
+
+          <li class="position-relative multiple-grids"> <a href="#"></a>
+            <ul class="whiteboard-dropdown">
+              <li class="avoid"><a href="#"></a></li>
+              <li class="sixgrid"><a href="#"></a></li>
+              <li class="fourgrid"><a href=""></a></li>
+              <li class="twogrid"><a href=""></a></li>
+              <li class="onegrid"><a href=""></a></li>
+            </ul>
+          </li>
+          
+          <li class="w-auto font-16 mt-2 save-pdf"><a href="#" class="text-dark"><i class="fa mr-1 fa-file-pdf-o fa-2x text-dark float-left"></i> <span class="float-left ml-2" style="display:inline-block; margin-top:3px;">Save PDF</span></a></li>
+          <li  class="float-right mt-2">
             <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple />
             <label for="file-3" class="w-auto"> <i class="fa fa-paperclip"></i> <span class="font-16 font-weight-normal">Upload File</span> </label>
           </li>
         </ul>
-      </section>
+      </div>
       <!-- top bar section finsih-->
-      <div class="col-md-12 float-left tab-sect">
+      <div class="col-md-12 float-left mt-3 tab-sect">
         <ul class="pl-0 float-left mb-3">
-          <li><a class="badge badge-info" href="">1</a> <i class="fa fa-remove"></i></li>
-          <li><a href="" class="badge badge-info">2</a> <i class="fa fa-remove"></i></li>
-          <li><a href="" class="badge badge-info">3</a> <i class="fa fa-remove"></i></li>
+          <li><a href="">1</a> </li>
+          <li><a href="">2</a> </li>
+          <li><a href="">3</a> </li>
           <li> <a href="#"><i class="fa fa-plus-circle mt-1"></i></a></li>
         </ul>
       </div>
@@ -160,7 +132,68 @@
 </div>
 <!-- White board container finish --> 
 
- 
+<!-- video chat plugin section starts -->
+
+
+<div class="pull-right" id="chatbox">
+  <div class="row chat-window col-xs-5 col-md-3 pull-right" id="chat_window_1">
+    <div class="col-xs-12 bg-white action-btns col-md-12">
+      <em><a href="#"><i class="fa fa-microphone"></i></a></em>
+      <em><a href="#"><i class="fa fa-video-camera"></i></a></em>
+      <em><a href="#"><i class="fa fa-comment"></i></a></em>
+
+      
+      <div class="panel panel-default bg-white">
+        <div class="panel-heading top-bar bg-light p-0">
+          <div class="col-md-12 pl-0 pr-0 float-left">
+            <h6 class="panel-title fa-4x text-center w-100 float-left"><span style="color:rgba(0,0,0,.1)" class=" mt-3 fa fa-user-circle-o"></span>
+             <p class="w-100 float-left font-16 font-weight-normal text-black-50">Tutor</p>
+            </h6>
+          </div>
+        </div>
+        <div id="messagebody" class="panel-body msg_container_base bg-white border-top-0 border-bottom-0" style="border: solid 1px #ddd">
+          <div class="row msg_container base_sent text-left">
+              <div class="messages">
+                  <p>Hi</p>
+                </div>
+          </div>
+          <div class="row msg_container base_sent text-left">
+              <div class="messages msg_sent">
+                  <p>Can we chat here</p>
+                </div>
+          </div>
+          <div class="row msg_container base_sent">
+              <div class="messages msg_sent  text-right">
+                  <p>Good, Have a nice day.</p>
+                </div>
+          </div>
+          <div class="row msg_container base_sent">
+              <div class="messages msg_sent  text-right">
+                  <p>Good, Have a nice day.</p>
+                </div>
+          </div>
+          <div class="row msg_container base_sent">
+              <div class="messages msg_sent  text-right">
+                  <p>Good, Have a nice day.</p>
+                </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="panel-footer">
+        <div class="input-group">
+          <input id="btn-input" type="text" class="form-control input-sm chat_input border-0 pl-0 pr-0" placeholder="Write your message here..." required="required" />
+           
+          <div class="attachfile d-inline-block float-right position-relative">
+              <input class="input-file w-auto"  id="my-file" type="file" />
+              <label tabindex="0" for="my-file" style="right:0" class="input-file-trigger bg-white text-dark pr-0 w-100"><i class="fa fa-paperclip"></i></label>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- video chat plugin section finish -->
 
 <!-- dispute popup section starts -->
 <div id="dispute" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade bd-example-modal-md">
@@ -421,7 +454,7 @@
              e || (e = this.options.rating);
              if (e) {
                  for (t = n = 0, i = e - 1; 0 <= i ? n <= i : n >= i; t = 0 <= i ? ++n : --n) {
-                     this.$el.find("span").eq(t).removeClass("fa-star-0").addClass("fa-star")
+                     this.$el.find("span").eq(t).removeClass("fa-star-o").addClass("fa-star")
                  }
              }
              if (e && e < 5) {
@@ -462,11 +495,88 @@ $(function(){
     ratingsField.val(value);
   });
 });
+ // video chat js herer
+
+ $(document).on('click', '.panel-heading span.icon_minim', function (e) {
+    var $this = $(this);
+    if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.removeClass('glyphicon-minus').addClass('glyphicon-plus');
+    } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).on('focus', '.panel-footer input.chat_input', function (e) {
+    var $this = $(this);
+    if ($('#minim_chat_window').hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $('#minim_chat_window').removeClass('panel-collapsed');
+        $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).on('click', '#new_chat', function (e) {
+    var size = $( ".chat-window:last-child" ).css("margin-left");
+     size_total = parseInt(size) + 400;
+    alert(size_total);
+    var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
+    clone.css("margin-left", size_total);
+});
+$(document).on('click', '.icon_close', function (e) {
+    //$(this).parent().parent().parent().parent().remove();
+    $( "#chatbox" ).hide();
+});
+
+// send function start
+
+function send(){
+	var chat = $("#btn-input").val(); 
+var dt = new Date();
+var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+
+if (chat =="") {
+    alert('Enter Message');
+} else
+{
+var body =                       '<div class="row msg_container base_sent">' +
+						'<div class="w-100 float-left">' +
+                            '<div class="messages msg_sent">' +
+                                '<p>'+ chat + '</p>'+
+                               
+                            '</div>' +
+                        '</div>' +
+                        
+					'</div>';
+}
+$(body).appendTo("#messagebody");
+$('#btn-input').val('');
+$("#messagebody").animate({ scrollTop: $("#messagebody")[0].scrollHeight}, 'slow');
+}
+
+
+// send function end
+
+
+
+
+$( "#btn-chat" ).click(function() {
+send()
+});
+
+$('#btn-input').keypress(function (e) {
+  if (e.which == 13) {
+    send()
+  }
+});
+
+
+
+
 
 	});
 </script>   
- <style>
-   
- </style>
+ 
 </body>
 </html>
