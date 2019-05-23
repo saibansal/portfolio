@@ -1,0 +1,210 @@
+/* Sass Document */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Signika:300,400,600,700&display=swap'); 
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Signika', sans-serif;
+
+$signika : 'Signika', sans-serif;
+$opensans : 'Open Sans', sans-serif;
+$primary-color: #12426a;
+$white-text: #fff;
+$blueText: #284959;
+$bluebackground: #284959;
+
+$break-xs: 575px;
+$break-sm: 767px;
+$break-lg: 992px;
+$break-large: 1201px;
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 14px;
+	color:#333;
+	font-family: 'Open Sans', sans-serif;
+	header{
+		background: #a7e69e; /* Old browsers */
+		background: -moz-linear-gradient(top,  #a7e69e 0%, #93e088 1%, #96e08a 26%, #96e08a 99%, #94e088 99%, #a9e69f 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #a7e69e 0%,#93e088 1%,#96e08a 26%,#96e08a 99%,#94e088 99%,#a9e69f 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #a7e69e 0%,#93e088 1%,#96e08a 26%,#96e08a 99%,#94e088 99%,#a9e69f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7e69e', endColorstr='#a9e69f',GradientType=0 ); /* IE6-9 */
+		float: left;
+		width:100%;
+		padding: 2rem 0;
+		text-align: center;
+		a{
+			float: left;
+			width: 100%;
+		}
+	}
+	.form-section{
+		background-image : url(../images/form-section-bg.jpg);
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 2rem 0;
+		.form-left{
+			@media screen and (max-width: $break-lg) {
+				padding-top:0 !important; 
+				padding-bottom: 10px!important;
+
+			}
+			h4{
+				font-size: 36px;
+				font-weight: 700;
+				margin-bottom:20px;
+				margin-top:10rem ;
+				@media screen and (max-width: $break-lg) {
+					margin-top:0; 
+					font-size: 20px;
+					line-height: 2rem;
+				}
+			}
+			h5{
+				font-size: 24px;
+				line-height: 2rem;
+				font-weight: normal; 
+				margin-bottom:20px; 
+				@media screen and (max-width: $break-sm) {
+					font-size: 16px;
+				}
+				
+			}
+		}
+		.registration-form{
+			border:solid 13px #1c272e;
+			h1{
+				font-family: $signika;
+				font-size: 24px;
+				color:#002b46;
+			}
+			label{ 
+				color:$blueText;
+				font-weight: 600;
+				font-size: 15px;
+				margin-bottom: 2px;
+			}
+			input, select, textarea{
+				border:solid 1px #9ca1a1;
+				background-color:#f7f7f7;
+				border-radius: 0;
+				padding:12px;
+				font-size: 14px;
+				color:#242424;
+				font-weight: 600;
+			}
+			select{
+				padding: 0 12px;
+				background-image: url(../images/select-down-arrow.png);
+				background-position: 97% center;
+				background-repeat: no-repeat;
+				background-size: 13px 9px;
+			}
+			textarea{
+				padding: 6px 12px;
+				resize: none;
+			}
+			button{
+				background: $bluebackground !important;
+				padding:.7rem 1.8rem;
+				color:$white-text;
+				font-weight: 600;
+				font-size: 17px;
+				border-radius: 10px
+			}
+		}
+	}
+
+	.punch-line{
+		background-image: url(../images/punch-line-bg.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-size: 30px;
+		color: $white-text;
+		padding:7rem 0;
+		line-height: 3rem;
+		@media screen and (max-width: $break-sm) {
+			padding:4rem 0;
+			font-size: 25px;
+			line-height: 2.5rem;
+
+		  }
+	}
+	.services{
+		padding: 3rem 0;
+		.card{
+			border:0;
+			text-align: center;
+			.card-body{
+				float: left;
+				width: 100%;
+			}
+			p{
+				margin-bottom: 7px; 
+			}
+			h5{
+				color:$primary-color;
+				font-style: italic;
+				font-weight: 400;
+				font-size: 18px;
+				float: left;
+				width:100%;
+				margin-bottom:0;
+				@media screen and (max-width: $break-sm) {
+					font-size: 16px;
+				  }
+
+				br{
+					@media screen and (max-width: $break-sm) {
+						display: none;
+					  }
+				}
+			}
+		}
+	}
+
+	footer{
+		background: #99e290; /* Old browsers */
+		background: -moz-linear-gradient(top,  #99e290 0%, #94df8a 0%, #94e088 1%, #94e088 100%, #9be391 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #99e290 0%,#94df8a 0%,#94e088 1%,#94e088 100%,#9be391 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #99e290 0%,#94df8a 0%,#94e088 1%,#94e088 100%,#9be391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99e290', endColorstr='#9be391',GradientType=0 ); /* IE6-9 */
+		float: left;
+		width: 100%;
+		padding:5rem 0;
+		text-align: center;
+		@media screen and (max-width: $break-sm) {
+			padding:3rem
+		}
+		h3{
+			font-size: 33px;
+			color:$white-text;
+			font-weight: 400;
+			line-height:2.5rem;
+			font-style: italic;
+			margin-bottom: 30px;
+			@media screen and (max-width: $break-sm) {
+				font-size: 22px;
+				line-height: 2rem;
+			}
+		}
+		h4{
+			font-size: 30px;
+			font-weight: 600;
+			font-style: italic;
+			color:$white-text;
+			font-family: $signika;
+			letter-spacing: 1px;
+			@media screen and (max-width: $break-sm) {
+				font-size: 22px;
+
+			}
+		}
+	}
+
+}

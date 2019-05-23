@@ -1,0 +1,238 @@
+/* Sass Document */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Signika:300,400,600,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body header {
+  background: #a7e69e;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#a7e69e), color-stop(1%, #93e088), color-stop(26%, #96e08a), color-stop(99%, #96e08a), color-stop(99%, #94e088), to(#a9e69f));
+  background: linear-gradient(to bottom, #a7e69e 0%, #93e088 1%, #96e08a 26%, #96e08a 99%, #94e088 99%, #a9e69f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7e69e', endColorstr='#a9e69f',GradientType=0 );
+  /* IE6-9 */
+  float: left;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+body header a {
+  float: left;
+  width: 100%;
+}
+
+body .form-section {
+  background-image: url(../images/form-section-bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  body .form-section .form-left {
+    padding-top: 0 !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+body .form-section .form-left h4 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 992px) {
+  body .form-section .form-left h4 {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 2rem;
+  }
+}
+
+body .form-section .form-left h5 {
+  font-size: 24px;
+  line-height: 2rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  body .form-section .form-left h5 {
+    font-size: 16px;
+  }
+}
+
+body .form-section .registration-form {
+  border: solid 13px #1c272e;
+}
+
+body .form-section .registration-form h1 {
+  font-family: "Signika", sans-serif;
+  font-size: 24px;
+  color: #002b46;
+}
+
+body .form-section .registration-form label {
+  color: #284959;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+body .form-section .registration-form input, body .form-section .registration-form select, body .form-section .registration-form textarea {
+  border: solid 1px #9ca1a1;
+  background-color: #f7f7f7;
+  border-radius: 0;
+  padding: 12px;
+  font-size: 14px;
+  color: #242424;
+  font-weight: 600;
+}
+
+body .form-section .registration-form select {
+  padding: 0 12px;
+  background-image: url(../images/select-down-arrow.png);
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  background-size: 13px 9px;
+}
+
+body .form-section .registration-form textarea {
+  padding: 6px 12px;
+  resize: none;
+}
+
+body .form-section .registration-form button {
+  background: #284959 !important;
+  padding: .7rem 1.8rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+body .punch-line {
+  background-image: url(../images/punch-line-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 30px;
+  color: #fff;
+  padding: 7rem 0;
+  line-height: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  body .punch-line {
+    padding: 4rem 0;
+    font-size: 25px;
+    line-height: 2.5rem;
+  }
+}
+
+body .services {
+  padding: 3rem 0;
+}
+
+body .services .card {
+  border: 0;
+  text-align: center;
+}
+
+body .services .card .card-body {
+  float: left;
+  width: 100%;
+}
+
+body .services .card p {
+  margin-bottom: 7px;
+}
+
+body .services .card h5 {
+  color: #12426a;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  body .services .card h5 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body .services .card h5 br {
+    display: none;
+  }
+}
+
+body footer {
+  background: #99e290;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#99e290), color-stop(0%, #94df8a), color-stop(1%, #94e088), color-stop(100%, #94e088), to(#9be391));
+  background: linear-gradient(to bottom, #99e290 0%, #94df8a 0%, #94e088 1%, #94e088 100%, #9be391 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99e290', endColorstr='#9be391',GradientType=0 );
+  /* IE6-9 */
+  float: left;
+  width: 100%;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  body footer {
+    padding: 3rem;
+  }
+}
+
+body footer h3 {
+  font-size: 33px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 2.5rem;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  body footer h3 {
+    font-size: 22px;
+    line-height: 2rem;
+  }
+}
+
+body footer h4 {
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff;
+  font-family: "Signika", sans-serif;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 767px) {
+  body footer h4 {
+    font-size: 22px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

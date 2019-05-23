@@ -2722,11 +2722,10 @@ textarea{
 .tab-sect li{
 	list-style: none;
 	float: left;
-	margin-right:10px;
 	position: relative;
 }
 .tab-sect li .badge{
-	padding:5px 9px
+	padding:5px 9px;
 }
 .tab-sect li i.fa-remove{
 	     position: absolute;
@@ -3149,3 +3148,98 @@ textarea{
  .white-board-navigation ul li.swatches:hover, .white-board-navigation ul li:hover ul li:hover, .white-board-navigation ul li.pencil-weight:hover{
 	 background-color:transparent;
  }
+ .tab-sect ul li a{
+	 padding:3px 10px;
+	 font-weight: normal;
+	 border-radius: 5px;
+ }
+
+ /*--------- faq starts ---------* */
+ .nav-tabs .nav-link.active:focus,  .nav-tabs .nav-link.active {
+	font-weight:normal;
+	color:#756af8  !important;
+	background-color: transparent;
+	border-bottom:3px solid #756af8 ;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+}
+.nav-tabs .nav-link{
+	flex: 0 0 0;
+	font-weight: normal;
+}
+.faq-section{
+	position: relative;
+	box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+	overflow: hidden;
+	margin-bottom: 2rem
+}
+.faq-section ul{
+	background: #f8f9fa;
+	width:100%;
+	height:100%;
+	left:-100%;
+	top:0%;
+	position: absolute;
+	padding:1rem;
+	list-style: none;
+	text-align: left;	
+	transition: top .5s ease-in-out, left .6s ease-in-out
+}
+
+.faq-section i{
+	color:#756af8 !important;
+	width:80px;
+	height: 80px;
+	display: inline-block;
+	border-radius: 50%;
+	background:rgba(117,106,248,.15);
+	line-height: 80px;
+	font-size: 2.3rem !important
+
+}
+.faq-section:hover ul{
+	/* top:0; */
+	left: 0;
+	}
+.faq-section ul li{
+	float: left;
+	width: 100%;
+}
+
+.faq-section ul li a{
+	float: left;
+	width: 100%;
+	padding:5px 10px;
+	font-weight: 400
+}
+.faq-section ul li a i{
+	height:auto;
+	width:auto;
+	line-height: normal;
+	font-size: 16px !important;
+	background: transparent;
+}
+.faq-content .card-header h5 a{
+	float: left;
+	width: 100%;
+}
+.faq-content [data-toggle="collapse"]:after {
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		content: "\f054";
+		transform: rotate(90deg) ;
+		transition: all linear 0.25s;
+		float: right;
+		}   
+.faq-content [data-toggle="collapse"].collapsed:after {
+		transform: rotate(0deg) ;
+	}
+	.faq-section h6{
+		color:rgba(0,0,0,.7)
+	}
+
+	

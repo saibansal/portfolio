@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html ng-app="myApp" ng-controller="AppCtrl" lang="en">
   <head>
@@ -107,86 +108,123 @@
     <div class="col-md-12 mt-5 pt-5 mb-3 pb-5">
       <div class="container">
         <div class="search-container mt-3 p-4 col-md-12">
-          <!-- top tab starts -->
-          <div class="detail-tab-wizard col-md-12  mb-3 text-center">
-            <div class="row">
-              <a class="col">View Question</a>
-              <a class="col">Matched Teachers</a>
-              <a class="col current">Review Proposals(3)</a>
-              <a class="col"> Hire Teacher(5)</a>
-            </div>
-          </div>
-          <!-- top tab finsih -->
+           
 
           <!-- matched teacher listing starts -->
             <div class="w-100 float-right pt-3 pb-3">
-              <h3 class="page-item">Review Proposal <span class="badge badge-info">15</span> </h3>
+              <h3 class="page-item">Transaction  History
+                  <span class="float-right"> Balance : $0.00</span>
+                  <span class="float-right">
+                    <button class="btn btn-info mr-3"> <i class="fa fa-download"></i> Download CSV  </button>
+                  </span> 
+                    
+                  </h3>
               <!-- teacher listing section starts -->
               <div class="w-100 text-center teacher-list py-4 float-left">
                 <div class="row">
-                  <!-- first teacer section starts -->
-                  <div class="col-12 col-sm-12 col-md-12 mb-2">
-                    <div class="card mb-3 bg-light rounded-lg card p-3 position-relative">
-                      <div class="row">
-                        <div class="col-md-2"> <img src="images/teacher.png" class="card-img-top" alt="..."> </div>
-                        <div class="col-md-8 text-left pl-0">
-                          <div class="card-body p-0 ">
-                            <h5 class="card-title pt-0">Proff. Atya Chala Cathy</h5>
-                            <p class="card-text mb-0">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                            </p>
-                            <div class="card-text hourly-rate mb-0">
-                              <div class="row">
-                                <span class="col-md-4">$ 7 /hr</span>
-                                <span class="col-md-4">100k earned</span>
-                                <span class="col-md-4"><i class="fa fa-map-marker"></i> India</span>
-                              </div>   
-                            </div>
-                            <p class="card-text selected-topics mt-3 mb-2">
-                              <em class="alert-info pl-2 pr-2 pt-1 pb-1 rounded-lg">Algebra</em>
-                              <em class="alert-info pl-2 pr-2 pt-1 pb-1 rounded-lg"> Trigonometry</em>
-                              <em class="alert-info pl-2 pr-2 pt-1 pb-1 rounded-lg"> Maths</em>
-                            </p>
-                            <p class="card-text mt-1">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s <a href="#">View More</a>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="row">
-                            <div class="col-md-12 btn-group-sm mb-3">  
-                              <button type="button" class="bg-success p-2 border-0 rounded-lg text-white w-100" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Get Support">
-                                <i class="button__icon fa mr-1 fa-thumbs-o-up"></i> Accept
-                              </button>
-                            </div>
+                  
+                  <!-- transaction history starts -->
+                  <div class="col-md-12">
+                    <div class="table-responsive">
+                      <table id="mytable" class="table text-left table-bordred table-striped">
+                        <thead>
+                          <th>Date</th>
+                          <th>Description</th>
+                          <th>Teacher</th>
+                          <th>Amount</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>16/02/2019</td>
+                            <td>Paid from MasterCard 0403</td>
+                            <td>Ravi Bhushan</td>
+                            <td>$ 1000.00</td>
+                          </tr>
 
-                            <div class="col-md-12 btn-group-sm mb-3">  
-                                <button type="button" class="bg-danger p-2 border-0 rounded-lg text-white w-100" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Get Support">
-                                  <i class="button__icon fa mr-1 fa-thumbs-o-down"></i> Reject
-                                </button>
-                              </div>
-                              <div class="col-md-12 btn-group-sm mb-3">  
-                                <button type="button" class="bg-danger p-2 border-0 rounded-lg text-white w-100" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Get Support">
-                                  <i class="button__icon fa mr-1 fa fa-paperclip"></i> 5 Files Download
-                                </button>
-                              </div>
-                            
-                          </div>
-                        </div>
-                      </div>
+                          <tr>
+                              <td>16/02/2019</td>
+                              <td>Paid from MasterCard 0403</td>
+                              <td>Ravi Bhushan</td>
+                              <td>$ 1000.00</td>
+                            </tr>
+                            <tr>
+                                <td>16/02/2019</td>
+                                <td>Paid from MasterCard 0403</td>
+                                <td>Ravi Bhushan</td>
+                                <td>$ 1000.00</td>
+                              </tr>
+                              <tr>
+                                  <td>16/02/2019</td>
+                                  <td>Paid from MasterCard 0403</td>
+                                  <td>Ravi Bhushan</td>
+                                  <td>$ 1000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>16/02/2019</td>
+                                    <td>Paid from MasterCard 0403</td>
+                                    <td>Ravi Bhushan</td>
+                                    <td>$ 1000.00</td>
+                                  </tr>
+                                
+                                  <tr>
+                                      <td>16/02/2019</td>
+                                      <td>Paid from MasterCard 0403</td>
+                                      <td>Ravi Bhushan</td>
+                                      <td>$ 1000.00</td>
+                                    </tr></tbody>
+                                    <tr>
+                                        <td>16/02/2019</td>
+                                        <td>Paid from MasterCard 0403</td>
+                                        <td>Ravi Bhushan</td>
+                                        <td>$ 1000.00</td>
+                                      </tr>
+
+                                      <tr>
+                                          <td>16/02/2019</td>
+                                          <td>Paid from MasterCard 0403</td>
+                                          <td>Ravi Bhushan</td>
+                                          <td>$ 1000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16/02/2019</td>
+                                            <td>Paid from MasterCard 0403</td>
+                                            <td>Ravi Bhushan</td>
+                                            <td>$ 1000.00</td>
+                                          </tr>
+                                          <tr>
+                                              <td>16/02/2019</td>
+                                              <td>Paid from MasterCard 0403</td>
+                                              <td>Ravi Bhushan</td>
+                                              <td>$ 1000.00</td>
+                                            </tr>
+
+                      </table>
+                      <div class="clearfix"></div>
+                      
+                      <nav aria-label="Page navigation example">
+                          <ul class="pagination justify-content-end">
+                            <li class="page-item disabled">
+                              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">Next</a>
+                            </li>
+                          </ul>
+                        </nav>
+
                     </div>
                   </div>
-                  <!-- first teacher section finish -->
-                  
+                  <!-- transaction history finish -->
                 </div>
               </div>
               <!-- teacher listing section finsih -->
             </div>
           <!-- matched teacher listing finsih -->
+ 
+          </div>
       </div>
     </div>
     <!-- search listing content container finish -->
