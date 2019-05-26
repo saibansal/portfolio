@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css'>
-    <title>Math Instanc</title>
+    <title>Math Instant</title>
   </head>
   <body>
     <!-- header starts  -->
@@ -45,37 +45,37 @@
             >
               <div class="form-row">
                 <div class="col-12 col-sm-6 col-md-6 mb-3">
-                  <label for="validationFirstName">First name</label>
+                  <label for="validationFirstName">First Name *</label>
                   <input
                     type="text"
                     class="form-control"
                     id="validationFirstName"
-                    placeholder="First name"
+                    placeholder="First Name"
                     required
                   />
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 mb-3">
-                  <label for="validationLastName">Last name</label>
+                  <label for="validationLastName">Last Name *</label>
                   <input
                     type="text"
                     class="form-control"
                     id="validationLastName"
-                    placeholder="Last name"
+                    placeholder="Last Name"
                     required
                   />
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 mb-3">
-                  <label for="validationEmail">Email</label>
+                  <label for="validationEmail">Email *</label>
                   <input
                     type="email"
                     class="form-control"
                     id="validationEmail"
-                    placeholder="eg: someone@some.com"
+                    placeholder="example@domain.com"
                     required
                   />
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 mb-3">
-                  <label for="validationCountry">Country</label>
+                  <label for="validationCountry">Country *</label>
                   <input
                     type="text"
                     class="form-control"
@@ -87,18 +87,18 @@
               </div>
               <div class="form-row">
                 <div class="col-md-12 mb-3">
-                  <label for="validationHighestLevel">Highest level of education achieved</label>
+                  <label for="validationHighestLevel">Highest level of education achieved *</label>
                   <select class="custom-select" id="validationHighestLevel" required>
-                    <option value="">Select Highest level</option>
-                    <option value="1">No formal education</option>
+                    <option value="">Select Highest Level</option>
+                    <option value="1">No Formal Education</option>
                     <option value="2">Secondary Education</option>
-                    <option value="3">Bachelor's degree</option>
-                    <option value="4">Master's degree doctorate or higher</option>
+                    <option value="3">Bachelor's Degree</option>
+                    <option value="4">Master's Degree / Doctorate or Higher</option>
                   </select>
                 </div>
 
                 <div class="col-md-6 mb-3">
-                  <label for="validationFeildStudy">Field of study</label>
+                  <label for="validationFeildStudy">Field of study *</label>
                   <input
                     type="text"
                     class="form-control"
@@ -116,8 +116,8 @@
                     id="validationLevelMath"
                     required
                   >
-                    <option value="">Select Highest level</option>
-                    <option value="elementry">Elementry</option>
+                    <option value="">Select Highest Level</option>
+                    <option value="elementry">Elementary</option>
                     <option value="highSchool">High School</option>
                     <option value="higherEducation">Higher Education</option>
                   </select>
@@ -127,13 +127,12 @@
                   <label for="validationLevelMath"
                     >List your math topics of expertise.
                     <em
-                      >Please list your math topics of expertise separated by
-                      commas</em
+                      >Please list your math topics separated by commas *</em
                     >.</label
                   >
                   <textarea
                     class="form-control"
-                    placeholder="eg: Algebra, Trigonometry, Calculus, Discrete math"
+                    placeholder="Algebra, Trigonometry, Calculus, Discrete math"
                     required
                     id="exampleFormControlTextarea1"
                     rows="3"
@@ -170,7 +169,7 @@
                   <img src="images/workfromhome.jpg" alt="" class="img-fluid" />
                 </p>
                 <h5 class="card-title">
-                  Work from <br />
+                  Work From <br />
                   Home
                 </h5>
               </div>
@@ -184,7 +183,7 @@
                   <img src="images/choose-time.jpg" class="img-fluid" alt="" />
                 </p>
                 <h5 class="card-title">
-                  Choose yours <br />
+                  Choose Your  <br />
                   Hours
                 </h5>
               </div>
@@ -198,8 +197,8 @@
                   <img src="images/payour-icon.jpg" class="img-fluid" alt="" />
                 </p>
                 <h5 class="card-title">
-                  Choose yours <br />
-                  Hourly pay
+                  Choose Your <br />
+                  Hourly Pay
                 </h5>
               </div>
             </div>
@@ -210,9 +209,9 @@
     <!-- three icons section finsih -->
 
     <footer>
-        <div class="col-sm-12 col-md-8 offset-sm-0 offset-md-2">
+        <div class="col-12 col-sm-12 col-md-8 offset-0 offset-sm-0 offset-md-2">
             <h3 class="wow fadeInDown" data-wow-delay="0.1s">MathInstant is the future of online math tutoring. We are an innovative platform connecting students with quality math support.</h3>            
-            <h4 class="wow fadeInUp" data-wow-delay="0.2s">Platform release date scheduled for September 2019</h4>
+            <h4>"Platform release date scheduled for September 2019"</h4>
         </div>
     </footer>
 
