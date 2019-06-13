@@ -34,7 +34,7 @@ body header a {
 
 body .form-section {
   background-image: url(../images/form-section-bg.jpg);
-  background-position: center top;
+  background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2rem 0;

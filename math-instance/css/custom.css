@@ -3223,8 +3223,10 @@ textarea{
 .faq-content .card-header h5 a{
 	float: left;
 	width: 100%;
+	font-size: 16px;
+	font-weight: 400
 }
-.faq-content [data-toggle="collapse"]:after {
+.faq-content [data-toggle="collapse"]:before {
 			font: normal normal normal 14px/1 FontAwesome;
 			font-size: inherit;
 			text-rendering: auto;
@@ -3233,9 +3235,12 @@ textarea{
 		content: "\f054";
 		transform: rotate(90deg) ;
 		transition: all linear 0.25s;
-		float: right;
+		float: left ;
+		margin-right:8px;
+		margin-top:4px;
+		font-size: 12px;
 		}   
-.faq-content [data-toggle="collapse"].collapsed:after {
+.faq-content [data-toggle="collapse"].collapsed:before {
 		transform: rotate(0deg) ;
 	}
 	.faq-section h6{
@@ -3243,3 +3248,19 @@ textarea{
 	}
 
 	
+	.fix{
+		position: fixed;
+		z-index: 10;
+	}
+	#faq-sidebar{
+		box-shadow:1px 10px 16px rgba(0,0,0,0.2)
+	}
+	#faq-sidebar ul li{
+		float: left;
+		width:100%;
+		text-align: left;
+	}
+	#faq-sidebar ul li.nav-item a.nav-link{
+		font-weight: normal;
+		font-size: 16px;
+	}

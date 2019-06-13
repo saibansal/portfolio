@@ -278,6 +278,15 @@
     </div>
     <!-- search listing content container finish -->
     
+    	<!-- Ask your question -->
+	<div class="askYourQuestion w-100 float-left">
+		<div class="container">
+			<h2>Still need any kind of help?</h2>
+			<a href="" class="btn btn-primary" data-toggle="modal" data-target="#askquestion-modal">Contact Us</a>
+		</div>
+	</div>
+	<!-- /Ask your question -->
+
     <!-- footer -->
 	<footer class="main-footer bg-light w-100 float-left">
       <div class="container">
@@ -483,96 +492,6 @@
     <script src="vendor/lightbox2/js/lightbox.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/front.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        var text_max = 1000;
-        $("#textarea_counter-modal").html("0" + "/1000");
-
-        $("#question-enter").keyup(function() {
-          var text_length = $("#question-enter").val().length;
-          var text_remaining = text_max - text_length;
-
-          $("#textarea_counter-modal").html(text_length + "/1000");
-        });
-      });
-
-      function readURL(input) {
-        if (input.files && input.files[0]) {
-          var reader = new FileReader();
-
-          reader.onload = function(e) {
-            //$('.image-upload-wrap').hide();
-
-            $(".file-upload-image").attr("src", e.target.result);
-            $(".file-upload-content").show();
-
-            $(".image-title").html(input.files[0].name);
-          };
-
-          reader.readAsDataURL(input.files[0]);
-        } else {
-          removeUpload();
-        }
-      }
-
-      function removeUpload() {
-        $(".file-upload-input").replaceWith($(".file-upload-input").clone());
-        $(".file-upload-content").hide();
-        $(".image-upload-wrap").show();
-      }
-      $(".image-upload-wrap").bind("dragover", function() {
-        $(".image-upload-wrap").addClass("image-dropping");
-      });
-      $(".image-upload-wrap").bind("dragleave", function() {
-        $(".image-upload-wrap").removeClass("image-dropping");
-      });
-    </script> 
-    <script type="text/javascript">
-      // for show hide on click edit profile
-
-      document.querySelector("html").classList.add("js");
-
-      var fileInput = document.querySelector(".input-file"),
-        button = document.querySelector(".input-file-trigger"),
-        the_return = document.querySelector(".file-return");
-
-      button.addEventListener("keydown", function(event) {
-        if (event.keyCode == 13 || event.keyCode == 32) {
-          fileInput.focus();
-        }
-      });
-      button.addEventListener("click", function(event) {
-        fileInput.focus();
-        return false;
-      });
-      fileInput.addEventListener("change", function(event) {
-        the_return.innerHTML = this.value;
-      });
-    </script>
-    <script>
-      $(document).ready(function() {
-        $('input[type="radio"]').click(function() {
-          var inputValue = $(this).attr("value");
-          var targetBox = $("." + inputValue);
-          $(".box")
-            .not(targetBox)
-            .hide();
-          $(targetBox).show();
-        });
-
-      $(".filter-_btn").click(function(){
-         $(".filter-_options").slideToggle();
-      }); 
-
-    });
-
-    </script>
- <script>
-  $(document).ready(function() {
-    $(".tax-wrap input").focus(function() {
-      $('.hide-tax').show('slow');    
-    });
- });
- </script>
+    
 </body>
 </html>
