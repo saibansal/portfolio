@@ -1,0 +1,118 @@
+body {
+  background: #d3e1ec;
+}
+body nav {
+  background: #f5f6f7;
+  padding: 18px 0;
+  border-bottom: solid 10px #9eb6c8;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+@media only screen and (max-width : 767px) {
+  body nav {
+    position: relative !important;
+  }
+}
+body nav ul {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0;
+}
+body nav ul li {
+  list-style: none;
+}
+@media only screen and (max-width : 767px) {
+  body nav ul li {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+  }
+}
+body nav ul li:first-child {
+  float: left;
+}
+body nav ul li:last-child {
+  float: right;
+}
+body nav ul li a {
+  float: left;
+}
+@media only screen and (max-width : 767px) {
+  body nav ul li a {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+  }
+}
+body main {
+  height: 100vh;
+  float: left;
+  width: 100%;
+}
+@media only screen and (max-width : 767px) {
+  body main .mt-5 {
+    margin-top: 0 !important;
+  }
+  body main .pt-0 {
+    padding-top: 0 !important;
+  }
+}
+body main .curve-image {
+  position: relative;
+  height: 100vh;
+  background: url(../images/imge.png) left top no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+@media only screen and (max-width : 767px) {
+  body main .curve-image {
+    height: 300px;
+  }
+}
+@media only screen and (max-width : 992px) {
+  body main .curve-image {
+    height: 100vh;
+  }
+}
+body main .curve-image svg {
+  float: right;
+  height: 100vh;
+  position: absolute;
+  top: -3px;
+  right: -2px;
+}
+@media only screen and (max-width : 767px) {
+  body main .curve-image svg {
+    display: none;
+  }
+}
+body main .card {
+  background: transparent;
+  border: 0;
+}
+body main .card .card-body {
+  padding: 10px 0 0 0;
+  color: #055a7e;
+  font-family: "Roboto Slab", serif;
+  font-size: 22px;
+}
+body main .card .category-icon {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+body main .card .category-icon img {
+  width: 98%;
+}
+
+/*# sourceMappingURL=custom.css.map */

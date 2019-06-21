@@ -3264,12 +3264,3 @@ textarea{
 		font-weight: normal;
 		font-size: 16px;
 	}
-	.assign-teacher{
-		border-bottom: solid 1px #e4e9ec;
-		/* border-top:solid 1px #000; */
-		padding:7px 0;
-		font-size: 15px;
-	}
-	.assign-teacher:last-child{
-		border-bottom: 0;
-	}
