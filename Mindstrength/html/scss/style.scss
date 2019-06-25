@@ -7,8 +7,6 @@ $break-large: 1200px;
 $information-phone: "only screen and (max-width : 767px)";
 $information-tablet: "only screen and (max-width : 992px)";
 
-
-
 body {
   background: $bodybg;
   nav {
@@ -16,12 +14,12 @@ body {
     padding: 18px 0;
     border-bottom: solid 10px #9eb6c8;
     position: fixed !important;
-    top:0;
-    left:0;
-    // display: none;
-    z-index:1;
+    top: 0;
+    left: 0;
+    z-index: 1;
     @media #{$information-phone} {
-        position: relative !important;
+      position: relative !important;
+      padding: 0;
     }
     ul {
       float: left;
@@ -31,88 +29,120 @@ body {
       li {
         list-style: none;
         @media #{$information-phone} {
-            width:100%;
-            padding:5px 0;
-            text-align: center;            
+          width: 50%;
+          padding: 5px 0;
+          text-align: center;
         }
         &:first-child {
           float: left;
+          @media #{$information-phone} {
+            text-align: left;
+          }
+          a{
+            @media #{$information-phone}{
+              text-align: left;
+            }
+          }
         }
         &:last-child {
           float: right;
+          @media #{$information-phone} {
+            text-align: right;
+          }
+          a{
+            @media #{$information-phone}{
+              text-align:right;
+            }
+          }
         }
         a {
           float: left;
           @media #{$information-phone} {
-              width:100%;
-              padding:5px 0;
-              text-align: center;
+            width: 100%;
+            padding: 5px 0;
+            text-align: center;
+          }
+          img{
+            @media #{$information-phone} {
+              max-width:80%;
             }
+          }
         }
       }
     }
   }
-  main{
-      height: 100vh;
-      float: left;
-      width: 100%;
-      @media #{$information-phone} {
-          .mt-5{
-              margin-top: 0!important;
-            }
-            .pt-0{
-                padding-top: 0 !important
-            }
-        }
-      .curve-image{
-          position: relative;
-          height:100vh;
-          background: url(../images/imge.png) left top no-repeat;
-          background-size:cover;
-          padding: 0;
-          @media #{$information-phone} {
-              height:300px;
-          }
-          @media #{$information-tablet} {
-            height:100vh;
-        }
-
-          svg{
-              float: right;
-              height: 100vh;
-              position: absolute;
-              top:-3px;
-              right:-2px;
-
-              @media #{$information-phone} {
-                display: none
-              }
-          }
+  main {
+    height: 100vh;
+    float: left;
+    width: 100%;
+    @media #{$information-phone} {
+      .mt-5 {
+        margin-top: 0 !important;
       }
-      .card{
-          background:transparent;
-          border:0;
-          .card-body{
-              padding:10px 0 0 0;
-              color:#055a7e;
-              font-family: 'Roboto Slab', serif;
-              font-size: 22px;
-          }
-          .category-icon{
-              width:200px;
-              height: 200px;
-              background:#fff;
-              border-radius: 50%;
-              padding:20px;
-              text-align: center;
-              display: flex;
-              align-items: center;
-              flex-wrap: wrap;
-              margin: auto;
-              img{
-                  width:98%
-              }
-          }
+      .pt-0 {
+        padding-top: 0 !important;
       }
     }
+    .icon-section {
+      margin-bottom: 30px;
+      @media #{$information-phone} {
+        margin-bottom: 30px;
+      }
+    }
+    .curve-image {
+      position: relative;
+      height: 100vh;
+      padding: 0;
+      @media #{$information-phone} {
+        height: 300px;
+        background: url(../images/imge.png) left top no-repeat;
+        background-size: cover;
+      }
+      @media #{$information-tablet} {
+        height: 100vh;
+        background: url(../images/imge.png) left top no-repeat;
+        background-size: cover;
+      }
+
+      svg {
+        float: right;
+        height: 100vh;
+        position: absolute;
+        top: -3px;
+        right: -2px;
+        @media #{$information-phone} {
+          display: none;
+        }
+
+        @media #{$information-tablet} {
+          display: none;
+        }
+      }
+    }
+    .card {
+      background: transparent;
+      border: 0;
+      .card-body {
+        padding: 10px 0 0 0;
+        color: #055a7e;
+        font-family: "Roboto Slab", serif;
+        font-size: 22px;
+      }
+      .category-icon {
+        width: 200px;
+        height: 200px;
+        background: #fff;
+        border-radius: 50%;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        img {
+          width: 98%;
+        }
+      }
+    }
+  }
 }

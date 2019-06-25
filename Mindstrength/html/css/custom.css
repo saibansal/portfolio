@@ -13,6 +13,7 @@ body nav {
 @media only screen and (max-width : 767px) {
   body nav {
     position: relative !important;
+    padding: 0;
   }
 }
 body nav ul {
@@ -26,7 +27,7 @@ body nav ul li {
 }
 @media only screen and (max-width : 767px) {
   body nav ul li {
-    width: 100%;
+    width: 50%;
     padding: 5px 0;
     text-align: center;
   }
@@ -34,8 +35,28 @@ body nav ul li {
 body nav ul li:first-child {
   float: left;
 }
+@media only screen and (max-width : 767px) {
+  body nav ul li:first-child {
+    text-align: left;
+  }
+}
+@media only screen and (max-width : 767px) {
+  body nav ul li:first-child a {
+    text-align: left;
+  }
+}
 body nav ul li:last-child {
   float: right;
+}
+@media only screen and (max-width : 767px) {
+  body nav ul li:last-child {
+    text-align: right;
+  }
+}
+@media only screen and (max-width : 767px) {
+  body nav ul li:last-child a {
+    text-align: right;
+  }
 }
 body nav ul li a {
   float: left;
@@ -45,6 +66,11 @@ body nav ul li a {
     width: 100%;
     padding: 5px 0;
     text-align: center;
+  }
+}
+@media only screen and (max-width : 767px) {
+  body nav ul li a img {
+    max-width: 80%;
   }
 }
 body main {
@@ -60,21 +86,31 @@ body main {
     padding-top: 0 !important;
   }
 }
+body main .icon-section {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width : 767px) {
+  body main .icon-section {
+    margin-bottom: 30px;
+  }
+}
 body main .curve-image {
   position: relative;
   height: 100vh;
-  background: url(../images/imge.png) left top no-repeat;
-  background-size: cover;
   padding: 0;
 }
 @media only screen and (max-width : 767px) {
   body main .curve-image {
     height: 300px;
+    background: url(../images/imge.png) left top no-repeat;
+    background-size: cover;
   }
 }
 @media only screen and (max-width : 992px) {
   body main .curve-image {
     height: 100vh;
+    background: url(../images/imge.png) left top no-repeat;
+    background-size: cover;
   }
 }
 body main .curve-image svg {
@@ -85,6 +121,11 @@ body main .curve-image svg {
   right: -2px;
 }
 @media only screen and (max-width : 767px) {
+  body main .curve-image svg {
+    display: none;
+  }
+}
+@media only screen and (max-width : 992px) {
   body main .curve-image svg {
     display: none;
   }

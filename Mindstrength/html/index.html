@@ -24,22 +24,43 @@
     <main role="main" class="col-md-12 float-left">
       <div class="row">
         <!-- left section starts -->
-         <div class="col-md-5 float-left curve-image">
-            <svg 
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="320px" height="100%">
-               <path fill-rule="evenodd"  fill="#d3e1ec"
-                d="M62.000,0.000 C62.000,0.000 -121.494,210.868 147.000,424.000 C226.038,486.740 473.096,609.150 170.000,866.000 C140.942,890.625 319.500,866.000 319.500,866.000 L319.500,2.000 L62.000,0.000 Z"/>
-               </svg>
+         <div class="col-12 col-sm-12 col-md-12 col-lg-5 float-left curve-image">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="651px" height="838px">
+    <defs>
+        <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" 
+            width="651px" height="838px">
+        <feOffset in="SourceAlpha" dx="-7.314" dy="-6.82" />
+        <feGaussianBlur result="blurOut" stdDeviation="5.477" />
+        <feFlood flood-color="rgb(1, 80, 50)" result="floodOut" />
+        <feComposite operator="atop" in="floodOut" in2="blurOut" />
+        <feComponentTransfer>
+        <feFuncA type="linear" slope="0.28" />
+        </feComponentTransfer>
+        <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+        </feMerge>
+        </filter>
+      <clipPath id="clip">
+      <path
+        d="M325.482,36.000 C325.482,36.000 251.567,261.626 539.526,431.976 
+        C604.104,470.179 726.372,630.863 483.087,815.000 L36.000,815.000 
+         L36.000,38.776 L325.482,36.000 Z" />
+        </clipPath>
+        </defs>
+        <g filter="url(#Filter_0)">
+     <image xlink:href="images/imge.png" clip-path="url(#clip)"/>  
+      </g>
+    </svg>
          </div>
         <!-- left section finish -->
         <!-- right section starts -->
-        <div class="col-md-7 float-left position-relative">
-            <div class="col-md-12 mt-5 pt-5">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 float-left position-relative">
+            <div class="col-md-12 mt-5 pt-5"> 
                 <div class="row">
                     <div class="w-100 float-left text-center mt-0 pt-5">
-                        <div class="card text-center col-12 col-sm-12 offset-0 offset-sm-0 col-md-4 offset-md-4">
+                        <div class="card text-center col-12 icon-section col-sm-12 offset-0 offset-sm-0 col-md-4 offset-md-4">
                             <span class="category-icon"> <img src="images/learner-experience.png" class="" alt="..."> </span>
                             <div class="card-body">
                                 <h5 class="card-title">Learner Experience</h5>
@@ -48,21 +69,19 @@
                     </div>
 
                     <div class="w-100 float-left text-center">
-                        <div class="card text-center col-12 col-sm-12 col-md-6 float-left">
+                        <div class="card text-center col-12 col-sm-12 icon-section col-md-6 float-left">
                             <span class="category-icon"> <img src="images/content-design.png" class="" alt="..."> </span>
                             <div class="card-body">
                                 <h5 class="card-title">Content Design System</h5>
                             </div>
                         </div>
-                        <div class="card text-center col-md-6 float-left">
+                        <div class="card text-center col-12 col-sm-12 col-md-6 icon-section float-left">
                             <span class="category-icon"> <img src="images/skyview.png" class="" alt="..."> </span>
                             <div class="card-body">
                                 <h5 class="card-title">Sky View</h5>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
