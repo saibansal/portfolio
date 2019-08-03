@@ -1,0 +1,17 @@
+Fonts used in this design:
+
+Font: Bebas
+Author: Flat-it
+Url: http://www.fontsquirrel.com/fonts/bebas
+
+Font: Montserrat
+Author: Julieta Ulanovsky
+Url: http://www.fontsquirrel.com/fonts/montserrat
+
+Font: Nexa
+Author: Fontfabric
+Url: http://www.fontsquirrel.com/fonts/nexa
+
+Font: Roboto
+Author: Christian Robertson
+Url: http://www.fontsquirrel.com/fonts/roboto

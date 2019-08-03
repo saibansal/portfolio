@@ -1,0 +1,14 @@
+
+Resources used in this design;
+
+Designer: rawpixel,
+Url:https://pixabay.com/es/photos/adulto-descanso-negocio-cauc%C3%A1sica-2449725/;
+
+Designer: FirmBee,
+Url:https://pixabay.com/es/photos/oficina-negocio-contador-620822/;
+
+Designer: rawpixel,
+Url:https://pixabay.com/es/photos/equipo-la-formaci%C3%B3n-de-equipos-%C3%A9xito-3373638/;
+
+Designer: Pexels,
+Url:https://pixabay.com/es/photos/edificios-ciudad-paisaje-urbano-1869425/;
