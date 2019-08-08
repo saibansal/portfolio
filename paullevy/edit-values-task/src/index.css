@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; 
+}
+
+
+ul{
+  padding:0
+}
+ul li{
+  padding:5px 10px;
+  list-style: decimal;
+  list-style-position: inside;
+}
+.task-completed{
+  /* background:greenyellow; */
+}
+.not-completed{
+  /* background:red; */
+}
+button{
+  margin-left:15px;
+  display: inline-block;
+}
