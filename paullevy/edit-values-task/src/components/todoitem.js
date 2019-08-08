@@ -31,11 +31,11 @@ class TodoItem extends React.Component {
           this.props.clickHandler(this.props.index)
         }}
  
-          className={this.props.details.completed ? 'task-completed' : 'not-completed'}
+          // className={this.props.details.completed ? 'task-completed' : 'not-completed'}
         >
-          {this.props.details.fname}
+          <span> {this.props.details.fname}</span>
            
- 
+          <div className="buttonsgroup">
           <button onClick={(evt) => {
             evt.stopPropagation();
             this.props.deleteTask(this.props.index)
@@ -47,17 +47,17 @@ class TodoItem extends React.Component {
             evt.stopPropagation();
             this.toggleState()
           }}>Edit </button>
- 
+ </div>
         </li> 
       )
   }
   renderForm (){
     return(
-      <form onSubmit={this.updateItem}> 
-        <input type="text" ref={(value) => {
+      <form className="update-form" onSubmit={this.updateItem}> 
+        <span> <input type="text" ref={(value) => {
           this.input = value
 
-        }} defaultValue={this.props.details.fname} />
+        }} defaultValue={this.props.details.fname} /></span>
         <button type="submit">Update</button>
         </form> 
     )
@@ -68,10 +68,7 @@ class TodoItem extends React.Component {
       <section>
         {
           isEditing ? this.renderForm () : this.renderitem()
-        }
-        
-     
-
+        }  
       </section>
     )
   }

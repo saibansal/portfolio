@@ -1,6 +1,7 @@
 import React from 'react';
 const TodoForm = (props) => {
     return (
+        <section className="addValueForm">
         <form onSubmit={props.addTask}>
             <input type="text" required autoFocus
                 value={props.currentTask}
@@ -14,6 +15,7 @@ const TodoForm = (props) => {
 
             <button type="submit">Add task</button>
         </form>
+        </section>
     )
 }
 export default TodoForm; 

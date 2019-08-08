@@ -13,7 +13,6 @@ class TodoList extends React.Component {
     this.state = {
       tasks: [],
       currentTask: ''
-
     }
   }
 
@@ -25,7 +24,6 @@ class TodoList extends React.Component {
       tasks
     })
   }
-
  
   updateTask(newValue) {
     this.setState({
@@ -41,6 +39,7 @@ class TodoList extends React.Component {
       fname: currentTask,
       completed: false
     })
+
     this.setState({
       tasks,
       currentTask: ''
@@ -50,24 +49,21 @@ class TodoList extends React.Component {
   editTask(index, newValue){
     var tasks=this.state.tasks;
     var task=tasks[index];
-
-    task['fname']=newValue;
-    
+    task['fname']=newValue;    
     this.setState({
       tasks
     })
   }
-
-
-
+  
   changeStatus(index) { 
     var tasks = this.state.tasks;
     var task = tasks[index];
-    task.complete d = !task.completed;
+    task.completed = !task.completed;
     this.setState({
       tasks
     })
   }
+
   render() {
     return (
       <section>
@@ -76,7 +72,7 @@ class TodoList extends React.Component {
           updateTask={this.updateTask}
           addTask={this.addTask}
         />
-
+        <div className="todolist">
         <ul>
           {
             this.state.tasks.map((task, index) => {
@@ -92,10 +88,9 @@ class TodoList extends React.Component {
             })
           }
         </ul>
-
+        </div>
       </section>
     )
   }
 }
-
 export default TodoList;
