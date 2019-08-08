@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700|Rubik:300,400,500,700&display=swap");
+@font-face {
+  font-family: "AktivGrotesk Regular";
+  src: url("../fonts/AktivGroteskregular.eot"); /* IE9*/
+  src: url("../fonts/AktivGroteskregular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/AktivGroteskregular.woff2") format("woff2"),
+    /* chrome、firefox */ url("../fonts/AktivGroteskregular.woff") format("woff"),
+    /* chrome、firefox */ url("../fonts/AktivGroteskregular..ttf") format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url("../fonts/AktivGroteskregular.svg#Aktiv Grotesk Regular")
+      format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "AktivGrotesk Bold";
+  src: url("../fonts/AktivGroteskBold.eot"); /* IE9*/
+  src: url("../fonts/AktivGroteskBold.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/AktivGroteskBold.woff2") format("woff2"),
+    /* chrome、firefox */ url("../fonts/AktivGroteskBold.woff") format("woff"),
+    /* chrome、firefox */ url("../fonts/AktivGroteskBold.ttf") format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url("../fonts/AktivGroteskBold.svg#Aktiv Grotesk Bold")
+      format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "AktivGrotesk Medium";
+  src: url("../fonts/c16b7f3c0832bc60d12dfeae0073d6d6.eot"); /* IE9*/
+  src: url("../fonts/c16b7f3c0832bc60d12dfeae0073d6d6.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/c16b7f3c0832bc60d12dfeae0073d6d6.woff2") format("woff2"),
+    /* chrome、firefox */ url("../fonts/c16b7f3c0832bc60d12dfeae0073d6d6.woff") format("woff"),
+    /* chrome、firefox */ url("../fonts/c16b7f3c0832bc60d12dfeae0073d6d6.ttf") format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../fonts/c16b7f3c0832bc60d12dfeae0073d6d6.svg#Aktiv Grotesk W01 Medium") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+	font-family: "AktivGrotesk Light";
+  src: url("../fonts/e6d74b86b1acaca5cc4800067427d62b.eot"); /* IE9*/
+  src: url("../fonts/e6d74b86b1acaca5cc4800067427d62b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/e6d74b86b1acaca5cc4800067427d62b.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/e6d74b86b1acaca5cc4800067427d62b.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/e6d74b86b1acaca5cc4800067427d62b.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/e6d74b86b1acaca5cc4800067427d62b.svg#Aktiv Grotesk W01 Light") format("svg"); /* iOS 4.1- */
+}
+
+
+html {
+  height: auto !important;
+}
+
+a {
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+.btn {
+  background: $primary-color;
+  border-color: $primary-color;
+  font-size: 13px;
+  padding: 10px 25px;
+  &:hover {
+    background: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
+}
+
+.flag-border {
+  background-image: url(../images/flag-border.png);
+  background-position: top left;
+  background-repeat: repeat-x;
+}
+
+.tri-color-border{
+	height: 9px;
+	background: #ffdd00;
+	border-top: solid 3px $primary-color;
+	border-bottom: solid 3px $secondary-color;
+	width: 100%;
+	position: relative;
+}
+ 
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+.height-equal-box {
+  height: 100%;
+  color: #fff;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.clear-both {
+  clear: both;
+}
+.load-page {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: $primary-color; 
+	position: fixed;
+	z-index: 1500;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	opacity: 1;
+	.loading-content {
+		overflow: hidden; 
+		color:#fff;
+		font-family: $rubik;
+		text-transform: uppercase;
+		font-size: 3rem;
+		position: absolute;
+		top:50%;
+		left:50%;  
+		text-align: center;
+		@include css3-prefix("transform", translate(-50%, -50%));
+		img{
+//			opacity: 0;
+			animation: logo-loader 3s;
+			-webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+		} 
+	}
+}
+
+.clear-both {
+  clear: both;
+	
+}
+header.sticky nav {
+  background-color: $secondary-color;
+  transition: all 0.3s ease-in-out;
+}
+.outer-content {
+  overflow: hidden;
+  width: 100%;
+  float: left;
+}
+.play-icon {
+  height: 70px;
+  width: 70px;
+  background: $primary-color;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+	@media #{$xs}{
+		top:40%;
+	}
+	&::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent #fff;
+    line-height: 0;
+    _border-color: #000000 #000000 #000000 #fff;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    margin-top: -7px;
+    margin-left: -3px;
+  }
+}
+// end common btn classes
+  
+@-webkit-keyframes logo-loader {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes logo-loader {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes logo-loader {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes logo-loader {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}  
