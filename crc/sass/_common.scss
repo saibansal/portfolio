@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,300,400,500&display=swap');
+@font-face {
+	font-family: 'myriad pro';
+	src: url('../fonts/myriad-pro-regular.eot');
+	src: local('../fonts/myriad-pro-regular'), 
+		url('../fonts/myriad-pro-regular.woff') format('woff'),
+		url('../fonts/myriad-pro-regular.ttf') format('truetype');
+}
+ @font-face {
+	font-family: 'myriad pro bold';
+	src: url('../fonts/Myriad_Pro_Bold.eot');
+	src: local('../fonts/Myriad_Pro_Bold'), 
+		url('../fonts/Myriad_Pro_Bold.woff') format('woff'),
+		url('../fonts/Myriad_Pro_Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'AndaleMono';
+	src: url('../fonts/andalemo.eot');
+	src: local('../fonts/andalemo'), 
+		url('../fonts/andalemo.woff') format('woff'),
+		url('../fonts/andalemo.ttf') format('truetype');
+}
+html {
+  height: auto !important;
+}
+body{
+	font-family: $myriad-pro;
+}
+a {
+  &:hover {
+    text-decoration: none !important;
+  }
+} 
+p{
+	font-size: 18px;
+	color:$primary-color; 
+	font-family: $myriad-pro;
+	line-height: 32px;                                  
+	@media #{$md}{
+		font-size: 12.72px;
+		line-height: 22px;
+	}
+	@media #{$sm}{
+		font-size: 15px;
+		font-family: $popins;
+		line-height: 29px;
+	}
+} 
+h1{
+	font-size: 55px;
+	font-weight: bold;
+	color:$primary-color;
+	position: relative;
+	width: 100%; 
+	font-weight: bold;
+	margin-bottom: 128px;
+	font-family:$myriad-bold;
+	@media #{$md}{
+		margin-bottom: 83px;
+		font-size: 39px;
+	}
+	@media #{$sm}{
+		font-size: 33px;
+		margin-top:12px !important;
+	}
+	&:before{
+		width:79px;
+		height: 3px;
+		background-color: $secondary-color;
+		content: '';
+		position: absolute;
+		bottom:-58px;
+		left:0; 
+		@media #{$md}{
+			bottom:-40px;
+			width: 56px;
+			margin-left: 0;
+		}
+		@media #{$sm}{
+			height: 5px;
+			width:80px;
+		}
+	 
+	}
+}
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+.height-equal-box {
+  height: 100%;
+  color: #fff;
+} 
+.outer-container{
+	float: left; 
+	width:100%;
+	overflow: hidden;
+}
+.row{
+	margin-left: 0;
+	margin-right: 0;
+}
+.content-section {
+	width:100%;
+	padding:83px 0;
+	position:relative;
+	@media #{$md}{
+		padding: 40px 0;
+	}
+	@media #{$sm}{
+		padding: 20px 0;
+	}
+	&:after{
+		@media #{$sm}{
+			display: none !important;
+		}
+	}
+}
+
+.container{
+	@media #{$very-large-desktop} {
+		max-width: 67%;
+		padding: 0;
+	}
+	@media #{$xl}{
+		max-width: 1483px;
+	}
+	@media #{$lg-width} {
+		max-width: 95%;
+		padding:0 0;
+	}
+	@media #{$md}{
+		max-width :695px;
+	}
+	@media #{$sm}{
+		max-width: 100%; 
+		padding: 0 13px;
+	}
+}
+
+ 

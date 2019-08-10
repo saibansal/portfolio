@@ -1,0 +1,555 @@
+.home-page{
+	clear: both;
+	margin-bottom: 54px;
+.learning-section{
+	position: relative;
+	&:after{
+		content: 'Learning';
+		color: rgba(12, 27, 81, 0.18);
+		font-size: 127px;
+		position: absolute;
+		bottom: 160px;
+		left: -11px;
+		font-family: $myriad-bold;
+		@media #{$md}{
+			font-size: 90px;
+			bottom: 41px;
+			left: auto;
+			right: 114px
+		}
+	}
+	.learning-content{
+		@media #{$md}{
+			padding-left:0
+		}
+	}
+	.learning-right{
+		background: url(../images/learning-image.jpg);
+  background-position: center center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 height: 637px;
+		@media #{$xl}{
+			padding-left: 95px
+		}
+		@media #{$lg}{
+			padding-left: 95px
+		}
+		@media #{$md}{
+			height: 284px;
+			margin-top: 80px;
+			border-left: 25px solid #fff;
+		}
+		@media #{$sm}{
+			height: 230px;
+			margin-top: 40px;
+			border-left: 0;
+		}
+	}
+	ul{
+		padding: 0;
+		@media #{$sm}{
+			margin-bottom: 0
+		}
+		li{
+			list-style: none;
+			margin-left:36px;
+			margin-right:36px;
+			display: inline-block;
+			margin-top:160px;
+			padding-bottom: 0px;
+			position: relative;
+			@media #{$md}{
+				margin-left: 25px;
+				margin-right: 25px;
+			}
+			&:first-child{
+				margin-left:0
+			}
+			&:last-child{
+				margin-right:0
+			}
+			&.active, &:hover{
+				a{ 
+					&:after{
+						width:79px;
+						height: 3px;
+						background-color: $secondary-color;
+						content: '';
+						position: absolute;
+						bottom:-10px;
+						left:50%;
+						margin-left: -40px;
+					}
+				}
+			}
+			a{
+				font-size: 22px;
+				font-weight: bold;
+				color:$primary-color;
+				float:left;
+				@media #{$md}{
+					font-size: 16px;
+				}
+				@media #{$sm}{
+					font-size: 18px;
+				}
+			}
+			@media #{$md}{
+				margin-top:54px;
+			}
+			
+			@media #{$sm}{
+				margin-top:25px;
+			}
+			
+		}
+	}
+}
+.enrollment-section{
+	h1{
+		margin-top: 21px;
+	}
+	.learning-content {
+		@media #{$md}{
+			padding-left:30px;
+		}
+//		@media #{$lg-width}{
+//			padding-left:30px;
+//		}
+		
+	}
+	.learning-right{
+		background:url(../images/enrolment-image.jpg);
+		background-size: cover;
+		background-position: center center;
+		height:600px;
+		@media #{$md}{
+			height: 261px;
+			margin-top:105px;
+			border-left:0px solid #fff;
+		}
+		@media #{$sm}{
+			height: 60vw;
+			margin-top: 40px;
+			border-left: 0;
+		}
+		
+	}
+	ul{
+		margin-top: 86px;
+		margin-bottom: 0;
+		@media #{$md}{
+			margin-top:30px;
+		}
+		@media #{$sm}{
+			margin-top:7px;
+		}
+		li{
+			margin: 0 15px;
+			@media #{$md}{
+				margin: 12px 15px;
+			}
+			@media #{$sm}{
+				margin: 15px 17px;
+			}
+			&:last-child{
+				@media #{$md}{
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	&:after{
+		top:64px;
+		right:0;
+		left: auto;
+		content: 'Enro';
+		@media #{$md}{
+			content: 'Enrolm';
+			right: -63px;
+			bottom: auto;
+			top:62px;
+		}
+	}
+}
+
+.wellbeing{
+
+	h1{
+		&:before{
+			left:50%;
+			margin-left:-40px;
+		}
+	}
+	.container{
+		max-width:953px;
+		@media #{$md}{
+			max-width: 483px;
+		}
+		@media #{$sm}{
+			max-width: 100%;
+			padding:0 35px;
+		}
+	}
+	&:after{	
+		content: 'Wellbeing';
+		color: rgba(12, 27, 81, 0.18);
+		font-size: 127px;
+		position: absolute;
+		font-weight: bold;
+		font-family: $myriad-bold;
+		bottom: 55px;
+		left: -11px; 
+		@media #{$very-large-desktop}{
+			left: 130px;
+		}
+		@media #{$md}{
+			font-size: 90px;
+			bottom: auto;
+			left:-44px;
+		}
+	}
+}
+.latest-news{
+	background-color:$primary-color;
+	margin-top:52px;
+	padding:103px 0;
+	@media #{$md}{
+		margin-top: 24px;
+		padding: 44px 0;
+	}
+	@media #{$sm}{
+		margin-top: 15px;
+	}
+	h1{
+		&:before{
+			left:50%;
+			margin-left:-40px;
+		}
+	}
+	.card{
+		background-color:transparent;
+		border:0;
+		color:$white-color;
+		padding:0 15px;
+		margin-top:30px;
+		@media #{$md}{
+			padding: 0 7px;
+		}
+		@media #{$sm}{
+			margin-top:0;
+			margin-bottom: 20px;
+			padding: 0;
+		}
+		.card-body{
+			padding:35px 0;
+			@media #{$md}{
+				padding: 20px 0;
+			}
+			@media #{$sm}{
+				padding: 20px 15px;
+			}
+			h5{
+				color:$white-color;
+				font-size: 22px;
+				position: relative;
+				padding-top:29px;
+				font-family: $myriad-bold;
+				@media #{$md}{
+					font-size: 16px;
+					padding-top:14px;
+				}
+				@media #{$sm}{
+					font-size: 22px;
+				}
+				&:before{
+					top:0;
+					left:0;
+					width:80px;
+					height: 3px;
+					background: $secondary-color;
+					content: '';
+					position: absolute;
+				}
+			}
+			.read-more{
+				float: left;
+				font-size: 15px;
+				color:rgba(255,255,255,.77);
+				letter-spacing: 1px; 
+				position: relative;  
+		 	font-family: $myriad-bold;
+				margin-top: 13px;
+				@media #{$md}{
+					font-size: 10px;
+				}
+				@media #{$sm}{
+					font-size: 15px;
+				}
+				img{
+					margin-left:10px;
+					@media #{$md}{
+						height: 30px;
+						width: auto;
+					}
+				}
+			}
+		}
+		.news-thumb{
+			height: 300px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			float: left;
+			@media #{$md}{
+				height: 20vw;
+			}
+			@media #{$sm}{
+				height: 45vw;
+			}
+		}
+	}
+	.container{
+		position: relative;
+		@media #{$md}{
+			max-width: 706px;
+		}
+		&:before{
+			content: 'Latest News';
+			color: #232d5b	;
+			font-size: 127px;
+			position: absolute;
+			font-family: $myriad-bold;
+			top: -93px;
+			left: -93px;
+			@media #{$md}{
+				font-size: 90px;
+				top:-56px;
+				left: -123px;
+			}
+			@media #{$sm}{
+				display: none;
+			}
+		}
+		.col-md-4{
+			padding:0 2px;
+			@media #{$sm}{
+				padding:0 10px;
+			}
+		}
+	}
+	.container{
+		@media #{$sm}{
+			padding: 0 10px;
+		}
+	}
+}
+
+.events{
+	h1{
+		&:before{
+			left:50%;
+			margin-left:-40px;
+			@media #{$sm}{
+				margin-left: -28px;
+			}
+		}
+	}
+	.container{
+		@media #{$md}{
+			max-width:704px;
+		}
+	}
+	.events-grid{
+		background-color: $primary-color;
+		padding:0 68px 48px;
+		@media #{$md}{
+			padding:0 28px 28px 28px; 
+		}
+		@media #{$sm}{
+			margin-bottom: 16px;
+		}
+		.date{
+			.event-date{
+				color:$light-blue;
+				font-size: 167px; 
+			}
+			.col-md-6{
+				span{
+					float: left;
+					width:100%;
+					text-align: center;
+					@media #{$sm}{
+						font-size: 20px !important; 
+					}
+				}
+				&:first-child{
+					color: $light-blue;
+					font-size: 167px;
+					font-family: $myriad-bold; 
+					position: relative;
+					
+					@media #{$md}{
+						font-size: 79px;
+						bottom: -13px;
+					}
+					@media #{$sm}{
+						font-size: 124px;
+					}
+					&:after{
+						content: '';
+						width:78px;
+						background:$secondary-color;
+						height: 3px;
+						position: absolute;
+						@media #{$sm}{
+							left:0;
+							bottom: 0;
+							width: 59px;
+						}
+					}
+				}
+				&:last-child{
+					span{
+						float: left;
+						width:100%;
+						font-weight: bold;
+						color:$light-blue;
+						font-family: $myriad-bold;
+						font-size: 26px;
+						@media #{$md}{
+							font-size: 12px;
+							font-weight: bold;
+							text-transform: uppercase;
+							
+						}
+						&:first-child{
+							border-bottom: solid 3px $secondary-color;	
+							padding-bottom: 8px;
+							text-transform: uppercase;
+							@media #{$md}{
+								margin-top:25px;
+							}
+						}
+						&:last-child{ 
+							padding-top: 5px;
+							font-weight: normal;
+						}
+					}
+				}
+			} 
+		}
+		h4{
+			color:$white-color;
+			font-size: 42px;
+			font-family: $myriad-bold;
+			padding-top:72px;
+			line-height: 52px;
+			padding-bottom: 73px;
+			@media #{$md}{
+				padding-top: 37px;
+    font-size: 20px;
+    line-height: 25px;
+				padding-bottom:43px;
+			}
+			@media #{$sm}{
+				font-size: 26px;
+				line-height: 33px;
+			}
+		}
+		.bottom-row{
+			p{
+				width: 100%;
+				margin-bottom: 0;
+				color:$white-color;
+				font-size: 25px;
+				background: url('../images/plus-icon.png') no-repeat right center;
+				@media #{$md}{
+					font-size: 12px;
+					background-size: 15px 15px;
+				}
+				@media #{$sm}{
+					font-size: 16px;
+					background-size: 24px 24px;
+				}
+				&:before{
+					content: '';
+					float: right;
+					color:$secondary-color;
+					background-image: url(../images/plus-icon.png);
+					background-position: right center;
+					background-repeat: no-repeat;
+					width: 31px;
+					height: 31px; 
+					display: none;
+					@media #{$md}{
+						width:15px;
+						height: 15px;
+					}
+				}
+				img{
+					float: right;
+					@media #{$md}{
+						width: 15px;
+						height: 15px;
+						margin-top: 7px;
+					}
+				}
+			}
+		}
+	}
+	.event-row{
+		position: relative;
+		&:before{
+			content: 'Events';
+			color: $light-grey;
+			font-size: 127px;
+			position: absolute;
+			font-family: $myriad-bold;
+			top: -128px;
+			right: 167px;
+			@media #{$md}{
+				font-size: 90px;
+				position: absolute;
+				font-family: $myriad-bold;
+				top: -87px;
+				right: 0;
+			}
+			@media #{$sm}{
+				display: none;
+			}
+		}
+		.col-md-4{
+			padding:0 10px;
+			@media #{$md}{
+				padding: 0 6px;
+			}
+		}
+	}
+}
+
+.parallax-image{
+	@media #{$md}{
+		padding-top:0;
+	}
+	.container{
+		padding: 0;
+	}
+}
+.mob-button{
+	background: #b0bfd9;
+	color:$primary-color;
+	margin-top:9px;
+	a{
+		padding:17px 11px;
+		float:left;
+		color:$primary-color;
+		line-height: 37px;
+		font-size: 20px;
+		img{
+			margin-right: 15px;
+		}
+	}
+}
+	}
