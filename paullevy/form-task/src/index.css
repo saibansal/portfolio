@@ -1,5 +1,79 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: sans-serif; 
+}
+
+
+ul{
+  padding:0
+}
+ul li, .update-form{
+  padding:10px 10px;
+  border: dotted 3px #ddd;
+  list-style: none;
+  list-style-position: inside;
+  width:auto;
+  margin-bottom: 15px;
+  float: left;
+  width:100%;
+}
+.buttonsgroup{
+  float:right
+}
+ul li span, .update-form span{
+  width:70%;
+  float: left;
+  text-align: left;
+  padding:7px 10px;
+  color:#9c9c9c
+}
+.update-form span{
+ padding: 0 ; 
+}
+.update-form  button{
+  float:right
+}
+.update-form span input{
+  padding:8px
+}
+/* .task-completed{
+  background:greenyellow;
+}
+.not-completed{
+  background:red;
+} */
+button{
+  margin-left:15px;
+  display: inline-block;
+}
+button{
+  background: #02aad0;
+  padding: 9px 21px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+}
+button:hover{
+  background:goldenrod;
+}
+
+.addValueForm{
+  padding:30px 20%;
+  width:calc(100% -20%);
+  text-align: center;
+  background:#f4f4f4
+}
+input{
+  padding:10px;
+  border:solid 1px #ddd;
+  border-radius:5px;
+  outline: 0
+}
+.todolist{
+  padding:30px 20%;
+  width:calc(100% -20%);
+  text-align: center; 
+  border-top: solid 1px #ddd;
+ 
 }
