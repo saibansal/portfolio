@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <title>HTML</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt=""></a>
+    </div>
+  </nav>
+
+  <main class="container main-content pt-5 pb-5">
+    <h2 class="text-center"> Select your Site </h2>
+    <div class="col-sm-12 col-md-8 offset-sm-0 offset-md-2">
+      <div class="float-left w-100 text-center">
+        <ul class="nav mb-3 text-center" id="pills-tab" role="tablist">
+          <li>
+            <a class="active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+              aria-controls="pills-home" aria-selected="true"> <img src="images/site_logo.svg" alt=""> Amazon</a>
+          </li>
+          <li>
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+              aria-controls="pills-profile" aria-selected="false"><img src="images/site_logo.svg" alt=""> Overstack</a>
+          </li>
+          <li>
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+              aria-controls="pills-contact" aria-selected="false"><img src="images/site_logo.svg" alt=""> Wayfair</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" id="pills-tabContent">
+        <h2 class="text-white text-center">Now scrap your site</h2>
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <form action="#" method="post">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Amazon Products" aria-label="Amazon Products">
+            </div>
+
+
+            <div class="w-100 float-left text-center">
+              <button class="btn btn-primary"><img src="images/tick.svg" alt=""> Submit Form</button>
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <form action="#" method="post">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Overstack Products" aria-label="Overstack Products">
+            </div> 
+            <div class="w-100 float-left text-center">
+              <button class="btn btn-primary"><img src="images/tick.svg" alt=""> Submit Form</button>
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <form action="#" method="post">
+            <div class="input-group mb-3"> 
+              <input type="text" class="form-control" placeholder="Wayfair Products" aria-label="Wayfair Products">
+            </div> 
+            <div class="w-100 float-left text-center">
+              <button class="btn btn-primary"><img src="images/tick.svg" alt=""> Submit Form</button>
+            </div>
+          </form> 
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+  <script src="js/jquery-slim.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+::-webkit-input-placeholder {
+  /* Firefox, Chrome, Opera */
+  color: blue;
+}
+
+:-ms-input-placeholder {
+  /* Firefox, Chrome, Opera */
+  color: blue;
+}
+
+::-ms-input-placeholder {
+  /* Firefox, Chrome, Opera */
+  color: blue;
+}
+
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: blue;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: orange;
+}
+
+@font-face {
+  font-family: "OtamaDisplayBlack";
+  src: url("fonts/OtamaDisplay-Black.eot");
+  src: url("fonts/OtamaDisplay-Black.eot?#iefix") format("embedded-opentype"), url("fonts/OtamaDisplay-Black.woff2") format("woff2"), url("fonts/OtamaDisplay-Black.woff") format("woff"), url("fonts/OtamaDisplay-Black.ttf") format("truetype"), url("fonts/OtamaDisplay-Black.svg#OtamaDisplay-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  font-family: "OtamaDisplayBlack";
+  font-weight: 900;
+  font-style: normal;
+}
+
+nav {
+  background: #f6f6f6;
+}
+
+nav img {
+  max-height: 30px;
+}
+
+.main-content h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.main-content ul {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  padding: 0;
+  margin-left: 0;
+}
+
+.main-content ul li {
+  display: inline-block;
+  background: #e0e7ef;
+  padding: 15px 30px 12px;
+  margin: 0 10px;
+  width: 30%;
+}
+
+.main-content ul li a {
+  color: #000;
+  font-size: 22px;
+  padding: 0;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.main-content ul li a img {
+  max-height: 23px;
+  margin-right: 10px;
+}
+
+.main-content .tab-content {
+  float: left;
+  width: 100%;
+  background: #89a1c3;
+  margin: 20px 19px 0 11px;
+  padding: 5% 10%;
+  color: #fff;
+  position: relative;
+}
+
+.main-content .tab-content:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 15px 10px;
+  border-color: transparent transparent #89a1c3 transparent;
+  position: absolute;
+  top: -15px;
+}
+
+.main-content .tab-content .input-group .form-control {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: solid 2px #fff;
+  outline: none;
+  color: #fff;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+  font-family: "Roboto", sans-serif;
+  max-width: 300px;
+  margin: auto;
+  background: url(images/tick.svg) 98% center no-repeat;
+  background-size: 20px 20px;
+  padding: 0;
+}
+
+.main-content .tab-content button.btn {
+  background: #000;
+  border-radius: 0;
+  border: 0;
+  padding: 12px 25px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: solid 3px #000;
+  -webkit-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+}
+
+.main-content .tab-content button.btn:hover {
+  border: solid 3px #f6f6f6;
+}
+
+.main-content .tab-content button.btn img {
+  height: 20px;
+  margin-right: 15px;
+}
+/*# sourceMappingURL=style.css.map */
