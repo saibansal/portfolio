@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'mixins';
+
+@import 'vendor/bootstrap.min';  
+@import 'vendor/font-awesome';
+@import 'vendor/_infinite-slider';
+
+@import 'common';
+
+@import 'partials/header';
+
+@import 'pages/home';  
+
+// footr scss file add here

@@ -1,0 +1,8 @@
+First Fold-
+Font-family: Montserrat
+
+Mid Section-
+Font-family: Montserrat
+
+Footer-
+Font-family: Roboto

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700|Muli:600|Nunito:200,300&display=swap');
+ 
+//font-family: 'Nunito', sans-serif;
+//font-family: 'Montserrat', sans-serif;
+//font-family: 'Muli', sans-serif;
+
+html {
+  height: auto !important;
+}
+body{
+	font-family: $montserrat;
+}
+a {
+  &:hover {
+    text-decoration: none !important;
+  }
+} 
+.row{
+	clear: both;
+}
+.outer-container{
+	overflow: hidden;
+	float: left;
+	width:100%;
+}
+.row{
+	padding: .5rem 1rem;
+}
+ 

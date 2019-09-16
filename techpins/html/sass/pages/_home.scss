@@ -1,0 +1,279 @@
+.home-page{
+	clear: both;
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $white-color;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $white-color;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $white-color;
+}
+	
+	.section-slider{
+		float: left;
+		width: 100%;
+		.slider-description{
+			padding-top:100px;
+			padding-left: 45px;
+			h2{
+				color:#4e4e4e;
+				font-family: $nunito;
+				font-weight: 200;
+				font-size: 50px;
+			}
+			h3{
+				color:#313131;
+				font-size: 60px;
+				font-weight: 600;
+				font-family: $montserrat;
+				margin-top:20px;
+			}
+			h4{
+				font-size: 20px;
+				color: #313131;
+				margin-bottom: 15px;
+			}
+			p{
+				font-size: 18px;
+				color:#707070;
+				font-family: $nunito;
+			}
+			a.btn{
+				background:$light-blue;
+				color:$white-color;
+				padding: 11px 21px;
+				font-size: 18px;
+				&:hover{
+					background-color:$orange-color;
+					border-color:$orange-color;
+				}
+			}
+		}
+		.carousel-item{
+			img{
+				object-fit: cover;
+				object-position: right top;
+				height: 580px;
+			}	
+		}
+		.carousel-indicators{
+			margin-left: 25%;
+			li{
+				background-color:#b8bfc0;
+				opacity: 1;
+				width:10px; 
+				height: 10px;
+				border-radius: 50%;
+				&:hover{
+					background-color:$light-blue;
+				}
+			}
+		}
+	}
+	
+	.technology-icon{
+		background: #fcfcfc;
+		.helping-industries{
+			padding:60px 35px 25px;
+			h2, h3{
+				color:#484848;
+			}
+			h2{
+				font-size: 34px;
+				font-family: $nunito;
+				font-weight: 200;
+				margin-bottom: 0;
+			}
+			h3{
+				text-transform: uppercase;
+			}
+			.icon{
+				width:100%;
+				text-align: center;
+				margin-top:45px;
+				float: left;
+				
+				img{
+					height: 60px;	
+				}
+				figcaption{
+					font-family: $nunito;
+					font-weight: 400;
+					font-size: 18px;
+					margin-top: 20px; 
+					line-height: 26px;
+				}
+				
+			}
+		}
+	}
+	
+	.practices-section{
+ 		.practice-container{
+			float: left;
+			width:100%;
+			.practice-content{
+				padding: 120px 0;
+			}
+			padding:0 20px;
+			.card{
+				background-color: transparent;
+				margin-top:40px;
+				border:0;
+				.card-body{
+					padding:0;	
+					.btn{
+						background-color:$light-blue;
+						color:$white-color;
+						padding: 11px 21px;
+						font-family: $muli;
+						font-size: 18px;
+						&:hover{
+							background-color:$orange-color;
+						}
+					}
+				}
+				p{
+					line-height: 24px;
+				}
+			}
+			.practice-image{
+				padding-right: 0;
+				img{
+					object-fit: cover; 
+					height: 100%;
+				}
+			}
+		}
+		h2{
+			font-family: $nunito;
+			font-size: 36px;
+			font-weight: 200;
+			margin-bottom: 0; 
+		}
+		h3{
+			font-weight: 600;
+			font-size: 32px;
+			text-transform: uppercase;
+			
+		}
+		p{
+			font-family: $nunito;
+			font-size: 20px;
+			line-height: 25px;
+			font-weight: 300;
+			
+		}
+		.practice-detail{
+			float: left;
+			width: calc(100% - 85px);
+			h5.card-title{
+				font-size: 18px;
+			}
+		}
+		.practice-icon{
+			float: left;
+			width:60px;
+			margin-right: 25px;
+		}
+	}
+	.btn{
+		background-color: $light-blue;
+		border-color:$light-blue;
+		&:hover{
+			background-color:$orange-color;
+			border-color:$orange-color;
+		}
+	}
+
+.industry-logo{
+	.logo-container{
+		h2{
+			color: #69696a;
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+//		background:#f9f9fb;
+		padding: 30px; 
+		text-align: center;
+	}
+}
+
+.contact-section{
+	width: 100%;
+	float: left;
+	.contact-image{
+		padding: 0;
+		position: relative;
+		img{
+			object-fit: cover;
+			object-position: center top;
+			height: 600px;
+			width: 100%;
+		}
+		.contact-text{
+			position: absolute;
+			right:0;
+			top:25%;
+			background:$white-color;
+			padding:40px 40px;
+			max-width:400px;
+			h6{
+				font-size: 24px;
+				color:#484848;
+				font-family: $muli; 
+			} 
+			p{
+				font-family: $nunito;
+				font-weight: 300;
+			}
+		}
+	}
+	.contact-form{
+		background-color: #4d535d;
+		padding: 60px 120px;
+		h2, h3{
+			color:#e5e5e5;
+		}
+		h2{ 
+			font-family: $nunito;
+			text-transform: uppercase;
+			font-size: 18px;
+		}
+		h3{
+			font-size: 20px;
+			font-family: $montserrat;
+			font-weight: 600;
+			font-size: 30px;  
+		}
+		.form-control{
+			border:0;
+			border-radius: 0;
+			border-bottom: solid 1px #a6a9af;
+			background-color: transparent;
+			padding: 0;
+			color:#fff;
+			font-family: $nunito;
+			font-weight: 300;
+			margin-bottom:10px;
+		}
+		.btn{
+			background-color:$light-blue;
+			color:$white-color;
+			padding: 11px 21px;
+			font-family: $nunito;
+			font-size: 18px;
+			border-color:$light-blue;
+			&:hover{
+				background-color:$orange-color;
+				border-color:$orange-color;
+			}
+		}
+	}
+	}
+}
+	 
