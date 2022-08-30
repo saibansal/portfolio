@@ -1,0 +1,457 @@
+body:before {
+  background-image: url(../images/cloud.png);
+  width: 100%;
+  height: 264px;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  position: fixed;
+  left: 0;
+  top: 0;
+  content: '';
+}
+
+@media only screen and (max-width: 1199.98px) {
+  body:before {
+    height: 100px;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  body:before {
+    height: 100px;
+    position: absolute;
+    padding-top: 3rem;
+  }
+}
+
+.content-area {
+  float: left;
+  width: 100%;
+  position: relative;
+  padding-top: 7rem;
+  z-index: 0;
+}
+
+.content-area .container {
+  height: 77vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .content-area .container {
+    height: 57vh;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .content-area .container {
+    height: 77vh;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .content-area {
+    padding: 0;
+    padding-top: 3rem;
+  }
+}
+
+.content-area ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.content-area ul li {
+  display: inline-block;
+  margin-bottom: 40px;
+  width: calc(97% / 4);
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .content-area ul li {
+    margin-bottom: 30px;
+    width: calc(97% / 4);
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .content-area ul li {
+    margin-bottom: 25px;
+    width: calc(97% / 3);
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .content-area ul li {
+    margin-bottom: 15px;
+    width: calc(97% / 3);
+  }
+}
+
+@media only screen and (max-width: 567.98px) {
+  .content-area ul li {
+    width: calc(97% / 4);
+    margin-bottom: 15px;
+  }
+
+}
+
+.content-area ul li a {
+  text-align: center;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.content-area ul li a span.imageDroppedReflector {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  padding: 5px 20px;
+  /* font-family: 'GurbaniAkharThick'; */
+  font-family: 'AmrLipi';
+  color: #fff;
+  font-size: 22px;
+  border: solid 1px #fff;
+  text-decoration: none;
+  text-align: center;
+  background: #ed7f06;
+  float: left;
+  border-radius: 10px;
+  display: none;
+}
+
+
+.content-area ul li a span img {
+  max-width: 80%;
+  position: relative;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .content-area ul li a span img {
+    max-width: 90%;
+  }
+
+}
+
+footer {
+  position: fixed;
+  float: left;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/footerbg.png);
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: #9dc95f;
+  padding: 4rem 0 2rem;
+  content: '';
+  width: 100%;
+}
+
+@media only screen and (max-width: 575.98px) {
+  footer {
+    padding: 2rem 0 1rem;
+  }
+
+  .content-area {
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .content-area ul li a span.imageDroppedReflector {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px 10px;
+  }
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+footer ul li {
+  display: inline-block;
+  border-radius: 10px;
+  margin: 0 10px 5px 10px;
+}
+
+@media only screen and (max-width: 1499.98px) {
+  footer ul li {
+    width: auto;
+    margin: 5px;
+  }
+}
+
+footer ul li a {
+  padding: 5px 25px;
+  font-family: 'AmrLipi';
+
+  color: #fff;
+  font-size: 30px;
+  width: 100%;
+  border: solid 5px #fff;
+  text-decoration: none;
+  text-align: center;
+  background: #ed7f06;
+  float: left;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1499.98px) {
+  footer ul li a {
+    font-size: 20px;
+    padding: 4px 20px;
+    border: solid 3px #fff;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  footer ul li a {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 4px 20px;
+    border: solid 3px #fff;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  footer ul li a {
+    font-size: 18px;
+    padding: 4px 5px;
+    border: solid 3px #fff;
+    font-weight: bold;
+  }
+}
+
+footer ul li:hover a {
+  color: #fff;
+}
+
+@media only screen and (max-height: 960px) and (orientation: landscape) {
+  .content-area {
+    padding-top: 5rem;
+  }
+
+  body:before {
+    height: 144px;
+  }
+
+  .content-area .container {
+    height: 72vh;
+  }
+}
+
+@media only screen and (max-height: 905px) and (orientation: landscape) {
+  .content-area ul li a img {
+    max-height: 130px;
+  }
+
+  footer {
+    padding-bottom: 1.5rem;
+  }
+
+  footer ul li a {
+    font-size: 16px;
+    padding: 8px 25px;
+    border: solid 3px #fff;
+  }
+}
+
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+  body:before {
+    height: 84px;
+  }
+
+  .content-area ul li a img {
+    max-height: 130px;
+  }
+}
+
+@media only screen and (max-height: 590px) and (orientation: landscape) {
+  .content-area ul li {
+    width: calc(97% / 5);
+  }
+
+  .content-area ul li a img {
+    max-height: 130px;
+  }
+
+  footer {
+    padding: 1.3rem;
+  }
+
+  footer ul li a {
+    font-size: 16px;
+    padding: 5px;
+    border: solid 3px #fff;
+  }
+
+  .content-area {
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-height: 480px) and (orientation: landscape) {
+  .content-area ul li a img {
+    max-height: 100px;
+  }
+
+  .content-area {
+    padding-top: 0;
+  }
+
+  .content-area ul li {
+    width: calc(92% /5);
+  }
+}
+
+@media only screen and (max-height: 480px) and (orientation: portrait) {
+  .content-area ul li a img {
+    max-height: 70px;
+  }
+
+  .content-area {
+    padding-top: 0;
+  }
+
+  .content-area ul li {
+    width: calc(92% /4);
+  }
+}
+
+footer ul li a {
+  cursor: grabbing;
+}
+
+@media only screen and (width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .content-area {
+    padding-top: 2rem
+  }
+}
+
+@media only screen and (width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .content-area {
+    padding-top: 2rem
+  }
+
+  footer ul li a {
+    font-size: 26px;
+  }
+
+  .content-area ul li a img {
+    max-height: 150px;
+  }
+}
+
+@media only screen and (width: 1368px) and (max-height: 912px) and (orientation: landscape) {
+  .content-area {
+    padding-top: 2rem
+  }
+
+  footer ul li a {
+    font-size: 33px;
+  }
+
+  .content-area ul li a img {
+    max-height: 200px;
+  }
+
+  .content-area ul li a span.imageDroppedReflector {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (width: 912px) and (max-height:1368px) and (orientation: portrait) {
+  .content-area {
+    padding-top: 2rem
+  }
+
+  footer ul li a {
+    font-size: 33px;
+  }
+
+  .content-area ul li a img {
+    max-height: 150px;
+  }
+
+  .content-area ul li a span.imageDroppedReflector {
+    font-size: 30px;
+  }
+
+  .content-area ul li {
+    width: calc(97% / 3.5);
+  }
+}
+
+@media only screen and (max-width: 789px) and (max-height:340px) and (orientation: landscape) {
+  .content-area {
+    padding-top: 1rem
+  }
+
+  .content-area ul li a img {
+    max-height: 80px;
+  }
+
+  .content-area ul li {
+    width: calc(97% / 6);
+    margin-bottom: 15px;
+  }
+}
+
+
+@media only screen and (min-width: 1700px) and (min-height:800px) and (orientation: landscape) {
+  .content-area {
+    padding-top: 5rem
+  }
+
+  .content-area ul li {
+    width: calc(97% / 4);
+    margin-bottom: 50px;
+  }
+
+  .content-area ul li a span.imageDroppedReflector {
+    font-size: 40px;
+    padding: 5px 40px;
+    border-width: 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width:1900px) {
+  .content-area ul li a span.imageDroppedReflector {
+    font-size: 26px;
+    padding: 4px 17px;
+    border-width: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width:1699px) {
+  .content-area {
+    padding-top: 1rem
+  }
+}
+
+@media only screen and (min-width: 568px) and (max-width:991px) {
+  .content-area {
+    padding-top: 1rem
+  }
+
+  .content-area ul li {
+    width: calc(97% / 4.5);
+  }
+}

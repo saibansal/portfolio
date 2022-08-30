@@ -1,0 +1,185 @@
+$xs: "only screen and (max-width : 575.98px)";
+$sm: "only screen and (max-width : 767.98px)";
+$md: "only screen and (max-width : 991.98px)";
+$lg: "only screen and (max-width : 1199.98px)";
+$lg-width: "only screen and (max-width : 1499.98px)";
+$xl: "only screen and (min-width : 1500px)";
+$very-large-desktop: "only screen and (min-width : 1750px)";
+
+
+body {
+    &:before {
+        background-image: url(../images/cloud.png);
+        width: 100%;
+        height: 264px;
+        background-size: cover;
+        background-position: center;
+        float: left;
+        position: fixed;
+        left: 0;
+        top: 0;
+        content: '';
+
+        @media #{$lg} {
+            height: 100px;
+            position: absolute;
+        }
+
+        @media #{$xs} {
+            height: 100px;
+            position: absolute;
+            padding-top: 3rem;
+
+        }
+    }
+}
+
+.content-area {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-top: 7rem;
+    z-index: 1;
+
+    .container {
+        height: 77vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        @media #{$lg} {
+            height: 57vh;
+        }
+        @media #{$md} {
+            height: 77vh;
+        }
+    }
+
+
+    @media #{$xs} {
+        padding: 0;
+        padding-top: 3rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        float: left;
+        width: 100%;
+        
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin-bottom: 40px;
+            width: calc(97% / 4); 
+
+            @media #{$lg} {
+                margin-bottom: 8px;
+                width: calc(97% / 4);
+            }
+
+            @media #{$md} {
+                margin-bottom: 8px;
+                width: calc(97% / 3);
+            }
+
+            @media #{$sm} {
+                margin-bottom: 8px;
+                width: calc(97% / 3);
+            }
+            @media #{$sm} {
+                margin-bottom: 8px;
+                width: calc(97% / 4);
+            }
+
+            a {
+                text-align: center;
+                float: left;
+                width: 100%;
+
+                img {
+                    max-width: 80%;
+
+                    @media #{$xs} {
+                        max-width: 90%;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+footer {
+    position: fixed;
+    float: left;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/footerbg.png);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-color: #9dc95f;
+    padding: 4rem 0 2rem;
+    content: '';
+    width: 100%;
+
+    @media #{$xs} { 
+        padding: 5rem 0 1rem;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+        text-align: center;
+        justify-content: center;
+
+        li { 
+            display: inline-block;
+            border-radius: 10px;
+            margin: 0 10px 5px 10px; 
+            @media #{$lg-width} {
+                width: auto;
+                margin: 5px;
+            }
+
+            a {
+                padding: 20px 10px;
+                font-family: 'GurbaniAkharThick';
+                color: #fff;
+                font-size: 40px;
+                width: 100%;
+                border: solid 5px #fff;
+                text-decoration: none;
+                text-align: center;
+                background: #ed7f06;
+                float: left;
+                border-radius: 10px; 
+                @media #{$lg-width} {
+                    font-size: 20px;
+                    padding: 4px 20px;
+                    border: solid 3px #fff; 
+                }
+
+                @media #{$md} {
+                    font-size: 30px;
+                    padding: 4px 20px;
+                    border: solid 3px #fff;
+                }
+
+                @media #{$sm} {
+                    font-size: 16px;
+                    padding: 4px 5px;
+                    border: solid 3px #fff;
+                }
+            }
+
+            &:hover {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

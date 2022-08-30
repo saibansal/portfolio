@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Super Kids';
+    src: url('SuperKidsRegular.eot');
+    src: url('SuperKidsRegular.eot?#iefix') format('embedded-opentype'),
+        url('SuperKidsRegular.woff2') format('woff2'),
+        url('SuperKidsRegular.ttf') format('truetype'),
+        url('SuperKidsRegular.svg#SuperKidsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GurbaniAkharThick';
+    src: url('GurbaniAkharThick.eot');
+    src: url('GurbaniAkharThick.eot?#iefix') format('embedded-opentype'),
+        url('GurbaniAkharThick.woff2') format('woff2'),
+        url('GurbaniAkharThick.ttf') format('truetype'),
+        url('GurbaniAkharThick.svg#GurbaniAkharThick') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AmrLipi';
+    src: url('AmrLipi.eot');
+    src: url('AmrLipi.eot?#iefix') format('embedded-opentype'),
+        url('AmrLipi.woff2') format('woff2'),
+        url('AmrLipi.woff') format('woff'),
+        url('AmrLipi.ttf') format('truetype'),
+        url('AmrLipi.svg#AmrLipi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
