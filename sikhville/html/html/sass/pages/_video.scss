@@ -1,0 +1,249 @@
+.topVideo-banner {
+    @include fullwidth();
+    // padding: abs($number: 4rem) abs($number: $null);
+
+    .carousel-inner {
+        .carousel-item {
+            .carousel-caption {
+                max-width: abs($number: 1090px);
+                left: abs($number: $null);
+                text-align: left;
+                top: abs($number: $null);
+                bottom: auto;
+                height: abs($number: $full);
+                margin: auto;
+                margin-top: abs($number: $null);
+                display: flex !important;
+                align-items: center;
+
+                .carousel-content {
+                    float: left;
+                    @include fullwidth();
+                }
+
+                h5 {
+                    @include fullwidth();
+                    font-family: $ifc;
+                    font-size: abs($number: 40px);
+                    color: $white;
+                    color: #948f93;
+                }
+
+                .content {
+                    font-size: abs($number: 25px);
+                    font-family: $robolt;
+                    @include fullwidth();
+                    color: $white;
+                    margin-bottom: abs($number: 20px);
+
+                    span {
+                        float: left;
+                        background-color: #00aeef;
+                        color-interpolation-filters: #fff;
+                        font-family: $robobd;
+                        padding: abs($number: $null) abs($number: 10px);
+                    }
+
+                    ul {
+                        float: left;
+                        margin-top: abs($number: 5px);
+
+                        li {
+                            float: left;
+                            margin-left: abs($number: 40px);
+                            font-family: $robo;font-size: abs($number: 18px);
+
+                        }
+                    }
+                }
+
+                p {
+                    &.text {
+                        font-size: abs($number: 16px);
+                        float: left;
+                        width: abs($number: $full);
+                        font-family: $robolt;
+                        line-height: abs($number: 26px);
+                        max-width: abs($number: 500px)
+                    }
+                }
+
+                .banner-action {
+                    float: left;
+                    width: abs($number: $full);
+                    margin-top: abs($number: 25px);
+
+                    a {
+                        color: $white;
+                        font-family: $ifc;
+                        font-size: abs($number: 24px);
+
+                        &:first-child {
+                            margin-right: abs($number: 20px);
+                        }
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+main {
+    .section {
+        &.vismaadPioneer {
+            .content-container {
+                padding: abs($number: 4rem) abs($number: $null);
+                @include sectionColor(vismaadPioneer);
+                text-align: center;
+                color: $white;
+
+                h5 {
+                    font-size: abs($number: 43px);
+                    font-family: $robo;
+                    margin-bottom: abs($number: 50px);
+                }
+
+                p {
+                    color: $primary;
+                    font-size: abs($number: 25px);
+                    font-family: $robo;
+                    margin-bottom: abs($number: 50px);
+                }
+            }
+        }
+       
+        &.sakhiyaan {
+            background-image: url(../images/borde-section.png);
+            background-color: $primary;
+            padding: 2rem 0;
+
+            .content-container {
+                @include sectionColor(sakhiyaan);
+
+                .recommend-album {
+                    
+
+                    h5 {
+                        color: $secondary;
+                        margin-bottom: abs($number: 10px);
+                        font-size: abs($number: 40px);
+                    }
+
+                    .slick-slider {
+                        button {
+                            width: abs($number: 41px);
+                            height: abs($number: 41px);
+                            top: -40px;
+
+                            &.slick-prev {
+                                background-image: url(../images/prev-album.png);
+                            }
+
+                            &.slick-next {
+                                background-image: url(../images/next-album.png);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        &.baal-geet{
+            background-image: url(../images/darbar-pattern.jpg);
+            padding: 21px 0 0 0;
+        }
+    }
+
+    .darbar-sahib {
+        float: left;
+        width: abs($number: $full);
+        padding: calc(8rem + 21px)  abs($number: $null) abs($number: 8rem) abs($number: $null);
+        background-image: url(../images/darbar-background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        &:before{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 39px;
+            top: 0;
+            background-image: url(../images/darbar-pattern.jpg);
+            background-position: left top;
+            background-repeat: repeat-x;
+            content: '';
+            
+        }
+        .content {
+            font-size: abs($number: 25px);
+            font-family: $robolt;
+            @include fullwidth();
+            color: $white;
+            margin-bottom: abs($number: 20px);
+
+            span {
+                float: left;
+                background-color: #00aeef;
+                color-interpolation-filters: #fff;
+                font-family: $robobd;
+                padding: abs($number: $null) abs($number: 10px);
+            }
+
+            ul {
+                float: left;
+                margin-top: abs($number: 5px);
+
+                li {
+                    float: left;
+                    margin-left: abs($number: 40px);
+                    font-family: $robo;font-size: abs($number: 18px);
+
+                }
+            }
+            p {
+                color:$white;
+                &.text {
+                    font-size: abs($number: 16px);
+                    float: left;
+                    width: abs($number: $full);
+                    font-family: $robolt;
+                    line-height: abs($number: 26px);
+                    max-width: abs($number: 500px)
+                }
+            }
+
+            .banner-action {
+                float: left;
+                width: abs($number: $full);
+                margin-top: abs($number: 25px);
+
+                a {
+                    color: $white;
+                    font-family: $ifc;
+                    font-size: abs($number: 24px);
+
+                    &:first-child {
+                        margin-right: abs($number: 20px);
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .darbar-image{
+        img{
+            border:solid 7px $white;
+            border-radius: 6px;
+        }
+    }
+   
+}

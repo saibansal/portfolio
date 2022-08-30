@@ -1,0 +1,54 @@
+header {
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+    background-image: url(../images/header-pattern.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-bottom: 39px;
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    nav {
+        ul {
+
+            li {
+                background-image: url(../images/nav-left.png);
+                background-position: left top;
+                background-repeat: no-repeat;
+                float: left;
+                margin-left: 8px;
+
+                a {
+                    padding: 6px 35px;
+                    background-image: url(../images/nav-right.png);
+                    background-position: right top;
+                    background-repeat: no-repeat;
+                    float: left;
+                    text-decoration: none;
+                    font-family: "Roboto Condensed Bold";
+                    color: #ec1165;
+                    font-size: 25px;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+
+                &.active,
+                &:hover {
+                    a {
+                        text-decoration: none;
+                        color: #2e3192;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-banner {
+    float: left;
+    width: 100%;
+}

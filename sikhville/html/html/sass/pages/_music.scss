@@ -1,0 +1,300 @@
+.music-banner {
+    background-image: url(../images/music-banner-bg.png);
+    background-position: left top;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include fullwidth();
+    padding: abs($number: 4rem) abs($number: $null);
+
+    .carousel-inner {
+        .carousel-item {
+            .carousel-captions {
+                max-width: abs($number: 1090px);
+                margin: auto;
+                margin-top: abs($number: 2rem);
+
+                h5 {
+                    @include fullwidth();
+                    text-align: center;
+                    font-family: $ifc;
+                    font-size: abs($number: 40px);
+                    color: $white;
+                }
+
+                p {
+                    font-size: abs($number: 25px);
+                    font-family: $robolt;
+                    @include fullwidth();
+                    color: $white;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.music {
+
+    &.music-added {
+        .content-container {
+            @include sectionColor(music);
+
+            .section-heading {
+                span {
+                    background: transparent;
+                    color: $primary;
+                    margin-top: abs($number: 30px);
+                }
+            }
+
+            .card {
+                img {
+                    max-width: abs($number: 328px);
+                    height: abs($number: 398px);
+                    margin: auto;
+                }
+
+                .card-title {
+                    @include sectionColor(music);
+                    padding-bottom: abs($number: $null);
+                    font-family: $ifc;
+                    font-size: abs($number: 33px);
+                }
+
+                .card-text {
+                    font-size: abs($number: 25px);
+                    font-family: $robolt;
+                }
+
+            }
+        }
+    }
+}
+
+.music-detail {
+    @include sectionColor(musicDetail);
+
+    .content {
+        .album-image {
+            h5 {
+                @include fullwidth();
+                margin-top: abs($number: 15px);
+                font-family: $ifc;
+                font-size: abs($number: 26px);
+                color: $white;
+            }
+
+            p {
+                font-size: abs($number: 20px);
+                font-family: $robolt;
+                @include fullwidth();
+                color: $white;
+            }
+        }
+
+        .album-detail {
+            h5 {
+                @include fullwidth();
+                line-height: normal;
+                font-family: $ifc;
+                font-size: abs($number: 45px);
+                color: $white;
+            }
+
+            ol {
+                @include fullwidth();
+                margin-bottom: 15px;
+
+                li {
+
+                    float: left;
+                    width: auto;
+                    margin-right: abs($number: 35px);
+                    font-size: abs($number: 18px);
+                    font-family: $robo;
+                    color: $primary;
+                    list-style-type: disc;
+
+                    &::marker {
+                        color: $white;
+                    }
+
+                    &:first-child {
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .music-playlist {
+        @include fullwidth();
+        margin-top: 15px;
+
+        .album-name {
+
+            img {
+                float: left;
+                margin-right: 10px;
+            }
+
+            h5 {
+                font-family: $robo;
+                font-size: abs($number: 20px);
+                color: $white;
+                width: auto;
+                float: none;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: abs($number: 12px);
+                font-family: $robolt;
+                color: $white;
+            }
+        }
+    }
+
+   
+}
+
+
+.customer-logos {
+    float: left;
+    width: 100%;
+
+    &.slick-slider {
+        margin: 0px 0;
+
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+
+        img {
+            width: 100%;
+        }
+
+        .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            &:focus {
+                outline: none;
+            }
+            &.dragging {
+                cursor: pointer;
+                cursor: hand;
+            }
+        }
+        .slick-track{
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+
+            &:after, &:before {
+                display: table;
+                content: '';
+            }
+            &:after {
+                clear: both;
+            }
+        }
+
+    }
+}
+.recommend-album {
+    @include fullwidth();
+    margin: abs($number: 4rem) abs($number: $null);
+
+    h5 {
+        @include fullwidth();
+        line-height: normal;
+        font-family: $ifc;
+        font-size: abs($number: 50px);
+        color: $white;
+    }
+
+    .carousel-logo {
+        width: auto;
+
+        &>div {
+            float: left;
+        }
+    }
+
+    .carousel-by-item [class*="cloneditem-"] {
+        display: none;
+    }
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+   padding:0 20px 0 0 ;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+} 
+
+.slick-slide img {
+    display: block;
+    border:solid 5px #fff;
+    
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
