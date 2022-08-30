@@ -1,0 +1,47 @@
+.our-team {
+    @include fullwidth;
+    margin-top: 15px;
+
+    .multipletab {
+        @include fullwidth();
+        background: #fff;
+        overflow: hidden;
+        position: relative;
+
+        .tab-buttons {
+            display: inline-block;
+            width: 100%;
+            
+            &>span {
+                display: block;
+                float: left;
+                cursor: pointer;
+                color: #666;
+                font-family: $opensb;
+                background: #ddd;
+                padding: 10px 25px;                
+                margin-right: 2px;
+
+                &.active {
+                    background: $secondary;
+                    color: $white;
+                    position: relative;                    
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        position: relative;
+        padding: 20px 0;
+
+        &>div {
+            position: absolute;
+            color: #666;
+            font-family: 'pt sans', sans-serif;
+            padding-left:5px  !important;
+            padding-right:5px  !important;
+        }
+    }
+  
+}

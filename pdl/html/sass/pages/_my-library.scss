@@ -1,0 +1,25 @@
+main[role=listview] {
+    .product-list {
+        &.my-library {
+            .view-group {
+                .thumbnail {
+                    .img-event {
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                            height: 150px !important;
+
+                        }
+                    }
+                    .card-body {
+                        .rating{
+                            .btn{
+                                border-radius: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+main {
+    &[role=collection-listing] {
+        @include fullwidth();
+        .banner{
+            @include fullwidth();
+            img{
+                @include fullwidth();
+                max-height:380px
+            }
+        }
+
+        .collection{           
+            @include fullwidth;
+            ul{
+                li{
+                    padding: 5px 0;
+                }
+            }
+            .card{                
+                border-radius: 0;
+                box-shadow: 0 0 6px rgba($color: #000000, $alpha: 0.2);   
+                border:0;              
+                .card-subtitle{
+                    font-family: $opensb;
+                    font-size:18px;
+                    color: $primary;
+                    @include fullwidth;
+                    margin-top: 2px;
+                    @media #{$xl}{
+                        font-size: 16px;
+                    }
+                }
+                .card-link{
+                    color:#6c757d;
+                    @include fullwidth;
+                    font-size: 14px;
+                    margin-top: 5px;
+                    @media #{$xl}{
+                        font-size: 13px;
+                    }
+                }
+            }
+           
+            h5{
+                font-family:$openbd;
+                font-size: 18px;
+                color: $primary;
+                @media #{$xl}{
+                    font-size: 16px;
+
+                }
+            }
+        }
+ 
+    }
+}

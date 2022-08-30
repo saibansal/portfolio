@@ -1,0 +1,180 @@
+footer {
+    background: #fff;
+    @include fullwidth();
+    width: 100%;
+    float: left;
+    border-top: solid 1px #e4e4e4;
+    padding: 100px 0 20px 0;
+    @media #{$xl} {
+        padding: 80px 0 0 0;
+    }
+    @media #{$lg} {
+        padding: 60px 0;
+    }
+
+    @media #{$md} {
+        padding: 40px 0;
+    }
+
+    h3 {
+        color: rgba($color: #282828, $alpha: 0.8);
+        font-size: 24px;
+        @include fullwidth();
+        font-family: $openbd;
+        @media #{$xl}{
+            font-size: 17px ;
+        }
+        @media #{$md}{
+            font-size: 18px ;
+        }
+        @media #{$xs}{
+            text-align: center;
+        }
+    }
+
+    ul {
+        @include fullwidth();
+        list-style: none;
+        padding: 0;
+
+        li {
+            @include fullwidth();
+
+            a {
+                @include fullwidth();
+                color: #010101;
+                font-size: 18px;
+                font-family: $open;
+                padding: 10px 0;
+                @media #{$xl}{
+                    font-size: 13px;
+                    padding: 5px 0;
+                }
+                @media #{$md}{
+                    font-size: 15px;
+                }
+                @media #{$xs}{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .footer-logo{
+        @media #{$md}{
+            text-align:center;
+            margin-bottom: 30px;
+        }
+    }
+    .footer-links{
+        display: flex;
+        margin-top: 60px;
+        justify-content: center;
+        @media #{$xl}{
+            margin-top: 30px;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: inline-block;
+            width: auto;
+            @media #{$md}{
+                text-align: center;
+            }
+            li{
+                float: left;
+                width: auto;
+                @media #{$md}{
+                    text-align: center;
+                    float: none;
+                    display: inline-block;
+                }
+                a{
+                    width: auto;
+                    float: left;
+                    color: #010101;
+                    font-size: 16px;
+                    font-family: $open;
+                    padding:  0 10px;
+                    @media #{$xl}{
+                        font-size: 13px;
+                    }
+                     
+                }
+                &:after{
+                    content: '|';
+                    float: right;
+                }
+                &:last-child{
+                    &:after{
+                        content: '';
+                        float: right;
+                    }
+                    a{
+                        padding-right: 0;
+                    }
+                }
+                &:first-child{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+.copyright{
+    @include fullwidth();
+    background: $primary;
+    padding: 10px 0;
+    margin-top: 20px;
+    .col-md-6{
+        @media #{$sm}{
+            text-align: center;
+        }
+        p{
+            font-size: 14px;
+            font-family: $robolt;
+            color:    $white;
+            margin-bottom: 0;
+            @media #{$xl}{
+                font-size: 13px;
+            }
+            @media #{$sm}{
+                text-align: center;
+            }
+        }
+        &:first-child{
+            text-align: left;
+            
+        }
+        &:last-child{
+            text-align:right;
+        }
+    }
+}
+
+
+.home-demo .item {
+    background: #ff3f4d;
+    flex: 1 1 100px;
+    padding: 10px;
+  }
+  .home-demo h2 {
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+  }
+  .home-slider {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 601px) {
+    .home-demo .item {
+      margin: 5px;
+    }
+  }
+  

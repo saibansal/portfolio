@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.eot');
+    src: url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff'),
+        url('Montserrat-Regular.ttf') format('truetype'),
+        url('Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('Roboto-Black.eot');
+    src: url('Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Black.woff2') format('woff2'),
+        url('Roboto-Black.woff') format('woff'),
+        url('Roboto-Black.ttf') format('truetype'),
+        url('Roboto-Black.svg#Roboto-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url('Montserrat-Black.eot');
+    src: url('Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Black.woff2') format('woff2'),
+        url('Montserrat-Black.woff') format('woff'),
+        url('Montserrat-Black.ttf') format('truetype'),
+        url('Montserrat-Black.svg#Montserrat-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('Roboto-Light.eot');
+    src: url('Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Light.woff2') format('woff2'),
+        url('Roboto-Light.woff') format('woff'),
+        url('Roboto-Light.ttf') format('truetype'),
+        url('Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open';
+    src: url('OpenSans.eot');
+    src: url('OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('OpenSans.woff2') format('woff2'),
+        url('OpenSans.woff') format('woff'),
+        url('OpenSans.ttf') format('truetype'),
+        url('OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open sb';
+    src: url('OpenSans-Semibold.eot');
+    src: url('OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('OpenSans-Semibold.woff2') format('woff2'),
+        url('OpenSans-Semibold.woff') format('woff'),
+        url('OpenSans-Semibold.ttf') format('truetype'),
+        url('OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open bd';
+    src: url('OpenSans-Bold.eot');
+    src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('OpenSans-Bold.woff2') format('woff2'),
+        url('OpenSans-Bold.woff') format('woff'),
+        url('OpenSans-Bold.ttf') format('truetype'),
+        url('OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dancing Script OT';
+    src: url('DancingScriptOT.eot');
+    src: url('DancingScriptOT.eot?#iefix') format('embedded-opentype'),
+        url('DancingScriptOT.woff2') format('woff2'),
+        url('DancingScriptOT.woff') format('woff'),
+        url('DancingScriptOT.ttf') format('truetype'),
+        url('DancingScriptOT.svg#DancingScriptOT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

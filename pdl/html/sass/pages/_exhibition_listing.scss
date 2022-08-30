@@ -1,0 +1,159 @@
+main {
+    &[role=exhibition-listinig] {
+        @include fullwidth();
+        .banner{
+            @include fullwidth();
+            img{
+                @include fullwidth();
+                max-height:380px
+            }
+        }
+
+        .exhibition{
+            #exhibitionList{
+                .card{
+                    padding: 0 13px;
+                    margin-bottom: 30px;
+                    @media #{$sm}  {
+                        padding: 0;
+                        margin:0
+                     }
+                    .card-body{
+                     box-shadow: 0 7px 16px rgba(76, 84, 118, .25);  
+                     @media #{$sm}  {
+                        box-shadow: 0 0 0 rgba(76, 84, 118, .25);  
+                     }
+                    }
+                }
+            }
+            .tab-content {
+                &.allExhibition{
+                    .card{
+                        padding: 0;
+                        margin-bottom: 30px;
+                        .card-body{
+                            box-shadow: 0 7px 16px rgba(76, 84, 118, .25);    
+                        }
+                    }
+                }
+            }
+        }
+        .ask-question{
+            @include fullwidth();
+            padding : 40px 0;
+            background-color: #5191FA;
+            .content-container{
+                margin: auto;
+                max-width: 837px;
+                @media #{$sm}{
+                    justify-content: center;
+                    text-align: center;
+                }
+                .row{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .content{
+                        max-width: 619px;
+                        h5{
+                            color: $white;
+                            font-size: 24px;
+                            font-family: $openbd;
+                            text-transform: uppercase;
+                            @media #{$xl}{
+                                font-size: 18px;
+                            } 
+                        }
+                        p{
+                            color: $white;
+                            font-size: 16px;
+                            font-family: $open;
+                            line-height: 24px;
+                            margin-bottom: 0;
+                            @media #{$xl}{
+                                font-size: 15px;
+                            } 
+                            @media #{$sm}{
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                    .action-button{
+                        @media #{$sm}{
+                            @include fullwidth();
+                        }
+                        a{
+                            border: solid 2px $white;
+                            font-size: 16px;
+                            padding: 9px 18px;
+                            font-family: $opensb;
+                            color: $white;
+                            display: inline-block;
+                            text-decoration: none;
+                            transition:all .3s ease-in-out; 
+                            &:hover{
+                                background-color: $white;
+                                color: #5191FA;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .exhibition-form{
+            .col-lg-6{
+                order: 1;
+                @media #{$md}{
+                    order: 2;
+                }
+            }
+            .col-lg-5{
+                order: 2;
+                @media #{$md}{
+                    order: 1;
+                    text-align: center;
+                }
+            }
+            h4{
+                @include fullwidth();   
+                color: $primary;
+                font-size: 18px;
+                font-family: $openbd;
+            }
+            p{
+                color: #000000;
+                font-size: 15px;
+                @include  fullwidth();
+            }
+            label{
+                font-size: 15px;
+                color: #4A4A4A;
+                font-family: $open;
+                @include fullwidth();
+            }
+            .form-control{
+                font-size: 15px;
+                color: #4A4A4A;
+                font-family: $open;
+                height: auto;
+                padding: 15px;
+                border-radius: 5px;
+                border:solid 1px #707070;
+            }
+            textarea{
+                &.form-control{
+                    height: 150px;
+                    resize: none;
+                }
+            }
+            .pdl-button{
+                &:hover{
+                    background-color: $secondary;
+                    border-color: $secondary;
+                }
+            }
+        }
+    }
+}

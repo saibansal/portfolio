@@ -1,0 +1,108 @@
+.dashboard {
+
+    .pos_relative {
+
+        @include fullwidth();
+        margin-top: 20px;
+    }
+
+    .panel-featured-left {
+        border-radius: 0;
+    }
+
+    .panel-body {
+        background: #fdfdfd;
+        -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, .10);
+        padding: 15px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, .10);
+        border-radius: 0;
+    }
+
+
+    .widget-summary {
+        display: table;
+        width: 100%;
+    }
+
+    .widget-summary .widget-summary-col.widget-summary-col-icon {
+        width: 1%;
+    }
+
+    .widget-summary .widget-summary-col {
+        display: table-cell;
+        vertical-align: top;
+        width: 100%;
+    }
+
+
+    .widget-summary .summary-icon {
+        margin: 0 15px 0 0;
+        font-size: 42px;
+        font-size: 4.2rem;
+        width: 60px;
+        height: 60px;
+        line-height: 34px;
+        text-align: center;
+        color: #fff;
+        -webkit-border-radius: 55px;
+        border-radius: 55px;
+    }
+
+
+    .widget-summary .widget-summary-col {
+        display: table-cell;
+        vertical-align: top;
+        width: 100%;
+    }
+
+
+    .widget-summary .summary {
+        min-height: 65px;
+        word-break: break-all;
+    }
+
+
+    .widget-summary .summary .title {
+        margin: 0;
+        font-size: 14px;
+        line-height: 22px;
+        color: #333;
+        font-weight: 500;
+    }
+
+
+    .widget-summary .summary .info {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .widget-summary .summary .amount {
+        margin-right: .2em;
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+        vertical-align: middle;
+    }
+
+
+    .widget-summary .summary .info span {
+        vertical-align: middle;
+    }
+
+    .summary-icon i {
+        font-size: 30px;
+    }
+
+    .widget-summary .summary-footer {
+        padding: 8px 8px 8px;
+        border-top: 1px dotted #ddd;
+        text-align: right;
+        font-size: 12px;
+    }
+
+    .bg-primary {
+        background: $secondary !important;
+    }
+
+    /* dashboard card end */
+}

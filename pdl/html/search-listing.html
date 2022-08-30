@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Punjab Digital Library</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <section class="outer-container">
+<!-- header section starts -->
+<header>
+  <div class="container">
+    <nav class="navbar">
+      <a class="navbar-brand" href="#"><img src="images/Logo.png" alt="" srcset=""></a>
+
+      <div class="header-bar">
+        <div class="info-icon">
+          <a class="" href="#">
+            <img src="images/email-icon.png" class="float-left" alt="" srcset="">
+            <span>Free Support 24/7 </span><br>
+            <em>support@panjabdigilib.org</em>
+          </a>
+        </div>
+
+        <div class="header-form">
+          <form>
+            <div class="form-row align-items-center">
+              <div class="col select-cat">
+                <!-- <label>Select Category</label> -->
+                <select class="custom-select">
+                  <option>Everything</option>
+                </select>
+              </div>
+              <div class="col search-bar">
+                <!-- <label>What you want to search</label> -->
+                <input type="text" class="form-control header-search" placeholder="Type keywords here...">
+              </div>
+
+              <div class="col-auto">
+                <button type="submit">
+                  <!-- <img src="images/search-icon.svg" alt="" srcset=""> -->
+                   Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <a class="nav-button header-search-btn"><img src="images/search-icon.svg" alt="" srcset=""></a>
+        <a class="nav-button nv__btn"><img src="images/toggle-bar.svg" alt="" srcset=""></a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- hambuger dropdown starts -->
+  <div class="headerMenu">
+    <a href="#" class="menuClose "></a>
+    <ul>
+      <li><a href="#"><i class="fas fa-search"></i> Advance Search</a></li>
+      <li><a href="#"><i class="fas fa-sliders-h"></i> Services</a></li>
+      <li><a href="#"><i class="fas fa-th-large"></i> View Catalog</a></li>
+      <li><a href="#"><i class="fas fa-question-circle"></i> Ask a Librarian</a></li>
+      <li><a href="#"><i class="fas fa-user"></i> About Us</a></li>
+      <li><a href="#"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+      <li><a href="#"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+    </ul>
+  </div>
+  <!-- hambuger dropdown finish -->
+</header>
+<!-- header section finish -->
+
+    <!-- main container section starts -->
+    <main role="listview">
+      <nav aria-label="breadcrumb" class="breadCrumb">
+        <div class="container d-flex justify-content-between">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#"><img src="images/home-icon.svg" alt=""></a></li>
+            <li class="breadcrumb-item"><a href="#">Books Search</a></li>
+          </ol>
+
+          <div class="share-icons mt-3">
+            <div class="addthis_inline_share_toolbox_2xxz"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <!-- left filter section finish -->
+          <div class="col-lg-3 col-xl-3 col-xxl-2 sideBarColumn">
+            
+            <!-- category section starts -->
+            <div class="filter-section">
+              <div class="row mobile-filter">
+                <div class="col-6 d-block d-lg-none">
+                  <h3 id="select-category"> <img src="images/select-category-icon.svg" alt="" srcset=""> Categories</h3>
+                </div>
+                <div class="col-6 d-block d-lg-none">
+                  <h3 id="refine-search"> <img src="images/filter-search.svg" alt="" srcset=""> Refine Search</h3>
+                </div>
+              </div>
+              <h3 class="d-none d-lg-block">Select Category <img src="images/select-category-icon.svg" alt="" srcset=""></h3>
+              <div class="filter-options selecCat">
+                <a class="filterClose"></a>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Books">
+                  <label class="custom-control-label" for="Books">Books (5000)</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Magazines">
+                  <label class="custom-control-label" for="Magazines">Magazines (10000+)</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Manuscripts">
+                  <label class="custom-control-label" for="Manuscripts">Manuscripts (6820)</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Thesis">
+                  <label class="custom-control-label" for="Thesis">Thesis (200)</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Newspapers">
+                  <label class="custom-control-label" for="Newspapers">Newspapers (10)</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Photographs">
+                  <label class="custom-control-label" for="Photographs">Photographs (50)</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Pamphlets">
+                  <label class="custom-control-label" for="Pamphlets">Pamphlets (20501)</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Files">
+                  <label class="custom-control-label" for="Files">Files (5011)</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Artifacts">
+                  <label class="custom-control-label" for="Artifacts">Artifacts (210)</label>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Audios">
+                  <label class="custom-control-label" for="Audios">Audios (10)</label>
+                </div>
+
+              </div>
+            </div>
+            <!-- category search section finish -->
+
+            <!-- refine search section starts -->
+            <div class="filter-section ">
+              <h3 class="d-none d-lg-block">Refine Search <img src="images/filter-search.svg" alt="" srcset=""></h3>
+              <div class="filter-options frnSearch position-relative">
+                <a class="filterClose"></a>
+                <!-- Completion filter section starts -->
+                <div class="filter-row">
+                  <h4>Completion</h4>
+                  <div class="row">
+                    <div class="col">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="All">
+                        <label class="custom-control-label" for="All">All</label>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Complete">
+                        <label class="custom-control-label" for="Complete">Complete</label>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="Incomplete">
+                        <label class="custom-control-label" for="Incomplete">Incomplete</label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- Completion filter section finish -->
+
+                <!-- Doc Condition filter section starts -->
+                <div class="filter-row doc-condittion">
+                  <h4>Doc Condition</h4>
+                  <div class="row m-0">
+                    <div class="custom-control custom-checkbox mr-3">
+                      <input type="checkbox" class="custom-control-input" id="All">
+                      <label class="custom-control-label" for="All">All</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox mr-3">
+                      <input type="checkbox" class="custom-control-input" id="Good">
+                      <label class="custom-control-label" for="Good">Good</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="PartiallyDamaged">
+                      <label class="custom-control-label" for="Incomplete">Partially Damaged</label>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- Doc Condition filter section finish -->
+
+                <!-- Content filter section starts -->
+                <div class="filter-row">
+                  <h4>Content</h4>
+                  <div class="w-100 float-left">
+                    <div class="input-group input-border mb-3">
+                      <input type="text" class="form-control border-0" placeholder="Type Keywords"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <span class="input-group-text border-0 bg-white" id="basic-addon2"><img src="images/pencil.svg"
+                            alt="" srcset=""></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content filter section finish -->
+
+                <!-- Accession Number filter section starts -->
+                <div class="filter-row">
+                  <h4>Accession Number</h4>
+                  <div class="w-100 float-left">
+                    <div class="input-group input-border mb-3">
+                      <input type="text" class="form-control border-0" placeholder="Type Keywords"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <span class="input-group-text border-0 bg-white" id="basic-addon2"><img src="images/pencil.svg"
+                            alt="" srcset=""></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Accession Number filter section finish -->
+
+                <!-- Script filter section starts -->
+                <div class="filter-row">
+                  <h4>Script</h4>
+                  <div class="w-100 float-left mb-2">
+                    <select class="custom-select">
+                      <option value="All"> All </option>
+                    </select>
+                  </div>
+                </div>
+                <!-- Script filter section finish -->
+
+                <!-- Language filter section starts -->
+                <div class="filter-row">
+                  <h4>Language</h4>
+                  <div class="w-100 float-left">
+                    <select class="custom-select">
+                      <option value="All"> All </option>
+                    </select>
+                  </div>
+                </div>
+                <!-- Script filter section finish -->
+
+                <!-- Custodian filter section starts -->
+                <div class="filter-row">
+                  <h4>Custodian</h4>
+                  <div class="w-100 float-left">
+                    <select class="custom-select">
+                      <option value="All"> All </option>
+                    </select>
+                  </div>
+                </div>
+                <!-- Custodian filter section finish -->
+
+                <!-- Pages filter section starts -->
+                <div class="filter-row">
+                  <h4>Pages</h4>
+                  <div class="w-100 float-left">
+                    <div class="input-group input-border mb-3">
+                      <input type="text" class="form-control border-0" placeholder="Type Keywords"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <span class="input-group-text border-0 bg-white" id="basic-addon2"><img src="images/pencil.svg"
+                            alt="" srcset=""></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pages filter section finish -->
+              </div>
+            </div>
+            <!-- refine search section finish -->
+          </div>
+          <!-- left filter section starts -->
+
+          <!-- product listing sectin starts -->
+          <div class="col-lg-9 col-xl-9 col-xxl-10 product-list">
+
+            <h3 class="section-heading">Books <em>(5500)</em>
+              <span class="float-right">
+                <a id="grid" class="active">
+                  <i class="fas fa-th-large"></i> Grid View
+                </a>
+
+                <a id="list">
+                  <i class="fas fa-bars"></i> List View
+                </a>
+              </span>
+            </h3>
+            
+              <div id="products" class="row view-group">
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-1.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-2.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-3.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-4.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-5.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-6.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-7.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-8.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-9.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-10.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-11.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-12.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-13.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-16.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/product-listing-15.png" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item col-6 col-sm-4 col-md-4 col-lg-3 grid-group-item">
+                  <div class="thumbnail card">
+                    <div class="img-event">
+                      <img src="images/listing-15.svg" alt="" />
+                    </div>
+                    <div class="caption card-body justify-content-center text-center">
+                      <h4 class="section-heading"> Catalogue of Punjabi Printed Books </h4>
+                      <p>Shamsher Singh Ashok</p>
+
+                      <p> 416 pages | Gurmukhi </p>
+                      <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            
+          </div>
+          <!-- product listing section finish -->
+        </div>
+
+        <!-- pagination section starts -->
+        <nav class="paging" aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item prev disabled">
+              <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item next">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- pagination section finish -->
+    </main>
+    <!-- main container section finish -->
+
+   <!-- newsletter section starts -->
+   <section class="newsletter inner-newsletter">
+    <div class="container">
+      <div class="newsletter-container">
+        <div class="subscription">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-5">
+              <h3>Stay with us</h3>
+              <p class="mb-0 "> Subscribe to our newsletters now and stay up-to-date.</p>
+            </div>
+            <div class="col-md-7">
+              <form class="form-inline">
+                <div class="form-group col-12 col-md-9">
+                  <input type="text" class="w-100 float-left form-control" placeholder="Enter email here">
+                </div>
+                <div class="col-12 col-md-3 pr-md-0 pl-md-0 subscribe-button">
+                  <button type="submit">SUBSCRIBE</button>
+
+                </div>
+                <p class="w-100 mt-1 mb-0 float-left"><a href="#" class="text-white float-right"
+                    style="font-size: 13px;">View All Newsletter
+                    Collection</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- newsletter section finish -->
+
+    <!-- footer section starts -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-2 footer-logo">
+            <span><a href="#"><img src="images/footer-olog.png" alt="" class="img-fluid"></a></span>
+            <div class="viewall">
+              <a href="#">Donate</a>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-10 ">
+            <div class="row">
+              <div class="col-sm-6 col-md-3">
+                <h3>About Us</h3>
+                <ul>
+                  <li><a href="">About Panjab Digital Library</a></li>
+                  <li><a href="">History (Club Behind the scenes)</a></li>
+                  <li><a href="">Policies</a></li>
+                  <li><a href="">Newsletter</a></li>
+                  <li><a href="">Working Groups</a></li>
+                  <li><a href="">Current Projects</a></li>
+                  <li><a href="">Team</a></li>
+                  <li><a href="">Media</a></li>
+                  <li><a href="">Acknowledgments</a></li>
+                  <li><a href="">Guestbook</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <h3>Services</h3>
+                <ul>
+                  <li><a href="">Digitization</a></li>
+                  <li><a href="">Preservation</a></li>
+                  <li><a href="">Data Mining</a></li>
+                  <li><a href="">Training</a></li>
+                  <li><a href="">Request High Resolution</a></li>
+                  <li><a href="">Library Shop</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <h3>Support Us</h3>
+                <ul>
+                  <li><a href="">Make a Donation</a></li>
+                  <li><a href="">Adopt-a-Book</a></li>
+                  <li><a href="">Become a Patron</a></li>
+                  <li><a href="">Work with us</a></li>
+                  <li><a href="">Volunteer </a></li>
+                  <li><a href="">Collections </a></li>
+                  <li><a href="">Donate Books</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <h3>Information</h3>
+                <ul>
+                  <li><a href="">Custodians</a></li>
+                  <li><a href="">Authors </a></li>
+                  <li><a href="">Librarians </a></li>
+                  <li><a href="">Publishers </a></li>
+                  <li><a href="">Teachers </a></li>
+                  <li><a href="">Students </a></li>
+                  <li><a href="">Museums</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="row ">
+            <ul>
+              <li><a href="">Privacy Statement</a></li>
+              <li><a href="">FAQs</a></li>
+              <li><a href="">Feedback</a></li>
+              <li><a href="">Disclaimer</a></li>
+              <li><a href="">Forms</a></li>
+              <li><a href="">Metadata Schema</a></li>
+              <li><a href="">Contact </a></li>
+              <li><a href="">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>© ALL RIGHT RESERVED BY PUNJAB DIGITAL LIBRARY @2020</p>
+          </div>
+          <div class="col-md-6">
+            <p>Revealing the Invisible Heritage of Panjab</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section finish -->
+  </section>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src='js/slick.js'></script>
+  <script src="js/common.js"></script>
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6194efa0aeedf20012fc468a&product=inline-share-buttons" async="async"></script>
+
+</body>
+
+</html>
