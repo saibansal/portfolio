@@ -1,0 +1,142 @@
+a{
+    text-decoration: none !important;
+}
+.upload-document {
+    float: left;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(100vh - 140px);
+    background-color: #F5F5F5
+}
+
+.upload-document .verticalCenter {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    height: 100% !important;
+    width: 100%;
+}
+
+.upload-document .verticalCenter .centerContainer {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+    -ms-flex-pack: center !important;
+    width: 100%;
+    justify-content: center !important;
+}
+
+.upload-document-section {
+    float: left;
+    background-color: #38A1F4;
+    min-height: 45vh;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.upload-document-section:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    content: '';
+    background-image: url(../../assets/images/shadow-effect.png);
+    background-size: cover;
+    background-position: -0px center;
+}
+
+svg {
+    width: 85%;
+}
+
+.section {
+    float: left;
+    width: 100%;
+    padding: 0;
+}
+
+.upload-document-content {
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.upload-document-content ion-col div {
+    border-radius: 7px;
+    text-align: center;
+    margin: 0 5px;
+    height: 100%;
+    padding: 15px 5px;
+}
+
+.upload-document-content ion-col {
+    padding: 0 0;
+    margin: 0;
+}
+
+.upload-document-content ion-col:first-child div {
+    background: #009A7A;
+}
+
+.upload-document-content ion-col div {
+    background: #DC4E41;
+}
+
+.upload-document-content ion-col:last-child div {
+    background: #DCA841;
+}
+.upload-document-content ion-col span{
+    width: 100%;
+    height:45px;
+    float: left;
+}
+.upload-document-content ion-col svg{width: 50%;}
+.upload-document-content ion-col div h5 a,
+.upload-document-content ion-col div h5 {
+    font-size: 1rem;
+    font-family: 'Lato Bold';
+    color: #fff;
+    margin-bottom: 0;
+    float: left;
+    width:100%;
+    
+}
+.upload-document-content ion-col div h5{
+    margin-top: 7px;
+}
+.upload-document-content ion-col div p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Lato Bold';
+}
+
+ion-tab-bar[slot="bottom"] {
+    padding: .8rem 2rem;
+    border-top: 0;
+}
+
+ion-tab-bar[slot="bottom"]  ion-tab-button a {
+    float: left;
+    color: #636363;
+    font-size: 16px;
+    font-family: 'Lato Bold';
+    margin-top: 0;
+} 
+ion-tab-bar[slot="bottom"]  ion-tab-button span{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+ion-tab-bar[slot="bottom"]  ion-tab-button svg{
+    width: 100%;
+    height: 60px
+}

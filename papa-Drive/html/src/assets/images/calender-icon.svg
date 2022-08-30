@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136.445" height="136.459" viewBox="0 0 136.445 136.459">
+  <g id="calender-icon" transform="translate(-300)">
+    <g id="calendar_1_" transform="translate(300)">
+      <path id="Path_320" data-name="Path 320" d="M425.092,12.8H406.615V4.271a4.271,4.271,0,0,0-8.542,0V12.8H372.5V4.271a4.271,4.271,0,0,0-8.542,0V12.8H338.386V4.271a4.271,4.271,0,1,0-8.542,0V12.8H311.367A11.368,11.368,0,0,0,300,24.167V125.092a11.368,11.368,0,0,0,11.367,11.367H425.078a11.368,11.368,0,0,0,11.367-11.367V24.167A11.338,11.338,0,0,0,425.092,12.8Zm2.838,112.292a2.836,2.836,0,0,1-2.838,2.838H311.367a2.836,2.836,0,0,1-2.838-2.838V24.167a2.836,2.836,0,0,1,2.838-2.838h18.477v8.529a4.271,4.271,0,1,0,8.542,0V21.329h25.586v8.529a4.271,4.271,0,1,0,8.542,0V21.329H398.1v8.529a4.271,4.271,0,0,0,8.542,0V21.329h18.476a2.836,2.836,0,0,1,2.838,2.838V125.092Z" transform="translate(-300)" fill="#b6b6b6"/>
+      <rect id="Rectangle_105" data-name="Rectangle 105" width="17.057" height="12.8" transform="translate(29.857 51.172)" fill="#b6b6b6"/>
+      <rect id="Rectangle_106" data-name="Rectangle 106" width="17.057" height="12.8" transform="translate(29.857 72.501)" fill="#b6b6b6"/>
+      <rect id="Rectangle_107" data-name="Rectangle 107" width="17.057" height="12.8" transform="translate(29.857 93.815)" fill="#b6b6b6"/>
+      <rect id="Rectangle_108" data-name="Rectangle 108" width="17.057" height="12.8" transform="translate(59.701 93.815)" fill="#b6b6b6"/>
+      <rect id="Rectangle_109" data-name="Rectangle 109" width="17.057" height="12.8" transform="translate(59.701 72.501)" fill="#b6b6b6"/>
+      <rect id="Rectangle_110" data-name="Rectangle 110" width="17.057" height="12.8" transform="translate(59.701 51.172)" fill="#b6b6b6"/>
+      <rect id="Rectangle_111" data-name="Rectangle 111" width="17.057" height="12.8" transform="translate(89.558 93.815)" fill="#b6b6b6"/>
+      <rect id="Rectangle_112" data-name="Rectangle 112" width="17.057" height="12.8" transform="translate(89.558 72.501)" fill="#b6b6b6"/>
+      <rect id="Rectangle_113" data-name="Rectangle 113" width="17.057" height="12.8" transform="translate(89.558 51.172)" fill="#b6b6b6"/>
+    </g>
+  </g>
+</svg>

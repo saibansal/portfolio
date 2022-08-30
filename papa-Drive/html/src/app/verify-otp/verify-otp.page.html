@@ -1,0 +1,49 @@
+ 
+
+<ion-content>
+  <div class="verify-otp">
+    <!-- finger lock and face lock section starts --> 
+    <div class="verticalCenter">
+      <div class="centerContainer">
+        <!-- logo section starts -->
+        <div class="logo">
+          <img src="assets/images/Logo.png" alt="">
+        </div>
+        <!-- logo section finish -->
+        <!-- slider section starts -->
+        <div class="section">
+          <div class="container">
+            <ion-grid class="col-md-12 float-left">
+              <ion-row  class="col-md-12 float-left w-100">
+                <ion-col size="2">
+                  <ion-input class="x" #otp1  required="true" maxLength="1"></ion-input>
+                </ion-col>  
+                <ion-col size="2">
+                  <ion-input class="x" #otp2 required="true" maxLength="1"></ion-input>
+                </ion-col>  
+                <ion-col size="2">
+                  <ion-input class="x" #otp3 required="true" maxLength="1"></ion-input>
+                </ion-col>  
+                <ion-col size="2">
+                  <ion-input class="x" #otp4 required="true" maxLength="1"></ion-input>
+                </ion-col>  
+                <ion-col size="2">
+                  <ion-input class="x" #otp5 required="true" maxLength="1"></ion-input>
+                </ion-col>  
+                <ion-col size="2">
+                  <ion-input class="x" #otp6 required="true" maxLength="1"></ion-input>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <ion-col size='12' class="float-left">
+              <ion-button [routerLink]="['/home']" expand="block" size="large" color=" l ight"
+                class="round ion-co lor-light ios button submit-button hydrated">Get Started</ion-button>
+            </ion-col>
+          </div>
+        </div>
+        <!-- slider section finish -->
+      </div>
+    </div>
+    <!-- finger lock and face lock section finish -->
+  </div>
+</ion-content>

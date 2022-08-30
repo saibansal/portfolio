@@ -1,0 +1,33 @@
+<ion-content>
+  <div class="getStarted">
+    <!-- finger lock and face lock section starts -->
+    <div class="section">
+      <div class="container">
+        <!-- logo section starts -->
+        <div class="logo">
+          <img src="assets/images/Logo.png" alt="">
+        </div>
+        <!-- logo section finish -->
+        <div class="unlock text-center">
+          <a href="#"><img src="assets/images/finger.png" alt="" srcset=""></a>
+          <a href="#"><img src="assets/images/face-unlock.png" alt="" srcset=""></a>
+        </div>
+        <div class="or"><img src="assets/images/or.png" alt="" srcset=""></div>
+
+        <ion-grid  class="col-md-12 float-left">
+
+          <ion-col size='12' class="ion-align-self-center">
+            <ion-input clearInput="false" clearOnEdit="false" inputmode="text" placeholder="Mobile Number"
+              class="form-control register-input" required="true"></ion-input>
+          </ion-col>
+        </ion-grid>
+
+        <ion-col size='12' class="float-left">
+          <ion-button [routerLink]="['/verify-otp']" expand="block" size="large" color=" l ight"
+            class="round ion-co lor-light ios button submit-button hydrated">Get Started</ion-button>
+        </ion-col>
+      </div>
+    </div>
+    <!-- finger lock and face lock section finish -->
+  </div>
+</ion-content>

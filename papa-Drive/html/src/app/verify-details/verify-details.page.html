@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>verify-details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="verify-section">
+    <ion-grid> 
+      <ion-row class="mb-3">
+        <ion-col size="5" >
+          <ion-label>Document Name</ion-label>
+        </ion-col>
+        <ion-col size="7">
+          <input type="text" name="" id="" placeholder="Enter Document Name">
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="mb-3">
+        <ion-col size="5" >
+          <ion-label class="ion-text-end">Expiry Date</ion-label>
+        </ion-col>
+        <ion-col size="7">
+          <ion-datetime displayFormat="DDDD MMM D, YYYY" class="p-0" value="2008-09-02"></ion-datetime>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+
+    <ion-row class="mt-4 mb-4 ">
+      <ion-col size="10" class="document-image" size-sm="10" size-md="8" offset="1" offset-sm="1" offset-md="2">
+        <span><img class="img-fluid" src="assets/images/licence-image.jpg" alt="" srcset=""></span>
+      </ion-col>
+    </ion-row>
+ 
+    <ion-grid size="12" class="action-link">
+      <ion-row class="mt-4 mb-4">
+        <ion-col size="6">
+          <a href="#" class="btn btn-primary">Verify</a>
+        </ion-col>
+        <ion-col size="6">
+          <a href="#" class="btn btn-primary">Retake</a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

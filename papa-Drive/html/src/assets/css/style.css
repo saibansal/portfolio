@@ -1,0 +1,54 @@
+.my-custom-class .alert-wrapper {
+  --background: #fff;
+}
+
+.sc-ion-alert-ios-h.sc-ion-alert-ios-s.my-custom-class.ios {
+  background: rgba(0, 0, 0, .7);
+  width: 100%;
+  min-width: 300px;
+}
+
+.my-custom-class .alert-wrapper.sc-ion-alert-ios {
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+}
+
+.my-custom-class h2.alert-title.sc-ion-alert-ios {
+  font-size: 1.3rem;
+  font-family: 'Lato Regular';
+  color: #2196F3;
+  text-align: center;
+  width: 100%;
+  float: left;
+}
+
+.my-custom-class .alert-button-group {
+  margin-top: 15px;
+  
+}
+
+.my-custom-class .alert-button-group button {
+  border: 0;
+  color: #fff;
+  border-radius: 80px;
+  padding: 24px 30px;
+  border-top: 0;
+  border-bottom: 0;
+  border: 5px solid #fff !important;
+  max-width: 40%;
+  
+}
+
+.my-custom-class .alert-button-group .yes-btn {
+  background: #2196f3;
+  border-right: solid 5px transparent;
+  float: left;
+}
+
+.my-custom-class .alert-button-group .no-btn {
+  background: #DC4E41;
+  border-left: solid 5px transparent;
+  float: right;
+}
+ 

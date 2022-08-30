@@ -1,0 +1,122 @@
+.getStarted {
+    float: left;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-image: url(../../assets/images/login-page-app-design-gokhankara-net@2x.png);
+}
+
+.getStarted .verticalCenter {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    height: 100% !important;
+    width: 100%;
+}
+
+.getStarted .verticalCenter .centerContainer {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+    -ms-flex-pack: center !important;
+    width: 100%;
+    justify-content: center !important;
+}
+
+.getStarted {
+    float: left;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .getStarted {
+        padding: 10% 0;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .getStarted {
+        padding: 10% 0;
+    }
+}
+
+.getStarted .section {
+    float: left;
+    width: 100%;
+}
+
+.getStarted .section .logo {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.getStarted .section .unlock {
+    text-align: center;
+    width: 260px;
+    justify-content: space-between;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .getStarted .section .unlock {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .getStarted .section .unlock {
+        margin-top: 30px;
+    }
+}
+
+.getStarted .section .unlock a {
+    display: inline-block;
+}
+
+.getStarted .section .unlock a:first-child {
+    margin-right: 30px;
+}
+
+.getStarted .section .or {
+    float: left;
+    width: 100%;
+    margin: 3rem 0 0;
+    text-align: center;
+}
+
+.getStarted .section .input-group-prepend .input-group-text {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    border-right: solid 2px #fff;
+    background-color: red !important;
+}
+
+.register-input {
+    background-image: url(../../assets/images/usa.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    padding-left: 80px !important;
+    text-align: left;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: solid 2px #fff;
+    border-radius: 0;
+    position:relative;
+
+}
+.submit-button{
+    font-size: 20px;
+    color:#2196F3;
+    font-family: 'Lato Bold'; 
+    border-radius: 55px;
+    background-color: #fff;
+    letter-spacing: .5px;
+}

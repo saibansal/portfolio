@@ -1,0 +1,241 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Expense list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="document-list">
+    <!-- finger lock and face lock section starts -->
+    <div class="section">
+
+      <ion-grid class="top-bar">
+        <ion-row>
+          <ion-col size="7">
+            <ion-datetime class="float-left input-date" displayFormat="DDDD MMM D, YYYY" class="p-0" value="2008-09-02">
+            </ion-datetime>
+          </ion-col>
+          <ion-col size="5">
+            <a href="#" class="share-button"> <img width="15" src="assets/images/share-icon.svg" alt="" srcset=""> Share
+              All </a>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="document-listing">
+        <ion-row>
+          <ion-col size="8">
+            <ion-thumbnail class="float-left mr-2">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <h3 class="document-heading">Driving license </h3>
+            <p class="document-date">Uploaded : 30/12/2021</p>
+          </ion-col>
+
+          <ion-col size="4">
+            <ion-row>
+              <ion-col size="10" class="text-center">
+                <span class="not-verified"> </span>
+              </ion-col>
+              <ion-col size="2" class="text-right" (click)="presentActionSheet()">
+                <img src="assets/images/icon-set.svg" height="25">
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="document-listing">
+        <ion-row>
+          <ion-col size="8">
+            <ion-thumbnail class="float-left mr-2">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <h3 class="document-heading">Driving license </h3>
+            <p class="document-date">Uploaded : 30/12/2021</p>
+          </ion-col>
+
+          <ion-col size="4">
+            <ion-row>
+              <ion-col size="10" class="text-center">
+                <span class="not-verified"> </span>
+              </ion-col>
+              <ion-col size="2" class="text-right" (click)="presentActionSheet()">
+                <img src="assets/images/icon-set.svg" height="25">
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="document-listing">
+        <ion-row>
+          <ion-col size="8">
+            <ion-thumbnail class="float-left mr-2">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <h3 class="document-heading">Driving license </h3>
+            <p class="document-date">Uploaded : 30/12/2021</p>
+          </ion-col>
+
+          <ion-col size="4">
+            <ion-row>
+              <ion-col size="10" class="text-center">
+                <span class="not-verified"> </span>
+              </ion-col>
+              <ion-col size="2" class="text-right" (click)="presentActionSheet()">
+                <img src="assets/images/icon-set.svg" height="25">
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="document-listing">
+        <ion-row>
+          <ion-col size="6">
+            <ion-thumbnail class="float-left mr-2">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <h3 class="document-heading">Driving license </h3>
+            <p class="document-date">Uploaded : 30/12/2021</p>
+          </ion-col>
+          <ion-col size="2" class="total-price ion-text-center">
+            $2000
+          </ion-col>
+          <ion-col size="4">
+            <ion-row>
+              <ion-col size="10" class="text-center">
+                <span class="verified"> </span>
+              </ion-col>
+              <ion-col size="2" class="text-right" (click)="presentActionSheet()">
+                <img src="assets/images/icon-set.svg" height="25">
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="document-listing">
+        <ion-row>
+          <ion-col size="6">
+            <ion-thumbnail class="float-left mr-2">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <h3 class="document-heading">Driving license </h3>
+            <p class="document-date">Uploaded : 30/12/2021</p>
+          </ion-col>
+          <ion-col size="2" class="total-price ion-text-center">
+            $10
+          </ion-col>
+          <ion-col size="4">
+            <ion-row>
+              <ion-col size="10" class="text-center">
+                <span class="verified"> </span>
+              </ion-col>
+              <ion-col size="2" class="text-right" (click)="presentActionSheet()">
+                <img src="assets/images/icon-set.svg" height="25">
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="document-listing">
+        <ion-row>
+          <ion-col size="6">
+            <ion-thumbnail class="float-left mr-2">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <h3 class="document-heading">Driving license </h3>
+            <p class="document-date">Uploaded : 30/12/2021</p>
+          </ion-col>
+          <ion-col size="2" class="total-price ion-text-center">
+            $150
+          </ion-col>
+          <ion-col size="4">
+            <ion-row>
+              <ion-col size="10" class="text-center">
+                <span class="verified"> </span>
+              </ion-col>
+              <ion-col size="2" class="text-right" (click)="presentActionSheet()">
+                <img src="assets/images/icon-set.svg" height="25">
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="document-listing">
+        <ion-row>
+          <ion-col size="8">
+            <ion-thumbnail class="float-left mr-2">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <h3 class="document-heading">Driving license 2</h3>
+            <p class="document-date">Uploaded : 30/12/2021</p>
+          </ion-col>
+
+          <ion-col size="4">
+            <ion-row>
+              <ion-col size="10" class="text-center">
+                <span class="pending"> </span>
+              </ion-col>
+              <ion-col size="2" class="text-right" (click)="presentActionSheet()">
+                <img src="assets/images/icon-set.svg" height="25">
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="document-listing">
+        <ion-row>
+          <ion-col size="8">
+            <ion-thumbnail class="float-left mr-2">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <h3 class="document-heading">Driving license </h3>
+            <p class="document-date">Uploaded : 30/12/2021</p>
+          </ion-col>
+
+          <ion-col size="4">
+            <ion-row>
+              <ion-col size="10" class="text-center">
+                <span class="pending"> </span>
+              </ion-col>
+              <ion-col size="2" class="text-right" (click)="presentActionSheet()">
+                <img src="assets/images/icon-set.svg" height="25">
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="document-listing">
+        <ion-row>
+          <ion-col size="8">
+            <ion-thumbnail class="float-left mr-2">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <h3 class="document-heading">Driving license </h3>
+            <p class="document-date">Uploaded : 30/12/2021</p>
+          </ion-col>
+
+          <ion-col size="4">
+            <ion-row>
+              <ion-col size="10" class="text-center">
+                <span class="pending"> </span>
+              </ion-col>
+              <ion-col size="2" class="text-right" (click)="presentActionSheet()">
+                <img src="assets/images/icon-set.svg" height="25">
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </div>
+    <!-- finger lock and face lock section finish -->
+  </div>
+</ion-content>

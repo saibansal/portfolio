@@ -1,0 +1,7 @@
+{
+  "name": "papaDrive",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

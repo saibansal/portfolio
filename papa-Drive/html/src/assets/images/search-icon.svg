@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175.702" height="175.581" viewBox="0 0 175.702 175.581">
+  <g id="search-icon" transform="translate(-0.565 -1028.775)">
+    <path id="Path_333" data-name="Path 333" d="M0,0H31.323V78.308H0Z" transform="translate(98.746 1148.983) rotate(-45)" fill="#2196f3"/>
+    <path id="Path_332" data-name="Path 332" d="M0,0H31.323V23.492H0Z" transform="translate(98.746 1148.983) rotate(-45)" fill="#243762"/>
+    <path id="Path_317" data-name="Path 317" d="M21.207,1049.33a70.4,70.4,0,1,0,99.67,0A70.214,70.214,0,0,0,21.207,1049.33Zm16.611,16.444a47.616,47.616,0,0,1,66.45,0c18.348,18.795,18.348,48.552,0,66.563a47.614,47.614,0,0,1-66.45,0C19.47,1114.326,19.47,1084.569,37.819,1065.774Z" transform="translate(0 0)" fill="#2196f3"/>
+    <path id="Path_318" data-name="Path 318" d="M104.8,53.9A50.9,50.9,0,1,1,53.9,3,50.9,50.9,0,0,1,104.8,53.9Z" transform="translate(16.633 1046.331)" fill="#ecf0f1"/>
+    <path id="Path_319" data-name="Path 319" d="M29.492,6V29.492H6v7.831H29.492V60.816h7.831V37.323H60.816V29.492H37.323V6Z" transform="translate(37.126 1066.824)" fill="#2196f3"/>
+  </g>
+</svg>

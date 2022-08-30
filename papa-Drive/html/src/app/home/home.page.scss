@@ -1,0 +1,19 @@
+.splash { float: left; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+@media only screen and (max-width: 767.98px) { .splash { background-image: url(../../assets/images/login-page-app-design-gokhankara-net@2x.png); } }
+@media only screen and (max-width: 575.98px) { .splash { background-image: url(../../assets/images/login-page-app-design-gokhankara-net.png); } }
+.splash .vertical-center { display: -ms-flexbox !important; display: flex !important; height: 100% !important; width: 100%; }
+.splash .vertical-center .center-container { -ms-flex-item-align: center !important; align-self: center !important; -ms-flex-pack: center !important; width: 100%; justify-content: center !important; }
+.splash { float: left; width: 100%; justify-content: center; height: 100vh; text-align: center; }
+.splash .skip { position: fixed; left: 50%; transform: translateX(-50%); text-align: center; color: #fff; text-decoration: none; }
+@media only screen and (max-width: 767.98px) { .splash .skip { bottom: 60px; } }
+@media only screen and (max-width: 575.98px) { .splash .skip { bottom: 80px; } }
+.splash .splash-slider { float: left; width: 100%; }
+.splash .splash-slider .carousel-inner { width: 90%; margin: 0 5%; }
+.splash .splash-slider .carousel-inner .carousel-item { margin-top: 10px; }
+@media only screen and (max-width: 767.98px) { .splash .splash-slider .carousel-inner .carousel-item { margin-top: 0px; } }
+@media only screen and (max-width: 575.98px) { .splash .splash-slider .carousel-inner .carousel-item { margin-top: 30px; } }
+.splash .splash-slider .carousel-inner .carousel-item p { color: #fff; font-family: "Lato Regular"; font-size: 18px; }
+.splash .splash-slider .carousel-indicators { position: fixed; }
+@media only screen and (max-width: 767.98px) { .splash .splash-slider .carousel-indicators { bottom: 10px; } }
+@media only screen and (max-width: 575.98px) { .splash .splash-slider .carousel-indicators { bottom: 20px; } }
+.splash .splash-slider .carousel-indicators li { height: 15px; width: 15px; border-radius: 50%; } 

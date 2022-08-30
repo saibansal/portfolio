@@ -1,0 +1,95 @@
+.user-profile {
+
+    .profile-pic {
+        box-shadow: 0 0 0;
+        text-align: center;
+        margin: 0;
+        border-radius: 0;
+        background-color: #2196F3;
+        padding-bottom: 20px;
+
+        .profile-image {
+            padding-top: 70px;
+            background-image: url(../../assets/images/shadow-effect.png);
+            background-position: top center;
+            background-size: cover;
+            float: left;
+            width: 100%;
+            margin-bottom: 15px;
+
+            a {
+                position: relative;
+                display: inline-block;
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                    object-fit: cover;
+                    object-position: left;
+                    border-radius: 15px;
+                    border-radius: solid 8px #fff;
+                }
+
+                span {
+                    &.edit {
+                        position: absolute;
+                        right: -50%;
+                        bottom: -50%;
+                        transform: translate(-100%, -100%);
+                        z-index: 1;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        ion-card-header {
+            float: left;
+            width: 100%;
+            padding-top: 0;
+            ion-card-title {
+                color: #fff;
+                font-size: 25px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        }
+
+        ion-card-content {
+            color: #fff;
+            font-size: 14px;
+            line-height: 24px;
+            float: left;
+            padding-top: 0;
+            width: 100%;
+        }
+    }
+
+    .user-info {
+        float: left;
+        width: 100%;
+
+        tr {
+            background: #F0F4FF;
+            
+            &:nth-child(even) {
+                background-color: #fff;                
+            }
+            td {
+                text-align: left;
+                padding: 15px 20px 15px 20px;
+                width: 20%;
+                font-weight: 500;
+                &:first-child{
+                    text-align: right;
+                    font-weight: 400;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

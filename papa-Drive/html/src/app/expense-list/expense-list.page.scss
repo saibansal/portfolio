@@ -1,0 +1,167 @@
+.document-list {
+    float: left;
+    width: 100%;
+    height: 100vh;
+
+    .verticalCenter {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        height: 100% !important;
+        width: 100%;
+
+        .centerContainer {
+            -ms-flex-item-align: center !important;
+            align-self: center !important;
+            -ms-flex-pack: center !important;
+            width: 100%;
+            justify-content: center !important;
+        }
+    }
+
+    .select-icon {
+        display: none !important;
+    }
+    ion-datetime {
+        height: 35px;
+        background-image: url(../../assets/images/calender-icon.svg);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        border-bottom: solid 2px #B6B6B6;
+        margin-top: 10px;
+    }
+    .listing-icons{
+        button{
+            span{
+                color: rgba($color: #000000, $alpha: 0.5);
+            }
+
+        }
+    }
+    ion-grid {
+        &.top-bar {
+            padding: 15px;
+            .share-button {
+                background-color: #009245;
+                color: #fff;                
+                padding: 13px 20px;
+                width: 100%;
+                max-width: 163px;
+                text-align: center;
+                border-radius: 50px;
+                float: right;
+                text-decoration: none;
+            }
+            .input-date{
+                border-bottom: solid 2px rgba($color: #000000, $alpha: 0.5);
+            }
+        }
+    }
+
+    ion-grid {
+        &.document-listing {
+            padding: 15px;
+            background: #F0F4FF;
+
+            &:nth-child(odd) {
+                background: #fff;
+            }
+
+            ion-col {
+                .document-heading {
+                    font-size: 14px;
+                    font-family: 'Lato Bold';
+                    color: #092634;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    align-items: center;
+                }
+
+                .document-date {
+                    color: #009245;
+                    font-family: 'Lato Regular';
+                    font-size: 13px;
+                    margin-bottom: 0;
+                }
+
+                ion-thumbnail {
+                    width: 38px;
+                    img {
+                        border-radius: 0;
+                        object-fit: cover;
+                        max-width: 38px;
+                        max-height: 38px;
+                    }
+                }
+
+                .not-verified {
+                    color: #DC4E41;
+                    font-family: 'Lato Bold';
+                    font-size: 13px;
+                    position: relative;
+                    background-image: url(../../assets/images/not-verified-icon.svg);
+                    background-size: 13px 13px;
+                    background-position: left center;
+                    background-repeat: no-repeat;
+                    padding: 6px 0;
+                    padding-left: 17px;
+                    font-family: 'Lato Bold';
+
+                    &:before {
+                        content: 'Not Verified';
+                    }
+
+                }
+
+                .verified {
+                    font-size: 13px;
+                    color: #009245;
+                    background-image: url(../../assets/images/verified-icon.svg);
+                    background-size: 16px 16px;
+                    background-position: left center;
+                    background-repeat: no-repeat;
+                    padding: 6px 0;
+                    padding-left: 22px;
+                    font-family: 'Lato Bold';
+
+                    &:before {
+                        content: 'Verified';
+                    }
+                }
+
+                .pending {
+                    color: #DCA841;
+                    font-size: 13px;
+                    background-image: url(../../assets/images/pending-icon.svg);
+                    background-size: 16px 16px;
+                    background-position: left center;
+                    background-repeat: no-repeat;
+                    padding: 6px 0;
+                    padding-left: 22px;
+                    font-family: 'Lato Bold';
+                    font-size: 13px;
+                    text-align: center;
+
+                    &:before {
+                        content: 'Processing';
+                        display: inline-block;
+                    }
+                }
+
+                ion-select {
+                    position: absolute;
+                    top: 0;
+
+                    .select-icon {
+                        display: none;
+                    }
+                }
+            }
+            .total-price{
+                color:#009A7A;
+                font-size: 18px;
+
+            }
+        }
+    }
+}
