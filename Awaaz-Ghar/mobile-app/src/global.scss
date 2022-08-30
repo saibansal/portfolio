@@ -1,0 +1,116 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+
+
+ion-item .item-native {
+    --padding: 0 !important;
+}
+
+body {
+    --background: #1F2239;
+}
+
+ion-header {
+    --background: #1F2239; 
+    ion-toolbar{
+        --background: #1F2239;
+        padding: 20px 0 10px;
+        img {
+    margin-top: 15px;
+}
+    }
+    &:after {
+        display: none;
+    }
+
+     
+}
+
+ion-content {
+    --padding: 0 30px;
+}
+
+ion-grid {
+    .owl-theme {
+        .owl-dots {
+            .owl-dot {
+
+                &:hover,
+                &.active {
+                    span {
+                        background: #00ADEF !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-heading {
+    color: #fff;
+    float: left;
+    width: 100%;
+    font-family: 'Open bd';
+    font-size: 17px;
+    padding: 0 10px;
+    margin-top: 15px;
+    text-transform: uppercase;
+
+    span {
+        float: right;
+        font-family: 'Open';
+        font-size: 17px;
+
+    }
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+// .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span
+.owl-theme {
+    .owl-controls {
+        .owl-page {
+            &.active {
+                span {
+                    background:#00ADEF
+                }
+            }
+        }
+    }
+}
+
+.tabs-inner{
+    // --background: #1F2239;
+}
+
+ion-content {
+    --background: #1F2239;
+}

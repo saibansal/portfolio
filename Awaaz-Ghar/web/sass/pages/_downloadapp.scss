@@ -1,0 +1,152 @@
+.banner {
+    &.download-app-banner {
+        background-image: url(../images/download-app-banner.png);
+        background-position: 63%;
+        background-size: cover;
+        width: 100%;
+
+        
+
+
+        @media #{$xl} {
+            min-height: auto;
+            padding: abs($number: 6rem) abs($number:20px) abs($number: $null);
+        }
+        @media #{$lg-width} {
+            background-position: 77%;
+        }
+
+        @media #{$lg} {
+            min-height: auto;
+            padding: abs($number: $null) abs($number:20px) abs($number: $null);
+        }
+
+        @media #{$md} {
+            min-height: auto;
+            padding: abs($number: $null) abs($number:20px) abs($number: $null);
+        }
+
+        @media #{$sm} {
+            padding: abs($number: 2rem) abs($number:20px) abs($number: $null);
+        }
+
+        .banner-icon {
+            img {
+                @media #{$lg} {
+                    max-height: 500px;
+                }
+
+                @media #{$md} {
+                    max-height: 350px;
+                }
+
+
+                @media #{$sm} {
+                    max-height: 250px;
+                }
+            }
+
+            @media #{$sm} {
+                order: 1;
+                padding: abs($number: $null);
+            }
+        }
+
+        .banner-text {
+            @media #{$lg}{
+                padding-top:abs($number: $null);
+            }
+            @media #{$sm} {
+                order: 2;
+            }
+
+            h4 {
+                @media #{$lg} {
+                    font-size: 2.5rem;
+                }
+                @media #{$md} {
+                    font-size: 2.2rem;
+                }
+                @media #{$sm} {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+main {
+    .downloadapp {
+        .download-steps {
+            max-width: 1168px;
+            margin: auto;
+
+            h2 {
+                font-size: 29px;
+                font-family: $open;
+                text-align: center;
+                line-height: 40px;
+
+                @media #{$lg} {
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+
+                @media #{$sm} {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+
+            .threesteps {
+                span {
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 15px;
+
+                    @media #{$sm} {
+                        margin-bottom: 10px;
+                    }
+
+                    img {
+                        vertical-align: auto;
+                    }
+                }
+
+                h2 {
+                    float: left;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    font-size: 26px;
+                    color: #252C49;
+                    font-family: $openbd;
+
+                    @media #{$lg} {
+                        margin-bottom: 0;
+                        font-size: 20px;
+                    }
+
+                    @media #{$md} {
+                        margin-bottom: 0;
+                        font-size: 18px;
+                    }
+                }
+
+                p {
+                    text-align: center;
+
+                    @media #{$md} {
+                        font-size: 15px;
+                    }
+
+                    @media #{$sm} {
+                        margin-bottom: 50px;
+                    }
+
+                }
+            }
+        }
+
+    }
+}

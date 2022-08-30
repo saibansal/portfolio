@@ -1,0 +1,117 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar>
+    <img src="../../assets/logo-with-text.png" alt="" srcset="">
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <h2 class="section-heading">My Profile
+        <span>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14.001" height="14.001" viewBox="0 0 14.001 14.001">
+              <g id="pencil" transform="translate(-32 -32)">
+                <path id="Path_132" data-name="Path 132" d="M0,0H4V11.065H0Z"
+                  transform="matrix(-0.707, -0.707, 0.707, -0.707, 36.094, 44.738)" fill="#fff" />
+                <path id="Path_133" data-name="Path 133"
+                  d="M45.742,33.763l-1.5-1.5a.982.982,0,0,0-1.385.058L41.441,33.73l2.83,2.83,1.413-1.413A.982.982,0,0,0,45.742,33.763ZM33,42.353,32,46l3.648-1Z"
+                  fill="#fff" />
+              </g>
+            </svg>
+            Edit Profile
+          </a>
+        </span>
+      </h2>
+
+      <div class="profile-image">
+        <img src="../../assets/user-default.jpeg" alt="" srcset="">
+      </div>
+
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ul class="profileDetails">
+        <li>
+          <p>Name : </p>
+          <em>Sukhwinder Singh</em>
+          <span>
+            <ion-input type="text" disabled value="Sukhwinder Singh" class="read"></ion-input>
+          </span>
+        </li>
+        <li>
+          <p>Email Id : </p>
+          <em>someone@domainname.com</em>
+          <span>
+            <ion-input type="email" disabled value="someone@domainname.com" class="read"></ion-input>
+          </span>
+        </li>
+        <li>
+          <p>Contact : </p>
+          <em>+91 0000 000 000</em>
+          <span>
+            <ion-input type="text" disabled value="+91 0000 000 000" class="read"></ion-input>
+          </span>
+        </li>
+        <li>
+          <p>Gender</p>
+          <em>Male</em>
+          <span>
+            <ion-select value="male" class="read" disabled okText="Okay" cancelText="Cancel">
+              <ion-select-option value="male">Male</ion-select-option>
+              <ion-select-option value="female">Female</ion-select-option> 
+            </ion-select>
+          </span>
+        </li>
+        <li>
+          <p>Address</p>
+          <em>St. Square building, Plot No C - 167, Industrial Area, Phase 8 B, Industrial Area</em>
+          <span>
+            <ion-textarea class="read" disabled  rows="2" value="St. Square building, Plot No C - 167, Industrial Area, Phase 8 B, Industrial Area"></ion-textarea>
+          </span>
+        </li>
+        <li>
+          <p>City</p>
+          <em>SAS Nagar, Mohali</em>
+          <span><ion-input type="text" disabled value="SAS Nagar, Mohali" class="read"></ion-input></span>
+        </li>
+      </ul>
+
+      <div class="upgrade">
+        <p>Currently you are using Free Subscription
+          with limited access. Upgrade your Account
+          with unlimited access</p> 
+          <ion-button>Click here to Upgrade</ion-button>
+      </div>
+      
+      <ion-list class="nav-list">
+        <ion-item>
+          <ion-label> <ion-icon src="../../assets/change-pwd-icon.svg"></ion-icon> Change Password</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-icon src="../../assets/paymet-icon.svg"></ion-icon> Payment Details</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-icon src="../../assets/about-icon.svg"></ion-icon> About Us</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-icon src="../../assets/list-icon.svg"></ion-icon> Terms & Condittion</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-icon src="../../assets/privacy-icon.svg"></ion-icon> Privacy Policy</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-icon src="../../assets/feedback-icon.svg"></ion-icon> Feedback</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-icon src="../../assets/logout-icon.svg"></ion-icon> Logout</ion-label>
+        </ion-item>
+      </ion-list>
+
+      
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

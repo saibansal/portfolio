@@ -1,0 +1,74 @@
+.audio-player {
+    float: left;
+    width: 100%;
+    padding: 5px 10px;
+    background: #00ADEF;
+
+    .album-info {
+        float: left;
+        width: 80%;
+
+        span {
+            float: left;
+            margin-right: 10px;
+
+            img {
+                object-fit: cover;
+                width: 60px;
+                height: 50px;
+            }
+        }
+
+        h5 {
+            color: #fff;
+            font-size: 18px;
+            font-family: 'Open sb';
+            width: 100%;
+            margin: 0;
+            margin-top: 5px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 14px;
+            margin: 0;
+            font-family: 'Open';
+            width: 100%;
+        }
+    }
+
+    .play-btn {
+        float: right;
+        margin-top: 12px;
+        margin-right: 10px;
+    }
+}
+
+ion-tab-bar {
+    --background: #2B2F4A;
+    padding: 15px 0;
+
+    ion-label {
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: 'Open';
+    }
+
+    ion-tab-button {
+        &.tab-selected {
+            ion-label {
+                color: #00adef;
+            }
+            svg {
+                path {
+                    fill: #00adef;
+                }
+            }
+        } 
+        svg {
+            height: 28px;
+            margin-bottom: 5px;
+        }
+    } 
+}

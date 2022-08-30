@@ -1,0 +1,72 @@
+footer {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5328a1+0,662b57+69,782e0a+100 */
+    background: #5328a1;
+    background: -moz-linear-gradient(-45deg, #5328a1 0%, #662b57 69%, #782e0a 100%);
+    background: -webkit-linear-gradient(-45deg, #5328a1 0%, #662b57 69%, #782e0a 100%);
+    background: linear-gradient(135deg, #5328a1 0%, #662b57 69%, #782e0a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5328a1', endColorstr='#782e0a', GradientType=1);
+
+    @include fullwidth();
+    padding: abs($number: 55px) abs($number: $null);
+
+    @media #{$sm} {
+        padding: abs($number: 20px) abs($number: $null);
+    }
+    @media #{$sm} {
+        text-align: center;
+    }
+
+    .footer-social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include social();
+
+        @media #{$xs} {
+           justify-content: center;
+           margin: abs($number: 15px) abs($number: $null);
+        }
+    }
+}
+
+.copyright {
+    background-color: #252C49;
+    @include fullwidth();
+    padding: abs($number: 14px) abs($number: 0);
+    font-size: abs($number: 14px);
+    font-family: $open;
+    color: $white;
+@media #{$md}{
+    text-align: center;
+}
+    ul {
+        padding: abs($number: $null);
+        float: right;
+        margin: abs($number: $null);
+        @media #{$sm}{
+            margin-top: 8px;
+        }
+
+        li {
+            display: inline-block;
+
+            &:after {
+                content: '|';
+                float: right;
+                margin: abs($number: $null) abs($number: 5px) abs($number: $null) abs($number: 8px);
+            }
+
+            &:last-child {
+                &:after {
+                    display: none;
+
+                }
+            }
+
+            a {
+                color: $white;
+            }
+        }
+
+    }
+}

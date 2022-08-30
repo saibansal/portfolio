@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35">
+  <g id="list-add" transform="translate(-274 -689)">
+    <g id="Path_71" data-name="Path 71" transform="translate(274 689)" fill="none">
+      <path d="M18,0A17.755,17.755,0,0,1,36,17.5,17.755,17.755,0,0,1,18,35,17.755,17.755,0,0,1,0,17.5,17.755,17.755,0,0,1,18,0Z" stroke="none"/>
+      <path d="M 18.00000190734863 2 C 13.71563148498535 2 9.690561294555664 3.61931037902832 6.666231155395508 6.559619903564453 C 3.657173156738281 9.485099792480469 2.000003814697266 13.37047004699707 2.000003814697266 17.5 C 2.000003814697266 21.62952995300293 3.657173156738281 25.51490020751953 6.666231155395508 28.44038009643555 C 9.690561294555664 31.38068962097168 13.71563148498535 33 18.00000190734863 33 C 22.28437232971191 33 26.30944061279297 31.38068962097168 29.33377075195313 28.44038009643555 C 32.34283065795898 25.51490020751953 34 21.62952995300293 34 17.5 C 34 13.37047004699707 32.34283065795898 9.485099792480469 29.33377075195313 6.559619903564453 C 26.30944061279297 3.61931037902832 22.28437232971191 2 18.00000190734863 2 M 18.00000190734863 0 C 27.94113159179688 0 36 7.835020065307617 36 17.5 C 36 27.16497993469238 27.94113159179688 35 18.00000190734863 35 C 8.058872222900391 35 3.814697265625e-06 27.16497993469238 3.814697265625e-06 17.5 C 3.814697265625e-06 7.835020065307617 8.058872222900391 0 18.00000190734863 0 Z" stroke="none" fill="#fff"/>
+    </g>
+    <g id="add-music" transform="translate(282.471 697)">
+      <circle id="Ellipse_15" data-name="Ellipse 15" cx="2.5" cy="2.5" r="2.5" transform="translate(-0.471 10)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Ellipse_16" data-name="Ellipse 16" cx="2.5" cy="2.5" r="2.5" transform="translate(10.529 14)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_70" data-name="Path 70" d="M14.739,7H12.369A2.369,2.369,0,0,0,10,9.369v9" transform="translate(-5.261 -5.105)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_4" data-name="Line 4" y1="7" transform="translate(15.529 9)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Line_5" data-name="Line 5" x1="4" transform="translate(13.529 2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Line_6" data-name="Line 6" y2="4" transform="translate(15.529)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

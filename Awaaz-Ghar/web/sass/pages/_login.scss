@@ -1,0 +1,199 @@
+.login-logo {
+    position: relative;
+    margin-left: -41.5%;
+    img {
+        position: absolute;
+        width: 20%;
+        margin-top: 19%;
+        background: #252C49;
+        border-radius: 4.5rem;
+        padding: 5%;
+    }
+}
+
+.login-form-1 {
+    padding: 9%;
+    background: #252C49;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @media #{$md} {
+        height: auto;
+        width: 100%;
+    }
+
+    @media #{$sm} {
+        order: 2;
+    }
+
+    .back-to-main {
+        position: absolute;
+        top: 50px;
+        color: $white;
+        left: 50px;
+        z-index: 1;
+    }
+
+    .content {
+        width: 100%;
+        float: left;
+        text-align: center;
+
+        @media #{$md} {
+            padding: 0rem 0;
+        }
+
+        .left-logo {
+            width: 100%;
+
+            img {
+                width: 300px;
+            }
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-family: $openbd;
+            width: 100%;
+            float: left;
+            color: $white;
+
+            @media #{$lg} {
+                font-size: 24px;
+            }
+
+            @media #{$md} {
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        }
+
+        p {
+            font-size: 22px;
+            font-family: $open;
+            width: 100%;
+            float: left;
+            color: $white;
+
+            @media #{$lg-width} {
+                font-size: 18px;
+            }
+
+            @media #{$sm} {
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+.login-form-2 {
+    padding: 0 9%;
+    background: #00ADEF;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    @media #{$md} {
+        height: auto;
+        width: 100%;
+    }
+
+    @media #{$sm} {
+        order: 2;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 630px;
+        margin: auto;
+        display: inline-block;
+
+        h3 {
+            text-align: left;
+            text-transform: uppercase;
+            width: 100%;
+            float: left;
+            font-size: 22px;
+            margin-bottom: 25px;
+            color: #fff;
+        }
+
+        label {
+            color: $white;
+            font-size: 22px;
+            font-family: $open;
+            @include fullwidth();
+            @media #{$lg-width} {
+                font-size: 17px;
+            }
+        }
+
+        input[type=text],
+        input[type=password] {
+            padding: 10px 15px;
+            border-radius: 10px;
+            float: left;
+            width: 100%;
+            height: auto;
+            border: 0;
+            font-size: 16px;
+            color: $primary;
+            margin-bottom: 30px;
+        }
+
+        .btnSubmit {
+            font-weight: 600;
+            width: 100%;
+            color: $white;
+            background-color: $primary;
+            border: none;
+            font-size: 18px;
+            font-family: $open;
+            border: solid 2px $primary;
+            text-transform: uppercase;
+            border-radius: 8px;
+            padding: 2%;
+            transition: background-color ease-in-out .2s;
+            &:hover {
+                background: transparent;
+                border: solid 2px $white;
+            }
+        }
+
+        .btnForgetPwd {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            margin: 40px 0;
+            float: left;
+            width: 100%;            
+            &:hover {
+                text-decoration: none;
+                color: #fff;
+            }
+            @media #{$lg-width} {
+                margin: 0 0 15px 0;
+            }
+        }
+
+        .social-login {
+            text-align: center;
+            width: 100%;
+            float: left;
+
+            a {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                margin: 0 8px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

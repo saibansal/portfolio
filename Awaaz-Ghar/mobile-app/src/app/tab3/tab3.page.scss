@@ -1,0 +1,75 @@
+ ion-grid{
+    background: #1F2239
+ }
+.track-list {
+    float: left;
+    width: 100%;
+    padding: 0;
+
+    .section-heading {
+        padding: 0 15px;
+    }
+
+    .audio-list {
+        float: left;
+        width: 100%;
+        padding: 20px 15px;
+        background-image: url(../../assets/seperator.svg);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+     
+        .album-info {
+            float: left;
+            width: 60%;
+
+            span {
+                float: left;
+                margin-right: 7px;
+
+                img {
+                    object-fit: cover;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            h5 {
+                color: #fff;
+                font-size: 16px;
+                font-family: 'Open';
+                width: 100%;
+                margin: 0;
+                margin-top: 0;
+            }
+
+            p {
+                color: #fff;
+                font-size: 13px;
+                margin: 0;
+                font-family: 'Open';
+                width: 100%;
+            }
+        }
+
+        .action-button {
+            text-align: right;
+
+            .play-btn {
+                margin-top: 0;
+                margin-right: 7px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+
+}

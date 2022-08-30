@@ -1,0 +1,107 @@
+main {
+    &[role=feedback] {
+        background: #F9F9F9;
+
+        .feedback {
+            @include fullwidth();
+
+            .profileLeft {
+                @include fullwidth();
+                border-right: solid 1px #DAD7D7;
+                padding: 0 3rem;
+
+                @media #{$sm} {
+                    border: 0;
+                } 
+
+                 
+            }
+
+            .profile-form {
+                padding: 0 20px;
+
+                @media #{$sm} {
+                    padding: 0;
+                }
+
+                h2 {
+                    @include fullwidth();
+                    color: #1F2239;
+                    font-family: "Open bd";
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                    @media #{$lg} {
+                        font-size: 24px;
+                    }
+
+                    @media #{$md} {
+                        font-size: 22px;
+                    }
+
+                    @media #{$sm} {
+                        font-size: 20px;
+                    }
+
+                    @media #{$xs} {
+                        font-size: 18px;
+                    }
+                }
+                p{
+                    color: rgba($color: $primary, $alpha: 0.7);
+                }
+
+                .form-group {
+                    margin-bottom: 30px;
+
+                    @media #{$sm} {
+                        margin-bottom: 15px;
+                    }
+
+                    label {
+                        font-size: 18px;
+                        font-family: $opensb;
+                        @include fullwidth();
+
+                        @media #{$sm} {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .form-control {
+                        border: solid 1px #CFCFCF;
+                        color: #252C49;
+                        border-radius: 0;
+                        height: auto;
+                        padding: 15px 30px;
+
+                        @media #{$sm} {
+                            padding: 7px 20px;
+                        }
+                    }
+                    textarea{
+                        &.form-control{
+                            height: 130px;
+                            padding: 15px 20px;
+                        }
+                    }
+
+                    button {
+                        border-radius: 30px;
+                        background: #00ADEF;
+                        padding: 10px 40px;
+                        border: 0;
+                        font-family: $openbd;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            background: $primary;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

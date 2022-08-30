@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="113" height="113" viewBox="0 0 113 113">
+  <defs>
+    <filter id="Ellipse_2" x="0" y="0" width="113" height="113" filterUnits="userSpaceOnUse">
+      <feOffset dx="0.5" dy="0.866" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.22"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Next_Button" data-name="Next Button" transform="translate(7 6.634)">
+    <g transform="matrix(1, 0, 0, 1, -7, -6.63)" filter="url(#Ellipse_2)">
+      <circle id="Ellipse_2-2" data-name="Ellipse 2" cx="49" cy="49" r="49" transform="translate(7 6.63)" fill="#fff"/>
+    </g>
+    <image id="Next_Icon" data-name="Next Icon" width="18" height="28" transform="translate(43 35)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAcCAYAAABsxO8nAAAABHNCSVQICAgIfAhkiAAAAcJJREFUOE+V1c0rhEEcwHHPSTg7uknZVS7UkpXyFslJSBapzcFhi0X+AclLOThIKUsOlIS2lJcSJcLBy/4F/gO5Wt/ZZh885vc8Y2r6PfvMbz7PzOw88zjZbLYgX0JVsVOuE5mX7Yx70/LCURCAQ/4lNUr9oNaBPVsauTSnMjxYTjykhjwdy8DebDEFJUleNHR4514D2JMNlp/aEsmTQodqGywHqcI6TREWBKwK7NVvZC6kMTVFNVVv+eRGLdijhP2CLEbWCHZlwv5AGpsgLgtPVyO797YZIY3NEucErB7s5mebCGlsnLgqYB1gJ/k2X0hjceK6gEXAblVbIKSxMeKagHWBpa0gjbUTD6hFBjD+HygMcEctNkDTVhC7vpfOu8LURphaKhAC6QRIC0g3yHHgYoMMkLQjIP0g7ij9NuQQQEpAekD2AzckI4mRtCUgLSDn3jbTSztM0qaA9IHsmdq8x4jfy9oKciY84HtnM51RkjaExGaQCwlx/zWQBD9WhMQ2EPWZ8i3q8J8hY17IagJRn6nAoqAIWUfUUk92DchDoKAT8l+REn6r87hC34+CXNsi7hqpC9apkKBOvWTQwpoe8AWFX9EIryWbfAAAAABJRU5ErkJggg=="/>
+  </g>
+</svg>
