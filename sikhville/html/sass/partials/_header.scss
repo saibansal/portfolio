@@ -1,0 +1,66 @@
+header {
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+    background-image: url(../images/header-pattern.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-bottom: 39px;
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    nav {
+        ul {
+            @media #{$md}{
+                background-color:#f9bf03;
+                border-top:solid 3px #d20959;
+                margin-top: 15px !important;
+            }
+            li {
+                background-image: url(../images/nav-left.png);
+                background-position: left top;
+                background-repeat: no-repeat;
+                float: left;
+                margin-left: 8px;
+                @media #{$md}{
+                    background-image: none;
+                }
+
+                a {
+                    padding: 6px 35px;
+                    background-image: url(../images/nav-right.png);
+                    background-position: right top;
+                    background-repeat: no-repeat;
+                    float: left;
+                    text-decoration: none;
+                    font-family: "Roboto Condensed Bold";
+                    color: #ec1165;
+                    font-size: 25px;
+                    @media #{$md}{
+                        background-image: none;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+
+                &.active,
+                &:hover {
+                    a {
+                        text-decoration: none;
+                        color: #2e3192;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-banner {
+    float: left;
+    width: 100%;
+}

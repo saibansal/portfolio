@@ -1,0 +1,78 @@
+ 
+main {
+    .section {
+        &.download-listing {
+            .content-container {
+                @include sectionColor(categoryListing);  
+                padding:abs($number: 4rem) abs($number: $null) abs($number: $null) abs($number: $null);
+                
+                h5{
+                    color:#fff200;
+                    font-size: abs($number: 40px);
+                    text-align: left;
+                    font-family: $ifc;
+                    background-image: url(../../images/images/heading-seprator.png);
+                    background-repeat: repeat-x;
+                    background-position: left bottom;
+                    padding-bottom: abs($number: 20px);
+                    a{
+                        float: right;
+                        font-family: $ifc;
+                        color: $white;
+                        font-size: abs($number: 30px);
+                        margin-top: abs($number: 10px);
+                        text-decoration: none;
+                    }
+                }
+                .card{
+                    background-color: transparent;
+                   
+                }
+            }
+            .col{
+                text-align: center;
+                margin-bottom: abs($number: 50px);
+                .card{
+                    border: abs($number: $null);
+                    background-color: transparent;
+                    border-radius: abs($number: $null);
+                    img{
+                        border-radius: abs($number: $null);
+                        border:solid abs($number: 5px) #fdd60f;
+                    }
+                    .card-body{
+                        .card-title{
+                            color: $white;
+                        }
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    transition: all .3s ease-in-out;
+                    @include fullwidth();
+                    color: $white;
+                   
+                    h4{
+                        font-size: abs($number: 32px);
+                        color:$white;
+                        margin-top: abs($number: 15px);
+                        font-family:$ifc;
+                        color: $white;
+                        
+                    }
+                }
+                &:hover{
+                    a{
+                        color: #00ffff;
+                        span{
+                            border-color: #00ffff;
+                        }
+                        h4{
+                            color: #00ffff;
+                        }
+                    }
+                }                
+            }
+        } 
+    }  
+}

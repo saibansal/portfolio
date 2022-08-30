@@ -1,0 +1,452 @@
+.top-videos {
+    .content-container {
+        @include sectionColor(topvideo);
+    }
+}
+
+.worksheets {
+    .content-container {
+        @include sectionColor(worksheet);
+
+        .col-md-6 {
+            text-align: center;
+
+            img {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+
+.shopping {
+    .content-container {
+        @include sectionColor(shopping);
+
+        .col-md-6 {
+            text-align: center;
+
+            img {
+                margin-bottom: abs($number: 20px);
+            }
+        }
+    }
+}
+
+.games {
+    .content-container {
+        @include sectionColor(games);
+
+        .col-md-6 {
+            text-align: center;
+
+            img {
+                margin-bottom: abs($number: 20px);
+            }
+        }
+    }
+}
+
+.music {
+    .content-container {
+        @include sectionColor(music);
+
+        .col-md-6 {
+            text-align: center;
+
+            img {
+                margin-bottom: abs($number: 20px);
+            }
+        }
+    }
+}
+
+.companyInfo {
+
+    .aboutUs,
+    .ourTeam,
+    .ourMission {
+        text-align: center;
+        color: #fff;
+
+        .card-body {
+            padding: abs($number: 4.2rem) abs($number: 2rem);
+        }
+
+        .card-title {
+            font-family: $ifc;
+            font-weight: bold;
+            font-size: abs($number: 2rem);
+        }
+
+        .card-text {
+            color: $white;
+            font-size: abs($number: 23px);
+            font-family: $robo;
+            line-height: abs($number: 30px);
+            @media #{$sm}{
+                font-size: 18px;
+            }
+
+        }
+
+        .card-footer {
+            border: abs($number: $null);
+            margin-top: abs($number: 30px);
+            background: transparent;
+            margin-bottom: abs($number: 20px);
+
+            a {
+                background-image: url(../images/read-more-bg.png);
+                background-repeat: no-repeat;
+                display: inline-block;
+                padding: abs($number: 1.7rem) abs($number: 2.1rem);
+                font-family: $ifc;
+                font-size: abs($number: 30px);
+                text-decoration: none;
+            }
+        }
+    }
+
+    .aboutUs {
+        background-color: #793efd;
+
+        .card-footer {
+            a {
+                color: #793efd;
+            }
+        }
+    }
+
+    .ourTeam {
+        background-color: #fac005;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            left: $null;
+            top: $null;
+            background-image: url(../images/vertical-border.jpg);
+            background-repeat: repeat-y;
+            height: abs($number: 100%);
+            width: abs($number: 20px);
+            content: '';
+        }
+
+        &:after {
+            position: absolute;
+            right: $null;
+            top: $null;
+            background-image: url(../images/vertical-border.jpg);
+            background-repeat: repeat-y;
+            height: abs($number: 100%);
+            width: abs($number: 20px);
+            content: '';
+        }
+
+        .card-footer {
+            a {
+                color: #fac005;
+            }
+        }
+    }
+
+    .ourMission {
+        background-color: #1bbfec;
+
+        .card-footer {
+            a {
+                color: #1bbfec;
+            }
+        }
+    }
+}
+
+.support {
+    .content-container {
+        @include sectionColor(support);
+
+        .col-md-6 {
+            text-align: center;
+
+            img {
+                margin-bottom: abs($number: 20px);
+            }
+        }
+
+        h5 {
+            color: $primary;
+            font-family: $ifc;
+            font-size: abs($number: 52px);
+            font-weight: bold;
+            text-align: left;
+            @include fullwidth();
+            margin-top: 50px;
+            @media #{$md}{
+                font-size: abs($number: 30px);
+                text-align: center;
+            }
+        }
+
+        .testimonialSlider {
+            @include fullwidth();
+
+            p {
+                position: relative; 
+                border: solid abs($number: 4px) $primary;
+                border-radius: abs($number: 30px);
+                max-width: abs($number: 500px);
+                padding: abs($number: 48px);
+                font-size: abs($number: 23px);
+                color: $white;
+                font-family: $robo;
+                background-color:#3952ac  ;
+                text-align: left;
+                @media #{$md}{
+                    display: inline-block;
+                    float:  none;
+                }
+                &:before{
+                    background-image:url(../images/left-top-testimonial.png);
+                    position: relative;
+                    left: 16px;
+                    top: 16px;
+                    width: 30px;
+                    height: 27px;
+                    content: '';
+                    position: absolute;
+                }
+                &:after{
+                    background-image:url(../images/bottom-testimonial.png);
+                    position: relative;
+                    right: 16px;
+                    bottom: 16px;
+                    width: 30px;
+                    height: 27px;
+                    content: '';
+                    position: absolute;
+                }
+            }
+
+            em {
+                color: $primary;
+                font-size: abs($number: 25px);
+                font-family: $robo;
+                padding-top: 20px;
+                @include fullwidth();
+                max-width: 500px;
+                position: relative;
+
+                &:before {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 22px 17px 0 17px;
+                    border-color: $primary transparent transparent transparent;
+                    position: absolute;
+                    left: 50%;
+                    top: -50%;
+                    content: '';
+                    transform: translate(-50%, 10px)
+                }
+            }
+
+        }
+    }
+}
+
+.slider-conta {
+    padding: 4.5rem 0;
+
+    .cd-h-timeline__events {
+        border-bottom: solid 2px #fff;
+        text-align: center;
+
+        img {
+            // height: 432px;
+            object-fit: cover;
+        }
+
+        h5 {
+            color: $white;
+            font-size: 25px;
+            font-family: $robobd;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $white;
+            font-size: 25px;
+            font-family: $robo;
+            margin-bottom: 0;
+            @media #{$sm}{
+                font-size: 18px;
+            }
+
+            a {
+                text-decoration: underline;
+                color: $white;
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}
+
+.get-contact {
+    background: #630460;
+    // display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 4.5rem 8rem;
+    @media #{$sm}{
+        padding:1.5rem;
+    }
+    h5 {
+        float: left;
+        width: 100%;
+        color: $white;
+        font-family: $ifc;
+        text-align: left;
+        font-size: 33px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        @media #{$sm}{
+            text-align: center;
+        }
+    }
+
+    p {
+        color: $white;
+        font-size: 22px;
+        font-family: $robobd;
+        @media #{$sm}{
+            font-family: $robo;
+            font-size: 18px;
+            text-align: center;
+        }
+        a {
+            color: #ffd217;
+            border-right: solid 2px #ffd217;
+            padding: 0 10px;
+            float: left;
+            text-decoration: none;
+            @media #{$sm}{
+                border:0;
+                text-align: center;
+                width: 100%;
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+                border-right: 0;
+            }
+        }
+    }
+    button {
+        &.button {
+            background-image: url(../images/read-more-bg.png);
+            background-color: transparent;
+            width: 205px;
+            height: 95px;
+            font-size: 33px;
+            color:#630460;
+            font-family:$ifc;
+            border: 0;
+            line-height: 95px
+        }
+    }
+    .box-container {
+        @include fullwidth();
+        position: relative;
+
+        &:before {
+            content: '';
+            float: left;
+            width: 23px;
+            height: 64px;
+            background: url(../images/input-border.png);
+        }
+
+        &::after {
+            content: '';
+            float: right;
+            width: 23px;
+            height: 64px;
+            background: url(../images/input-border-right.png);
+        }
+
+        &.textarea {
+            &:before {
+                background: url(../images/left-textarea-border.png);
+                height: 130px;
+                width: 25px;
+            }
+
+            &::after {
+                background: url(../images/right-textarea-border.png);
+                height: 130px;
+                width: 25px;
+            }
+
+            .form-control {
+                height: 130px;
+                width: calc(100% - 50px);
+            }
+        }
+
+        .form-control {
+            width: calc(100% - 46px);
+            float: left;
+            background: transparent;
+            border: 0;
+            height: 64px;
+            line-height: normal;
+            border-top: solid 3px #fff;
+            border-bottom: solid 3px #fff;
+            font-family: $ifc;
+            font-size: 33px;
+            color: $white;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            @media #{$sm}{
+                font-size: 18px;
+                font-family: $robo;
+                text-transform: capitalize;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 0;
+            }
+        }
+
+      
+
+    }
+}
+.js .carousel-indicators{display: inline-block;text-align: center;}
+.js .carousel-indicators li{
+    float: none;
+    width: 30px;
+    display: inline-block;
+}
+
+.js .cd-h-timeline__date{
+    @media #{$sm}{
+        font-size: 18px;
+    }
+}
+
+.navbar-toggler{
+    background-color: #d20959;
+    padding: 8px 15px;
+    i{
+        color: #fff;
+    }
+}
